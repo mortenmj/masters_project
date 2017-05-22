@@ -38,12 +38,13 @@ headsepline, % Uncomment to get a line under the header
 %consistentlayout, % Uncomment to change the layout of the declaration, abstract and acknowledgements pages to match the default layout
 ]{MastersDoctoralThesis} % The class file specifying the document structure
 
+
+%----------------------------------------------------------------------------------------
+%   FONT SETTINGS
+%----------------------------------------------------------------------------------------
+
 \usepackage[utf8]{inputenc} % Required for inputting international characters
 \usepackage[T1]{fontenc} % Output font encoding for international characters
-
-%\usepackage[cmintegrals,cmbraces]{newtxmath}
-%\usepackage[oldstyle]{ebgaramond}
-%\usepackage{ebgaramond-maths}
 \usepackage{fontspec}
 \usepackage{microtype}
 \usepackage[english]{selnolig}
@@ -58,9 +59,20 @@ headsepline, % Uncomment to get a line under the header
   ItalicFeatures  = {Ligatures = {TeX, Common, Rare}}
 ]
 
+%----------------------------------------------------------------------------------------
+%   MATH SETTINGS
+%----------------------------------------------------------------------------------------
+
+\usepackage{mathtools}
+\usepackage{hyperref}
+\usepackage{cleveref}
+
+%----------------------------------------------------------------------------------------
+%   BIBLIOGRAPHY SETTINGS
+%----------------------------------------------------------------------------------------
+
 \usepackage[backend=biber,style=ieee]{biblatex} % Use the bibtex backend with the ieee citation style
 \addbibresource{Simulation.bib}                 % The filename of the bibliography
-
 \usepackage[autostyle=true]{csquotes} % Required to generate language-dependent quotes in the bibliography
 
 %----------------------------------------------------------------------------------------
@@ -76,6 +88,12 @@ headsepline, % Uncomment to get a line under the header
     bottom=1.5cm, % Bottom margin
     %showframe, % Uncomment to show how the type block is set on the page
 }
+
+%----------------------------------------------------------------------------------------
+%   MISC SETTINGS
+%----------------------------------------------------------------------------------------
+
+\usepackage[l2tabu]{nag}
 
 %----------------------------------------------------------------------------------------
 %   THESIS INFORMATION
