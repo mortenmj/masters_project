@@ -38,31 +38,36 @@ headsepline, % Uncomment to get a line under the header
 %consistentlayout, % Uncomment to change the layout of the declaration, abstract and acknowledgements pages to match the default layout
 ]{MastersDoctoralThesis} % The class file specifying the document structure
 
+\usepackage{marginnote}
+\usepackage{subfiles}
+\usepackage{copyrightbox}
+
+\usepackage{mortenmj-macros}
 
 %----------------------------------------------------------------------------------------
 %   FONT SETTINGS
 %----------------------------------------------------------------------------------------
 
-\usepackage[utf8]{inputenc} % Required for inputting international characters
-\usepackage[T1]{fontenc} % Output font encoding for international characters
 \usepackage{fontspec}
-\usepackage{microtype}
 \usepackage[english]{selnolig}
+\usepackage{ebgaramond}
 
-\setmainfont{Adobe Garamond Pro}[
+\setmainfont{EB Garamond}[
   Numbers         = OldStyle,
   Ligatures       = {TeX, Common},
-  BoldFont        = AGaramondPro-SemiBold,
-  ItalicFont      = AGaramondPro-Italic,
-  BoldItalicFont  = AGaramondPro-SemiboldItalic,
-  UprightFont     = AGaramondPro-Regular,
+%  BoldFont        = AGaramondPro-SemiBold,
+%  ItalicFont      = AGaramondPro-Italic,
+%  BoldItalicFont  = AGaramondPro-SemiboldItalic,
+%  UprightFont     = AGaramondPro-Regular,
   ItalicFeatures  = {Ligatures = {TeX, Common, Rare}}
 ]
+\usepackage{microtype}
 
 %----------------------------------------------------------------------------------------
 %   MATH SETTINGS
 %----------------------------------------------------------------------------------------
 
+%\usepackage[adobe-garamond]{mathdesign}
 \usepackage{mathtools}
 \usepackage{hyperref}
 \usepackage{cleveref}
@@ -73,20 +78,20 @@ headsepline, % Uncomment to get a line under the header
 
 \usepackage[backend=biber,style=ieee]{biblatex} % Use the bibtex backend with the ieee citation style
 \addbibresource{Simulation.bib}                 % The filename of the bibliography
-\usepackage[autostyle=true]{csquotes} % Required to generate language-dependent quotes in the bibliography
+\usepackage[autostyle=true]{csquotes}           % Required to generate language-dependent quotes in the bibliography
 
 %----------------------------------------------------------------------------------------
 %   MARGIN SETTINGS
 %----------------------------------------------------------------------------------------
 
 \geometry{
-    paper=a4paper, % Change to letterpaper for US letter
-    inner=2.5cm, % Inner margin
-    outer=3.8cm, % Outer margin
+    paper=a4paper,      % Change to letterpaper for US letter
+    inner=2.5cm,        % Inner margin
+    outer=3.8cm,        % Outer margin
     bindingoffset=.5cm, % Binding offset
-    top=1.5cm, % Top margin
-    bottom=1.5cm, % Bottom margin
-    %showframe, % Uncomment to show how the type block is set on the page
+    top=1.5cm,          % Top margin
+    bottom=1.5cm,       % Bottom margin
+%    showframe,         % Uncomment to show how the type block is set on the page
 }
 
 %----------------------------------------------------------------------------------------
@@ -142,27 +147,27 @@ headsepline, % Uncomment to get a line under the header
 
 \begin{minipage}[t]{0.4\textwidth}
 \begin{flushleft} \large
-\emph{Author:}\\
+\textsw{Author:}\\
 \href{http://www.johnsmith.com}{\authorname} % Author name - remove the \href bracket to remove the link
 \end{flushleft}
 \end{minipage}
 \begin{minipage}[t]{0.4\textwidth}
 \begin{flushright} \large
-\emph{Supervisor:} \\
-\href{http://www.ntnu.edu/employees/sverre.hendseth}{\supname} % Supervisor name - remove the \href bracket to remove the link  
+\textsw{Supervisor:} \\
+\href{http://www.ntnu.edu/employees/sverre.hendseth}{\supname} % Supervisor name - remove the \href bracket to remove the link
 \end{flushright}
 \end{minipage}\\[3cm]
- 
+
 \vfill
 
-\large \textit{A thesis submitted in fulfillment of the requirements\\ for the degree of \degreename}\\[0.3cm] % University requirement text
-\textit{in the}\\[0.4cm]
+\large \textsw{A thesis submitted in fulfillment of the requirements\\ for the degree of \degreename}\\[0.3cm] % University requirement text
+\textsw{in the}\\[0.4cm]
 %\groupname\\
 \deptname\\[2.6cm] % Research group name and department name
 
 \vfill
 
-{\large \today}\\[4cm] % Date
+%{\large \today}\\[4cm] % Date
 \includegraphics[width=6cm]{Logo} % University/department logo - uncomment to place it
 
 \vfill
@@ -290,10 +295,10 @@ $\omega$ & angular frequency & \si{\radian} \\
 % Include the chapters of the thesis as separate files from the Chapters folder
 % Uncomment the lines as you write the chapters
 
-\include{Chapters/Chapter1}
-\include{Chapters/Chapter2}
-\include{Chapters/Chapter3}
-\include{Chapters/Chapter4}
+\subfile{Chapters/Chapter1}
+\subfile{Chapters/Chapter2}
+\subfile{Chapters/Chapter3}
+\subfile{Chapters/Chapter4}
 
 %----------------------------------------------------------------------------------------
 %    THESIS CONTENT - APPENDICES
@@ -304,7 +309,7 @@ $\omega$ & angular frequency & \si{\radian} \\
 % Include the appendices of the thesis as separate files from the Appendices folder
 % Uncomment the lines as you write the Appendices
 
-\include{Appendices/AppendixA}
+\subfile{Appendices/AppendixA}
 %\include{Appendices/AppendixB}
 %\include{Appendices/AppendixC}
 
