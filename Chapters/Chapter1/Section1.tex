@@ -1,0 +1,56 @@
+%----------------------------------------------------------------------------------------
+%   SECTION 1
+%----------------------------------------------------------------------------------------
+
+\documentclass[../../main.tex]{subfiles}
+\begin{document}
+\section{The human computer}
+
+\begin{figure}[ht]
+    \cimage{comet}{Courtesy of the Library of Congress}
+    \caption{Halley's comet over Cambridge, 1682.}
+    \label{fig:comet}
+\end{figure}
+
+In order to better understand the history of simulation, it is useful to take a look at the history of computation in general.
+Here, we will see how the need to simulate and predict the behavior of physical systems has been a driving force in the development of both analog and digital computers.
+Analog counting devices, such as the Chinese abacus, have been used for thousands of years to aid in computation
+However, the term originally applied to a profession where people were employed to perform calculations following exact rules.
+The beginnings of the profession can be traced to the work done by Alexis-Claude Clairaut to predict the perihelion, the closest approach to the sun, of Halley's comet.
+The return of the comet had been a matter of scientific discussion since it was first predicted by Edmund Halley in 1695.
+However, the period of time between earlier sightings did not conform to Halley's prediction.
+The orbit calculated by Halley, using his own measurements from the 1682 passing, predicted that the comet would reappear at fixed intervals.
+Dispite this, the appearances of the comet, recorded by Apian in 1531, Kepler in 1607, and Halley himself in 1682, did not conform to a perfectly regular interval.
+Halley and Newton correctly deduced that other celestial bodies influenced the comet's orbit, but the three-body problem was considered insurmountable at the time.
+Beginning in the spring of 1757, one year before the predicted return of the comet, Clairaut began to undertake the calculation of the comet's orbit.
+Clairaut, along with two friends, using differential equations solved by successive approximation \cite{wilson1993}.
+
+\begin{align*} \label{eqn:clairaut}
+  z &= \int r \times dx + \int (2 \xi - \rho)r \times dx && \text{Clairaut's equation \cite{wilson1993}}
+\end{align*}
+
+Clairaut set his two companions to calculating the positions of Jupiter and Saturn, around the sun, advancing them a degree or two for every step of the calculation
+For each step the forces that acted on them , and the effect on their orbits, was determined.
+Clairaut calculated the resulting effect on the comet itself.
+They did these calculations, first starting with the 1531 return, and having done that repeated the work starting with the 1607 observations and finally the 1682 observation by Halley,
+working daily from June through September of 1757.
+While the prediction produced by Clairaut's team would deviate from the date of the perihelion by 33 days, it was a vast improvement compared to the prediction of Halley, which had an error margin of 600 days.
+Ultimately, while several shortcomings have later been identified in the calculations performed by Clairaut, his largest contribution was not the prediction of Halley's comet itself.
+Clairaut's most important contribution would be the idea that laborious mathematics could be computed in parallel;
+that mathematical work could be divided into pieces, computed independently, checked for errors and combined into a final product \cite{grier1955}.
+
+\begin{figure}[h]
+    \cimage{tabulatingroom}{Courtesy of the Library of Congress}
+    \caption{A computing room in the 1920.}
+    \label{fig:tabulatingroom}
+\end{figure}
+
+Shortly after the work by Clairaut and his companions, the French Académie des Sciences undertook to calculate logarithmic and trigonometric tables for the new metric system.
+Inspired by Adam Smith's writings on division of labor in the Wealth of Nations, Gaspard de Prony, director of the Bureau du Cadastre, organized the bureau's computing staff into three sections.
+The first group had little training in mathematics, and would be limited to performing simple arithmetics.
+The second group, made up of more experienced computers, reduced the calculations that were to be performed into fundamental arithmetical operations, and verified the results that were returned.
+These made up the section that in later computing organizations would be referred to as planners.
+The third group was made up of some of the finest mathematicians in France, who would oversee the entire operation.
+They took no part in the computational work itself, but investigated the various analytical expressions that could be used and selected the ones best suited for reduction into simple steps \cite{hyman1985}.
+
+\end{document}

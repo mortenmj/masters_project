@@ -38,12 +38,23 @@ headsepline, % Uncomment to get a line under the header
 %consistentlayout, % Uncomment to change the layout of the declaration, abstract and acknowledgements pages to match the default layout
 ]{MastersDoctoralThesis} % The class file specifying the document structure
 
-\setdefaultlanguage{english}
-\usepackage{marginnote}
-\usepackage{subfiles}
-\usepackage{copyrightbox}
+%----------------------------------------------------------------------------------------
+%   GRAPHICS SETTINGS
+%----------------------------------------------------------------------------------------
 
-\usepackage{mortenmj-macros}
+\let\attribute\relax
+
+\usepackage{standalone}
+\usepackage{graphicx}
+\usepackage{pgfplots}
+\usepackage{pgfplotstable}
+\usepackage{tikzscale}
+\usepackage{tikz-uml}
+\usepgfplotslibrary{external}
+\pgfplotsset{compat=newest}
+\tikzexternalize
+%\tikzexternalize[shell escape=-enable-write18]
+\tikzset{external/mode=graphics if exists}
 
 %----------------------------------------------------------------------------------------
 %   FONT SETTINGS
@@ -68,7 +79,7 @@ headsepline, % Uncomment to get a line under the header
 %   MATH SETTINGS
 %----------------------------------------------------------------------------------------
 
-%\usepackage[adobe-garamond]{mathdesign}
+\usepackage{amsmath}
 \usepackage{mathtools}
 \usepackage{hyperref}
 \usepackage{cleveref}
@@ -95,11 +106,21 @@ headsepline, % Uncomment to get a line under the header
 %    showframe,         % Uncomment to show how the type block is set on the page
 }
 
+
 %----------------------------------------------------------------------------------------
 %   MISC SETTINGS
 %----------------------------------------------------------------------------------------
 
+\usepackage{mathtools}
+\usepackage[section]{placeins}
+\usepackage{booktabs}
 \usepackage[l2tabu]{nag}
+\setdefaultlanguage{english}
+\usepackage{marginnote}
+\usepackage{subfiles}
+\usepackage{copyrightbox}
+
+\usepackage{mortenmj-macros}
 
 %----------------------------------------------------------------------------------------
 %   THESIS INFORMATION

@@ -1,0 +1,135 @@
+%-----------------------------------
+%   Solvers
+%-----------------------------------
+
+\documentclass[../../main.tex]{subfiles}
+\begin{document}
+\section{Solvers}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics{solverinterface-uml}
+  \caption{Solver interface}
+  \label{fig:solver-interface}
+\end{figure}
+
+As it is desirable that solvers also be implemented in plugins, it is necessary to specify an API.
+
+\subsection{Criteria}
+
+The API should allow for as wide a range of implementations as possible, and roughly in any conceivable language.
+The reasons for this need for flexibility are several.
+
+While implementing solvers in a procedural or functional language might yield impressive performance, the result is often code that is difficult to understand.
+Implementing in an object oriented language allows for abstraction of the numerical algorithm, and permits code that is divided into well-defined, self-contained modules \cite{kees1999}.
+However, programmers may also deem that the computational overhead of an object oriented solution outweighs the benefits, and would therefore prefer to implement the solver in some other paradigm.
+Our interface must be sufficiently flexible to allow for both approaches, so that implementers can make this choice themselves.
+Furthermore, much research has gone into the development of efficient solvers in the past century, and it would be very useful to simply integrate these as plugins in our software.
+
+The API should allow for solvers of ordinary differential equations, partial differential equations and non-linear differential equations.
+This will not be an API for implementing solvers, but rather an API for how such a solver should interface with the rest of our simulation framework.
+
+In order to create a pleasant user experience, it would be beneficial if the solver could report data to the application as the simulation progresses.
+This way, the user can see the graph being drawn in real time, and can stop and reconfigure the simulation if that is desired.
+This is also in line with the requirements of responsive design; The user sees that the application is working, and therefore has a better user experience.
+It is important that this continous feedback is an option, and not a hard requirement, so that the coupling between the solver and the application doesn't impose limitations on solver implementers.
+
+In some cases it may be desirable to run the solver on some other machine, or indeed even a cluster of machines, and our API should be flexible enough to allow for this.
+Therefore, we need an API where the solver can report data to the application, even when running remotely.
+However, it would not be desirable to impose this as a requirement, as that may limit certain implementations.
+Whether or not the solver can provide data to the GUI in real time should be reported to the application, so that the lack of information isn't interpreted as an error by the user.
+
+\subsection{Considerations}
+
+To determine the required parameters for our solver API, we will have to look more closely at the types of differential equations we intend to support.
+There are two ways we can represent systems of differential equations in our application.
+We can require the user to supply the system in a matrix representation, or we can require a function $f(x)$, that returns $dx/dt$.
+In the case where $x$ is multivariate, $f(x)$ should return an array of results.
+Systems of linear differential equations can be specified in matrix form like so \cite{kreyzig}:
+
+\begin{gather}
+  \begin{aligned}
+    y'_{1} = a_{11}(t)y_{1} + &\cdots + a_{1n}(t)y_{n} + g_{1}(t)   \\
+                              &\vdotswithin{\cdots}                 \\
+    y'_{n} = a_{n1}(t)y_{1} + &\cdots + a_{nn}(t)y_{n} + g_{n}(t)
+  \end{aligned}\\
+  \intertext{This can be written in vector form as}
+  \begin{split}
+    \vec{y'} = \mat{A}\vec{y} + \vec{g} \\
+  \end{split}\\
+  \shortintertext{where}
+  \begin{split} \nonumber
+    \begin{aligned}
+      \vec{y} &=
+      \begin{bmatrix}
+        y_{1}  \\
+        \vdots \\
+        y_{n}
+      \end{bmatrix}
+    \end{aligned}
+    \begin{aligned}
+      \mat{A} &=
+      \begin{bmatrix}
+        a_{11} & \cdots & a_{1n} \\
+        \cdot  & \cdots & \cdot  \\
+        a_{n1} & \cdots & a_{nn}
+      \end{bmatrix}
+    \end{aligned}
+    \begin{aligned}
+      \vec{g} &=
+      \begin{bmatrix}
+        g_{1}  \\
+        \vdots \\
+        g_{n}
+      \end{bmatrix}
+    \end{aligned}
+  \end{split}
+\end{gather}
+
+As we can see, it would suffice to have an array of size $n$ for the state variables,
+a two-dimensional array of size $n \times n$ for the constants and another array of size $n$ for the constant terms.
+Linear partial differential equations can be reduced to this form and this should be done before passing the equations to the solver.
+
+Support for differential algebraic equations complicate the matter somewhat, but not much.
+In addition to the specification outlined above, we would need to specify the algebraic constraints in a similar fashion.
+However, nonlinear systems obviously can not be written in such a form \cite{khalil}.
+Generally, solvers of nonlinear algebraic equations take as input a problem-defining function.
+
+In order to provide the same API for both classes of problems, it might be more useful to require that the user supplies such a function.
+In addition, specialized solvers may require that other functions are supplied \cite{kinsol}\cite{cvode}\cite{ida}.
+Where solver implementations require that the user supplies functions such as these, they should either be implemented in our wrapper,
+or we should provide an interface for the user to supply their own implementation.
+In the latter case, it would be useful to supply a default implementation, so that the solver can be used out of the box.
+
+For linear solvers, whether they be for ordinary or partial differential equations, we need an initial time value, as well as an end value.
+Other information the solver needs, such as time step for fixed-step solvers, tolerance and so on, can be set in a key-value manner in Properties.
+
+\subsection{Proposal}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics{basesolver-uml}
+  \caption{Solver base class}
+  \label{fig:solver-baseclass}
+\end{figure}
+
+\subsubsection{General}
+
+The interface, shown in \cref{fig:solver-interface}, allows the solver implementation to provide the framework with a unique ID, a human-readable name, a
+type (ODE, PDE, etc.\@), and any relevant properties that must be configured by the user.
+One such property might for example be the desired number of steps, in the case of e.g. Euler's method.
+The Solver class needs to be sufficiently flexible that it can be inherited by classes for implementing all the solver types mentioned above.
+
+\subsubsection{Linear solvers}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics{solverinheritance-uml}
+  \caption{Linear differential equation solver class}
+  \label{fig:solver-linear}
+\end{figure}
+
+
+\subsubsection{Non-linear solvers}
+
+\end{document}

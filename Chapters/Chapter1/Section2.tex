@@ -1,0 +1,46 @@
+%----------------------------------------------------------------------------------------
+%   SECTION 2
+%----------------------------------------------------------------------------------------
+
+\documentclass[../../main.tex]{subfiles}
+\begin{document}
+\section{Analog computers}
+
+\begin{figure}[ht]
+  \cimage{engine}{Courtesy of the Science Museum, London}
+    \caption{Babbage's Analytical Engine.}
+    \label{fig:engine}
+\end{figure}
+
+Working with a similar project in 1821, Charles Babbage, widely considered the father of the computer, was familiar with the approach used by de Prony and applied a similar methodology.
+Like de Prony, Babbage recognized that mathematical work could be reduced to what he called ``mental labor'' \cite{babbage1832}.
+He applied the same approach as de Prony in calculating a series of tables for the Astronomical Society of London.
+However, Babbage was disappointed by the number of mistakes made by his human computers.
+Babbage took de Prony's approach to its next logical step and began work on a calculating machine.
+Applying the finite difference method, Babbage designed his first difference engine; An analog computer that could calculate the values of a polynomial simply by using repeated addition.
+
+The difference engine designed by Babbage primarily holds great historical interest.
+The Astronomical Society, which supported Babbage's work, ultimately did not adopt it for practical use, as it was cumbersome in operation.
+However, Babbage later designed, though never attempted to build, a more general machine which could modify its operation based on its own results.
+Babbage called this new design the Analytical Engine (\cref{fig:engine}) and its design includes most of the major modules in a modern general purpose computer:
+
+\begin{enumerate}
+  \item \textit{Input/output} The engine would take input from, and return output to, punched cards.
+  \item \textit{Memory} The Analytical Engine could store up to 1000 numbers, each with 40 digits, in its internal data store.
+  \item \textit{Central Processing Unit} The engine included registers for storing intermediate values, an ALU which could compute basic arithmetic operations, a synchronizing clock,
+      and mechanisms for converting instructions from the programmer into detailed, internal instructions, what we today refer to as microcode.
+\end{enumerate}
+
+Unfortunately, the Difference Engine was considered unwieldy to use, and the Analytical Engine was never constructed in Babbage's lifetime \cite{babbage1832}.
+Instead, the first machine to gain widespread acceptance among astronomical computers would be the geared adding machine.
+The geared adding machine was invented in the 17th century, but was considered unreliable at the time.
+It would only be with the aid of 19th century mass production menthods, and the consequent reduction in their cost, that the machines would proliferate.
+The pressures of the Great War meant that the need for human computers was at its greatest, just as many young men would be sent to fight in the war.
+In England, France and the United States, computers were hard at work producing ballistics tables for the artillery, and calculating statistics for all areas of wartime production \cite{grier1955}.
+
+The two world wars, bringing both greater need for computation as well as scarcity of manpower, pushed the development of increasingly complex computing machines.
+While simple analog computers like the slide rule had been in use for several hundred years, the need to perform complex calculations during the war drove the development of increasingly complex
+Computers in the early 20th century relied heavily on complex mechanical calculators and punched card machines in order to keep up with the growing demand for computation.
+The punched card machine was capable of interpreting data, and could operate at full speed for days unlike a human computer who would inevitably tire \cite{carr}.
+
+\end{document}
