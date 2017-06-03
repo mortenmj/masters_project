@@ -44,6 +44,7 @@ headsepline, % Uncomment to get a line under the header
 
 \let\attribute\relax
 
+\usepackage{copyrightbox}
 \usepackage{standalone}
 \usepackage{graphicx}
 \usepackage{pgfplots}
@@ -111,15 +112,15 @@ headsepline, % Uncomment to get a line under the header
 %   MISC SETTINGS
 %----------------------------------------------------------------------------------------
 
-\usepackage{mathtools}
 \usepackage[section]{placeins}
 \usepackage{booktabs}
 \usepackage[l2tabu]{nag}
 \setdefaultlanguage{english}
 \usepackage{marginnote}
 \usepackage{subfiles}
-\usepackage{copyrightbox}
+\providecommand{\rootfolder}{.} % Relative path to main.tex
 
+% This should be included last
 \usepackage{mortenmj-macros}
 
 %----------------------------------------------------------------------------------------
@@ -317,10 +318,10 @@ $\omega$ & angular frequency & \si{\radian} \\
 % Include the chapters of the thesis as separate files from the Chapters folder
 % Uncomment the lines as you write the chapters
 
-\subfile{Chapters/Chapter1}
-\subfile{Chapters/Chapter2}
-\subfile{Chapters/Chapter3}
-\subfile{Chapters/Chapter4}
+\subfile{Chapters/Chapter1/Chapter1}
+\subfile{Chapters/Chapter2/Chapter2}
+\subfile{Chapters/Chapter3/Chapter3}
+\subfile{Chapters/Chapter4/Chapter4}
 
 %----------------------------------------------------------------------------------------
 %    THESIS CONTENT - APPENDICES
