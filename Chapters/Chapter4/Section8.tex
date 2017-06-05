@@ -7,12 +7,12 @@
 \begin{document}
 \section{Solvers}
 
-\begin{figure}[h]
-  \centering
-  \includegraphics{solverinterface-uml}
-  \caption{Solver interface}
-  \label{fig:solver-interface}
-\end{figure}
+%\begin{figure}[h]
+%  \centering
+%  \includegraphics{solverinterface-uml}
+%  \caption{Solver interface}
+%  \label{fig:solver-interface}
+%\end{figure}
 
 As it is desirable that solvers also be implemented in plugins, it is necessary to specify an API.
 
@@ -48,44 +48,7 @@ We can require the user to supply the system in a matrix representation, or we c
 In the case where $x$ is multivariate, $f(x)$ should return an array of results.
 Systems of linear differential equations can be specified in matrix form like so \cite{kreyzig}:
 
-\begin{gather}
-  \begin{aligned}
-    y'_{1} = a_{11}(t)y_{1} + &\cdots + a_{1n}(t)y_{n} + g_{1}(t)   \\
-                              &\vdotswithin{\cdots}                 \\
-    y'_{n} = a_{n1}(t)y_{1} + &\cdots + a_{nn}(t)y_{n} + g_{n}(t)
-  \end{aligned}\\
-  \intertext{This can be written in vector form as}
-  \begin{split}
-    \vec{y'} = \mat{A}\vec{y} + \vec{g} \\
-  \end{split}\\
-  \shortintertext{where}
-  \begin{split} \nonumber
-    \begin{aligned}
-      \vec{y} &=
-      \begin{bmatrix}
-        y_{1}  \\
-        \vdots \\
-        y_{n}
-      \end{bmatrix}
-    \end{aligned}
-    \begin{aligned}
-      \mat{A} &=
-      \begin{bmatrix}
-        a_{11} & \cdots & a_{1n} \\
-        \cdot  & \cdots & \cdot  \\
-        a_{n1} & \cdots & a_{nn}
-      \end{bmatrix}
-    \end{aligned}
-    \begin{aligned}
-      \vec{g} &=
-      \begin{bmatrix}
-        g_{1}  \\
-        \vdots \\
-        g_{n}
-      \end{bmatrix}
-    \end{aligned}
-  \end{split}
-\end{gather}
+\loadeq{001}
 
 As we can see, it would suffice to have an array of size $n$ for the state variables,
 a two-dimensional array of size $n \times n$ for the constants and another array of size $n$ for the constant terms.
@@ -107,12 +70,12 @@ Other information the solver needs, such as time step for fixed-step solvers, to
 
 \subsection{Proposal}
 
-\begin{figure}[h]
-  \centering
-  \includegraphics{basesolver-uml}
-  \caption{Solver base class}
-  \label{fig:solver-baseclass}
-\end{figure}
+%\begin{figure}[h]
+%  \centering
+%  \includegraphics{basesolver-uml}
+%  \caption{Solver base class}
+%  \label{fig:solver-baseclass}
+%\end{figure}
 
 \subsubsection{General}
 
@@ -123,12 +86,12 @@ The Solver class needs to be sufficiently flexible that it can be inherited by c
 
 \subsubsection{Linear solvers}
 
-\begin{figure}[h]
-  \centering
-  \includegraphics{solverinheritance-uml}
-  \caption{Linear differential equation solver class}
-  \label{fig:solver-linear}
-\end{figure}
+%\begin{figure}[h]
+%  \centering
+%  \includegraphics{solverinheritance-uml}
+%  \caption{Linear differential equation solver class}
+%  \label{fig:solver-linear}
+%\end{figure}
 
 
 \subsubsection{Non-linear solvers}
