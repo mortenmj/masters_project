@@ -51,6 +51,7 @@ headsepline, % Uncomment to get a line under the header
 \usepackage{pgfplotstable}
 \usepackage{tikzscale}
 \usepackage{tikz-uml}
+\usepackage{subcaption}
 \usepgfplotslibrary{external}
 \pgfplotsset{compat=newest}
 \tikzexternalize
@@ -65,15 +66,15 @@ headsepline, % Uncomment to get a line under the header
 \usepackage[english]{selnolig}
 \usepackage{ebgaramond}
 
-\setmainfont{EB Garamond}[
-  Numbers         = OldStyle,
-  Ligatures       = {TeX, Common},
+%\setmainfont{EB Garamond}[
+%  Numbers         = OldStyle,
+%  Ligatures       = {TeX, Common},
 %  BoldFont        = AGaramondPro-SemiBold,
 %  ItalicFont      = AGaramondPro-Italic,
 %  BoldItalicFont  = AGaramondPro-SemiboldItalic,
 %  UprightFont     = AGaramondPro-Regular,
-  ItalicFeatures  = {Ligatures = {TeX, Common, Rare}}
-]
+%  ItalicFeatures  = {Ligatures = {TeX, Common, Rare}}
+%]
 \usepackage{microtype}
 
 %----------------------------------------------------------------------------------------
@@ -118,8 +119,11 @@ headsepline, % Uncomment to get a line under the header
 \setdefaultlanguage{english}
 \usepackage{marginnote}
 \usepackage{subfiles}
-\usepackage{catchfilebetweentags}
 \providecommand{\rootfolder}{.} % Relative path to main.tex
+
+\usepackage{minted}
+
+\usepackage{svg}
 
 % This should be included last
 \usepackage{mortenmj-macros}
@@ -192,7 +196,7 @@ headsepline, % Uncomment to get a line under the header
 \vfill
 
 %{\large \today}\\[4cm] % Date
-\includegraphics[width=6cm]{Logo} % University/department logo - uncomment to place it
+\includegraphics[width=6cm]{Figures/Logo} % University/department logo - uncomment to place it
 
 \vfill
 \end{center}
