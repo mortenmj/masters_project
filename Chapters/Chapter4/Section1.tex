@@ -1,30 +1,79 @@
 %----------------------------------------------------------------------------------------
-%   General Requirements
+%   OpenCOR
 %----------------------------------------------------------------------------------------
 
 \providecommand{\rootfolder}{../..} % Relative path to main.tex
 \documentclass[\rootfolder/main.tex]{subfiles}
 \begin{document}
-\section{General Requirements}
+\section{OpenCOR}
 
-For any general purpose simulation suite to establish itself in the already crowded marketplace, it will need to be highly customisable.
-In order to provide all the benefits of existing simulation suites, without simply offering a toolbox, the simulation suite needs a plugin-based architecture.
-Features such as input- and output formats, the graphical interface, available solvers, language packs and model components should all be customisable by the user,
-so that the software can be tailored to different needs.
+OpenCOR is an open source simulation package made for the biology field.
+It is modular to the point where all features are in the form of plugins \cite{10.3389/fphys.2015.00026}.
+Any description of OpenCOR would be incomplete without a description of the language it uses to describe models, and the language used for describing simulation setups.
+OpenCOR uses CellML and SED-ML, both XML-based markup languages, to describe the model and the simulation setup respectively.
 
-A weakness in current solutions is that they are either too generic or too specific.
-Matlab is an example of the former, where users need a lot of technical know-how in order to write simulations from scratch.
-The Matlab language allows for any conceivable simulation problem to be run, but requires that the user knows the language,
-and that the problem is described at a low abstraction level.
-Other solutions are highly tailored to a particular field, or even sub-field, and only allow the user to simulation a constrained set of problems.
-These software suites typically allow the user to quickly simulate a problem, as long as it is within the realm of problems supported by the software,
-often with a graphical interface so that no programming experience is required of the user.
+\subsection{CellML}
 
-The benefit of the former is, of course, that any problem can be simulated given that the user has the required skill set.
-In practice however, the result is frequently that a software solution is cobbled together by end users with little experience in the best practises of software architecture.
-This leads to what software architects affectionately refer to as a big ball of mud.
-Conversely, the latter approach allows users to quickly simulate problems, without much knowledge of the software, but leaves the user with little opportunity to customise the application if needed.
 
-In order to better understand how these requirements might be met by a single piece of software, we will look at each of them in turn.
+\subsubsection{Introduction}
+
+CellML \cite{cuellar2003} is an XML-based format that is used to describe the structure of models.
+The information included in the model can broadly be described as twofold.
+First, it includes the various parts of the model, and how these are combined into the complete model.
+This information is specified separately from the simulation specification, as we shall see later.
+Second, the language allows for metadata to be added to the model, in order to categorize and organize models and model parts.
+
+Being an XML-based standard, CellML is extensible.
+In addition to the above, CellML allows for model designers to add information written in other XML-based languages to the model.
+This can be equations written in MathML, textual and graphical documentation in HTML (currently planned), data sets and so on.
+
+While CellML is designed to be domain independent, the language is flexible enough that is is used to implement purely biological as well as electrochemical and mechanical models \cite{cuellar2003}
+
+\subsubsection{Model structure}
+
+CellML models are constructed as a network of interconnected components.
+The components may contain variables as well as mathematical equations specified with MathML.
+Variables belong to a single component, but may be mapped to a variable in another component by specifying a connection.
+Two components may only have one connection, and all variable mappings must therefore be declared in the same place
+This enforces a level of organization to the sometimes complex mappings between components \cite{cuellar2003}.
+
+Variables in CellML are always expressed in units.
+This ensures rigor when shared models are connected, as incompatible variables cannot be mapped to one another.
+For example a variable declared with length units, say meters, cannot be mapped to another variable with mass units, for instance kilograms.
+However, it is perfectly possible to connect a variable using kilograms to one using pounds, and have the units automatically converted.
+This is possible by defining new units in terms of the dictionary of standard units included with CellML, which include the base and derived SI units.
+This allows researchers to work in their preferred units, and still share their work with the rest of the scientific community \cite{cuellar2003}.
+
+Models can be structured using grouping.
+CellML provides two types of groups, encapsulation and containment.
+In an encapsulating group, only one component in the group is accessible to components outside the group, in effect acting as an interface.
+By using a containment group the modeller can specify that one component contains another, which allows a physical organization of the model.
+
+\subsubsection{Metadata}
+
+Metadata in CellML models can include information about the author, references to literature and various information that puts the model into the proper biological context \cite{cuellar2003}.
+This information allows other researchers to search for
+
+\subsection{SED-ML}
+
+The SED-ML language allows the researcher to specify all stages of the simulation itself, independent of the model that is simulated.
+An experiment described with SED-ML consists of several components.
+
+\begin{enumerate}
+    \item The Model class defines which models should be used in the simulation.
+    \item The Change class allows models to be tweaked for a particular simulation, including changes to attributes or additions to the model specification itself.
+    \item The Simulation class specifies which of a number of predefined simulation algorithms to use for the experiment. \cite{sedml-specification}
+\end{enumerate}
+
+The simulation process broadly consists of three steps:
+
+\begin{enumerate}
+    \item Select the model to use. Any required fine-tuning, such as changing the models initial values, can be applied without requiring a change to the model specification itself.
+    \item Specify the simulation algorithm that should be used for the experiment.
+    \item Apply post-processing
+        Here, the raw output from the simulation steps can be processed. For example, the data can be normalised,
+        correlations can be calculated and so on, before the final plots or reports are generated.
+\end{enumerate}
+
 
 \end{document}
