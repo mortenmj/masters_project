@@ -1,0 +1,49 @@
+%-----------------------------------
+%   Input Formats
+%-----------------------------------
+
+\providecommand{\rootfolder}{../..} % Relative path to main.tex
+\documentclass[\rootfolder/main.tex]{subfiles}
+\begin{document}
+\section{Input formats}
+
+The two most powerful methods for describing systems, and also the most common, are the state space representation and the transfer function representation.
+While classical control theory is based on transfer function analysis, it has several drawbacks.
+Modern control theory largely relies on state space representation, which benefits from several powerful techniques in linear algebra.
+While both methods can be used to represent linear time-invariant systems, the state space representation offers several attractive advantages:
+
+While it is possible to extend the notion of transfer functions to time-variant and non-linear systems, it is rarely done.
+Representing a nonlinear system requires a sequence of transfer functions \cite{Zhang1993}, and the stronger the nonlinearities are the more functions are required.
+For this reason, the use of transfer functions is largely restricted to linear, time-invariant systems.
+
+\begin{itemize}
+	\item To treat multivariate systems in transfer function form requires a transfer function matrix. This can become unwieldy.
+		Using the state space representation allows us to treat univariate and multivariate systems the same way.
+	\item For any transfer function, there are many possible state space representations. Therefore, converting to the transfer function form involves a loss of information.
+		The state space representation maintains this information, allowing greater insight into the inner workings of the system.
+	\item The state space representation allows for non-zero initial conditions, unlike a transfer function representation.
+	\item The state space representation is defined for linear and non-linear systems, unlike a transfer function representation which is only defined for linear systems.
+	\item The state space representation is defined for time-variant and time-invariant systems, unlike a transfer function representation which is only defined for time invariant systems.
+	\item Given the state space representation, it is simple to determine if the system is observable and controllable.
+\end{itemize}
+
+To see how a state space representation may be represented in software, it is useful to review how it is defined.
+A system with states $x_{1}$ to $x_{p}$ and outputs $y_{1}$ to $y_{r}$ are related by the following equations:
+
+\loadeq{\rootfolder/Equations.tex}{001}
+
+We can rearrange this to represent the variables as vectors, and the coefficient as matrices:
+\loadeq{\rootfolder/Equations.tex}{002}
+
+Finally, in compact form, this may be written as:
+\loadeq{\rootfolder/Equations.tex}{003}
+
+As we can see, this system can be uniquely identified in the software by the matrices $(A, B, C, D)$, and it follows that this would be all we need to pass to a solver in order to simulate the system.
+However, in order to separate the model from the simulation setup, and to promote sharing of models, a richer input format would be desirable.
+In order to promote sharing of models, it is useful to attach metadata to the model, such as units.
+It would also be desirable to store the model in a format where variables and coefficients can have descriptive names.
+While the format described above, where the model is defined by its coefficient matrices, is sufficient to define the model mathematically, it is insufficient in these regards.
+In order to fulfill all of these requirements, storing the model as MathML would be more feasible.
+An input method like the one employed by OpenCOR, which we reviewed earlier, would be one possible solution, as shown in \cref{fig:opencor-input}.
+
+\end{document}

@@ -1,0 +1,30 @@
+%----------------------------------------------------------------------------------------
+%   General Requirements
+%----------------------------------------------------------------------------------------
+
+\providecommand{\rootfolder}{../..} % Relative path to main.tex
+\documentclass[\rootfolder/main.tex]{subfiles}
+\begin{document}
+\section{General Requirements}
+
+For any general purpose simulation suite to establish itself in the already crowded marketplace, it will need to be highly customisable.
+In order to provide all the benefits of existing simulation suites, without simply offering a toolbox, the simulation suite needs a plugin-based architecture.
+Features such as input- and output formats, the graphical interface, available solvers, language packs and model components should all be customisable by the user,
+so that the software can be tailored to different needs.
+
+A weakness in current solutions is that they are either too generic or too specific.
+Matlab is an example of the former, where users need a lot of technical know-how in order to write simulations from scratch.
+The Matlab language allows for any conceivable simulation problem to be run, but requires that the user knows the language,
+and that the problem is described at a low abstraction level.
+Other solutions are highly tailored to a particular field, or even sub-field, and only allow the user to simulation a constrained set of problems.
+These software suites typically allow the user to quickly simulate a problem, as long as it is within the realm of problems supported by the software,
+often with a graphical interface so that no programming experience is required of the user.
+
+The benefit of the former is, of course, that any problem can be simulated given that the user has the required skill set.
+In practice however, the result is frequently that a software solution is cobbled together by end users with little experience in the best practises of software architecture.
+This leads to what software architects affectionately refer to as a big ball of mud.
+Conversely, the latter approach allows users to quickly simulate problems, without much knowledge of the software, but leaves the user with little opportunity to customise the application if needed.
+
+In order to better understand how these requirements might be met by a single piece of software, we will look at each of them in turn.
+
+\end{document}

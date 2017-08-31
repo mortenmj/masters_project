@@ -46,9 +46,9 @@ To determine the required parameters for our solver API, we will have to look mo
 There are two ways we can represent systems of differential equations in our application.
 We can require the user to supply the system in a matrix representation, or we can require a function $f(x)$, that returns $dx/dt$.
 In the case where $x$ is multivariate, $f(x)$ should return an array of results.
-Systems of linear differential equations can be specified in matrix form like so \cite{kreyzig}:
+Systems of linear differential equations can be specified in matrix form in the following manner \cite{kreyzig}:
 
-\loadeq{001}
+\loadeq{\rootfolder/Equations.tex}{001}
 
 As we can see, it would suffice to have an array of size $n$ for the state variables,
 a two-dimensional array of size $n \times n$ for the constants and another array of size $n$ for the constant terms.
