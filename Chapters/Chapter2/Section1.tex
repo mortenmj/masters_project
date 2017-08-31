@@ -1,79 +1,201 @@
 %----------------------------------------------------------------------------------------
-%   OpenCOR
+%   Modelica
 %----------------------------------------------------------------------------------------
 
 \providecommand{\rootfolder}{../..} % Relative path to main.tex
 \documentclass[\rootfolder/main.tex]{subfiles}
 \begin{document}
-\section{OpenCOR}
+\section{Language features}
 
-OpenCOR is an open source simulation package made for the biology field.
-It is modular to the point where all features are in the form of plugins \cite{10.3389/fphys.2015.00026}.
-Any description of OpenCOR would be incomplete without a description of the language it uses to describe models, and the language used for describing simulation setups.
-OpenCOR uses CellML and SED-ML, both XML-based markup languages, to describe the model and the simulation setup respectively.
+Modelica is an object-oriented programming language for specifying models of large, complex, and heterogenous physical systems\cite{clauss2002}.
+The language can be used to model systems in fields like mechanical engineering, biology, robotics, and more.
+It support the creation of mixed-domain models, for example combining electric power, hydraulic systems, and thermal systems.
+It is also possible for model developers to create their own flow types, for instance chemicals in the modelling of chemical processes.
 
-\subsection{CellML}
+In Modelica, models are mathematically described by differential or algebraic equations, and they can be discrete or continuous.
+It is also possible to define algorithms like those in imperative languages.
+Models are made by composition of components, which in turn are implemented by equations or by programming them imperatively.
+The models are created by connecting graphical representations of the components, in a composition diagram.
+Modelica is object-oriented, and each component in a composition is implemented as a class.
 
+In order to illustrate the relative advantages and disadvantages between Modelica and the other simulation packages we review later, we will use the following example repeatedly \footnotemark.
+Consider a simple drive train, consisting of two rotational inertial loads, with a spring-damper between the two, and between the second load and a rigid frame as shown in \cref{fig:inertial}.
 
-\subsubsection{Introduction}
+\footnotetext{The example is inspired by Modelica By Example, by Michael M. Tiller \cite{tiller2014}.}
 
-CellML \cite{cuellar2003} is an XML-based format that is used to describe the structure of models.
-The information included in the model can broadly be described as twofold.
-First, it includes the various parts of the model, and how these are combined into the complete model.
-This information is specified separately from the simulation specification, as we shall see later.
-Second, the language allows for metadata to be added to the model, in order to categorize and organize models and model parts.
+\begin{figure}[ht]
+    \iimage{Figures/InertialBasic}
+    \caption{Graphical implementation of inertial system}
+    \label{fig:inertial}
+\end{figure}
 
-Being an XML-based standard, CellML is extensible.
-In addition to the above, CellML allows for model designers to add information written in other XML-based languages to the model.
-This can be equations written in MathML, textual and graphical documentation in HTML (currently planned), data sets and so on.
+\subsection{Equations and algorithms}
 
-While CellML is designed to be domain independent, the language is flexible enough that is is used to implement purely biological as well as electrochemical and mechanical models \cite{cuellar2003}
+First, let us look at what it means when we say that Modelica is equation-based.
+In an imperative language, statements are evaluated sequentially and assigning a value to a variable would overwrite whatever value it may have held previously.
+This is not the case in Modelica.
+In Modelica, these two statements are both simultaneously valid:
 
-\subsubsection{Model structure}
+\inputminted[fontsize=\footnotesize]{Modelica}{Listings/simultaneous.txt}
 
-CellML models are constructed as a network of interconnected components.
-The components may contain variables as well as mathematical equations specified with MathML.
-Variables belong to a single component, but may be mapped to a variable in another component by specifying a connection.
-Two components may only have one connection, and all variable mappings must therefore be declared in the same place
-This enforces a level of organization to the sometimes complex mappings between components \cite{cuellar2003}.
+To look at how this is used to define a physical system, we will implement the equations for the model from \cref{fig:inertial} in text form.
+The equations for the system are derived by Newton's second law for rotation.
+If we let $J$ be the moment of inertia, $\varphi$ be the angular displacement, $\omega$ be the angular velocity and, $\tau$ be the torque, the law states that
 
-Variables in CellML are always expressed in units.
-This ensures rigor when shared models are connected, as incompatible variables cannot be mapped to one another.
-For example a variable declared with length units, say meters, cannot be mapped to another variable with mass units, for instance kilograms.
-However, it is perfectly possible to connect a variable using kilograms to one using pounds, and have the units automatically converted.
-This is possible by defining new units in terms of the dictionary of standard units included with CellML, which include the base and derived SI units.
-This allows researchers to work in their preferred units, and still share their work with the rest of the scientific community \cite{cuellar2003}.
+\loadeq{\rootfolder/Equations.tex}{005}
 
-Models can be structured using grouping.
-CellML provides two types of groups, encapsulation and containment.
-In an encapsulating group, only one component in the group is accessible to components outside the group, in effect acting as an interface.
-By using a containment group the modeller can specify that one component contains another, which allows a physical organization of the model.
+Combining these equations gives the following system of differential equations:
 
-\subsubsection{Metadata}
+\loadeq{\rootfolder/Equations.tex}{006}
 
-Metadata in CellML models can include information about the author, references to literature and various information that puts the model into the proper biological context \cite{cuellar2003}.
-This information allows other researchers to search for
+In Modelica, we can state this directly.
+While Modelica also allows programmers to define algorithms that are evaluated sequentially, as in most other languages, what sets it apart is that the programmer can define equations which are evaluated simultaneously.
+In an ordinary programming language, the second statement would override the first in the following example.
 
-\subsection{SED-ML}
+As shown above it is possible to define complex equations simply by stating the necessary expressions, just like one would write them on paper.
+We will use this in order to implement the system shown above.
+\Cref{lst:inertial-codj} shows a direct implementation of \cref{eq:inertial}.
 
-The SED-ML language allows the researcher to specify all stages of the simulation itself, independent of the model that is simulated.
-An experiment described with SED-ML consists of several components.
+\begin{listing}[ht]
+    \inputminted[fontsize=\footnotesize]{Modelica}{\rootfolder/Models/MasterProject/Models/InertialCode.mo}
+    \caption{Code implementation of the inertial system in \cref{eq:inertial}}
+    \label{lst:inertial-code}
+\end{listing}
 
-\begin{enumerate}
-    \item The Model class defines which models should be used in the simulation.
-    \item The Change class allows models to be tweaked for a particular simulation, including changes to attributes or additions to the model specification itself.
-    \item The Simulation class specifies which of a number of predefined simulation algorithms to use for the experiment. \cite{sedml-specification}
-\end{enumerate}
+As stated it is also possible to implement programs like this in imperative languages.
+This may be done in algorithm blocks within models, which may coexist with the equation blocks seen above, or they may be implemented as separate functions and then called from a model.
+It is also possible to call an external function in this way, written in e.g. the C language.
+This allows for complex model behavior.
+For example, it may be possible to model the behavior of a system of elevators in Modelica, and implement a control system in a different language.
 
-The simulation process broadly consists of three steps:
+\subsection{Object-oriented features}
 
-\begin{enumerate}
-    \item Select the model to use. Any required fine-tuning, such as changing the models initial values, can be applied without requiring a change to the model specification itself.
-    \item Specify the simulation algorithm that should be used for the experiment.
-    \item Apply post-processing
-        Here, the raw output from the simulation steps can be processed. For example, the data can be normalised,
-        correlations can be calculated and so on, before the final plots or reports are generated.
-\end{enumerate}
+As Modelica is object-oriented we could, if we wanted to, separate a model into smaller component parts, and connect these components to one another to form a complete model.
+In the previous example, it would make sense to implement the inertial load and the spring-damper as separate classes, and connect instances of them to form the model.
+When making a model by connecting graphical components in Modelica, this instantiation and connecting of objects is done behind the scenes.
+If we look at the code of the first model, shown in \cref{fig:inertial}, we see that it does exactly what we propose above.
+The code in \cref{lst:inertial-basic} is the code generated when the model in \cref{fig:inertial} was created\footnotemark:
+
+\footnotetext{Annotations which describe the placement of components has been removed}
+
+\begin{listing}[ht]
+    \inputminted[fontsize=\footnotesize]{Modelica}{\rootfolder/Models/MasterProject/Models/InertialBasic2.mo}
+    \caption{Text view of the model in \cref{fig:inertial}}
+    \label{lst:inertial-basic}
+\end{listing}
+
+Most of the key features in object-oriented languages are implemented in Modelica.
+Among these are encapsulation, inheritance, information hiding and polymorphism.
+We will extend our model in order to have a look at some of these features.
+In \cref{fig:inertial-expanded} we have added a torque input to the left of the first left, and a sensor for measuring the rotation speed of the second shaft.
+Also, a PID controller has been added which drives the shaft speed to follow a reference signal.
+
+\begin{figure}[ht]
+	\iimage{Figures/InertialExpanded}
+	\caption{Expanded system}
+	\label{fig:inertial-expanded}
+\end{figure}
+
+As we can see, the model roughly consists of five subsystems: a reference signal, an actuator, the inertial system itself, a speed sensor, and a controller.
+Just like these subsystems are made up of smaller components, we can create a component representing each subsystem.
+This allows us to hide implementation details, and gives a clearer view of how the system is structured.
+This generalised model is shown in \cref{fig:inertial-architecture}.
+
+\begin{figure}[ht]
+	\iimage{Figures/InertialArchitecture}
+	\caption{System with replaceable subsystems}
+	\label{fig:inertial-architecture}
+\end{figure}
+
+Here, each block is a separate model which can be developed independently of the main model.
+In \cref{fig:inertial-architecture-blowup} we show how the new component, named "plant", now contains the same shaft and spring-damper assembly as in the previous models.
+Furthermore, the component now inherits from a library interface named "PartialTwoFlangesAndSupport"
+This interface provides input and output flanges, as well as the option between using a support flange or allowing the component to be implicitly supported.
+This process can be repeated indefinitely, and the model shown in the figure might easily be a component in another, larger, model.
+Structuring models in this way makes them easier to understand, and allows for reusability.
+
+\begin{figure}[ht]
+	\iimage{Figures/InertialArchitectureBlowup}
+        \caption{Expanded view of the actuator (left) and plant subsystem (right)}
+	\label{fig:inertial-architecture-blowup}
+\end{figure}
+
+We can take this process one step further, and replace the subsystems with virtual subsystems, or interfaces, to get even greater reusability from our models.
+A component in a model declared as "replaceable" can be replaced with any plug-compatible component, i.e. any component with the same inputs and outputs.
+We may choose to either use a partial model, which is the Modelica term for an interface, or some default model that can be replaced only when desired.
+Then, when we instantiate a model, we supply a component for each subsystem that is to be replaced.
+
+\begin{listing}[ht]
+    \inputminted[fontsize=\footnotesize]{Modelica}{\rootfolder/Models/MasterProject/Models/InertialImplementation.mo}
+    \caption{Instantiation of the inertial system}
+    \label{lst:inertial-instantiation}
+\end{listing}
+
+In this case, the model has an ideal speed sensor. However, when modelling a real system it would be more useful to replace this with a model that mimics the operation of a real sensor.
+There are many possible sensors for measuring the rotational speed of a shaft, and it would be useful if these could be implemented as components and quickly swapped into the model.
+In this case, the plant will be the only constant part of the model, while the controller, the actuator, the sensor and the signal source will be made replaceable.
+What used to be a model is now a model architecture, and needs to be instantiated with components.
+The code shown in \cref{lst:inertial-instantiation} shows how this is done.
+While this example is used scalar inputs and outputs, the interfaces may trivially be changed to accept multiple inputs and outputs, which would make our architecture even more general.
+
+Where necessary, it is also possible to create adapter models which wrap a subsystem and convert its output to whatever format the rest of the model requires.
+For example, while our sensor measures the rotational speed of the drive shaft, in some other application we might prefer to know the drive shaft position.
+This is very useful when different parts of models are created by different people, or even different companies.
+
+\subsection{Mixed-domain models}
+
+Modelica allows for easy creation of mixed-domain models \cite{clauss2002}.
+\Cref{fig:inertial-actuator} shows one such example, where the actuator from \cref{fig:inertial-architecture} is implemented as a simple model of an induction motor.
+Additionally, the resistor in the model has a heat port, which allows the motor to be thermally connected to the rest of the system.
+While this simple example is limited to electric flow, torque and optionally heatflow, it is possible to model any number of physical quantities in Modelica.
+A similar component to that shown in \cref{fig:inertial-actuator} could, as an example, easily be connected to a valve that controls liquid flow, all in one model.
+The Modelica library contains more detailed examples showing how to model heat flow in an electric motor\footnotemark.
+
+This can also be extended to model phenomenom outside of the engineering disciplines.
+As an example, the PhysioLibrary project publishes a Modelica library for modelling all aspects of human physiology.
+
+\footnotetext{\url{http://doc.modelica.org/om/Modelica.Thermal.HeatTransfer.Examples.html}}
+\footnotetext{\url{http://doc.modelica.org/om/Modelica.Fluid.Examples.html}}
+
+\subsection{Causal and acausal}
+
+\begin{figure}[ht]
+    \centering
+    \subcaptionbox{Component implementation\label{fig:rlc-comp}}
+        {
+            \def\svgwidth{0.37\columnwidth}\tiny
+            \input{Figures/RLCcomponents.pdf_tex}
+        }
+    \subcaptionbox{Block implementation\label{fig:rlc-block}}
+        {
+            \def\svgwidth{0.60\columnwidth}\tiny
+            \input{Figures/RLCblocks.pdf_tex}
+        }
+    \caption{RLC circuit comparing component and block implementations}
+    \label{fig:rlc}
+\end{figure}
+
+In the model in \cref{fig:inertial-architecture}, most subsystems are components while the reference sinusous is a block.
+We will quickly review the differences between the two, and provide an example of their relative strengths.
+A block in Modelica is a causal model.
+In short, a causal model relates inputs to outputs. In Modelica, there are many such blocks which implement operations such as integration, gain, sinusoids etc.
+Conversely, acausal modelling creates the model from components that implement the behaviors of their real-world counterparts, such as the spring-damper we used previously.
+While it is more difficult to implement acausal simulation software\cite{tiller2001}, there are many benefits to the user.
+An example is provided in \cite{harman2006}.
+Here, the modelling of hydraulic components for automotive systems is discussed.
+
+\begin{displayquote}
+    For some components a pressure drop across the component is the only data available.
+    With some modelling tools it would be necessary to reverse-engineer an orifice size and flow coefficient to achieve this pressure drop.
+    However the ActuationHydraulics library exploits the acausal capabilities of Modelica and allows the choice of a flow-model where pressure drop is specified as a function of flow.
+\end{displayquote}
+
+Creating the model from acausal components is also often quicker and easier for the user.
+To illustrate this, we implement a simple parallel RLC circuit.
+In \cref{fig:rlc-comp} we create an acausal model, by dragging and dropping components that implement the behavior of the circuit elements.
+Compare to \cref{fig:rlc-block} which implements the same circuit using block components.
+As before, these circuit components can easily be replaced by plug-compatible versions, making it trivial to e.g. replace the resistors with components that also model heat buildup.
+
 
 
 \end{document}
