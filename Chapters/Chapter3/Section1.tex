@@ -1,0 +1,23 @@
+%----------------------------------------------------------------------------------------
+%   MATLAB
+%----------------------------------------------------------------------------------------
+
+\providecommand{\rootfolder}{../..} % Relative path to main.tex
+\documentclass[\rootfolder/main.tex]{subfiles}
+\begin{document}
+\section{Language features}
+
+\begin{listing}[ht]
+    \inputminted[fontsize=\footnotesize, firstline=1, lastline=8]{matlab}{\rootfolder/Models/Matlab/InertialMatlab.m}
+    \caption{Inertial system implemented numerically in Matlab}
+\end{listing}
+
+\begin{figure}[ht]
+    \centering
+    \footnotesize
+    \resizebox{0.8\textwidth}{!}{\input{Figures/InertialSimulink.pdf_tex}}
+    \caption{Inertial system implemented in Simulink}
+    \label{fig:inertial-simulink}
+\end{figure}
+
+\end{document}
