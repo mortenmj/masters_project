@@ -1,0 +1,134 @@
+% Equations dictionary
+\providecommand{\rootfolder}{../..} % Relative path to main.tex
+\documentclass[\rootfolder/main.tex]{subfiles}
+\begin{document}
+
+%<*eq001>
+\begin{equation}
+    \begin{aligned}
+    \dot{x}_{1} &= a_{11}(t)x_{1}(t) + \cdots + a_{1p}(t)x_{p}(t) + b_{11}(t)u_{1}(t) + \cdots + b_{1q}(t)u_{q}(t)   \\
+                &\vdotswithin{\cdots}                                                                                \\
+    \dot{x}_{p} &= a_{p1}(t)x_{1}(t) + \cdots + a_{pp}(t)x_{p}(t) + b_{p1}(t)u_{1}(t) + \cdots + b_{pq}(t)u_{q}(t)   \\
+    y_{1}       &= c_{11}(t)x_{1}(t) + \cdots + c_{1p}(t)x_{p}(t) + d_{11}(t)u_{1}(t) + \cdots + d_{1q}(t)u_{q}(t)   \\
+                &\vdotswithin{\cdots}                                                                                \\
+    y_{r}       &= c_{r1}(t)x_{1}(t) + \cdots + c_{rp}(t)x_{p}(t) + d_{r1}(t)u_{1}(t) + \cdots + d_{rq}(t)u_{q}(t) 
+    \end{aligned}
+\end{equation}
+%</eq001>
+
+%<*eq002>
+\begin{equation}
+    \begin{aligned}
+        \frac{d}{dt}
+        \begin{bmatrix}
+	    x_{1}  \\
+            \vdots \\
+	    x_{p}
+        \end{bmatrix}
+        &=
+        \begin{bmatrix}
+	    a_{11} & \cdots & a_{1p} \\
+            \cdot  & \cdots & \cdot  \\
+	    a_{p1} & \cdots & a_{pp}
+        \end{bmatrix}
+        \begin{bmatrix}
+	    x_{1}  \\
+            \vdots \\
+	    x_{p}
+        \end{bmatrix}
+        +
+        \begin{bmatrix}
+	    b_{11} & \cdots & b_{1q} \\
+            \cdot  & \cdots & \cdot  \\
+	    b_{p1} & \cdots & b_{pq}
+        \end{bmatrix}
+        \begin{bmatrix}
+	    u_{1}  \\
+            \vdots \\
+	    u_{q}
+        \end{bmatrix} \\
+        \\
+        \begin{bmatrix}
+	    y_{1}  \\
+            \vdots \\
+	    y_{r}
+        \end{bmatrix}
+        &=
+        \begin{bmatrix}
+	    c_{11} & \cdots & c_{1p} \\
+            \cdot  & \cdots & \cdot  \\
+	    c_{r1} & \cdots & c_{rp}
+        \end{bmatrix}
+        \begin{bmatrix}
+	    x_{1}  \\
+            \vdots \\
+	    x_{p}
+        \end{bmatrix}
+        +
+        \begin{bmatrix}
+	    d_{11} & \cdots & d_{1q} \\
+            \cdot  & \cdots & \cdot  \\
+	    d_{r1} & \cdots & d_{rq}
+        \end{bmatrix}
+        \begin{bmatrix}
+	    u_{1}  \\
+            \vdots \\
+	    u_{q}
+        \end{bmatrix} \\
+    \end{aligned}
+\end{equation}
+%</eq002>
+
+%<*eq003>
+\begin{equation}
+    \begin{aligned}
+        \vec{\dot{x}(t)} &= \mat{A(t)}\vec{x(t)} + \mat{B(t)}\vec{u(t)} \\
+        \vec{y(t)}       &= \mat{C(t)}\vec{x(t)} + \mat{D(t)}\vec{u(t)} \\
+    \end{aligned}
+\end{equation}
+%</eq003>
+
+%<*eq004>
+\begin{equation}
+    \begin{aligned}
+        s \vec{\dot{X}(s)} = \mat{A(t)}\vec{X(t)} + \mat{B(t)}\vec{U(t)} \\
+        \vec{Y(t)} = \mat{C(t)}\vec{X(t)} + \mat{D(t)}\vec{U(t)} \\
+    \end{aligned}
+\end{equation}
+%</eq004>
+
+%<*eq005>
+\begin{gather*}
+    \begin{aligned}
+        J \dot{\omega} &= \sum_{i} \tau_{i} \\
+        \tau &= c\Delta\varphi + d\Delta\dot{\varphi}
+    \end{aligned}
+\end{gather*}
+%</eq005>
+
+%<*eq006>
+\begin{equation}
+    \begin{gathered}
+    \begin{aligned}
+        \omega_{1} &= \dot{\varphi}_{1} \\
+        \omega_{2} &= \dot{\varphi}_{2} \\
+    \end{aligned}\\
+    \begin{aligned}
+        J_{1} \dot{\omega}_{1} &= c_{1} \left(\varphi_{2} - \varphi_{1}\right) + d_{1} \frac{d\left(\varphi_{2}-\varphi_{1}\right)}{dt} \\
+        J_{2} \dot{\omega}_{2} &= c_{1} \left(\varphi_{1} - \varphi_{2}\right) + d_{1} \frac{d\left(\varphi_{1}-\varphi_{2}\right)}{dt} - c_{2}\varphi_{2} - d_{2}\dot{\varphi}_{2} \\
+    \end{aligned}
+    \end{gathered}
+    \label{eq:inertial}
+\end{equation}
+%</eq006>
+
+%<*eq007>
+\begin{gather*}
+    \begin{aligned}
+        i_{1}\left(t\right) &= \frac{1}{R_{1}} \left(u\left(t\right) - \frac{1}{C} \int i_{1}\left(t\right) \\
+        i_{2}\left(t\right) &= \frac{1}{L} 
+    \end{aligned}
+\end{gather*}
+%</eq007>
+
+\end{document}
