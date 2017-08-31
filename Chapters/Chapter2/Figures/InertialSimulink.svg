@@ -1,0 +1,4792 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="168.54mm"
+   height="62.9708mm"
+   viewBox="0 0 637 238"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="InertialSimulink.svg">
+  <metadata
+     id="metadata1457">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs1455">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient5585">
+      <stop
+         style="stop-color:#000077;stop-opacity:1;"
+         offset="0"
+         id="stop5587" />
+      <stop
+         style="stop-color:#000077;stop-opacity:0;"
+         offset="1"
+         id="stop5589" />
+    </linearGradient>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient5585"
+       id="linearGradient5591"
+       x1="2.2891504"
+       y1="7.4731445"
+       x2="44.602451"
+       y2="7.4731445"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1600"
+     inkscape:window-height="837"
+     id="namedview1453"
+     showgrid="false"
+     inkscape:zoom="3.8798199"
+     inkscape:cx="70.403141"
+     inkscape:cy="153.35118"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g4" />
+  <g
+     fill="none"
+     stroke="black"
+     stroke-width="1"
+     fill-rule="evenodd"
+     stroke-linecap="square"
+     stroke-linejoin="bevel"
+     id="g4"
+     style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647">
+    <g
+       clip-path="none"
+       transform="matrix(1,0,0,1,0,0)"
+       id="g6"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:none;stroke-opacity:0.94117647;fill:none"
+       stroke-opacity="0"
+       stroke="none"
+       fill-opacity="1"
+       fill="#ffffff"
+       opacity="1">
+      <path
+         d="M0,0 L636.742,0 L636.742,238 L0,238 L0,0 z"
+         vector-effect="none"
+         id="path8"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:none;stroke-opacity:0.94117647;fill:none"
+         fill-rule="evenodd" />
+    </g>
+    <defs
+       id="defs10">
+      <clipPath
+         id="clip3">
+        <path
+           d="M-366,-21 L270.742,-21 L270.742,217 L-366,217 L-366,-21 z"
+           id="path13" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip3)"
+       fill="#ffffff"
+       fill-opacity="1"
+       opacity="1"
+       stroke="none"
+       stroke-opacity="0"
+       transform="matrix(1,0,0,1,366,21)"
+       id="g15"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647">
+      <path
+         d="M0,0 L30,0 L30,30 L0,30 L0,0 z"
+         fill-rule="evenodd"
+         vector-effect="none"
+         id="path17"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647" />
+    </g>
+    <defs
+       id="defs19">
+      <clipPath
+         id="clip7">
+        <path
+           d="M-15,-13 L15,-13 L15,17 L-15,17 L-15,-13 z"
+           id="path22" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip7)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       stroke-miterlimit="2"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,381,34)"
+       id="g24"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647;fill:#000077;fill-opacity:1">
+      <text
+         fill="#000000"
+         fill-opacity="1"
+         font-family="Arial"
+         font-size="10"
+         font-style="normal"
+         font-weight="400"
+         stroke="none"
+         textLength="5.54688"
+         x="-2.76562"
+         xml:space="preserve"
+         y="1"
+         id="text26"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647;fill:#000077;fill-opacity:1">1</text>
+    </g>
+    <defs
+       id="defs28">
+      <clipPath
+         id="clip8">
+        <path
+           d="M775,175 L805,175 L805,205 L775,205 L775,175 z"
+           id="path31" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip8)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       stroke-miterlimit="2"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,-408.5,-153.5)"
+       id="g33"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647">
+      <polyline
+         fill="none"
+         points="787,190 793,190"
+         vector-effect="none"
+         id="polyline35"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647" />
+    </g>
+    <defs
+       id="defs37">
+      <clipPath
+         id="clip9">
+        <path
+           d="M-15,-23 L15,-23 L15,7 L-15,7 L-15,-23 z"
+           id="path40" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip9)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       stroke-miterlimit="2"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,381,44)"
+       id="g42"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647;fill:#000077;fill-opacity:1">
+      <text
+         fill="#000000"
+         fill-opacity="1"
+         font-family="Arial"
+         font-size="10"
+         font-style="normal"
+         font-weight="400"
+         stroke="none"
+         textLength="5"
+         x="-2.5"
+         xml:space="preserve"
+         y="1"
+         id="text44"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647;fill:#000077;fill-opacity:1">s</text>
+    </g>
+    <defs
+       id="defs46">
+      <clipPath
+         id="clip14">
+        <path
+           d="M-365.5,-21.5 L271.242,-21.5 L271.242,216.5 L-365.5,216.5 L-365.5,-21.5 z"
+           id="path49" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip14)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       stroke-miterlimit="2"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,365.5,21.5)"
+       id="g51"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647">
+      <path
+         d="M0,0 L30,0 L30,30 L0,30 L0,0 z"
+         fill-rule="evenodd"
+         vector-effect="none"
+         id="path53"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647" />
+    </g>
+    <defs
+       id="defs55">
+      <clipPath
+         id="clip17">
+        <path
+           d="M-380.742,-53 L256,-53 L256,185 L-380.742,185 L-380.742,-53 z"
+           id="path58" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip17)"
+       fill="none"
+       opacity="1"
+       stroke="none"
+       stroke-opacity="0"
+       transform="matrix(1,0,0,1,380.742,53)"
+       id="g60"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:none;stroke-opacity:0.94117647">
+      <path
+         d="M-22.8438,0 L22.8438,0 L22.8438,14 L-22.8438,14 L-22.8438,0 z"
+         fill-rule="evenodd"
+         vector-effect="none"
+         id="path62"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:none;stroke-opacity:0.94117647" />
+    </g>
+    <defs
+       id="defs64">
+      <clipPath
+         id="clip21">
+        <path
+           d="M0,0 L46,0 L46,14 L0,14 L0,0 z"
+           id="path67" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip21)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="square"
+       stroke-linejoin="bevel"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,357.898,53)"
+       id="g69"
+       style="stroke-width:0.28693349;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647;fill-opacity:1;fill:#000077">
+      <text
+         fill="#000000"
+         fill-opacity="1"
+         font-family="Arial"
+         font-size="10"
+         font-style="normal"
+         font-weight="400"
+         stroke="none"
+         textLength="42.6875"
+         x="1.5"
+         xml:space="preserve"
+         y="10"
+         id="text71"
+         style="stroke-width:0.28693349;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647;fill-opacity:1;fill:#000077">Integrator</text>
+    </g>
+    <defs
+       id="defs73">
+      <clipPath
+         id="clip29">
+        <path
+           d="M-196,-21 L440.742,-21 L440.742,217 L-196,217 L-196,-21 z"
+           id="path76" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip29)"
+       fill="#ffffff"
+       fill-opacity="1"
+       opacity="1"
+       stroke="none"
+       stroke-opacity="0"
+       transform="matrix(1,0,0,1,196,21)"
+       id="g78"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647">
+      <path
+         d="M0,0 L30,0 L30,30 L0,30 L0,0 z"
+         fill-rule="evenodd"
+         vector-effect="none"
+         id="path80"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647" />
+    </g>
+    <defs
+       id="defs82">
+      <clipPath
+         id="clip33">
+        <path
+           d="M-15,-13 L15,-13 L15,17 L-15,17 L-15,-13 z"
+           id="path85" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip33)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       stroke-miterlimit="2"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,211,34)"
+       id="g87"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#000077;stroke-opacity:1;fill:#000077;fill-opacity:1">
+      <text
+         fill="#000000"
+         fill-opacity="1"
+         font-family="Arial"
+         font-size="10"
+         font-style="normal"
+         font-weight="400"
+         stroke="none"
+         textLength="5.54688"
+         x="-2.76562"
+         xml:space="preserve"
+         y="1"
+         id="text89"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#000077;stroke-opacity:1;fill:#000077;fill-opacity:1">1</text>
+    </g>
+    <defs
+       id="defs91">
+      <clipPath
+         id="clip34">
+        <path
+           d="M605,175 L635,175 L635,205 L605,205 L605,175 z"
+           id="path94" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip34)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       stroke-miterlimit="2"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,-408.5,-153.5)"
+       id="g96"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647">
+      <polyline
+         fill="none"
+         points="617,190 623,190"
+         vector-effect="none"
+         id="polyline98"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647" />
+    </g>
+    <defs
+       id="defs100">
+      <clipPath
+         id="clip35">
+        <path
+           d="M-15,-23 L15,-23 L15,7 L-15,7 L-15,-23 z"
+           id="path103" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip35)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       stroke-miterlimit="2"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,211,44)"
+       id="g105"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#000077;stroke-opacity:1;fill:#000077;fill-opacity:1">
+      <text
+         fill="#000000"
+         fill-opacity="1"
+         font-family="Arial"
+         font-size="10"
+         font-style="normal"
+         font-weight="400"
+         stroke="none"
+         textLength="5"
+         x="-2.5"
+         xml:space="preserve"
+         y="1"
+         id="text107"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#000077;stroke-opacity:1;fill:#000077;fill-opacity:1">s</text>
+    </g>
+    <defs
+       id="defs109">
+      <clipPath
+         id="clip40">
+        <path
+           d="M-195.5,-21.5 L441.242,-21.5 L441.242,216.5 L-195.5,216.5 L-195.5,-21.5 z"
+           id="path112" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip40)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       stroke-miterlimit="2"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,195.5,21.5)"
+       id="g114"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647">
+      <path
+         d="M0,0 L30,0 L30,30 L0,30 L0,0 z"
+         fill-rule="evenodd"
+         vector-effect="none"
+         id="path116"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647" />
+    </g>
+    <defs
+       id="defs118">
+      <clipPath
+         id="clip43">
+        <path
+           d="M-210.742,-53 L426,-53 L426,185 L-210.742,185 L-210.742,-53 z"
+           id="path121" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip43)"
+       fill="none"
+       opacity="1"
+       stroke="none"
+       stroke-opacity="0"
+       transform="matrix(1,0,0,1,210.742,53)"
+       id="g123"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:none;stroke-opacity:0.94117647">
+      <path
+         d="M-25.1172,0 L25.1172,0 L25.1172,14 L-25.1172,14 L-25.1172,0 z"
+         fill-rule="evenodd"
+         vector-effect="none"
+         id="path125"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:none;stroke-opacity:0.94117647" />
+    </g>
+    <defs
+       id="defs127">
+      <clipPath
+         id="clip47">
+        <path
+           d="M0,0 L50,0 L50,14 L0,14 L0,0 z"
+           id="path130" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip47)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="square"
+       stroke-linejoin="bevel"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,185.625,53)"
+       id="g132"
+       style="stroke-width:0.28693349;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647;fill:#000077;fill-opacity:1">
+      <text
+         fill="#000000"
+         fill-opacity="1"
+         font-family="Arial"
+         font-size="10"
+         font-style="normal"
+         font-weight="400"
+         stroke="none"
+         textLength="48.2344"
+         x="1"
+         xml:space="preserve"
+         y="10"
+         id="text134"
+         style="stroke-width:0.28693349;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647;fill:#000077;fill-opacity:1">Integrator2</text>
+    </g>
+    <defs
+       id="defs136">
+      <clipPath
+         id="clip55">
+        <path
+           d="M-196,-101 L440.742,-101 L440.742,137 L-196,137 L-196,-101 z"
+           id="path139" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip55)"
+       fill="#ffffff"
+       fill-opacity="1"
+       opacity="1"
+       stroke="none"
+       stroke-opacity="0"
+       transform="matrix(1,0,0,1,196,101)"
+       id="g141"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647">
+      <path
+         d="M0,0 L30,0 L30,30 L0,30 L0,0 z"
+         fill-rule="evenodd"
+         vector-effect="none"
+         id="path143"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647" />
+    </g>
+    <defs
+       id="defs145">
+      <clipPath
+         id="clip59">
+        <path
+           d="M-15,-13 L15,-13 L15,17 L-15,17 L-15,-13 z"
+           id="path148" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip59)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       stroke-miterlimit="2"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,211,114)"
+       id="g150"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647;fill:#000077;fill-opacity:1">
+      <text
+         fill="#000000"
+         fill-opacity="1"
+         font-family="Arial"
+         font-size="10"
+         font-style="normal"
+         font-weight="400"
+         stroke="none"
+         textLength="5.54688"
+         x="-2.76562"
+         xml:space="preserve"
+         y="1"
+         id="text152"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647;fill:#000077;fill-opacity:1">1</text>
+    </g>
+    <defs
+       id="defs154">
+      <clipPath
+         id="clip60">
+        <path
+           d="M605,255 L635,255 L635,285 L605,285 L605,255 z"
+           id="path157" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip60)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       stroke-miterlimit="2"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,-408.5,-153.5)"
+       id="g159"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647">
+      <polyline
+         fill="none"
+         points="617,270 623,270"
+         vector-effect="none"
+         id="polyline161"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647" />
+    </g>
+    <defs
+       id="defs163">
+      <clipPath
+         id="clip61">
+        <path
+           d="M-15,-23 L15,-23 L15,7 L-15,7 L-15,-23 z"
+           id="path166" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip61)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       stroke-miterlimit="2"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,211,124)"
+       id="g168"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#000077;stroke-opacity:1;fill:#000077;fill-opacity:1">
+      <text
+         fill="#000000"
+         fill-opacity="1"
+         font-family="Arial"
+         font-size="10"
+         font-style="normal"
+         font-weight="400"
+         stroke="none"
+         textLength="5"
+         x="-2.5"
+         xml:space="preserve"
+         y="1"
+         id="text170"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#000077;stroke-opacity:1;fill:#000077;fill-opacity:1">s</text>
+    </g>
+    <defs
+       id="defs172">
+      <clipPath
+         id="clip66">
+        <path
+           d="M-195.5,-101.5 L441.242,-101.5 L441.242,136.5 L-195.5,136.5 L-195.5,-101.5 z"
+           id="path175" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip66)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       stroke-miterlimit="2"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,195.5,101.5)"
+       id="g177"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647">
+      <path
+         d="M0,0 L30,0 L30,30 L0,30 L0,0 z"
+         fill-rule="evenodd"
+         vector-effect="none"
+         id="path179"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647" />
+    </g>
+    <defs
+       id="defs181">
+      <clipPath
+         id="clip69">
+        <path
+           d="M-210.742,-133 L426,-133 L426,105 L-210.742,105 L-210.742,-133 z"
+           id="path184" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip69)"
+       fill="none"
+       opacity="1"
+       stroke="none"
+       stroke-opacity="0"
+       transform="matrix(1,0,0,1,210.742,133)"
+       id="g186"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:none;stroke-opacity:0.94117647">
+      <path
+         d="M-25.1172,0 L25.1172,0 L25.1172,14 L-25.1172,14 L-25.1172,0 z"
+         fill-rule="evenodd"
+         vector-effect="none"
+         id="path188"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:none;stroke-opacity:0.94117647" />
+    </g>
+    <defs
+       id="defs190">
+      <clipPath
+         id="clip73">
+        <path
+           d="M0,0 L50,0 L50,14 L0,14 L0,0 z"
+           id="path193" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip73)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="square"
+       stroke-linejoin="bevel"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,185.625,133)"
+       id="g195"
+       style="stroke-width:0.28693349;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647;fill:#000077;fill-opacity:1">
+      <text
+         fill="#000000"
+         fill-opacity="1"
+         font-family="Arial"
+         font-size="10"
+         font-style="normal"
+         font-weight="400"
+         stroke="none"
+         textLength="48.2344"
+         x="1"
+         xml:space="preserve"
+         y="10"
+         id="text197"
+         style="stroke-width:0.28693349;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647;fill:#000077;fill-opacity:1">Integrator3</text>
+    </g>
+    <defs
+       id="defs199">
+      <clipPath
+         id="clip81">
+        <path
+           d="M-366,-101 L270.742,-101 L270.742,137 L-366,137 L-366,-101 z"
+           id="path202" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip81)"
+       fill="#ffffff"
+       fill-opacity="1"
+       opacity="1"
+       stroke="none"
+       stroke-opacity="0"
+       transform="matrix(1,0,0,1,366,101)"
+       id="g204"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647">
+      <path
+         d="M0,0 L30,0 L30,30 L0,30 L0,0 z"
+         fill-rule="evenodd"
+         vector-effect="none"
+         id="path206"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647" />
+    </g>
+    <defs
+       id="defs208">
+      <clipPath
+         id="clip85">
+        <path
+           d="M-15,-13 L15,-13 L15,17 L-15,17 L-15,-13 z"
+           id="path211" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip85)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       stroke-miterlimit="2"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,381,114)"
+       id="g213"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647;fill:#000077;fill-opacity:1">
+      <text
+         fill="#000000"
+         fill-opacity="1"
+         font-family="Arial"
+         font-size="10"
+         font-style="normal"
+         font-weight="400"
+         stroke="none"
+         textLength="5.54688"
+         x="-2.76562"
+         xml:space="preserve"
+         y="1"
+         id="text215"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647;fill:#000077;fill-opacity:1">1</text>
+    </g>
+    <defs
+       id="defs217">
+      <clipPath
+         id="clip86">
+        <path
+           d="M775,255 L805,255 L805,285 L775,285 L775,255 z"
+           id="path220" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip86)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       stroke-miterlimit="2"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,-408.5,-153.5)"
+       id="g222"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647">
+      <polyline
+         fill="none"
+         points="787,270 793,270"
+         vector-effect="none"
+         id="polyline224"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647" />
+    </g>
+    <defs
+       id="defs226">
+      <clipPath
+         id="clip87">
+        <path
+           d="M-15,-23 L15,-23 L15,7 L-15,7 L-15,-23 z"
+           id="path229" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip87)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       stroke-miterlimit="2"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,381,124)"
+       id="g231"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647;fill:#000077;fill-opacity:1">
+      <text
+         fill="#000000"
+         fill-opacity="1"
+         font-family="Arial"
+         font-size="10"
+         font-style="normal"
+         font-weight="400"
+         stroke="none"
+         textLength="5"
+         x="-2.5"
+         xml:space="preserve"
+         y="1"
+         id="text233"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647;fill:#000077;fill-opacity:1">s</text>
+    </g>
+    <defs
+       id="defs235">
+      <clipPath
+         id="clip92">
+        <path
+           d="M-365.5,-101.5 L271.242,-101.5 L271.242,136.5 L-365.5,136.5 L-365.5,-101.5 z"
+           id="path238" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip92)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       stroke-miterlimit="2"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,365.5,101.5)"
+       id="g240"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647">
+      <path
+         d="M0,0 L30,0 L30,30 L0,30 L0,0 z"
+         fill-rule="evenodd"
+         vector-effect="none"
+         id="path242"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647" />
+    </g>
+    <defs
+       id="defs244">
+      <clipPath
+         id="clip95">
+        <path
+           d="M-380.742,-133 L256,-133 L256,105 L-380.742,105 L-380.742,-133 z"
+           id="path247" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip95)"
+       fill="none"
+       opacity="1"
+       stroke="none"
+       stroke-opacity="0"
+       transform="matrix(1,0,0,1,380.742,133)"
+       id="g249"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:none;stroke-opacity:0.94117647">
+      <path
+         d="M-25.1172,0 L25.1172,0 L25.1172,14 L-25.1172,14 L-25.1172,0 z"
+         fill-rule="evenodd"
+         vector-effect="none"
+         id="path251"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:none;stroke-opacity:0.94117647" />
+    </g>
+    <defs
+       id="defs253">
+      <clipPath
+         id="clip99">
+        <path
+           d="M0,0 L50,0 L50,14 L0,14 L0,0 z"
+           id="path256" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip99)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="square"
+       stroke-linejoin="bevel"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,355.625,133)"
+       id="g258"
+       style="stroke-width:0.28693349;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647;fill:#000077;fill-opacity:1">
+      <text
+         fill="#000000"
+         fill-opacity="1"
+         font-family="Arial"
+         font-size="10"
+         font-style="normal"
+         font-weight="400"
+         stroke="none"
+         textLength="48.2344"
+         x="1"
+         xml:space="preserve"
+         y="10"
+         id="text260"
+         style="stroke-width:0.28693349;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647;fill:#000077;fill-opacity:1">Integrator1</text>
+    </g>
+    <defs
+       id="defs262">
+      <clipPath
+         id="clip107">
+        <path
+           d="M-11,-91 L625.742,-91 L625.742,147 L-11,147 L-11,-91 z"
+           id="path265" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip107)"
+       fill="#ffffff"
+       fill-opacity="1"
+       opacity="1"
+       stroke="none"
+       stroke-opacity="0"
+       transform="matrix(1,0,0,1,11,91)"
+       id="g267"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647">
+      <path
+         d="M0,0 L30,0 L30,30 L0,30 L0,0 z"
+         fill-rule="evenodd"
+         vector-effect="none"
+         id="path269"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647" />
+    </g>
+    <defs
+       id="defs271">
+      <clipPath
+         id="clip111">
+        <path
+           d="M-15,-15 L15,-15 L15,15 L-15,15 L-15,-15 z"
+           id="path274" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip111)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       stroke-miterlimit="2"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,26,106)"
+       id="g276"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#000077;stroke-opacity:1;fill:#000077;fill-opacity:1">
+      <text
+         fill="#000000"
+         fill-opacity="1"
+         font-family="Arial"
+         font-size="10"
+         font-style="normal"
+         font-weight="400"
+         stroke="none"
+         textLength="10.5469"
+         x="-5.26562"
+         xml:space="preserve"
+         y="3.5"
+         id="text278"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#000077;stroke-opacity:1;fill:#000077;fill-opacity:1">J2</text>
+    </g>
+    <defs
+       id="defs280">
+      <clipPath
+         id="clip116">
+        <path
+           d="M-10.5,-91.5 L626.242,-91.5 L626.242,146.5 L-10.5,146.5 L-10.5,-91.5 z"
+           id="path283" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip116)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       stroke-miterlimit="2"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,10.5,91.5)"
+       id="g285"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#000077;stroke-opacity:1">
+      <path
+         d="M0,0 L30,0 L30,30 L0,30 L0,0 z"
+         fill-rule="evenodd"
+         vector-effect="none"
+         id="path287"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#000077;stroke-opacity:1" />
+    </g>
+    <defs
+       id="defs289">
+      <clipPath
+         id="clip119">
+        <path
+           d="M-25.7422,-123 L611,-123 L611,115 L-25.7422,115 L-25.7422,-123 z"
+           id="path292" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip119)"
+       fill="none"
+       opacity="1"
+       stroke="none"
+       stroke-opacity="0"
+       transform="matrix(1,0,0,1,25.7422,123)"
+       id="g294"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:none;stroke-opacity:0.94117647">
+      <path
+         d="M-23.7422,0 L23.7422,0 L23.7422,14 L-23.7422,14 L-23.7422,0 z"
+         fill-rule="evenodd"
+         vector-effect="none"
+         id="path296"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:none;stroke-opacity:0.94117647" />
+    </g>
+    <defs
+       id="defs298">
+      <clipPath
+         id="clip123">
+        <path
+           d="M0,0 L47,0 L47,14 L0,14 L0,0 z"
+           id="path301" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip123)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="square"
+       stroke-linejoin="bevel"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,2,123)"
+       id="g303"
+       style="stroke-width:0.28693349;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647;fill:#000077;fill-opacity:1">
+      <text
+         fill="#000000"
+         fill-opacity="1"
+         font-family="Arial"
+         font-size="10"
+         font-style="normal"
+         font-weight="400"
+         stroke="none"
+         textLength="45.4844"
+         x="1"
+         xml:space="preserve"
+         y="10"
+         id="text305"
+         style="stroke-width:0.28693349;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647;fill:#000077;fill-opacity:1">Constant1</text>
+    </g>
+    <defs
+       id="defs307">
+      <clipPath
+         id="clip131">
+        <path
+           d="M-11,-26 L625.742,-26 L625.742,212 L-11,212 L-11,-26 z"
+           id="path310" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip131)"
+       fill="#ffffff"
+       fill-opacity="1"
+       opacity="1"
+       stroke="none"
+       stroke-opacity="0"
+       transform="matrix(1,0,0,1,11,26)"
+       id="g312"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647">
+      <path
+         d="M0,0 L30,0 L30,30 L0,30 L0,0 z"
+         fill-rule="evenodd"
+         vector-effect="none"
+         id="path314"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647" />
+    </g>
+    <defs
+       id="defs316">
+      <clipPath
+         id="clip135">
+        <path
+           d="M-15,-15 L15,-15 L15,15 L-15,15 L-15,-15 z"
+           id="path319" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip135)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       stroke-miterlimit="2"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,26,41)"
+       id="g321"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#000077;stroke-opacity:1;fill:#000077;fill-opacity:1">
+      <text
+         fill="#000000"
+         fill-opacity="1"
+         font-family="Arial"
+         font-size="10"
+         font-style="normal"
+         font-weight="400"
+         stroke="none"
+         textLength="10.5469"
+         x="-5.26562"
+         xml:space="preserve"
+         y="3.5"
+         id="text323"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#000077;stroke-opacity:1;fill:#000077;fill-opacity:1">J1</text>
+    </g>
+    <defs
+       id="defs325">
+      <clipPath
+         id="clip140">
+        <path
+           d="M-10.5,-26.5 L626.242,-26.5 L626.242,211.5 L-10.5,211.5 L-10.5,-26.5 z"
+           id="path328" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip140)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       stroke-miterlimit="2"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,10.5,26.5)"
+       id="g330"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#000077;stroke-opacity:1">
+      <path
+         d="M0,0 L30,0 L30,30 L0,30 L0,0 z"
+         fill-rule="evenodd"
+         vector-effect="none"
+         id="path332"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#000077;stroke-opacity:1" />
+    </g>
+    <defs
+       id="defs334">
+      <clipPath
+         id="clip143">
+        <path
+           d="M-25.7422,-58 L611,-58 L611,180 L-25.7422,180 L-25.7422,-58 z"
+           id="path337" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip143)"
+       fill="none"
+       opacity="1"
+       stroke="none"
+       stroke-opacity="0"
+       transform="matrix(1,0,0,1,25.7422,58)"
+       id="g339"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:none;stroke-opacity:0.94117647">
+      <path
+         d="M-20.9688,0 L20.9688,0 L20.9688,14 L-20.9688,14 L-20.9688,0 z"
+         fill-rule="evenodd"
+         vector-effect="none"
+         id="path341"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:none;stroke-opacity:0.94117647" />
+    </g>
+    <defs
+       id="defs343">
+      <clipPath
+         id="clip147">
+        <path
+           d="M0,0 L42,0 L42,14 L0,14 L0,0 z"
+           id="path346" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip147)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="square"
+       stroke-linejoin="bevel"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,4.77344,58)"
+       id="g348"
+       style="stroke-width:0.28693349;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647;fill:#000077;fill-opacity:1">
+      <text
+         fill="#000000"
+         fill-opacity="1"
+         font-family="Arial"
+         font-size="10"
+         font-style="normal"
+         font-weight="400"
+         stroke="none"
+         textLength="39.9375"
+         x="1"
+         xml:space="preserve"
+         y="10"
+         id="text350"
+         style="stroke-width:0.28693349;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647;fill:#000077;fill-opacity:1">Constant</text>
+    </g>
+    <defs
+       id="defs352">
+      <clipPath
+         id="clip155">
+        <path
+           d="M-86,-18 L550.742,-18 L550.742,220 L-86,220 L-86,-18 z"
+           id="path355" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip155)"
+       fill="#ffffff"
+       fill-opacity="1"
+       opacity="1"
+       stroke="none"
+       stroke-opacity="0"
+       transform="matrix(1,0,0,1,86,18)"
+       id="g357"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647">
+      <path
+         d="M0,0 L30,0 L30,31 L0,31 L0,0 z"
+         fill-rule="evenodd"
+         vector-effect="none"
+         id="path359"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647" />
+    </g>
+    <defs
+       id="defs361">
+      <clipPath
+         id="clip159">
+        <path
+           d="M495,172 L525,172 L525,203 L495,203 L495,172 z"
+           id="path364" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip159)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       stroke-miterlimit="2"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,-408.5,-153.5)"
+       id="g366"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647">
+      <polyline
+         fill="none"
+         points="505,183 499,177"
+         vector-effect="none"
+         id="polyline368"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647" />
+    </g>
+    <defs
+       id="defs370">
+      <clipPath
+         id="clip160">
+        <path
+           d="M495,172 L525,172 L525,203 L495,203 L495,172 z"
+           id="path373" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip160)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       stroke-miterlimit="2"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,-408.5,-153.5)"
+       id="g375"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647;fill:#000077;fill-opacity:1">
+      <polyline
+         fill="none"
+         points="505,177 499,183"
+         vector-effect="none"
+         id="polyline377"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647;fill:#000077;fill-opacity:1" />
+    </g>
+    <defs
+       id="defs379">
+      <clipPath
+         id="clip161">
+        <path
+           d="M495,172 L525,172 L525,203 L495,203 L495,172 z"
+           id="path382" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip161)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       stroke-miterlimit="2"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,-408.5,-153.5)"
+       id="g384"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647">
+      <polyline
+         fill="none"
+         points="499,195 505,195"
+         vector-effect="none"
+         id="polyline386"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647" />
+    </g>
+    <defs
+       id="defs388">
+      <clipPath
+         id="clip162">
+        <path
+           d="M495,172 L525,172 L525,203 L495,203 L495,172 z"
+           id="path391" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip162)"
+       fill="#000000"
+       fill-opacity="1"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       stroke-miterlimit="2"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,-409,-154)"
+       id="g393"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#000077;stroke-opacity:1;fill:#000077;fill-opacity:1">
+      <path
+         d="M503,193 C503,193.552 502.552,194 502,194 C501.448,194 501,193.552 501,193 C501,192.448 501.448,192 502,192 C502.552,192 503,192.448 503,193 z"
+         fill-rule="evenodd"
+         vector-effect="none"
+         id="path395"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#000077;stroke-opacity:1;fill:#000077;fill-opacity:1" />
+      <path
+         d="M503,198 C503,198.552 502.552,199 502,199 C501.448,199 501,198.552 501,198 C501,197.448 501.448,197 502,197 C502.552,197 503,197.448 503,198 z"
+         fill-rule="evenodd"
+         vector-effect="none"
+         id="path397"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#000077;stroke-opacity:1;fill:#000077;fill-opacity:1" />
+    </g>
+    <defs
+       id="defs399">
+      <clipPath
+         id="clip167">
+        <path
+           d="M-85.5,-18.5 L551.242,-18.5 L551.242,219.5 L-85.5,219.5 L-85.5,-18.5 z"
+           id="path402" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip167)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       stroke-miterlimit="2"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,85.5,18.5)"
+       id="g404"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647">
+      <path
+         d="M0,0 L30,0 L30,31 L0,31 L0,0 z"
+         fill-rule="evenodd"
+         vector-effect="none"
+         id="path406"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647" />
+    </g>
+    <defs
+       id="defs408">
+      <clipPath
+         id="clip170">
+        <path
+           d="M-100.742,-51 L536,-51 L536,187 L-100.742,187 L-100.742,-51 z"
+           id="path411" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip170)"
+       fill="none"
+       opacity="1"
+       stroke="none"
+       stroke-opacity="0"
+       transform="matrix(1,0,0,1,100.742,51)"
+       id="g413"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:none;stroke-opacity:0.94117647">
+      <path
+         d="M-14.875,0 L14.875,0 L14.875,14 L-14.875,14 L-14.875,0 z"
+         fill-rule="evenodd"
+         vector-effect="none"
+         id="path415"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:none;stroke-opacity:0.94117647" />
+    </g>
+    <defs
+       id="defs417">
+      <clipPath
+         id="clip174">
+        <path
+           d="M0,0 L30,0 L30,14 L0,14 L0,0 z"
+           id="path420" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip174)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="square"
+       stroke-linejoin="bevel"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,85.8672,51)"
+       id="g422"
+       style="stroke-width:0.28693349;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647;fill:#000077;fill-opacity:1">
+      <text
+         fill="#000000"
+         fill-opacity="1"
+         font-family="Arial"
+         font-size="10"
+         font-style="normal"
+         font-weight="400"
+         stroke="none"
+         textLength="27.75"
+         x="1"
+         xml:space="preserve"
+         y="10"
+         id="text424"
+         style="stroke-width:0.28693349;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647;fill:#000077;fill-opacity:1">Divide</text>
+    </g>
+    <defs
+       id="defs426">
+      <clipPath
+         id="clip182">
+        <path
+           d="M-86,-98 L550.742,-98 L550.742,140 L-86,140 L-86,-98 z"
+           id="path429" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip182)"
+       fill="#ffffff"
+       fill-opacity="1"
+       opacity="1"
+       stroke="none"
+       stroke-opacity="0"
+       transform="matrix(1,0,0,1,86,98)"
+       id="g431"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647">
+      <path
+         d="M0,0 L30,0 L30,31 L0,31 L0,0 z"
+         fill-rule="evenodd"
+         vector-effect="none"
+         id="path433"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647" />
+    </g>
+    <defs
+       id="defs435">
+      <clipPath
+         id="clip186">
+        <path
+           d="M495,252 L525,252 L525,283 L495,283 L495,252 z"
+           id="path438" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip186)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       stroke-miterlimit="2"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,-408.5,-153.5)"
+       id="g440"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647">
+      <polyline
+         fill="none"
+         points="499,260 505,260"
+         vector-effect="none"
+         id="polyline442"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647" />
+    </g>
+    <defs
+       id="defs444">
+      <clipPath
+         id="clip187">
+        <path
+           d="M495,252 L525,252 L525,283 L495,283 L495,252 z"
+           id="path447" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip187)"
+       fill="#000000"
+       fill-opacity="1"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       stroke-miterlimit="2"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,-409,-154)"
+       id="g449"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#000077;stroke-opacity:1;fill:#000077;fill-opacity:1">
+      <path
+         d="M503,258 C503,258.552 502.552,259 502,259 C501.448,259 501,258.552 501,258 C501,257.448 501.448,257 502,257 C502.552,257 503,257.448 503,258 z"
+         fill-rule="evenodd"
+         vector-effect="none"
+         id="path451"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#000077;stroke-opacity:1;fill:#000077;fill-opacity:1" />
+      <path
+         d="M503,263 C503,263.552 502.552,264 502,264 C501.448,264 501,263.552 501,263 C501,262.448 501.448,262 502,262 C502.552,262 503,262.448 503,263 z"
+         fill-rule="evenodd"
+         vector-effect="none"
+         id="path453"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#000077;stroke-opacity:1;fill:#000077;fill-opacity:1" />
+    </g>
+    <defs
+       id="defs455">
+      <clipPath
+         id="clip188">
+        <path
+           d="M495,252 L525,252 L525,283 L495,283 L495,252 z"
+           id="path458" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip188)"
+       fill="#000000"
+       fill-opacity="1"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       stroke-miterlimit="2"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,-408.5,-153.5)"
+       id="g460"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647">
+      <polyline
+         fill="none"
+         points="505,278 499,272"
+         vector-effect="none"
+         id="polyline462"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647" />
+    </g>
+    <defs
+       id="defs464">
+      <clipPath
+         id="clip189">
+        <path
+           d="M495,252 L525,252 L525,283 L495,283 L495,252 z"
+           id="path467" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip189)"
+       fill="#000000"
+       fill-opacity="1"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       stroke-miterlimit="2"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,-408.5,-153.5)"
+       id="g469"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647">
+      <polyline
+         fill="none"
+         points="505,272 499,278"
+         vector-effect="none"
+         id="polyline471"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647" />
+    </g>
+    <defs
+       id="defs473">
+      <clipPath
+         id="clip194">
+        <path
+           d="M-85.5,-98.5 L551.242,-98.5 L551.242,139.5 L-85.5,139.5 L-85.5,-98.5 z"
+           id="path476" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip194)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       stroke-miterlimit="2"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,85.5,98.5)"
+       id="g478"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647">
+      <path
+         d="M0,0 L30,0 L30,31 L0,31 L0,0 z"
+         fill-rule="evenodd"
+         vector-effect="none"
+         id="path480"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647" />
+    </g>
+    <defs
+       id="defs482">
+      <clipPath
+         id="clip197">
+        <path
+           d="M-100.742,-131 L536,-131 L536,107 L-100.742,107 L-100.742,-131 z"
+           id="path485" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip197)"
+       fill="none"
+       opacity="1"
+       stroke="none"
+       stroke-opacity="0"
+       transform="matrix(1,0,0,1,100.742,131)"
+       id="g487"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:none;stroke-opacity:0.94117647">
+      <path
+         d="M-17.6484,0 L17.6484,0 L17.6484,14 L-17.6484,14 L-17.6484,0 z"
+         fill-rule="evenodd"
+         vector-effect="none"
+         id="path489"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:none;stroke-opacity:0.94117647" />
+    </g>
+    <defs
+       id="defs491">
+      <clipPath
+         id="clip201">
+        <path
+           d="M0,0 L35,0 L35,14 L0,14 L0,0 z"
+           id="path494" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip201)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="square"
+       stroke-linejoin="bevel"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,83.0938,131)"
+       id="g496"
+       style="stroke-width:0.28693349;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647;fill:#000077;fill-opacity:1">
+      <text
+         fill="#000000"
+         fill-opacity="1"
+         font-family="Arial"
+         font-size="10"
+         font-style="normal"
+         font-weight="400"
+         stroke="none"
+         textLength="33.2969"
+         x="1"
+         xml:space="preserve"
+         y="10"
+         id="text498"
+         style="stroke-width:0.28693349;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647;fill:#000077;fill-opacity:1">Divide1</text>
+    </g>
+    <defs
+       id="defs500">
+      <clipPath
+         id="clip209">
+        <path
+           d="M-466,-26 L170.742,-26 L170.742,212 L-466,212 L-466,-26 z"
+           id="path503" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip209)"
+       fill="#ffffff"
+       fill-opacity="1"
+       opacity="1"
+       stroke="none"
+       stroke-opacity="0"
+       transform="matrix(1,0,0,1,466,26)"
+       id="g505"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647">
+      <path
+         d="M20,10 C20,15.5228 15.5228,20 10,20 C4.47715,20 0,15.5228 0,10 C0,4.47715 4.47715,0 10,0 C15.5228,0 20,4.47715 20,10 z"
+         fill-rule="nonzero"
+         vector-effect="none"
+         id="path507"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647" />
+    </g>
+    <defs
+       id="defs509">
+      <clipPath
+         id="clip213">
+        <path
+           d="M875,180 L895,180 L895,200 L875,200 L875,180 z"
+           id="path512" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip213)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       stroke-miterlimit="2"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,-408.5,-153.5)"
+       id="g514"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647">
+      <polyline
+         fill="none"
+         points="878,190 882,190"
+         vector-effect="none"
+         id="polyline516"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647" />
+    </g>
+    <defs
+       id="defs518">
+      <clipPath
+         id="clip214">
+        <path
+           d="M875,180 L895,180 L895,200 L875,200 L875,180 z"
+           id="path521" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip214)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       stroke-miterlimit="2"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,-408.5,-153.5)"
+       id="g523"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647">
+      <polyline
+         fill="none"
+         points="883,195 887,195"
+         vector-effect="none"
+         id="polyline525"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647" />
+    </g>
+    <defs
+       id="defs527">
+      <clipPath
+         id="clip215">
+        <path
+           d="M875,180 L895,180 L895,200 L875,200 L875,180 z"
+           id="path530" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip215)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       stroke-miterlimit="2"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,-408.5,-153.5)"
+       id="g532"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647">
+      <polyline
+         fill="none"
+         points="885,193 885,197"
+         vector-effect="none"
+         id="polyline534"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647" />
+    </g>
+    <defs
+       id="defs536">
+      <clipPath
+         id="clip220">
+        <path
+           d="M-465.5,-26.5 L171.242,-26.5 L171.242,211.5 L-465.5,211.5 L-465.5,-26.5 z"
+           id="path539" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip220)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       stroke-miterlimit="2"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,465.5,26.5)"
+       id="g541"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647">
+      <path
+         d="M20,10 C20,15.5228 15.5228,20 10,20 C4.47715,20 0,15.5228 0,10 C0,4.47715 4.47715,0 10,0 C15.5228,0 20,4.47715 20,10 z"
+         fill-rule="nonzero"
+         vector-effect="none"
+         id="path543"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647" />
+    </g>
+    <defs
+       id="defs545">
+      <clipPath
+         id="clip223">
+        <path
+           d="M-531,-21 L105.742,-21 L105.742,217 L-531,217 L-531,-21 z"
+           id="path548" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip223)"
+       fill="#ffffff"
+       fill-opacity="1"
+       opacity="1"
+       stroke="none"
+       stroke-opacity="0"
+       transform="matrix(1,0,0,1,531,21)"
+       id="g550"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647">
+      <path
+         d="M0,0 L30,15 L0,30 L0,0 z"
+         fill-rule="nonzero"
+         vector-effect="none"
+         id="path552"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647" />
+    </g>
+    <defs
+       id="defs554">
+      <clipPath
+         id="clip227">
+        <path
+           d="M-9,-15 L21,-15 L21,15 L-9,15 L-9,-15 z"
+           id="path557" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip227)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       stroke-miterlimit="2"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,540,36)"
+       id="g559"
+       style="stroke-width:0.28693349;stroke-miterlimit:4;stroke-dasharray:none;stroke:#000077;stroke-opacity:1;fill:#000077;fill-opacity:1">
+      <text
+         fill="#000000"
+         fill-opacity="1"
+         font-family="Arial"
+         font-size="10"
+         font-style="normal"
+         font-weight="400"
+         stroke="none"
+         textLength="10.5469"
+         x="-5.26562"
+         xml:space="preserve"
+         y="3.5"
+         id="text561"
+         style="stroke-width:0.28693349;stroke-miterlimit:4;stroke-dasharray:none;stroke:#000077;stroke-opacity:1;fill:#000077;fill-opacity:1">c1</text>
+    </g>
+    <defs
+       id="defs563">
+      <clipPath
+         id="clip232">
+        <path
+           d="M-530.5,-21.5 L106.242,-21.5 L106.242,216.5 L-530.5,216.5 L-530.5,-21.5 z"
+           id="path566" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip232)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       stroke-miterlimit="2"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,530.5,21.5)"
+       id="g568"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#000077;stroke-opacity:1">
+      <path
+         d="M0,0 L30,15 L0,30 L0,0 z"
+         fill-rule="nonzero"
+         vector-effect="none"
+         id="path570"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#000077;stroke-opacity:1" />
+    </g>
+    <defs
+       id="defs572">
+      <clipPath
+         id="clip235">
+        <path
+           d="M-545.742,-53 L91,-53 L91,185 L-545.742,185 L-545.742,-53 z"
+           id="path575" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip235)"
+       fill="none"
+       opacity="1"
+       stroke="none"
+       stroke-opacity="0"
+       transform="matrix(1,0,0,1,545.742,53)"
+       id="g577"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:none;stroke-opacity:0.94117647">
+      <path
+         d="M-11.5391,0 L11.5391,0 L11.5391,14 L-11.5391,14 L-11.5391,0 z"
+         fill-rule="evenodd"
+         vector-effect="none"
+         id="path579"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:none;stroke-opacity:0.94117647" />
+    </g>
+    <defs
+       id="defs581">
+      <clipPath
+         id="clip239">
+        <path
+           d="M0,0 L23,0 L23,14 L0,14 L0,0 z"
+           id="path584" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip239)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="square"
+       stroke-linejoin="bevel"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,534.203,53)"
+       id="g586"
+       style="stroke-width:0.28693349;stroke-miterlimit:4;stroke-dasharray:none;stroke:#000077;stroke-opacity:1;fill:#000077;fill-opacity:1">
+      <text
+         fill="#000000"
+         fill-opacity="1"
+         font-family="Arial"
+         font-size="10"
+         font-style="normal"
+         font-weight="400"
+         stroke="none"
+         textLength="21.0781"
+         x="1"
+         xml:space="preserve"
+         y="10"
+         id="text588"
+         style="stroke-width:0.28693348;stroke-miterlimit:2;stroke-dasharray:none;stroke:#000077;stroke-opacity:1;fill:#000077;fill-opacity:1">Gain</text>
+    </g>
+    <defs
+       id="defs590">
+      <clipPath
+         id="clip247">
+        <path
+           d="M-316,-71 L320.742,-71 L320.742,167 L-316,167 L-316,-71 z"
+           id="path593" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip247)"
+       fill="#ffffff"
+       fill-opacity="1"
+       opacity="1"
+       stroke="none"
+       stroke-opacity="0"
+       transform="matrix(1,0,0,1,316,71)"
+       id="g595"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647">
+      <path
+         d="M20,10 C20,15.5228 15.5228,20 10,20 C4.47715,20 0,15.5228 0,10 C0,4.47715 4.47715,0 10,0 C15.5228,0 20,4.47715 20,10 z"
+         fill-rule="nonzero"
+         vector-effect="none"
+         id="path597"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647" />
+    </g>
+    <defs
+       id="defs599">
+      <clipPath
+         id="clip251">
+        <path
+           d="M725,225 L745,225 L745,245 L725,245 L725,225 z"
+           id="path602" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip251)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       stroke-miterlimit="2"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,-408.5,-153.5)"
+       id="g604"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647">
+      <polyline
+         fill="none"
+         points="728,235 732,235"
+         vector-effect="none"
+         id="polyline606"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647" />
+    </g>
+    <defs
+       id="defs608">
+      <clipPath
+         id="clip252">
+        <path
+           d="M725,225 L745,225 L745,245 L725,245 L725,225 z"
+           id="path611" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip252)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       stroke-miterlimit="2"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,-408.5,-153.5)"
+       id="g613"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647">
+      <polyline
+         fill="none"
+         points="733,240 737,240"
+         vector-effect="none"
+         id="polyline615"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647" />
+    </g>
+    <defs
+       id="defs617">
+      <clipPath
+         id="clip253">
+        <path
+           d="M725,225 L745,225 L745,245 L725,245 L725,225 z"
+           id="path620" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip253)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       stroke-miterlimit="2"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,-408.5,-153.5)"
+       id="g622"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647">
+      <polyline
+         fill="none"
+         points="735,238 735,242"
+         vector-effect="none"
+         id="polyline624"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647" />
+    </g>
+    <defs
+       id="defs626">
+      <clipPath
+         id="clip258">
+        <path
+           d="M-315.5,-71.5 L321.242,-71.5 L321.242,166.5 L-315.5,166.5 L-315.5,-71.5 z"
+           id="path629" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip258)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       stroke-miterlimit="2"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,315.5,71.5)"
+       id="g631"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#000077;stroke-opacity:1">
+      <path
+         d="M20,10 C20,15.5228 15.5228,20 10,20 C4.47715,20 0,15.5228 0,10 C0,4.47715 4.47715,0 10,0 C15.5228,0 20,4.47715 20,10 z"
+         fill-rule="nonzero"
+         vector-effect="none"
+         id="path633"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#000077;stroke-opacity:1" />
+    </g>
+    <defs
+       id="defs635">
+      <clipPath
+         id="clip261">
+        <path
+           d="M-531,-66 L105.742,-66 L105.742,172 L-531,172 L-531,-66 z"
+           id="path638" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip261)"
+       fill="#ffffff"
+       fill-opacity="1"
+       opacity="1"
+       stroke="none"
+       stroke-opacity="0"
+       transform="matrix(1,0,0,1,531,66)"
+       id="g640"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647">
+      <path
+         d="M0,0 L30,15 L0,30 L0,0 z"
+         fill-rule="nonzero"
+         vector-effect="none"
+         id="path642"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647" />
+    </g>
+    <defs
+       id="defs644">
+      <clipPath
+         id="clip265">
+        <path
+           d="M-9,-15 L21,-15 L21,15 L-9,15 L-9,-15 z"
+           id="path647" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip265)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       stroke-miterlimit="2"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,540,81)"
+       id="g649"
+       style="stroke-width:0.28693349;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647;fill:#000077;fill-opacity:1">
+      <text
+         fill="#000000"
+         fill-opacity="1"
+         font-family="Arial"
+         font-size="10"
+         font-style="normal"
+         font-weight="400"
+         stroke="none"
+         textLength="11.0938"
+         x="-5.54688"
+         xml:space="preserve"
+         y="3.5"
+         id="text651"
+         style="stroke-width:0.28693349;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647;fill:#000077;fill-opacity:1">d1</text>
+    </g>
+    <defs
+       id="defs653">
+      <clipPath
+         id="clip270">
+        <path
+           d="M-530.5,-66.5 L106.242,-66.5 L106.242,171.5 L-530.5,171.5 L-530.5,-66.5 z"
+           id="path656" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip270)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       stroke-miterlimit="2"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,530.5,66.5)"
+       id="g658"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647">
+      <path
+         d="M0,0 L30,15 L0,30 L0,0 z"
+         fill-rule="nonzero"
+         vector-effect="none"
+         id="path660"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647" />
+    </g>
+    <defs
+       id="defs662">
+      <clipPath
+         id="clip273">
+        <path
+           d="M-545.742,-98 L91,-98 L91,140 L-545.742,140 L-545.742,-98 z"
+           id="path665" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip273)"
+       fill="none"
+       opacity="1"
+       stroke="none"
+       stroke-opacity="0"
+       transform="matrix(1,0,0,1,545.742,98)"
+       id="g667"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:none;stroke-opacity:0.94117647">
+      <path
+         d="M-14.3125,0 L14.3125,0 L14.3125,14 L-14.3125,14 L-14.3125,0 z"
+         fill-rule="evenodd"
+         vector-effect="none"
+         id="path669"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:none;stroke-opacity:0.94117647" />
+    </g>
+    <defs
+       id="defs671">
+      <clipPath
+         id="clip277">
+        <path
+           d="M0,0 L29,0 L29,14 L0,14 L0,0 z"
+           id="path674" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip277)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="square"
+       stroke-linejoin="bevel"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,531.43,98)"
+       id="g676"
+       style="stroke-width:0.28693349;stroke-miterlimit:4;stroke-dasharray:none;stroke:#000077;stroke-opacity:1;fill:#000077;fill-opacity:1">
+      <text
+         fill="#000000"
+         fill-opacity="1"
+         font-family="Arial"
+         font-size="10"
+         font-style="normal"
+         font-weight="400"
+         stroke="none"
+         textLength="26.625"
+         x="1"
+         xml:space="preserve"
+         y="10"
+         id="text678"
+         style="stroke-width:0.28693349;stroke-miterlimit:4;stroke-dasharray:none;stroke:#000077;stroke-opacity:1;fill:#000077;fill-opacity:1">Gain1</text>
+    </g>
+    <defs
+       id="defs680">
+      <clipPath
+         id="clip285">
+        <path
+           d="M-601,-26 L35.7422,-26 L35.7422,212 L-601,212 L-601,-26 z"
+           id="path683" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip285)"
+       fill="#ffffff"
+       fill-opacity="1"
+       opacity="1"
+       stroke="none"
+       stroke-opacity="0"
+       transform="matrix(1,0,0,1,601,26)"
+       id="g685"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#000077;stroke-opacity:1">
+      <path
+         d="M20,10 C20,15.5228 15.5228,20 10,20 C4.47715,20 0,15.5228 0,10 C0,4.47715 4.47715,0 10,0 C15.5228,0 20,4.47715 20,10 z"
+         fill-rule="nonzero"
+         vector-effect="none"
+         id="path687"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#000077;stroke-opacity:1" />
+    </g>
+    <defs
+       id="defs689">
+      <clipPath
+         id="clip289">
+        <path
+           d="M1010,180 L1030,180 L1030,200 L1010,200 L1010,180 z"
+           id="path692" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip289)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       stroke-miterlimit="2"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,-408.5,-153.5)"
+       id="g694"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#000077;stroke-opacity:1">
+      <polyline
+         fill="none"
+         points="1013,190 1017,190"
+         vector-effect="none"
+         id="polyline696"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#000077;stroke-opacity:1" />
+    </g>
+    <defs
+       id="defs698">
+      <clipPath
+         id="clip290">
+        <path
+           d="M1010,180 L1030,180 L1030,200 L1010,200 L1010,180 z"
+           id="path701" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip290)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       stroke-miterlimit="2"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,-408.5,-153.5)"
+       id="g703"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#000077;stroke-opacity:1">
+      <polyline
+         fill="none"
+         points="1015,188 1015,192"
+         vector-effect="none"
+         id="polyline705"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#000077;stroke-opacity:1" />
+    </g>
+    <defs
+       id="defs707">
+      <clipPath
+         id="clip291">
+        <path
+           d="M1010,180 L1030,180 L1030,200 L1010,200 L1010,180 z"
+           id="path710" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip291)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       stroke-miterlimit="2"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,-408.5,-153.5)"
+       id="g712"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#000077;stroke-opacity:1">
+      <polyline
+         fill="none"
+         points="1018,195 1022,195"
+         vector-effect="none"
+         id="polyline714"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#000077;stroke-opacity:1" />
+    </g>
+    <defs
+       id="defs716">
+      <clipPath
+         id="clip292">
+        <path
+           d="M1010,180 L1030,180 L1030,200 L1010,200 L1010,180 z"
+           id="path719" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip292)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       stroke-miterlimit="2"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,-408.5,-153.5)"
+       id="g721"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#000077;stroke-opacity:1">
+      <polyline
+         fill="none"
+         points="1020,193 1020,197"
+         vector-effect="none"
+         id="polyline723"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#000077;stroke-opacity:1" />
+    </g>
+    <defs
+       id="defs725">
+      <clipPath
+         id="clip297">
+        <path
+           d="M-600.5,-26.5 L36.2422,-26.5 L36.2422,211.5 L-600.5,211.5 L-600.5,-26.5 z"
+           id="path728" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip297)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       stroke-miterlimit="2"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,600.5,26.5)"
+       id="g730"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#000077;stroke-opacity:1">
+      <path
+         d="M20,10 C20,15.5228 15.5228,20 10,20 C4.47715,20 0,15.5228 0,10 C0,4.47715 4.47715,0 10,0 C15.5228,0 20,4.47715 20,10 z"
+         fill-rule="nonzero"
+         vector-effect="none"
+         id="path732"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#000077;stroke-opacity:1" />
+    </g>
+    <defs
+       id="defs734">
+      <clipPath
+         id="clip300">
+        <path
+           d="M-356,-186 L280.742,-186 L280.742,52 L-356,52 L-356,-186 z"
+           id="path737" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip300)"
+       fill="#ffffff"
+       fill-opacity="1"
+       opacity="1"
+       stroke="none"
+       stroke-opacity="0"
+       transform="matrix(1,0,0,1,356,186)"
+       id="g739"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647">
+      <path
+         d="M30,30 L0,15 L30,0 L30,30 z"
+         fill-rule="nonzero"
+         vector-effect="none"
+         id="path741"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647" />
+    </g>
+    <defs
+       id="defs743">
+      <clipPath
+         id="clip304">
+        <path
+           d="M-21,-15 L9,-15 L9,15 L-21,15 L-21,-15 z"
+           id="path746" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip304)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       stroke-miterlimit="2"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,377,201)"
+       id="g748"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#000077;stroke-opacity:1;fill:#000077;fill-opacity:1">
+      <text
+         fill="#000000"
+         fill-opacity="1"
+         font-family="Arial"
+         font-size="10"
+         font-style="normal"
+         font-weight="400"
+         stroke="none"
+         textLength="10.5469"
+         x="-5.26562"
+         xml:space="preserve"
+         y="3.5"
+         id="text750"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#000077;stroke-opacity:1;fill:#000077;fill-opacity:1">c2</text>
+    </g>
+    <defs
+       id="defs752">
+      <clipPath
+         id="clip309">
+        <path
+           d="M-355.5,-186.5 L281.242,-186.5 L281.242,51.5 L-355.5,51.5 L-355.5,-186.5 z"
+           id="path755" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip309)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       stroke-miterlimit="2"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,355.5,186.5)"
+       id="g757"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647">
+      <path
+         d="M30,30 L0,15 L30,0 L30,30 z"
+         fill-rule="nonzero"
+         vector-effect="none"
+         id="path759"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647" />
+    </g>
+    <defs
+       id="defs761">
+      <clipPath
+         id="clip312">
+        <path
+           d="M-370.742,-218 L266,-218 L266,20 L-370.742,20 L-370.742,-218 z"
+           id="path764" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip312)"
+       fill="none"
+       opacity="1"
+       stroke="none"
+       stroke-opacity="0"
+       transform="matrix(1,0,0,1,370.742,218)"
+       id="g766"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:none;stroke-opacity:0.94117647">
+      <path
+         d="M-14.3125,0 L14.3125,0 L14.3125,14 L-14.3125,14 L-14.3125,0 z"
+         fill-rule="evenodd"
+         vector-effect="none"
+         id="path768"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:none;stroke-opacity:0.94117647" />
+    </g>
+    <defs
+       id="defs770">
+      <clipPath
+         id="clip316">
+        <path
+           d="M0,0 L29,0 L29,14 L0,14 L0,0 z"
+           id="path773" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip316)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="square"
+       stroke-linejoin="bevel"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,356.43,218)"
+       id="g775"
+       style="stroke-width:0.28693349;stroke-miterlimit:4;stroke-dasharray:none;stroke:#000077;stroke-opacity:1;fill:#000077;fill-opacity:1">
+      <text
+         fill="#000000"
+         fill-opacity="1"
+         font-family="Arial"
+         font-size="10"
+         font-style="normal"
+         font-weight="400"
+         stroke="none"
+         textLength="26.625"
+         x="1"
+         xml:space="preserve"
+         y="10"
+         id="text777"
+         style="stroke-width:0.28693349;stroke-miterlimit:4;stroke-dasharray:none;stroke:#000077;stroke-opacity:1;fill:#000077;fill-opacity:1">Gain3</text>
+    </g>
+    <defs
+       id="defs779">
+      <clipPath
+         id="clip324">
+        <path
+           d="M-271,-151 L365.742,-151 L365.742,87 L-271,87 L-271,-151 z"
+           id="path782" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip324)"
+       fill="#ffffff"
+       fill-opacity="1"
+       opacity="1"
+       stroke="none"
+       stroke-opacity="0"
+       transform="matrix(1,0,0,1,271,151)"
+       id="g784"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647">
+      <path
+         d="M30,30 L0,15 L30,0 L30,30 z"
+         fill-rule="nonzero"
+         vector-effect="none"
+         id="path786"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647" />
+    </g>
+    <defs
+       id="defs788">
+      <clipPath
+         id="clip328">
+        <path
+           d="M-21,-15 L9,-15 L9,15 L-21,15 L-21,-15 z"
+           id="path791" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip328)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       stroke-miterlimit="2"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,292,166)"
+       id="g793"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#000077;stroke-opacity:1;fill:#000077;fill-opacity:1">
+      <text
+         fill="#000000"
+         fill-opacity="1"
+         font-family="Arial"
+         font-size="10"
+         font-style="normal"
+         font-weight="400"
+         stroke="none"
+         textLength="11.0938"
+         x="-5.54688"
+         xml:space="preserve"
+         y="3.5"
+         id="text795"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#000077;stroke-opacity:1;fill:#000077;fill-opacity:1">d2</text>
+    </g>
+    <defs
+       id="defs797">
+      <clipPath
+         id="clip333">
+        <path
+           d="M-270.5,-151.5 L366.242,-151.5 L366.242,86.5 L-270.5,86.5 L-270.5,-151.5 z"
+           id="path800" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip333)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       stroke-miterlimit="2"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,270.5,151.5)"
+       id="g802"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647">
+      <path
+         d="M30,30 L0,15 L30,0 L30,30 z"
+         fill-rule="nonzero"
+         vector-effect="none"
+         id="path804"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647" />
+    </g>
+    <defs
+       id="defs806">
+      <clipPath
+         id="clip336">
+        <path
+           d="M-285.742,-183 L351,-183 L351,55 L-285.742,55 L-285.742,-183 z"
+           id="path809" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip336)"
+       fill="none"
+       opacity="1"
+       stroke="none"
+       stroke-opacity="0"
+       transform="matrix(1,0,0,1,285.742,183)"
+       id="g811"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:none;stroke-opacity:0.94117647">
+      <path
+         d="M-14.3125,0 L14.3125,0 L14.3125,14 L-14.3125,14 L-14.3125,0 z"
+         fill-rule="evenodd"
+         vector-effect="none"
+         id="path813"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:none;stroke-opacity:0.94117647" />
+    </g>
+    <defs
+       id="defs815">
+      <clipPath
+         id="clip340">
+        <path
+           d="M0,0 L29,0 L29,14 L0,14 L0,0 z"
+           id="path818" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip340)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="square"
+       stroke-linejoin="bevel"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,271.43,183)"
+       id="g820"
+       style="stroke-width:0.28693349;stroke-miterlimit:4;stroke-dasharray:none;stroke:#000077;stroke-opacity:1;fill:#000077;fill-opacity:1">
+      <text
+         fill="#000000"
+         fill-opacity="1"
+         font-family="Arial"
+         font-size="10"
+         font-style="normal"
+         font-weight="400"
+         stroke="none"
+         textLength="26.625"
+         x="1"
+         xml:space="preserve"
+         y="10"
+         id="text822"
+         style="stroke-width:0.28693349;stroke-miterlimit:4;stroke-dasharray:none;stroke:#000077;stroke-opacity:1;fill:#000077;fill-opacity:1">Gain4</text>
+    </g>
+    <defs
+       id="defs824">
+      <clipPath
+         id="clip348">
+        <path
+           d="M-196,-159 L440.742,-159 L440.742,79 L-196,79 L-196,-159 z"
+           id="path827" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip348)"
+       fill="#ffffff"
+       fill-opacity="1"
+       opacity="1"
+       stroke="none"
+       stroke-opacity="0"
+       transform="matrix(1,0,0,1,196,159)"
+       id="g829"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647">
+      <path
+         d="M30,34 L0,34 L0,0 L30,0 L30,34 z"
+         fill-rule="nonzero"
+         vector-effect="none"
+         id="path831"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647" />
+    </g>
+    <defs
+       id="defs833">
+      <clipPath
+         id="clip352">
+        <path
+           d="M605,313 L635,313 L635,347 L605,347 L605,313 z"
+           id="path836" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip352)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       stroke-miterlimit="2"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,-408.5,-153.5)"
+       id="g838"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647">
+      <polyline
+         fill="none"
+         points="628,320 632,320"
+         vector-effect="none"
+         id="polyline840"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647" />
+    </g>
+    <defs
+       id="defs842">
+      <clipPath
+         id="clip353">
+        <path
+           d="M605,313 L635,313 L635,347 L605,347 L605,313 z"
+           id="path845" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip353)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       stroke-miterlimit="2"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,-408.5,-153.5)"
+       id="g847"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647">
+      <polyline
+         fill="none"
+         points="628,330 632,330"
+         vector-effect="none"
+         id="polyline849"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647" />
+    </g>
+    <defs
+       id="defs851">
+      <clipPath
+         id="clip354">
+        <path
+           d="M605,313 L635,313 L635,347 L605,347 L605,313 z"
+           id="path854" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip354)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       stroke-miterlimit="2"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,-408.5,-153.5)"
+       id="g856"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647">
+      <polyline
+         fill="none"
+         points="628,340 632,340"
+         vector-effect="none"
+         id="polyline858"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647" />
+    </g>
+    <defs
+       id="defs860">
+      <clipPath
+         id="clip359">
+        <path
+           d="M-195.5,-159.5 L441.242,-159.5 L441.242,78.5 L-195.5,78.5 L-195.5,-159.5 z"
+           id="path863" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip359)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       stroke-miterlimit="2"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,195.5,159.5)"
+       id="g865"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647">
+      <path
+         d="M30,34 L0,34 L0,0 L30,0 L30,34 z"
+         fill-rule="nonzero"
+         vector-effect="none"
+         id="path867"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647" />
+    </g>
+    <defs
+       id="defs869">
+      <clipPath
+         id="clip362">
+        <path
+           d="M-210.742,-195 L426,-195 L426,43 L-210.742,43 L-210.742,-195 z"
+           id="path872" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip362)"
+       fill="none"
+       opacity="1"
+       stroke="none"
+       stroke-opacity="0"
+       transform="matrix(1,0,0,1,210.742,195)"
+       id="g874"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:none;stroke-opacity:0.94117647">
+      <path
+         d="M-9.875,0 L9.875,0 L9.875,14 L-9.875,14 L-9.875,0 z"
+         fill-rule="evenodd"
+         vector-effect="none"
+         id="path876"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:none;stroke-opacity:0.94117647" />
+    </g>
+    <defs
+       id="defs878">
+      <clipPath
+         id="clip366">
+        <path
+           d="M0,0 L20,0 L20,14 L0,14 L0,0 z"
+           id="path881" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip366)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="square"
+       stroke-linejoin="bevel"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,200.867,195)"
+       id="g883"
+       style="stroke-width:0.28693349;stroke-miterlimit:4;stroke-dasharray:none;stroke:#000077;stroke-opacity:1;fill:#000077;fill-opacity:1">
+      <text
+         fill="#000000"
+         fill-opacity="1"
+         font-family="Arial"
+         font-size="10"
+         font-style="normal"
+         font-weight="400"
+         stroke="none"
+         textLength="17.75"
+         x="1"
+         xml:space="preserve"
+         y="10"
+         id="text885"
+         style="stroke-width:0.28693349;stroke-miterlimit:4;stroke-dasharray:none;stroke:#000077;stroke-opacity:1;fill:#000077;fill-opacity:1">Add</text>
+    </g>
+    <defs
+       id="defs887">
+      <clipPath
+         id="clip374">
+        <path
+           d="M409.258,154 L1046,154 L1046,392 L409.258,392 L409.258,154 z"
+           id="path890" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip374)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       stroke-miterlimit="2"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,-409.258,-154)"
+       id="g892"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647">
+      <path
+         d="M635,190 L706,190"
+         fill-rule="evenodd"
+         vector-effect="none"
+         id="path894"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647" />
+    </g>
+    <defs
+       id="defs896">
+      <clipPath
+         id="clip377">
+        <path
+           d="M-263.742,-37.5 L373,-37.5 L373,200.5 L-263.742,200.5 L-263.742,-37.5 z"
+           id="path899" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip377)"
+       fill="none"
+       opacity="1"
+       stroke="none"
+       stroke-opacity="0"
+       transform="matrix(1,0,0,1,263.742,37.5)"
+       id="g901"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:none;stroke-opacity:0.94117647">
+      <path
+         d="M-17.2422,0 L17.2422,0 L17.2422,12 L-17.2422,12 L-17.2422,0 z"
+         fill-rule="evenodd"
+         vector-effect="none"
+         id="path903"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:none;stroke-opacity:0.94117647" />
+    </g>
+    <defs
+       id="defs905">
+      <clipPath
+         id="clip381">
+        <path
+           d="M0,0 L34,0 L34,12 L0,12 L0,0 z"
+           id="path908" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip381)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="square"
+       stroke-linejoin="bevel"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,246.5,37.5)"
+       id="g910"
+       style="stroke-width:0.28693349;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647;fill:#000077;fill-opacity:1">
+      <text
+         fill="#000000"
+         fill-opacity="1"
+         font-family="Arial"
+         font-size="9"
+         font-style="normal"
+         font-weight="400"
+         stroke="none"
+         textLength="32.4844"
+         x="1"
+         xml:space="preserve"
+         y="9"
+         id="text912"
+         style="stroke-width:0.28693349;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647;fill:#000077;fill-opacity:1">omega1</text>
+    </g>
+    <defs
+       id="defs914">
+      <clipPath
+         id="clip391">
+        <path
+           d="M-366,-36 L270.742,-36 L270.742,202 L-366,202 L-366,-36 z"
+           id="path917" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip391)"
+       fill="#000000"
+       fill-opacity="1"
+       opacity="1"
+       stroke="none"
+       stroke-opacity="0"
+       transform="matrix(1,0,0,1,366,36)"
+       id="g919"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647;fill:#000077;fill-opacity:1">
+      <path
+         d="M0,0 L-8,-4 L-8,4 L0,0 z"
+         fill-rule="nonzero"
+         vector-effect="none"
+         id="path921"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647;fill:#000077;fill-opacity:1" />
+    </g>
+    <defs
+       id="defs923">
+      <clipPath
+         id="clip394">
+        <path
+           d="M409.258,154 L1046,154 L1046,392 L409.258,392 L409.258,154 z"
+           id="path926" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip394)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       stroke-miterlimit="2"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,-409.258,-154)"
+       id="g928"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647">
+      <path
+         d="M706,190 L767,190"
+         fill-rule="evenodd"
+         vector-effect="none"
+         id="path930"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647" />
+    </g>
+    <defs
+       id="defs932">
+      <clipPath
+         id="clip397">
+        <path
+           d="M-316,-81 L320.742,-81 L320.742,157 L-316,157 L-316,-81 z"
+           id="path935" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip397)"
+       fill="#000000"
+       fill-opacity="1"
+       opacity="1"
+       stroke="none"
+       stroke-opacity="0"
+       transform="matrix(1,0,0,1,316,81)"
+       id="g937"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647;fill:#000077;fill-opacity:1">
+      <path
+         d="M0,0 L-8,-4 L-8,4 L0,0 z"
+         fill-rule="nonzero"
+         vector-effect="none"
+         id="path939"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647;fill:#000077;fill-opacity:1" />
+    </g>
+    <defs
+       id="defs941">
+      <clipPath
+         id="clip400">
+        <path
+           d="M409.258,154 L1046,154 L1046,392 L409.258,392 L409.258,154 z"
+           id="path944" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip400)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       stroke-miterlimit="2"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,-409.258,-154)"
+       id="g946"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647">
+      <path
+         d="M706,190 L706,235 L717,235"
+         fill-rule="evenodd"
+         vector-effect="none"
+         id="path948"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647" />
+    </g>
+    <defs
+       id="defs950">
+      <clipPath
+         id="clip403">
+        <path
+           d="M-296.742,-36 L340,-36 L340,202 L-296.742,202 L-296.742,-36 z"
+           id="path953" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip403)"
+       fill="#000000"
+       fill-opacity="1"
+       opacity="1"
+       stroke="none"
+       stroke-opacity="0"
+       transform="matrix(1,0,0,1,296.742,36)"
+       id="g955"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647;fill:#000077;fill-opacity:1">
+      <path
+         d="M2.5,0 C2.5,1.38071 1.38071,2.5 0,2.5 C-1.38071,2.5 -2.5,1.38071 -2.5,0 C-2.5,-1.38071 -1.38071,-2.5 0,-2.5 C1.38071,-2.5 2.5,-1.38071 2.5,0 z"
+         fill-rule="evenodd"
+         vector-effect="none"
+         id="path957"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647;fill:#000077;fill-opacity:1" />
+    </g>
+    <defs
+       id="defs959">
+      <clipPath
+         id="clip406">
+        <path
+           d="M409.258,154 L1046,154 L1046,392 L409.258,392 L409.258,154 z"
+           id="path962" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip406)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       stroke-miterlimit="2"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,-409.258,-154)"
+       id="g964"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647">
+      <path
+         d="M805,270 L885,270"
+         fill-rule="evenodd"
+         vector-effect="none"
+         id="path966"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647" />
+    </g>
+    <defs
+       id="defs968">
+      <clipPath
+         id="clip409">
+        <path
+           d="M-438.242,-117.5 L198.5,-117.5 L198.5,120.5 L-438.242,120.5 L-438.242,-117.5 z"
+           id="path971" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip409)"
+       fill="none"
+       opacity="1"
+       stroke="none"
+       stroke-opacity="0"
+       transform="matrix(1,0,0,1,438.242,117.5)"
+       id="g973"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:none;stroke-opacity:0.94117647">
+      <path
+         d="M-9.49219,0 L9.49219,0 L9.49219,12 L-9.49219,12 L-9.49219,0 z"
+         fill-rule="evenodd"
+         vector-effect="none"
+         id="path975"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:none;stroke-opacity:0.94117647" />
+    </g>
+    <defs
+       id="defs977">
+      <clipPath
+         id="clip413">
+        <path
+           d="M0,0 L19,0 L19,12 L0,12 L0,0 z"
+           id="path980" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip413)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="square"
+       stroke-linejoin="bevel"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,428.75,117.5)"
+       id="g982"
+       style="stroke-width:0.28693349;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647;fill:#000077;fill-opacity:1">
+      <text
+         fill="#000000"
+         fill-opacity="1"
+         font-family="Arial"
+         font-size="9"
+         font-style="normal"
+         font-weight="400"
+         stroke="none"
+         textLength="16.9844"
+         x="1"
+         xml:space="preserve"
+         y="9"
+         id="text984"
+         style="stroke-width:0.28693349;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647;fill:#000077;fill-opacity:1">phi2</text>
+    </g>
+    <defs
+       id="defs986">
+      <clipPath
+         id="clip423">
+        <path
+           d="M45.7422,-475.742 L45.7422,161 L-192.258,161 L-192.258,-475.742 L45.7422,-475.742 z"
+           id="path989" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip423)"
+       fill="#000000"
+       fill-opacity="1"
+       opacity="1"
+       stroke="none"
+       stroke-opacity="0"
+       transform="matrix(6.12323e-17,-1,1,6.12323e-17,475.742,45.7422)"
+       id="g991"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647;fill:#000077;fill-opacity:1">
+      <path
+         d="M0,0 L-8,-4 L-8,4 L0,0 z"
+         fill-rule="nonzero"
+         vector-effect="none"
+         id="path993"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647;fill:#000077;fill-opacity:1" />
+    </g>
+    <defs
+       id="defs995">
+      <clipPath
+         id="clip426">
+        <path
+           d="M409.258,154 L1046,154 L1046,392 L409.258,392 L409.258,154 z"
+           id="path998" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip426)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       stroke-miterlimit="2"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,-409.258,-154)"
+       id="g1000"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647">
+      <path
+         d="M885,270 L885,240.5 M885,229.5 L885,208"
+         fill-rule="evenodd"
+         vector-effect="none"
+         id="path1002"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647" />
+    </g>
+    <defs
+       id="defs1004">
+      <clipPath
+         id="clip427">
+        <path
+           d="M409.258,154 L1046,154 L1046,392 L409.258,392 L409.258,154 z"
+           id="path1007" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip427)"
+       fill="none"
+       opacity="1"
+       stroke="#333333"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       stroke-miterlimit="2"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,-409.258,-154)"
+       id="g1009"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647">
+      <polyline
+         fill="none"
+         points="885,240.5 885,239.5"
+         vector-effect="none"
+         id="polyline1011"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647" />
+      <polyline
+         fill="none"
+         points="885,229.5 885,230.5"
+         vector-effect="none"
+         id="polyline1013"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647" />
+    </g>
+    <defs
+       id="defs1015">
+      <clipPath
+         id="clip428">
+        <path
+           d="M409.258,154 L1046,154 L1046,392 L409.258,392 L409.258,154 z"
+           id="path1018" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip428)"
+       fill="none"
+       opacity="1"
+       stroke="#666666"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       stroke-miterlimit="2"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,-409.258,-154)"
+       id="g1020"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647">
+      <polyline
+         fill="none"
+         points="885,239.5 885,238.5"
+         vector-effect="none"
+         id="polyline1022"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647" />
+      <polyline
+         fill="none"
+         points="885,230.5 885,231.5"
+         vector-effect="none"
+         id="polyline1024"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647" />
+    </g>
+    <defs
+       id="defs1026">
+      <clipPath
+         id="clip429">
+        <path
+           d="M409.258,154 L1046,154 L1046,392 L409.258,392 L409.258,154 z"
+           id="path1029" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip429)"
+       fill="none"
+       opacity="1"
+       stroke="#999999"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       stroke-miterlimit="2"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,-409.258,-154)"
+       id="g1031"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647">
+      <polyline
+         fill="none"
+         points="885,238.5 885,237.5"
+         vector-effect="none"
+         id="polyline1033"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647" />
+      <polyline
+         fill="none"
+         points="885,231.5 885,232.5"
+         vector-effect="none"
+         id="polyline1035"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647" />
+    </g>
+    <defs
+       id="defs1037">
+      <clipPath
+         id="clip430">
+        <path
+           d="M409.258,154 L1046,154 L1046,392 L409.258,392 L409.258,154 z"
+           id="path1040" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip430)"
+       fill="none"
+       opacity="1"
+       stroke="#cccccc"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       stroke-miterlimit="2"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,-409.258,-154)"
+       id="g1042"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647">
+      <polyline
+         fill="none"
+         points="885,237.5 885,236.5"
+         vector-effect="none"
+         id="polyline1044"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647" />
+      <polyline
+         fill="none"
+         points="885,232.5 885,233.5"
+         vector-effect="none"
+         id="polyline1046"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647" />
+    </g>
+    <defs
+       id="defs1048">
+      <clipPath
+         id="clip433">
+        <path
+           d="M385.484,201 L-251.258,201 L-251.258,-37 L385.484,-37 L385.484,201 z"
+           id="path1051" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip433)"
+       fill="#000000"
+       fill-opacity="1"
+       opacity="1"
+       stroke="none"
+       stroke-opacity="0"
+       transform="matrix(-1,1.22465e-16,-1.22465e-16,-1,385.484,201)"
+       id="g1053"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647;fill:#000077;fill-opacity:1">
+      <path
+         d="M0,0 L-8,-4 L-8,4 L0,0 z"
+         fill-rule="nonzero"
+         vector-effect="none"
+         id="path1055"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647;fill:#000077;fill-opacity:1" />
+    </g>
+    <defs
+       id="defs1057">
+      <clipPath
+         id="clip436">
+        <path
+           d="M409.258,154 L1046,154 L1046,392 L409.258,392 L409.258,154 z"
+           id="path1060" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip436)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       stroke-miterlimit="2"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,-409.258,-154)"
+       id="g1062"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647">
+      <path
+         d="M885,270 L885,355 L803,355"
+         fill-rule="evenodd"
+         vector-effect="none"
+         id="path1064"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647" />
+    </g>
+    <defs
+       id="defs1066">
+      <clipPath
+         id="clip439">
+        <path
+           d="M-475.742,-116 L161,-116 L161,122 L-475.742,122 L-475.742,-116 z"
+           id="path1069" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip439)"
+       fill="#000000"
+       fill-opacity="1"
+       opacity="1"
+       stroke="none"
+       stroke-opacity="0"
+       transform="matrix(1,0,0,1,475.742,116)"
+       id="g1071"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647;fill:#000077;fill-opacity:1">
+      <path
+         d="M2.5,0 C2.5,1.38071 1.38071,2.5 0,2.5 C-1.38071,2.5 -2.5,1.38071 -2.5,0 C-2.5,-1.38071 -1.38071,-2.5 0,-2.5 C1.38071,-2.5 2.5,-1.38071 2.5,0 z"
+         fill-rule="evenodd"
+         vector-effect="none"
+         id="path1073"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647;fill:#000077;fill-opacity:1" />
+    </g>
+    <defs
+       id="defs1075">
+      <clipPath
+         id="clip442">
+        <path
+           d="M409.258,154 L1046,154 L1046,392 L409.258,392 L409.258,154 z"
+           id="path1078" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip442)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       stroke-miterlimit="2"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,-409.258,-154)"
+       id="g1080"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647">
+      <path
+         d="M635,270 L735,270"
+         fill-rule="evenodd"
+         vector-effect="none"
+         id="path1082"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647" />
+    </g>
+    <defs
+       id="defs1084">
+      <clipPath
+         id="clip445">
+        <path
+           d="M-278.242,-117.5 L358.5,-117.5 L358.5,120.5 L-278.242,120.5 L-278.242,-117.5 z"
+           id="path1087" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip445)"
+       fill="none"
+       opacity="1"
+       stroke="none"
+       stroke-opacity="0"
+       transform="matrix(1,0,0,1,278.242,117.5)"
+       id="g1089"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:none;stroke-opacity:0.94117647">
+      <path
+         d="M-17.2422,0 L17.2422,0 L17.2422,12 L-17.2422,12 L-17.2422,0 z"
+         fill-rule="evenodd"
+         vector-effect="none"
+         id="path1091"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:none;stroke-opacity:0.94117647" />
+    </g>
+    <defs
+       id="defs1093">
+      <clipPath
+         id="clip449">
+        <path
+           d="M0,0 L34,0 L34,12 L0,12 L0,0 z"
+           id="path1096" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip449)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="square"
+       stroke-linejoin="bevel"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,261,117.5)"
+       id="g1098"
+       style="stroke-width:0.28693349;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647;fill:#000077;fill-opacity:1">
+      <text
+         fill="#000000"
+         fill-opacity="1"
+         font-family="Arial"
+         font-size="9"
+         font-style="normal"
+         font-weight="400"
+         stroke="none"
+         textLength="32.4844"
+         x="1"
+         xml:space="preserve"
+         y="9"
+         id="text1100"
+         style="stroke-width:0.28693349;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647;fill:#000077;fill-opacity:1">omega2</text>
+    </g>
+    <defs
+       id="defs1102">
+      <clipPath
+         id="clip459">
+        <path
+           d="M90.7422,-325.742 L90.7422,311 L-147.258,311 L-147.258,-325.742 L90.7422,-325.742 z"
+           id="path1105" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip459)"
+       fill="#000000"
+       fill-opacity="1"
+       opacity="1"
+       stroke="none"
+       stroke-opacity="0"
+       transform="matrix(6.12323e-17,-1,1,6.12323e-17,325.742,90.7422)"
+       id="g1107"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647;fill:#000077;fill-opacity:1">
+      <path
+         d="M0,0 L-8,-4 L-8,4 L0,0 z"
+         fill-rule="nonzero"
+         vector-effect="none"
+         id="path1109"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647;fill:#000077;fill-opacity:1" />
+    </g>
+    <defs
+       id="defs1111">
+      <clipPath
+         id="clip462">
+        <path
+           d="M409.258,154 L1046,154 L1046,392 L409.258,392 L409.258,154 z"
+           id="path1114" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip462)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       stroke-miterlimit="2"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,-409.258,-154)"
+       id="g1116"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647">
+      <path
+         d="M735,270 L735,253"
+         fill-rule="evenodd"
+         vector-effect="none"
+         id="path1118"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647" />
+    </g>
+    <defs
+       id="defs1120">
+      <clipPath
+         id="clip465">
+        <path
+           d="M300.484,166 L-336.258,166 L-336.258,-72 L300.484,-72 L300.484,166 z"
+           id="path1123" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip465)"
+       fill="#000000"
+       fill-opacity="1"
+       opacity="1"
+       stroke="none"
+       stroke-opacity="0"
+       transform="matrix(-1,1.22465e-16,-1.22465e-16,-1,300.484,166)"
+       id="g1125"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647;fill:#000077;fill-opacity:1">
+      <path
+         d="M0,0 L-8,-4 L-8,4 L0,0 z"
+         fill-rule="nonzero"
+         vector-effect="none"
+         id="path1127"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647;fill:#000077;fill-opacity:1" />
+    </g>
+    <defs
+       id="defs1129">
+      <clipPath
+         id="clip468">
+        <path
+           d="M409.258,154 L1046,154 L1046,392 L409.258,392 L409.258,154 z"
+           id="path1132" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip468)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       stroke-miterlimit="2"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,-409.258,-154)"
+       id="g1134"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647">
+      <path
+         d="M735,270 L735,320 L718,320"
+         fill-rule="evenodd"
+         vector-effect="none"
+         id="path1136"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647" />
+    </g>
+    <defs
+       id="defs1138">
+      <clipPath
+         id="clip471">
+        <path
+           d="M-366,-116 L270.742,-116 L270.742,122 L-366,122 L-366,-116 z"
+           id="path1141" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip471)"
+       fill="#000000"
+       fill-opacity="1"
+       opacity="1"
+       stroke="none"
+       stroke-opacity="0"
+       transform="matrix(1,0,0,1,366,116)"
+       id="g1143"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647;fill:#000077;fill-opacity:1">
+      <path
+         d="M0,0 L-8,-4 L-8,4 L0,0 z"
+         fill-rule="nonzero"
+         vector-effect="none"
+         id="path1145"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647;fill:#000077;fill-opacity:1" />
+    </g>
+    <defs
+       id="defs1147">
+      <clipPath
+         id="clip474">
+        <path
+           d="M409.258,154 L1046,154 L1046,392 L409.258,392 L409.258,154 z"
+           id="path1150" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip474)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       stroke-miterlimit="2"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,-409.258,-154)"
+       id="g1152"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647">
+      <path
+         d="M735,270 L767,270"
+         fill-rule="evenodd"
+         vector-effect="none"
+         id="path1154"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647" />
+    </g>
+    <defs
+       id="defs1156">
+      <clipPath
+         id="clip477">
+        <path
+           d="M-325.742,-116 L311,-116 L311,122 L-325.742,122 L-325.742,-116 z"
+           id="path1159" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip477)"
+       fill="#000000"
+       fill-opacity="1"
+       opacity="1"
+       stroke="none"
+       stroke-opacity="0"
+       transform="matrix(1,0,0,1,325.742,116)"
+       id="g1161"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647;fill:#000077;fill-opacity:1">
+      <path
+         d="M2.5,0 C2.5,1.38071 1.38071,2.5 0,2.5 C-1.38071,2.5 -2.5,1.38071 -2.5,0 C-2.5,-1.38071 -1.38071,-2.5 0,-2.5 C1.38071,-2.5 2.5,-1.38071 2.5,0 z"
+         fill-rule="evenodd"
+         vector-effect="none"
+         id="path1163"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647;fill:#000077;fill-opacity:1" />
+    </g>
+    <defs
+       id="defs1165">
+      <clipPath
+         id="clip480">
+        <path
+           d="M-86,-106 L550.742,-106 L550.742,132 L-86,132 L-86,-106 z"
+           id="path1168" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip480)"
+       fill="#000000"
+       fill-opacity="1"
+       opacity="1"
+       stroke="none"
+       stroke-opacity="0"
+       transform="matrix(1,0,0,1,86,106)"
+       id="g1170"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647;fill:#000077;fill-opacity:1">
+      <path
+         d="M0,0 L-8,-4 L-8,4 L0,0 z"
+         fill-rule="nonzero"
+         vector-effect="none"
+         id="path1172"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647;fill:#000077;fill-opacity:1" />
+    </g>
+    <defs
+       id="defs1174">
+      <clipPath
+         id="clip483">
+        <path
+           d="M409.258,154 L1046,154 L1046,392 L409.258,392 L409.258,154 z"
+           id="path1177" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip483)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       stroke-miterlimit="2"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,-409.258,-154)"
+       id="g1179"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647">
+      <path
+         d="M450,260 L487,260"
+         fill-rule="evenodd"
+         vector-effect="none"
+         id="path1181"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647" />
+    </g>
+    <defs
+       id="defs1183">
+      <clipPath
+         id="clip486">
+        <path
+           d="M-196,-116 L440.742,-116 L440.742,122 L-196,122 L-196,-116 z"
+           id="path1186" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip486)"
+       fill="#000000"
+       fill-opacity="1"
+       opacity="1"
+       stroke="none"
+       stroke-opacity="0"
+       transform="matrix(1,0,0,1,196,116)"
+       id="g1188"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647;fill:#000077;fill-opacity:1">
+      <path
+         d="M0,0 L-8,-4 L-8,4 L0,0 z"
+         fill-rule="nonzero"
+         vector-effect="none"
+         id="path1190"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647;fill:#000077;fill-opacity:1" />
+    </g>
+    <defs
+       id="defs1192">
+      <clipPath
+         id="clip489">
+        <path
+           d="M409.258,154 L1046,154 L1046,392 L409.258,392 L409.258,154 z"
+           id="path1195" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip489)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       stroke-miterlimit="2"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,-409.258,-154)"
+       id="g1197"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647">
+      <path
+         d="M525,270 L597,270"
+         fill-rule="evenodd"
+         vector-effect="none"
+         id="path1199"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647" />
+    </g>
+    <defs
+       id="defs1201">
+      <clipPath
+         id="clip492">
+        <path
+           d="M-196,-36 L440.742,-36 L440.742,202 L-196,202 L-196,-36 z"
+           id="path1204" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip492)"
+       fill="#000000"
+       fill-opacity="1"
+       opacity="1"
+       stroke="none"
+       stroke-opacity="0"
+       transform="matrix(1,0,0,1,196,36)"
+       id="g1206"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647;fill:#000077;fill-opacity:1">
+      <path
+         d="M0,0 L-8,-4 L-8,4 L0,0 z"
+         fill-rule="nonzero"
+         vector-effect="none"
+         id="path1208"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647;fill:#000077;fill-opacity:1" />
+    </g>
+    <defs
+       id="defs1210">
+      <clipPath
+         id="clip495">
+        <path
+           d="M409.258,154 L1046,154 L1046,392 L409.258,392 L409.258,154 z"
+           id="path1213" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip495)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       stroke-miterlimit="2"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,-409.258,-154)"
+       id="g1215"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647">
+      <path
+         d="M525,190 L597,190"
+         fill-rule="evenodd"
+         vector-effect="none"
+         id="path1217"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647" />
+    </g>
+    <defs
+       id="defs1219">
+      <clipPath
+         id="clip498">
+        <path
+           d="M-466,-36 L170.742,-36 L170.742,202 L-466,202 L-466,-36 z"
+           id="path1222" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip498)"
+       fill="#000000"
+       fill-opacity="1"
+       opacity="1"
+       stroke="none"
+       stroke-opacity="0"
+       transform="matrix(1,0,0,1,466,36)"
+       id="g1224"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647;fill:#000077;fill-opacity:1">
+      <path
+         d="M0,0 L-8,-4 L-8,4 L0,0 z"
+         fill-rule="nonzero"
+         vector-effect="none"
+         id="path1226"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647;fill:#000077;fill-opacity:1" />
+    </g>
+    <defs
+       id="defs1228">
+      <clipPath
+         id="clip501">
+        <path
+           d="M409.258,154 L1046,154 L1046,392 L409.258,392 L409.258,154 z"
+           id="path1231" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip501)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       stroke-miterlimit="2"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,-409.258,-154)"
+       id="g1233"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647">
+      <path
+         d="M805,190 L867,190"
+         fill-rule="evenodd"
+         vector-effect="none"
+         id="path1235"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647" />
+    </g>
+    <defs
+       id="defs1237">
+      <clipPath
+         id="clip504">
+        <path
+           d="M-425.742,-37.5 L211,-37.5 L211,200.5 L-425.742,200.5 L-425.742,-37.5 z"
+           id="path1240" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip504)"
+       fill="none"
+       opacity="1"
+       stroke="none"
+       stroke-opacity="0"
+       transform="matrix(1,0,0,1,425.742,37.5)"
+       id="g1242"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:none;stroke-opacity:0.94117647">
+      <path
+         d="M-9.49219,0 L9.49219,0 L9.49219,12 L-9.49219,12 L-9.49219,0 z"
+         fill-rule="evenodd"
+         vector-effect="none"
+         id="path1244"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:none;stroke-opacity:0.94117647" />
+    </g>
+    <defs
+       id="defs1246">
+      <clipPath
+         id="clip508">
+        <path
+           d="M0,0 L19,0 L19,12 L0,12 L0,0 z"
+           id="path1249" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip508)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="square"
+       stroke-linejoin="bevel"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,416.25,37.5)"
+       id="g1251"
+       style="stroke-width:0.28693349;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647;fill:#000077;fill-opacity:1">
+      <text
+         fill="#000000"
+         fill-opacity="1"
+         font-family="Arial"
+         font-size="9"
+         font-style="normal"
+         font-weight="400"
+         stroke="none"
+         textLength="16.9844"
+         x="1"
+         xml:space="preserve"
+         y="9"
+         id="text1253"
+         style="stroke-width:0.28693349;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647;fill:#000077;fill-opacity:1">phi1</text>
+    </g>
+    <defs
+       id="defs1255">
+      <clipPath
+         id="clip516">
+        <path
+           d="M-531,-36 L105.742,-36 L105.742,202 L-531,202 L-531,-36 z"
+           id="path1258" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip516)"
+       fill="#000000"
+       fill-opacity="1"
+       opacity="1"
+       stroke="none"
+       stroke-opacity="0"
+       transform="matrix(1,0,0,1,531,36)"
+       id="g1260"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#000077;stroke-opacity:1;fill:#000077;fill-opacity:1">
+      <path
+         d="M0,0 L-8,-4 L-8,4 L0,0 z"
+         fill-rule="nonzero"
+         vector-effect="none"
+         id="path1262"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#000077;stroke-opacity:1;fill:#000077;fill-opacity:1" />
+    </g>
+    <defs
+       id="defs1264">
+      <clipPath
+         id="clip519">
+        <path
+           d="M409.258,154 L1046,154 L1046,392 L409.258,392 L409.258,154 z"
+           id="path1267" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip519)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       stroke-miterlimit="2"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,-409.258,-154)"
+       id="g1269"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#000077;stroke-opacity:1">
+      <path
+         d="M895,190 L932,190"
+         fill-rule="evenodd"
+         vector-effect="none"
+         id="path1271"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#000077;stroke-opacity:1" />
+    </g>
+    <defs
+       id="defs1273">
+      <clipPath
+         id="clip522">
+        <path
+           d="M-531,-81 L105.742,-81 L105.742,157 L-531,157 L-531,-81 z"
+           id="path1276" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip522)"
+       fill="#000000"
+       fill-opacity="1"
+       opacity="1"
+       stroke="none"
+       stroke-opacity="0"
+       transform="matrix(1,0,0,1,531,81)"
+       id="g1278"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647">
+      <path
+         d="M0,0 L-8,-4 L-8,4 L0,0 z"
+         fill-rule="nonzero"
+         vector-effect="none"
+         id="path1280"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647;fill:#000077;fill-opacity:1" />
+    </g>
+    <defs
+       id="defs1282">
+      <clipPath
+         id="clip525">
+        <path
+           d="M409.258,154 L1046,154 L1046,392 L409.258,392 L409.258,154 z"
+           id="path1285" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip525)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       stroke-miterlimit="2"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,-409.258,-154)"
+       id="g1287"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647">
+      <path
+         d="M745,235 L932,235"
+         fill-rule="evenodd"
+         vector-effect="none"
+         id="path1289"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647" />
+    </g>
+    <defs
+       id="defs1291">
+      <clipPath
+         id="clip528">
+        <path
+           d="M-601,-36 L35.7422,-36 L35.7422,202 L-601,202 L-601,-36 z"
+           id="path1294" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip528)"
+       fill="#000000"
+       fill-opacity="1"
+       opacity="1"
+       stroke="none"
+       stroke-opacity="0"
+       transform="matrix(1,0,0,1,601,36)"
+       id="g1296"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647;fill:#000077;fill-opacity:1">
+      <path
+         d="M0,0 L-8,-4 L-8,4 L0,0 z"
+         fill-rule="nonzero"
+         vector-effect="none"
+         id="path1298"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647;fill:#000077;fill-opacity:1" />
+    </g>
+    <defs
+       id="defs1300">
+      <clipPath
+         id="clip531">
+        <path
+           d="M409.258,154 L1046,154 L1046,392 L409.258,392 L409.258,154 z"
+           id="path1303" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip531)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       stroke-miterlimit="2"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,-409.258,-154)"
+       id="g1305"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647">
+      <path
+         d="M970,190 L1002,190"
+         fill-rule="evenodd"
+         vector-effect="none"
+         id="path1307"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647" />
+    </g>
+    <defs
+       id="defs1309">
+      <clipPath
+         id="clip534">
+        <path
+           d="M409.258,154 L1046,154 L1046,392 L409.258,392 L409.258,154 z"
+           id="path1312" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip534)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       stroke-miterlimit="2"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,-409.258,-154)"
+       id="g1314"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647">
+      <path
+         d="M970,235 L1020,235"
+         fill-rule="evenodd"
+         vector-effect="none"
+         id="path1316"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647" />
+    </g>
+    <defs
+       id="defs1318">
+      <clipPath
+         id="clip539">
+        <path
+           d="M45.7422,-610.742 L45.7422,26 L-192.258,26 L-192.258,-610.742 L45.7422,-610.742 z"
+           id="path1321" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip539)"
+       fill="#000000"
+       fill-opacity="1"
+       opacity="1"
+       stroke="none"
+       stroke-opacity="0"
+       transform="matrix(6.12323e-17,-1,1,6.12323e-17,610.742,45.7422)"
+       id="g1323"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#000077;stroke-opacity:1;fill:#000077;fill-opacity:1">
+      <path
+         d="M0,0 L-8,-4 L-8,4 L0,0 z"
+         fill-rule="nonzero"
+         vector-effect="none"
+         id="path1325"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#000077;stroke-opacity:1;fill:#000077;fill-opacity:1" />
+    </g>
+    <defs
+       id="defs1327">
+      <clipPath
+         id="clip542">
+        <path
+           d="M409.258,154 L1046,154 L1046,392 L409.258,392 L409.258,154 z"
+           id="path1330" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip542)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       stroke-miterlimit="2"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,-409.258,-154)"
+       id="g1332"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#000077;stroke-opacity:1">
+      <path
+         d="M1020,235 L1020,208"
+         fill-rule="evenodd"
+         vector-effect="none"
+         id="path1334"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#000077;stroke-opacity:1" />
+    </g>
+    <defs
+       id="defs1336">
+      <clipPath
+         id="clip545">
+        <path
+           d="M225.484,186 L-411.258,186 L-411.258,-52 L225.484,-52 L225.484,186 z"
+           id="path1339" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip545)"
+       fill="#000000"
+       fill-opacity="1"
+       opacity="1"
+       stroke="none"
+       stroke-opacity="0"
+       transform="matrix(-1,1.22465e-16,-1.22465e-16,-1,225.484,186)"
+       id="g1341"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#000077;stroke-opacity:1;fill:#000077;fill-opacity:1">
+      <path
+         d="M0,0 L-8,-4 L-8,4 L0,0 z"
+         fill-rule="nonzero"
+         vector-effect="none"
+         id="path1343"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#000077;stroke-opacity:1;fill:#000077;fill-opacity:1" />
+    </g>
+    <defs
+       id="defs1345">
+      <clipPath
+         id="clip548">
+        <path
+           d="M409.258,154 L1046,154 L1046,392 L409.258,392 L409.258,154 z"
+           id="path1348" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip548)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       stroke-miterlimit="2"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,-409.258,-154)"
+       id="g1350"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647">
+      <path
+         d="M1020,235 L1020,390 L655,390 L655,340 L643,340"
+         fill-rule="evenodd"
+         vector-effect="none"
+         id="path1352"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647" />
+    </g>
+    <defs
+       id="defs1354">
+      <clipPath
+         id="clip551">
+        <path
+           d="M-610.742,-81 L26,-81 L26,157 L-610.742,157 L-610.742,-81 z"
+           id="path1357" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip551)"
+       fill="#000000"
+       fill-opacity="1"
+       opacity="1"
+       stroke="none"
+       stroke-opacity="0"
+       transform="matrix(1,0,0,1,610.742,81)"
+       id="g1359"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#000077;stroke-opacity:1;fill:#000077;fill-opacity:1">
+      <path
+         d="M2.5,0 C2.5,1.38071 1.38071,2.5 0,2.5 C-1.38071,2.5 -2.5,1.38071 -2.5,0 C-2.5,-1.38071 -1.38071,-2.5 0,-2.5 C1.38071,-2.5 2.5,-1.38071 2.5,0 z"
+         fill-rule="evenodd"
+         vector-effect="none"
+         id="path1361"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#000077;stroke-opacity:1;fill:#000077;fill-opacity:1" />
+    </g>
+    <defs
+       id="defs1363">
+      <clipPath
+         id="clip554">
+        <path
+           d="M-86,-26 L550.742,-26 L550.742,212 L-86,212 L-86,-26 z"
+           id="path1366" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip554)"
+       fill="#000000"
+       fill-opacity="1"
+       opacity="1"
+       stroke="none"
+       stroke-opacity="0"
+       transform="matrix(1,0,0,1,86,26)"
+       id="g1368"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647;fill:#000077;fill-opacity:1">
+      <path
+         d="M0,0 L-8,-4 L-8,4 L0,0 z"
+         fill-rule="nonzero"
+         vector-effect="none"
+         id="path1370"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647;fill:#000077;fill-opacity:1" />
+    </g>
+    <defs
+       id="defs1372">
+      <clipPath
+         id="clip557">
+        <path
+           d="M409.258,154 L1046,154 L1046,392 L409.258,392 L409.258,154 z"
+           id="path1375" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip557)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       stroke-miterlimit="2"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,-409.258,-154)"
+       id="g1377"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#000077;stroke-opacity:1;fill:none;fill-opacity:1">
+      <path
+         d="M1030,190 L1044,190 L1044,156 L481,156 L481,180 L487,180"
+         fill-rule="evenodd"
+         vector-effect="none"
+         id="path1379"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#000077;stroke-opacity:1;fill:none;fill-opacity:1" />
+    </g>
+    <defs
+       id="defs1381">
+      <clipPath
+         id="clip560">
+        <path
+           d="M-86,-41 L550.742,-41 L550.742,197 L-86,197 L-86,-41 z"
+           id="path1384" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip560)"
+       fill="#000000"
+       fill-opacity="1"
+       opacity="1"
+       stroke="none"
+       stroke-opacity="0"
+       transform="matrix(1,0,0,1,86,41)"
+       id="g1386"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647;fill:#000077;fill-opacity:1">
+      <path
+         d="M0,0 L-8,-4 L-8,4 L0,0 z"
+         fill-rule="nonzero"
+         vector-effect="none"
+         id="path1388"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647;fill:#000077;fill-opacity:1" />
+    </g>
+    <defs
+       id="defs1390">
+      <clipPath
+         id="clip563">
+        <path
+           d="M409.258,154 L1046,154 L1046,392 L409.258,392 L409.258,154 z"
+           id="path1393" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip563)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       stroke-miterlimit="2"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,-409.258,-154)"
+       id="g1395"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#000077;stroke-opacity:1">
+      <path
+         d="M450,195 L487,195"
+         fill-rule="evenodd"
+         vector-effect="none"
+         id="path1397"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#000077;stroke-opacity:1" />
+    </g>
+    <defs
+       id="defs1399">
+      <clipPath
+         id="clip566">
+        <path
+           d="M225.484,176 L-411.258,176 L-411.258,-62 L225.484,-62 L225.484,176 z"
+           id="path1402" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip566)"
+       fill="#000000"
+       fill-opacity="1"
+       opacity="1"
+       stroke="none"
+       stroke-opacity="0"
+       transform="matrix(-1,1.22465e-16,-1.22465e-16,-1,225.484,176)"
+       id="g1404"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647;fill:#000077;fill-opacity:1">
+      <path
+         d="M0,0 L-8,-4 L-8,4 L0,0 z"
+         fill-rule="nonzero"
+         vector-effect="none"
+         id="path1406"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647;fill:#000077;fill-opacity:1" />
+    </g>
+    <defs
+       id="defs1408">
+      <clipPath
+         id="clip569">
+        <path
+           d="M409.258,154 L1046,154 L1046,392 L409.258,392 L409.258,154 z"
+           id="path1411" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip569)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       stroke-miterlimit="2"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,-409.258,-154)"
+       id="g1413"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647">
+      <path
+         d="M765,355 L664,355 L664,330 L643,330"
+         fill-rule="evenodd"
+         vector-effect="none"
+         id="path1415"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647" />
+    </g>
+    <defs
+       id="defs1417">
+      <clipPath
+         id="clip572">
+        <path
+           d="M225.484,166 L-411.258,166 L-411.258,-72 L225.484,-72 L225.484,166 z"
+           id="path1420" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip572)"
+       fill="#000000"
+       fill-opacity="1"
+       opacity="1"
+       stroke="none"
+       stroke-opacity="0"
+       transform="matrix(-1,1.22465e-16,-1.22465e-16,-1,225.484,166)"
+       id="g1422"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647;fill:#000077;fill-opacity:1">
+      <path
+         d="M0,0 L-8,-4 L-8,4 L0,0 z"
+         fill-rule="nonzero"
+         vector-effect="none"
+         id="path1424"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647;fill:#000077;fill-opacity:1" />
+    </g>
+    <defs
+       id="defs1426">
+      <clipPath
+         id="clip575">
+        <path
+           d="M409.258,154 L1046,154 L1046,392 L409.258,392 L409.258,154 z"
+           id="path1429" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip575)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       stroke-miterlimit="2"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,-409.258,-154)"
+       id="g1431"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647">
+      <path
+         d="M680,320 L643,320"
+         fill-rule="evenodd"
+         vector-effect="none"
+         id="path1433"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647" />
+    </g>
+    <defs
+       id="defs1435">
+      <clipPath
+         id="clip578">
+        <path
+           d="M-86,-121 L550.742,-121 L550.742,117 L-86,117 L-86,-121 z"
+           id="path1438" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip578)"
+       fill="#000000"
+       fill-opacity="1"
+       opacity="1"
+       stroke="none"
+       stroke-opacity="0"
+       transform="matrix(1,0,0,1,86,121)"
+       id="g1440"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647;fill:#000077;fill-opacity:1">
+      <path
+         d="M0,0 L-8,-4 L-8,4 L0,0 z"
+         fill-rule="nonzero"
+         vector-effect="none"
+         id="path1442"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647;fill:#000077;fill-opacity:1" />
+    </g>
+    <defs
+       id="defs1444">
+      <clipPath
+         id="clip581">
+        <path
+           d="M409.258,154 L1046,154 L1046,392 L409.258,392 L409.258,154 z"
+           id="path1447" />
+      </clipPath>
+    </defs>
+    <g
+       clip-path="url(#clip581)"
+       fill="none"
+       opacity="1"
+       stroke="#000000"
+       stroke-linecap="butt"
+       stroke-linejoin="miter"
+       stroke-miterlimit="2"
+       stroke-opacity="1"
+       stroke-width="1"
+       transform="matrix(1,0,0,1,-409.258,-154)"
+       id="g1449"
+       style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647">
+      <path
+         d="M605,330 L480,330 L480,275 L487,275"
+         fill-rule="evenodd"
+         vector-effect="none"
+         id="path1451"
+         style="stroke-width:0.4266669;stroke-miterlimit:4;stroke-dasharray:none;stroke:#00007f;stroke-opacity:0.94117647" />
+    </g>
+  </g>
+</svg>
