@@ -54,7 +54,7 @@ In an ordinary programming language, the second statement would override the fir
 
 As shown above it is possible to define complex equations simply by stating the necessary expressions, just like one would write them on paper.
 We will use this in order to implement the system shown above.
-\Cref{lst:inertial-codj} shows a direct implementation of \cref{eq:inertial}.
+\Cref{lst:inertial-code} shows a direct implementation of \cref{eq:inertial}.
 
 \begin{listing}[ht]
     \inputminted[fontsize=\footnotesize]{Modelica}{\rootfolder/Models/MasterProject/Models/InertialCode.mo}
@@ -145,10 +145,10 @@ This is very useful when different parts of models are created by different peop
 \subsection{Mixed-domain models}
 
 Modelica allows for easy creation of mixed-domain models \cite{clauss2002}.
-\Cref{fig:inertial-actuator} shows one such example, where the actuator from \cref{fig:inertial-architecture} is implemented as a simple model of an induction motor.
+\Cref{fig:inertial-architecture-blowup} shows one such example, where the actuator from \cref{fig:inertial-architecture} is implemented as a simple model of an induction motor.
 Additionally, the resistor in the model has a heat port, which allows the motor to be thermally connected to the rest of the system.
 While this simple example is limited to electric flow, torque and optionally heatflow, it is possible to model any number of physical quantities in Modelica.
-A similar component to that shown in \cref{fig:inertial-actuator} could, as an example, easily be connected to a valve that controls liquid flow, all in one model.
+A similar component to that shown in \cref{fig:inertial-architecture-blowup} could, as an example, easily be connected to a valve that controls liquid flow, all in one model.
 The Modelica library contains more detailed examples showing how to model heat flow in an electric motor\footnotemark.
 
 This can also be extended to model phenomenom outside of the engineering disciplines.

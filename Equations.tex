@@ -125,10 +125,30 @@
 %<*eq007>
 \begin{gather*}
     \begin{aligned}
-        i_{1}\left(t\right) &= \frac{1}{R_{1}} \left(u\left(t\right) - \frac{1}{C} \int i_{1}\left(t\right) \\
-        i_{2}\left(t\right) &= \frac{1}{L} 
+        \dot{\varphi}_{1}         &= \omega_{1} \\
+        \dot{\varphi}_{2}         &= \omega_{2} \\
+        J_{1} \dot{\omega}_{1}    &= \tau\left(t\right) - \tau_{2} \\
+        J_{2} \dot{\omega}_{1}    &= \tau_{2} \\
+        \varphi_{1}               &= \varphi_{2}
     \end{aligned}
 \end{gather*}
 %</eq007>
+
+%<*eq008>
+\begin{subequations}
+    \begin{equation}
+	\begin{gathered} \label{eq:dae-continuous}
+	    f(\vec{x}(t), \dot{\vec{x}}(t), \vec{u}(t), \vec{y}(t), t, \vec{q}(t_{e}), \vec{q}_{pre}(t_{e}), \vec{p}, \vec{c}(t_{e})) = 0 \\
+	    g(\vec{x}(t), \vec{u}(t), \vec{y}(t), t, \vec{q}(t_{e}), \vec{q}_{pre}(t_{e}), \vec{p}, \vec{c}(t_{e})) = 0
+	\end{gathered}
+    \end{equation}
+    \begin{equation} \label{eq:dae-discrete}
+	\vec{q}(t_{e}) := f_{q}(\vec{x}(t_{e}), \dot{\vec{x}}(t_{e}), \vec{u}(t_{e}), \vec{y}(t_{e}), t_{e}, \vec{q}_{pre}(t_{e}), \vec{p}, \vec{c}(t_{e}))
+    \end{equation}
+    \begin{equation} \label{eq:dae-conditions}
+	\vec{c}(t_{e}) := f_{e}(\vec{q}^{B}(t_{e}), \vec{q}^{B}_{pre}(t_{e}), \vec{p}^{B}, \vec{rel}(\vec{v}(t_{e})))
+    \end{equation}
+\end{subequations}
+%</eq008>
 
 \end{document}

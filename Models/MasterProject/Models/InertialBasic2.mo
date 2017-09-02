@@ -2,9 +2,9 @@ within MasterProject.Models;
 model InertialBasic2
   import MRC = Modelica.Mechanics.Rotational.Components;
 
-  MRC.Fixed fixed1;
-  MRC.Inertia inertia1(J = 0.4),
-              inertia2(J = 1.0);
+  MRC.Fixed        fixed1;
+  MRC.Inertia      inertia1(J = 0.4),
+                   inertia2(J = 1.0);
   MRC.SpringDamper springDamper1(c = 11.0, d = 0.2),
                    springDamper2(c = 5.0, d = 1.0);
 
