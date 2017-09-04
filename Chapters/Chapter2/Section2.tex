@@ -13,7 +13,7 @@ Because Modelica supports acausal modelling, the process of running the simulati
 \subsection{System transformation}
 
 Before a model can be used, it must first be translated into a form which can be simulated in an efficient manner.
-Typically, Modelica models are translated into a flat system of differential and algebraic equations (DAEs) \cite{lundvall2008}.
+Typically, Modelica models are translated into a flat system of differential and algebraic equations (DAEs) \cite{openmodelica.org:lundvall:sims:2005}.
 The translation process expands base classes, redeclarations and so on, to form the flat set of equations.
 This is done to create a system of equations that is free of the original object hierarchy of the model.
 Modelica allows for the creation of very large models, where real-life use cases can scale to a size of more than a hundred thousand variables
@@ -26,7 +26,7 @@ Before simulation the systems are processed to reduce the number of unknowns, us
 
 As the systems created by Modelica are composed from acausal components, the complete system will generally have fewer states than the total sum of the states of the components.
 This is referred to as the DAE system having a high index.
-Solving such a systems requires that equations are differentiated, as we will see in the following example which is adapted from \cite{claus2002}.
+Solving such a systems requires that equations are differentiated, as we will see in the following example which is adapted from \cite{clauss2002}.
 
 \begin{figure}[ht]
 	\begin{minipage}[c]{.75\columnwidth}
@@ -50,7 +50,7 @@ To solve this problem, the standard technique is as follows\cite{clauss2002}:
     \item Select state variables (at compiletime if possible, or at runtime)
 \end{itemize}
 
-The final representation of the system consists of both the continuous-time and discrete-time behavior of the system\cite{lundvall2008}:
+The final representation of the system consists of both the continuous-time and discrete-time behavior of the system\cite{openmodelica.org:lundvall:sims:2005}:
 \loadeq{\rootfolder/Equations.tex}{008}
 
 The continuous-time behavior, between events, is given by \cref{eq:dae-continuous}.
@@ -67,7 +67,7 @@ The equation warrants some explanation.
     \item $\vec{rel}(\vec{v}(t_{e}))$ is a boolean vector of relevant relation expressions in the model; $\vec{v}(t_{e}$ is a vector of all variables in the vectors above.
 \end{itemize}
 
-The equations are more thoroughly explained in \cite{lundvall2008}.
+The equations are more thoroughly explained in \cite{openmodelica.org:lundvall:sims:2005}.
 
 \subsection{DAE solution algorithm}
 
@@ -80,7 +80,7 @@ The equations are more thoroughly explained in \cite{lundvall2008}.
 
 As stated, the system description in \cref{eq:dae-continuous} is only valid between events, and the simulation is therefore performed piecewise.
 At event instants, points in time where the model is non-continuous, the hybrid DAE system must be reinitialized before simulation continues.
-A flowchart describing the procedure is shown in \cite{lundvall2008}, and reproduced in \cref{fig:dae-flowchart}.
+A flowchart describing the procedure is shown in \cite{openmodelica.org:lundvall:sims:2005}, and reproduced in \cref{fig:dae-flowchart}.
 The following steps are performed when simulating the system:
 
 \begin{enumerate}

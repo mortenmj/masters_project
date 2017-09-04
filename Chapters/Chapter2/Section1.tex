@@ -21,7 +21,7 @@ Modelica is object-oriented, and each component in a composition is implemented 
 In order to illustrate the relative advantages and disadvantages between Modelica and the other simulation packages we review later, we will use the following example repeatedly \footnotemark.
 Consider a simple drive train, consisting of two rotational inertial loads, with a spring-damper between the two, and between the second load and a rigid frame as shown in \cref{fig:inertial}.
 
-\footnotetext{The example is inspired by Modelica By Example, by Michael M. Tiller \cite{tiller2014}.}
+\footnotetext{The example is inspired by Modelica By Example, by Michael M. Tiller \cite{openmodelica.org:tiller:2014}.}
 
 \begin{figure}[ht]
     \iimage{Figures/InertialBasic}
@@ -36,7 +36,7 @@ In an imperative language, statements are evaluated sequentially and assigning a
 This is not the case in Modelica.
 In Modelica, these two statements are both simultaneously valid:
 
-\inputminted[fontsize=\footnotesize]{Modelica}{Listings/simultaneous.txt}
+\inputminted[fontsize=\footnotesize]{Modelica}{\rootfolder/Chapters/Chapter2/Listings/simultaneous.txt}
 
 To look at how this is used to define a physical system, we will implement the equations for the model from \cref{fig:inertial} in text form.
 The equations for the system are derived by Newton's second law for rotation.
@@ -91,9 +91,9 @@ In \cref{fig:inertial-expanded} we have added a torque input to the left of the 
 Also, a PID controller has been added which drives the shaft speed to follow a reference signal.
 
 \begin{figure}[ht]
-	\iimage{Figures/InertialExpanded}
-	\caption{Expanded system}
-	\label{fig:inertial-expanded}
+    \iimage{Figures/InertialExpanded}
+    \caption{Expanded system}
+    \label{fig:inertial-expanded}
 \end{figure}
 
 As we can see, the model roughly consists of five subsystems: a reference signal, an actuator, the inertial system itself, a speed sensor, and a controller.
@@ -102,9 +102,9 @@ This allows us to hide implementation details, and gives a clearer view of how t
 This generalised model is shown in \cref{fig:inertial-architecture}.
 
 \begin{figure}[ht]
-	\iimage{Figures/InertialArchitecture}
-	\caption{System with replaceable subsystems}
-	\label{fig:inertial-architecture}
+    \iimage{Figures/InertialArchitecture}
+    \caption{System with replaceable subsystems}
+    \label{fig:inertial-architecture}
 \end{figure}
 
 Here, each block is a separate model which can be developed independently of the main model.
@@ -115,9 +115,9 @@ This process can be repeated indefinitely, and the model shown in the figure mig
 Structuring models in this way makes them easier to understand, and allows for reusability.
 
 \begin{figure}[ht]
-	\iimage{Figures/InertialArchitectureBlowup}
-        \caption{Expanded view of the actuator (left) and plant subsystem (right)}
-	\label{fig:inertial-architecture-blowup}
+    \iimage{Figures/InertialArchitectureBlowup2}
+    \caption{Expanded view of the actuator (left) and plant subsystem (right)}
+    \label{fig:inertial-architecture-blowup}
 \end{figure}
 
 We can take this process one step further, and replace the subsystems with virtual subsystems, or interfaces, to get even greater reusability from our models.
@@ -163,13 +163,11 @@ As an example, the PhysioLibrary project publishes a Modelica library for modell
     \centering
     \subcaptionbox{Component implementation\label{fig:rlc-comp}}
         {
-            \def\svgwidth{0.37\columnwidth}\tiny
-            \input{Figures/RLCcomponents.pdf_tex}
+            \iimage[0.6]{Figures/RLCcomponents}
         }
     \subcaptionbox{Block implementation\label{fig:rlc-block}}
         {
-            \def\svgwidth{0.60\columnwidth}\tiny
-            \input{Figures/RLCblocks.pdf_tex}
+            \iimage{Figures/RLCblocks}
         }
     \caption{RLC circuit comparing component and block implementations}
     \label{fig:rlc}
@@ -195,7 +193,5 @@ To illustrate this, we implement a simple parallel RLC circuit.
 In \cref{fig:rlc-comp} we create an acausal model, by dragging and dropping components that implement the behavior of the circuit elements.
 Compare to \cref{fig:rlc-block} which implements the same circuit using block components.
 As before, these circuit components can easily be replaced by plug-compatible versions, making it trivial to e.g. replace the resistors with components that also model heat buildup.
-
-
 
 \end{document}
