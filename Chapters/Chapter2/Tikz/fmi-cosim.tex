@@ -1,0 +1,34 @@
+\RequirePackage{luatex85}
+\documentclass[tikz]{standalone}
+\usepackage{tikz}
+\usepackage{tikz-uml}
+\usetikzlibrary{shapes,arrows,positioning}
+
+\begin{document}
+    \pagestyle{empty}
+
+    \tikzstyle{toolbox}    = [rectangle, draw, node distance=5em, text centered, minimum height=10em, minimum width=10em]
+    \tikzstyle{fmubox}     = [rectangle, draw, node distance=5em, minimum height=4em, minimum width=10em]
+    \tikzstyle{textbox}    = [rectangle, node distance=0.2em, minimum height=1.5em, minimum width=4em]
+    \tikzstyle{nestedbox}  = [rectangle, draw, node distance=0.2em, minimum height=1.5em, minimum width=4em]
+
+    \tikzstyle{line}       = [draw, very thick, color=black!50, -latex']
+
+    \begin{tikzpicture}[node distance = 0.5cm, auto]
+        \node[toolbox](tool){};
+        \node[textbox, above= of tool.center]{Tool};
+
+        \node[fmubox, right= of tool.north east, anchor=north west](fmu1){};
+        \node[textbox, above= of fmu1.center]{FMU};
+        \node[nestedbox, below left= of fmu1.center]{Model};
+        \node[nestedbox, below right= of fmu1.center]{Solver};
+
+        \node[fmubox, right= of tool.south east, anchor=south west](fmu2){};
+        \node[textbox, above= of fmu2.center]{FMU};
+        \node[nestedbox, below left= of fmu2.center]{Model};
+        \node[nestedbox, below right= of fmu2.center]{Solver};
+
+        \umlassemblyconnector[interface={\space}, anchor1=30]{tool}{fmu1}
+        \umlassemblyconnector[interface={\space}, anchor1=-30]{tool}{fmu2}
+    \end{tikzpicture}
+\end{document}
