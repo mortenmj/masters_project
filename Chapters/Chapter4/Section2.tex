@@ -7,4 +7,27 @@
 \begin{document}
 \section{SED-ML}
 
+The SED-ML language allows the researcher to specify all stages of the simulation itself, independent of the model that is simulated.
+An experiment described with SED-ML consists of several components.
+
+\begin{enumerate}
+    \item The Model class defines which models should be used in the simulation.
+    \item The Change class allows models to be tweaked for a particular simulation, including changes to attributes or additions to the model specification itself.
+    \item The Simulation class specifies which of a number of predefined simulation algorithms to use for the experiment. \cite{sedml-specification}
+\end{enumerate}
+
+The simulation process broadly consists of three steps:
+
+\begin{enumerate}
+    \item Select the model to use. Any required fine-tuning, such as changing the models initial values, can be applied without requiring a change to the model specification itself.
+    \item Specify the simulation algorithm that should be used for the experiment.
+    \item Apply post-processing
+        Here, the raw output from the simulation steps can be processed. For example, the data can be normalised,
+        correlations can be calculated and so on, before the final plots or reports are generated.
+\end{enumerate}
+
+The project behind OpenCOR, called the Physiome Project, expends significant effort to reproduce the models used in scientific publications.
+SED-ML is used to specify the exact simulation parameters needed to reproduce a result the way it appears in literature.
+Indeed, models in the Physiome library are curated and evaluated by how closely they mimick the results they intend to reproduce.
+
 \end{document}

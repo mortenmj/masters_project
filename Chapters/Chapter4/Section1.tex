@@ -5,17 +5,14 @@
 \providecommand{\rootfolder}{../..} % Relative path to main.tex
 \documentclass[\rootfolder/main.tex]{subfiles}
 \begin{document}
-\section{OpenCOR}
+\section{CellML}
 
 OpenCOR is an open source simulation package made for the biology field.
 It is modular to the point where all features are in the form of plugins \cite{10.3389/fphys.2015.00026}.
-Any description of OpenCOR would be incomplete without a description of the language it uses to describe models, and the language used for describing simulation setups.
-OpenCOR uses CellML and SED-ML, both XML-based markup languages, to describe the model and the simulation setup respectively.
+OpenCOR uses two input languages, CellML and SED-ML, both XML-based markup languages, to describe the model and the simulation setup respectively.
+The software includes an editor for each language so that the user can create models without writing XML directly.
 
-\subsection{CellML}
-
-
-\subsubsection{Introduction}
+\subsection{Language features}
 
 CellML \cite{cuellar2003} is an XML-based format that is used to describe the structure of models.
 The information included in the model can broadly be described as twofold.
@@ -23,23 +20,40 @@ First, it includes the various parts of the model, and how these are combined in
 This information is specified separately from the simulation specification, as we shall see later.
 Second, the language allows for metadata to be added to the model, in order to categorize and organize models and model parts.
 
+To specify the model we have used previously, in CellML, we first define the units that are used in the model.
+The CellML specification includes SI units, but it is useful to define complex units and give them a descriptive name.
+
+\begin{listing}[ht]
+    \inputminted[fontsize=\footnotesize, lastline=27]{matlab}{\rootfolder/Models/OpenCOR/Inertial.input}
+    \caption{Unit definitions for the inertial system\label{lst:inertial-cellml-units}}
+\end{listing}
+
+Then, the defined units are used to specify the model.
+The model specification is similar to the Modelica code from \ref{Chapter02}.
+
+\begin{listing}[ht]
+    \inputminted[fontsize=\footnotesize, firstline=28]{matlab}{\rootfolder/Models/OpenCOR/Inertial.input}
+    \caption{Model definition for the inertial system\label{lst:inertial-cellml-units}}
+\end{listing}
+
+This is turned into MathML, which would be tedious to write manually, behind the scenes.
+
 Being an XML-based standard, CellML is extensible.
 In addition to the above, CellML allows for model designers to add information written in other XML-based languages to the model.
 This can be equations written in MathML, textual and graphical documentation in HTML (currently planned), data sets and so on.
 
-While CellML is designed to be domain independent, the language is flexible enough that is is used to implement purely biological as well as electrochemical and mechanical models \cite{cuellar2003}
-
-\subsubsection{Model structure}
+While CellML is mainly used in biology, it is designed to be domain independent.
+The language is flexible enough that is is used to implement purely biological as well as electrochemical and mechanical models \cite{cuellar2003}
 
 CellML models are constructed as a network of interconnected components.
 The components may contain variables as well as mathematical equations specified with MathML.
 Variables belong to a single component, but may be mapped to a variable in another component by specifying a connection.
 Two components may only have one connection, and all variable mappings must therefore be declared in the same place
-This enforces a level of organization to the sometimes complex mappings between components \cite{cuellar2003}.
+This is intended to enforce a level of organization to the sometimes complex mappings between components \cite{cuellar2003}.
 
 Variables in CellML are always expressed in units.
 This ensures rigor when shared models are connected, as incompatible variables cannot be mapped to one another.
-For example a variable declared with length units, say meters, cannot be mapped to another variable with mass units, for instance kilograms.
+For example a variable declared in units of meters cannot be mapped to another variable with mass units, for instance kilograms.
 However, it is perfectly possible to connect a variable using kilograms to one using pounds, and have the units automatically converted.
 This is possible by defining new units in terms of the dictionary of standard units included with CellML, which include the base and derived SI units.
 This allows researchers to work in their preferred units, and still share their work with the rest of the scientific community \cite{cuellar2003}.
@@ -54,26 +68,6 @@ By using a containment group the modeller can specify that one component contain
 Metadata in CellML models can include information about the author, references to literature and various information that puts the model into the proper biological context \cite{cuellar2003}.
 This information allows other researchers to search for
 
-\subsection{SED-ML}
-
-The SED-ML language allows the researcher to specify all stages of the simulation itself, independent of the model that is simulated.
-An experiment described with SED-ML consists of several components.
-
-\begin{enumerate}
-    \item The Model class defines which models should be used in the simulation.
-    \item The Change class allows models to be tweaked for a particular simulation, including changes to attributes or additions to the model specification itself.
-    \item The Simulation class specifies which of a number of predefined simulation algorithms to use for the experiment. \cite{sedml-specification}
-\end{enumerate}
-
-The simulation process broadly consists of three steps:
-
-\begin{enumerate}
-    \item Select the model to use. Any required fine-tuning, such as changing the models initial values, can be applied without requiring a change to the model specification itself.
-    \item Specify the simulation algorithm that should be used for the experiment.
-    \item Apply post-processing
-        Here, the raw output from the simulation steps can be processed. For example, the data can be normalised,
-        correlations can be calculated and so on, before the final plots or reports are generated.
-\end{enumerate}
-
+\subsubsection{Model sharing}
 
 \end{document}
