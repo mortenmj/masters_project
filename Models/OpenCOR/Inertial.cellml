@@ -1,0 +1,148 @@
+<?xml version='1.0'?>
+<model name="Inertial" xmlns="http://www.cellml.org/cellml/1.1#" xmlns:cellml="http://www.cellml.org/cellml/1.1#">
+    <units name="MomentOfInertia">
+        <unit units="kilogram"/>
+        <unit exponent="2" units="meter"/>
+    </units>
+    <units name="RotationalSpringConstant">
+        <unit units="newton"/>
+        <unit units="meter"/>
+        <unit exponent="-1" units="radian"/>
+    </units>
+    <units name="RotationalDampingConstant">
+        <unit units="newton"/>
+        <unit units="meter"/>
+        <unit units="second"/>
+        <unit exponent="-1" units="radian"/>
+    </units>
+    <units name="Angle">
+        <unit units="radian"/>
+    </units>
+    <units name="AngularVelocity">
+        <unit units="radian"/>
+        <unit exponent="-1" units="second"/>
+    </units>
+    <component name="Driveshaft">
+        <variable initial_value="0.4" name="J_1" units="MomentOfInertia"/>
+        <variable initial_value="1.0" name="J_2" units="MomentOfInertia"/>
+        <variable initial_value="11.0" name="c_1" units="RotationalSpringConstant"/>
+        <variable initial_value="5.0" name="c_2" units="RotationalSpringConstant"/>
+        <variable initial_value="0.2" name="d_1" units="RotationalDampingConstant"/>
+        <variable initial_value="1.0" name="d_2" units="RotationalDampingConstant"/>
+        <variable initial_value="0" name="phi_1" units="Angle"/>
+        <variable initial_value="1.0" name="phi_2" units="Angle"/>
+        <variable initial_value="0" name="omega_1" units="AngularVelocity"/>
+        <variable initial_value="0" name="omega_2" units="AngularVelocity"/>
+        <variable name="time" units="second"/>
+        <math xmlns="http://www.w3.org/1998/Math/MathML">
+            <apply>
+                <eq/>
+                <apply>
+                    <diff/>
+                    <bvar>
+                        <ci>time</ci>
+                    </bvar>
+                    <ci>phi_1</ci>
+                </apply>
+                <ci>omega_1</ci>
+            </apply>
+            <apply>
+                <eq/>
+                <apply>
+                    <diff/>
+                    <bvar>
+                        <ci>time</ci>
+                    </bvar>
+                    <ci>phi_2</ci>
+                </apply>
+                <ci>omega_2</ci>
+            </apply>
+            <apply>
+                <eq/>
+                <apply>
+                    <diff/>
+                    <bvar>
+                        <ci>time</ci>
+                    </bvar>
+                    <ci>omega_1</ci>
+                </apply>
+                <apply>
+                    <divide/>
+                    <apply>
+                        <plus/>
+                        <apply>
+                            <times/>
+                            <ci>c_1</ci>
+                            <apply>
+                                <minus/>
+                                <ci>phi_2</ci>
+                                <ci>phi_1</ci>
+                            </apply>
+                        </apply>
+                        <apply>
+                            <times/>
+                            <ci>d_1</ci>
+                            <apply>
+                                <minus/>
+                                <ci>omega_2</ci>
+                                <ci>omega_1</ci>
+                            </apply>
+                        </apply>
+                    </apply>
+                    <ci>J_1</ci>
+                </apply>
+            </apply>
+            <apply>
+                <eq/>
+                <apply>
+                    <diff/>
+                    <bvar>
+                        <ci>time</ci>
+                    </bvar>
+                    <ci>omega_2</ci>
+                </apply>
+                <apply>
+                    <divide/>
+                    <apply>
+                        <minus/>
+                        <apply>
+                            <minus/>
+                            <apply>
+                                <plus/>
+                                <apply>
+                                    <times/>
+                                    <ci>c_1</ci>
+                                    <apply>
+                                        <minus/>
+                                        <ci>phi_1</ci>
+                                        <ci>phi_2</ci>
+                                    </apply>
+                                </apply>
+                                <apply>
+                                    <times/>
+                                    <ci>d_1</ci>
+                                    <apply>
+                                        <minus/>
+                                        <ci>omega_1</ci>
+                                        <ci>omega_2</ci>
+                                    </apply>
+                                </apply>
+                            </apply>
+                            <apply>
+                                <times/>
+                                <ci>c_2</ci>
+                                <ci>phi_2</ci>
+                            </apply>
+                        </apply>
+                        <apply>
+                            <times/>
+                            <ci>d_2</ci>
+                            <ci>omega_2</ci>
+                        </apply>
+                    </apply>
+                    <ci>J_2</ci>
+                </apply>
+            </apply>
+        </math>
+    </component>
+</model>

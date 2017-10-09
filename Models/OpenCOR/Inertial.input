@@ -1,0 +1,48 @@
+def model Inertial as
+    def unit MomentOfInertia as
+        unit kilogram;
+        unit meter {expo: 2};
+    enddef;
+    
+    def unit RotationalSpringConstant as
+        unit newton;
+        unit meter;
+        unit radian {expo: -1};
+    enddef;
+
+    def unit RotationalDampingConstant as
+        unit newton;
+        unit meter;
+        unit second;
+        unit radian {expo: -1};
+    enddef;
+
+    def unit Angle as
+        unit radian;
+    enddef;
+
+    def unit AngularVelocity as
+        unit radian;
+        unit second {expo: -1};
+    enddef;
+
+    def comp Driveshaft as
+        var J_1: MomentOfInertia {init: 0.4};
+        var J_2: MomentOfInertia {init: 1.0};
+        var c_1: RotationalSpringConstant {init: 11.0};
+        var c_2: RotationalSpringConstant {init: 5.0};
+        var d_1: RotationalDampingConstant {init: 0.2};
+        var d_2: RotationalDampingConstant {init: 1.0};
+        var phi_1: Angle {init: 0};
+        var phi_2: Angle {init: 1.0};
+        var omega_1: AngularVelocity {init: 0};
+        var omega_2: AngularVelocity {init: 0};
+        var time: second;
+
+        ode(phi_1, time) = omega_1;
+        ode(phi_2, time) = omega_2;
+        ode(omega_1, time) = (c_1*(phi_2-phi_1)+d_1*(omega_2-omega_1))/J_1;
+        ode(omega_2, time) = (c_1*(phi_1-phi_2)+d_1*(omega_1-omega_2)
+            -c_2*phi_2-d_2*omega_2)/J_2;
+    enddef;
+enddef;
