@@ -7,15 +7,137 @@
 \begin{document}
 \section{Language features}
 
+While Matlab offers many different programming paradigms, and both numerical and symbolic mathematics, it is most known as a numerical scripting language.
+For this reason, we will first and foremost review these capabilities in the language.
+
+In addition to the Matlab programming language, Matlab also allows for modelling using graphical blocks in Simulink.
+However, it is noteworthy that these are not one and the same.
+While we saw in \ref{Chapter02} that in Modelica, graphical models were a representation of a text based specification, in Matlab these are separate things.
+In Matlab, these are separate.
+We may create models using state space representations, transfer functions, algorithms or a combination thereof in the Matlab language.
+We may also create models using graphical components, either causal or acausal as we shall see.
+Furthermore, models created in the Matlab language can be included as components in a graphical model, using what is called an s-function.
+However, a Simulink model is in a binary format, and there is no underlying Matlab code that may be edited.
+
+To illustrate some features of the language, we will revisit the example used previously, with the coupled driveshaft.
+The equations for this system were shown in \cref{eq:inertial}.
+To implement this system in Matlab, we first change it into matrix form.
+If we let $\vec{x}{t}$ be the states, $\vec{u}{t}$ be the inputs and $\vec{y}{t}$ be the outputs of the system, any such system can be represented in the following form:
+
+\loadeq{\rootfolder/Equations.tex}{003} % State space representation of the system in vector/matrix form
+
+Matlab allows for systems to be modelled in several different ways.
+To illustrate this, we will return to the same drive shaft example as used in \ref{Chapter02}.
+The equations shown in \cref{eq:inertial} can be transformed into state-space form.
+
+\Cref{lst:inertialmatlab} shows \cref{eq:inertial} implemented in the Matlab language, with the same example values used in \cref{fig:inertial};
+
+While perhaps most known as a scripting language, Matlab offers many features from object-oriented languages.
+
 \begin{listing}[ht]
-    \inputminted[fontsize=\footnotesize, firstline=1, lastline=8]{matlab}{\rootfolder/Models/Matlab/InertialMatlab.m}
-    \caption{Inertial system implemented numerically in Matlab}
+    \inputminted[fontsize=\footnotesize, firstline=1, lastline=9]{matlab}{\rootfolder/Models/Matlab/InertialMatlab.m}
+    \caption{Inertial system implemented numerically in Matlab\label{lst:inertialmatlab}}
 \end{listing}
 
+This creates a state space object which can be used with a number of other methods available in Matlab.
+It is also possible to transform this into a transfer function object, and use any number of Matlab methods made for analysing these.
+The system can be analyzed to find initial response, step response and so forth.
+Additionally, Matlab optionally includes toolboxes with a rich set of tools for control system creation, which can analyze the system and help the system designer do controller tuning.
+
+\section{Simulink modelling}
+
+In addition to specifying the state space or transfer function representations of the system in the Matlab language, it is possible to specify
+the system equations using block components in the graphical interface Simulink.
+The components used in Simulink are purely causal, and as such the system must be built from components such as adders, multipliers and integrators.
+To compare this with the acausal modelling paradigm shown earlier, the same system is also implemented in Simulink.
+
+Generally, the simplest approach when implementing a system of differential equations in Simulink is to start with the integration blocks, and work backwards.
+Unfortunately, as the model must be made from low-level components the possibility of making a mistake if that much greater.
+The author needed significantly more time to create this model compared to the implementation in \ref{Chapter02}.
+
 \begin{figure}[ht]
-    \iimage{Figures/InertialSimulink}
-    \caption{Inertial system implemented in Simulink}
-    \label{fig:inertial-simulink}
+    \centering
+    \tiny
+    \includesvg[width=0.8\columnwidth]{Figures/InertialSimulink}
+    \caption{Inertial system implemented in Simulink.\label{fig:inertial-simulink}}
 \end{figure}
+
+The block diagram equivalent of \cref{eq:inertial} is shown in \cref{fig:inertial-simulink}.
+Note that the input torque is added to the term for $J_{1} \der{\omega_{1}}$.
+Whereas adding an input term in Modelica required nothing more than to connect the input source to the left-hand side of the first inertia component,
+adding an input term in this model requires understanding the underlying equations and correctly identifying the proper way to change the model.
+
+We expand the model in the same was as we did previously, by adding a reference source and a controller to drive the output state of the system to the desired value.
+The plant has been turned into a subsystem, to reduce clutter in the model.
+Note that the plant outputs $\omega$ directly, while previously we added a sensor which differentiated $\varphi$ to solve for $\omega$.
+As Matlab solves this numerically, adding a differentiator is troublesome and was skipped in the example.
+
+\begin{figure}[ht]
+    \centering
+    \footnotesize
+    \includesvg[width=0.8\columnwidth]{Figures/InertialSimulinkExpanded}
+    \caption{Inertial system expanded.\label{fig:inertial-simulink-expanded}}
+\end{figure}
+
+In \ref{Chapter02} we saw how partial models could be instantiated with specific components.
+This is useful for example in order to compare variants of two controllers.
+In order to replace parts of models in Simulink there are a couple of approaches that can be used.
+First, for simple components, we may use the \emph{replace\_block()} function.
+\Cref{lst:matlab-replace} shows how to use this to replace the step function in \cref{inertial-simulink-expanded}, to swap in a different source.
+
+\begin{listing}[ht]
+    \inputminted[fontsize=\footnotesize, firstline=1, lastline=4]{matlab}{\rootfolder/Models/Matlab/ReplaceSource.m}
+    \caption{Replacing the reference signal source programmatically.\label{lst:matlab-replace}}
+\end{listing}
+
+This works for simple changes, but is limited to single blocks.
+To replace subcomponents, it is necessary to introduce a variant subsystem.
+This is a special type of subsystem that contains one or more plug-compatible variants.
+Simulink connects one of the variants the the inputs and outputs of the subsystem based on the value of a variable.
+This allows for programmatic switching between the variants.
+The selection of a variant can also be made conditional on the choice of another component variant, or any other logical expression for that matter.
+For example, we may configure the system to use a Kalman filter only when a certain controller variant is active.
+Note that the example also shows an empty controller variant, which allows us to run the system with no controller active by choosing this variant.
+
+\begin{figure}[ht]
+    \centering
+    \subcaptionbox{Model overview.\label{fig:inertial-simulink-variant-top}}
+    {
+        \footnotesize
+        \includesvg[width=0.8\columnwidth]{Figures/InertialSimulinkVariant1}
+    }
+    \subcaptionbox{View of the controller subsystem.\label{fig:inertial-simulink-variant-bottom}}
+    {
+        \footnotesize
+        \includesvg[width=0.8\columnwidth]{Figures/InertialSimulinkVariant2}
+    }
+    \caption{Inertial model with variant controller subsystem.\label{fig:inertial-simulink-variant}}
+\end{figure}
+
+This can be combined with running simulations of Simulink models from Matlab scripts in order to compare the effect of various signal sources on the behavior of the model.
+
+While, as we have seen, the model can be made modular and components can have multiple implementations, but there is no mechanism in Matlab/Simulink for
+the types of partial model implementation shown in \cref{fig:inertial-architecture}.
+In effect, this means that while we can create highly configurable models, any such changes requires that the original model is edited.
+
+Furthermore, the Simulink file format is a binary, as opposed to a text, format.
+Therefore, it is not possible to do these changes with a simple text replacement, like we could have done with the model from \cref{fig:inertial-instantiation}.
+
+\section{Simscape modelling}
+
+In addition to the causal modelling done in Simulink above, Matlab also comes with an expansion called Simscape.
+In Simscape, we can model using acausal components like those we saw in \ref{Chapter02}.
+\Cref{fig:inertial-simscape} shows what our model looks like in Simscape.
+
+\begin{figure}[ht]
+    \centering
+        \tiny
+        \includesvg[width=0.8\columnwidth]{Figures/InertialSimscape}
+    \caption{Inertial system in Simscape.\label{fig:inertial-simscape}}
+\end{figure}
+
+Simscape components are not signal-compatible with those in Simulink, but using special converter components we can interface Simscape models with Simulink models.
+This way, we might for example connect the acausal plant implementation above to a causal controller implementation.
+As acausal modelling has already been covered in \ref{Chapter02}, Simscape modelling will not be covered in further detail.
 
 \end{document}
