@@ -6,9 +6,9 @@
 %<*eq001>
 \begin{equation}
     \begin{aligned}
-    \dot{x}_{1} &= a_{11}(t)x_{1}(t) + \cdots + a_{1p}(t)x_{p}(t) + b_{11}(t)u_{1}(t) + \cdots + b_{1q}(t)u_{q}(t)   \\
+    \der{x}_{1} &= a_{11}(t)x_{1}(t) + \cdots + a_{1p}(t)x_{p}(t) + b_{11}(t)u_{1}(t) + \cdots + b_{1q}(t)u_{q}(t)   \\
                 &\vdotswithin{\cdots}                                                                                \\
-    \dot{x}_{p} &= a_{p1}(t)x_{1}(t) + \cdots + a_{pp}(t)x_{p}(t) + b_{p1}(t)u_{1}(t) + \cdots + b_{pq}(t)u_{q}(t)   \\
+    \der{x}_{p} &= a_{p1}(t)x_{1}(t) + \cdots + a_{pp}(t)x_{p}(t) + b_{p1}(t)u_{1}(t) + \cdots + b_{pq}(t)u_{q}(t)   \\
     y_{1}       &= c_{11}(t)x_{1}(t) + \cdots + c_{1p}(t)x_{p}(t) + d_{11}(t)u_{1}(t) + \cdots + d_{1q}(t)u_{q}(t)   \\
                 &\vdotswithin{\cdots}                                                                                \\
     y_{r}       &= c_{r1}(t)x_{1}(t) + \cdots + c_{rp}(t)x_{p}(t) + d_{r1}(t)u_{1}(t) + \cdots + d_{rq}(t)u_{q}(t) 
@@ -82,8 +82,8 @@
 %<*eq003>
 \begin{equation}
     \begin{aligned}
-        \vec{\dot{x}(t)} &= \mat{A(t)}\vec{x(t)} + \mat{B(t)}\vec{u(t)} \\
-        \vec{y(t)}       &= \mat{C(t)}\vec{x(t)} + \mat{D(t)}\vec{u(t)} \\
+        \vec[1]{x}{t} &= \mat{A(t)}\vec{x}{t} + \mat{B(t)}\vec{u}{t} \\
+        \vec{y}{t}    &= \mat{C(t)}\vec{x}{t} + \mat{D(t)}\vec{u}{t} \\
     \end{aligned}
 \end{equation}
 %</eq003>
@@ -91,8 +91,8 @@
 %<*eq004>
 \begin{equation}
     \begin{aligned}
-        s \vec{\dot{X}(s)} = \mat{A(t)}\vec{X(t)} + \mat{B(t)}\vec{U(t)} \\
-        \vec{Y(t)} = \mat{C(t)}\vec{X(t)} + \mat{D(t)}\vec{U(t)} \\
+        s \vec[1]{X}{s} = \mat{A(t)}\vec{X}{t} + \mat{B(t)}\vec{U}{t} \\
+        \vec{Y}{t}      = \mat{C(t)}\vec{X}{t} + \mat{D(t)}\vec{U}{t} \\
     \end{aligned}
 \end{equation}
 %</eq004>
@@ -100,8 +100,8 @@
 %<*eq005>
 \begin{gather*}
     \begin{aligned}
-        J \dot{\omega} &= \sum_{i} \tau_{i} \\
-        \tau &= c\Delta\varphi + d\Delta\dot{\varphi}
+        J \der{\omega} &= \sum_{i} \tau_{i} \\
+        \tau &= c\Delta\varphi + d\Delta\der{\varphi}
     \end{aligned}
 \end{gather*}
 %</eq005>
@@ -110,12 +110,12 @@
 \begin{equation}
     \begin{gathered}
     \begin{aligned}
-        \omega_{1} &= \dot{\varphi}_{1} \\
-        \omega_{2} &= \dot{\varphi}_{2} \\
+        \omega_{1} &= \der{\varphi}_{1} \\
+        \omega_{2} &= \der{\varphi}_{2} \\
     \end{aligned}\\
     \begin{aligned}
-        J_{1} \dot{\omega}_{1} &= c_{1} \left(\varphi_{2} - \varphi_{1}\right) + d_{1} \frac{d\left(\varphi_{2}-\varphi_{1}\right)}{dt} \\
-        J_{2} \dot{\omega}_{2} &= c_{1} \left(\varphi_{1} - \varphi_{2}\right) + d_{1} \frac{d\left(\varphi_{1}-\varphi_{2}\right)}{dt} - c_{2}\varphi_{2} - d_{2}\dot{\varphi}_{2} \\
+        J_{1} \der{\omega}_{1} &= c_{1} \left(\varphi_{2} - \varphi_{1}\right) + d_{1} \frac{d\left(\varphi_{2}-\varphi_{1}\right)}{dt} \\
+        J_{2} \der{\omega}_{2} &= c_{1} \left(\varphi_{1} - \varphi_{2}\right) + d_{1} \frac{d\left(\varphi_{1}-\varphi_{2}\right)}{dt} - c_{2}\varphi_{2} - d_{2}\der{\varphi}_{2} \\
     \end{aligned}
     \end{gathered}
     \label{eq:inertial}
@@ -125,10 +125,10 @@
 %<*eq007>
 \begin{gather*}
     \begin{aligned}
-        \dot{\varphi}_{1}         &= \omega_{1} \\
-        \dot{\varphi}_{2}         &= \omega_{2} \\
-        J_{1} \dot{\omega}_{1}    &= \tau\left(t\right) - \tau_{2} \\
-        J_{2} \dot{\omega}_{1}    &= \tau_{2} \\
+        \der{\varphi}_{1}         &= \omega_{1} \\
+        \der{\varphi}_{2}         &= \omega_{2} \\
+        J_{1} \der{\omega}_{1}    &= \tau\left(t\right) - \tau_{2} \\
+        J_{2} \der{\omega}_{1}    &= \tau_{2} \\
         \varphi_{1}               &= \varphi_{2}
     \end{aligned}
 \end{gather*}
@@ -137,17 +137,18 @@
 %<*eq008>
 \begin{subequations}
     \begin{equation}
-	\begin{gathered} \label{eq:dae-continuous}
-	    f(\vec{x}(t), \dot{\vec{x}}(t), \vec{u}(t), \vec{y}(t), t, \vec{q}(t_{e}), \vec{q}_{pre}(t_{e}), \vec{p}, \vec{c}(t_{e})) = 0 \\
-	    g(\vec{x}(t), \vec{u}(t), \vec{y}(t), t, \vec{q}(t_{e}), \vec{q}_{pre}(t_{e}), \vec{p}, \vec{c}(t_{e})) = 0
-	\end{gathered}
+        \begin{gathered} \label{eq:dae-continuous}
+            f(\vec{x}{t}, \vec[1]{x}{t}, \vec{u}{t}, \vec{y}{t}, t, \vec{q}{t_{e}}, \vec{q_{pre}}{t_{e}}, \vec{p}, \vec{c}{t_{e}}) = 0 \\
+            g(\vec{x}{t}, \vec{u}{t}, \vec{y}{t}, t, \vec{q}{t_{e}}, \vec{q_{pre}}{t_{e}}, \vec{p}, \vec{c}{t_{e}}) = 0
+        \end{gathered}
     \end{equation}
     \begin{equation} \label{eq:dae-discrete}
-	\vec{q}(t_{e}) := f_{q}(\vec{x}(t_{e}), \dot{\vec{x}}(t_{e}), \vec{u}(t_{e}), \vec{y}(t_{e}), t_{e}, \vec{q}_{pre}(t_{e}), \vec{p}, \vec{c}(t_{e}))
+        \vec{q}{t_{e}} := f_{q}(\vec{x}{t_{e}}, \vec[1]{x}{t_{e}}, \vec{u}{t_{e}}, \vec{y}{t_{e}}, t_{e}, \vec{q_{pre}}{t_{e}}, \vec{p}, \vec{c}{t_{e}})
     \end{equation}
     \begin{equation} \label{eq:dae-conditions}
-	\vec{c}(t_{e}) := f_{e}(\vec{q}^{B}(t_{e}), \vec{q}^{B}_{pre}(t_{e}), \vec{p}^{B}, \vec{rel}(\vec{v}(t_{e})))
+        \vec{c}{t_{e}} := f_{e}(\vec{q^{B}}{t_{e}}, \vec{q^{B}_{pre}}{t_{e}}, \vec{p^{B}}, \vec{rel}(\vec{v}{t_{e}}))
     \end{equation}
+    \label{eq:dae-system}
 \end{subequations}
 %</eq008>
 
