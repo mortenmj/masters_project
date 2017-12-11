@@ -22,6 +22,8 @@
 %   PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
+\providecommand{\rootfolder}{.} % Relative path to main.tex
+
 \documentclass[
 12pt, % The default document font size, options: 10pt, 11pt, 12pt
 %oneside, % Two side (alternating margins) for binding by default, uncomment to switch to one side
@@ -31,7 +33,7 @@ onehalfspacing, % Single line spacing, alternatives: onehalfspacing or doublespa
 rnolistspacing, % If the document is onehalfspacing or doublespacing, uncomment this to set spacing in lists to single
 %liststotoc, % Uncomment to add the list of figures/tables/etc to the table of contents
 %toctotoc, % Uncomment to add the main table of contents to the table of contents
-%parskip, % Uncomment to add space between paragraphs
+parskip, % Uncomment to add space between paragraphs
 %nohyperref, % Uncomment to not load the hyperref package
 headsepline, % Uncomment to get a line under the header
 %chapterinoneline, % Uncomment to place the chapter title next to the number on one line
@@ -52,6 +54,7 @@ headsepline, % Uncomment to get a line under the header
 \usepackage{tikz}
 \usepackage{tikzscale}
 \usepackage{tikz-uml}
+\usepackage{caption}
 \usepackage{subcaption}
 \usepgfplotslibrary{external}
 \pgfplotsset{compat=newest}
@@ -123,11 +126,10 @@ headsepline, % Uncomment to get a line under the header
 \usepackage{marginnote}
 \usepackage{subfiles}
 \usepackage{enumitem}
-\providecommand{\rootfolder}{.} % Relative path to main.tex
 
 \usepackage{minted}
 
-\usepackage{svg}
+\usepackage[inkscape=forced,inkscapelatex=false]{svg}
 
 % This should be included last
 \usepackage{mortenmj-macros}
@@ -268,7 +270,7 @@ The acknowledgments and the people to thank go here, don't forget to include you
 
 \listoffigures % Prints the list of figures
 
-%\listoftables % Prints the list of tables
+\listoftables % Prints the list of tables
 
 %----------------------------------------------------------------------------------------
 %    ABBREVIATIONS
@@ -308,7 +310,7 @@ The acknowledgments and the people to thank go here, don't forget to include you
 
 %$\omega$ & angular frequency & \si{\radian} \\
 
-r\end{symbols}
+%\end{symbols}
 
 %----------------------------------------------------------------------------------------
 %    DEDICATION
@@ -332,17 +334,18 @@ r\end{symbols}
 \subfile{Chapters/Chapter3/Chapter3}
 \subfile{Chapters/Chapter4/Chapter4}
 \subfile{Chapters/Chapter5/Chapter5}
+\subfile{Chapters/Chapter6/Chapter6}
 
 %----------------------------------------------------------------------------------------
 %    THESIS CONTENT - APPENDICES
 %----------------------------------------------------------------------------------------
 
-\appendix % Cue to tell LaTeX that the following "chapters" are Appendices
+%\appendix % Cue to tell LaTeX that the following "chapters" are Appendices
 
 % Include the appendices of the thesis as separate files from the Appendices folder
 % Uncomment the lines as you write the Appendices
 
-\subfile{Appendices/AppendixA}
+%\subfile{Appendices/AppendixA}
 %\include{Appendices/AppendixB}
 %\include{Appendices/AppendixC}
 

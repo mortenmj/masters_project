@@ -6,8 +6,132 @@
 
 \label{Chapter01} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
 
-\subfile{\rootfolder/Chapters/Chapter1/Section1.tex}
-\subfile{\rootfolder/Chapters/Chapter1/Section2.tex}
-\subfile{\rootfolder/Chapters/Chapter1/Section3.tex}
+\section{The human computer}
+
+\begin{figure}[ht]
+    \pimage{Figures/comet}
+    \caption[Halley's comet over Cambridge, 1682]
+        {Halley's comet over Cambridge, 1682. \\ Courtesy of the Library of Congress\label{fig:comet}}
+\end{figure}
+
+In order to better understand the history of simulation, it is useful to take a look at the history of computation in general.
+Here, we will see how the need to simulate and predict the behavior of physical systems has been a driving force in the development of both analog and digital computers.
+Analog counting devices, such as the Chinese abacus, have been used for thousands of years to aid in computation
+However, the term originally applied to a profession where people were employed to perform calculations following exact rules.
+The beginnings of the profession can be traced to the work done by Alexis-Claude Clairaut to predict the perihelion, the closest approach to the sun, of Halley's comet.
+The return of the comet had been a matter of scientific discussion since it was first predicted by Edmund Halley in 1695.
+However, the period of time between earlier sightings did not conform to Halley's prediction.
+The orbit calculated by Halley, using his own measurements from the 1682 passing, predicted that the comet would reappear at fixed intervals.
+Dispite this, the appearances of the comet, recorded by Apian in 1531, Kepler in 1607, and Halley himself in 1682, did not conform to a perfectly regular interval.
+Halley and Newton correctly deduced that other celestial bodies influenced the comet's orbit, but the three-body problem was considered insurmountable at the time.
+Beginning in the spring of 1757, one year before the predicted return of the comet, Clairaut began to undertake the calculation of the comet's orbit.
+Clairaut, along with two friends, using differential equations solved by successive approximation \cite{wilson1993}.
+
+\begin{align*} \label{eqn:clairaut}
+  z &= \int r \times dx + \int (2 \xi - \rho)r \times dx && \text{Clairaut's equation \cite{wilson1993}}
+\end{align*}
+
+Clairaut set his two companions to calculating the positions of Jupiter and Saturn, around the sun, advancing them a degree or two for every step of the calculation
+For each step the forces that acted on them , and the effect on their orbits, was determined.
+Clairaut calculated the resulting effect on the comet itself.
+They did these calculations, first starting with the 1531 return, and having done that repeated the work starting with the 1607 observations and finally the 1682 observation by Halley,
+working daily from June through September of 1757.
+While the prediction produced by Clairaut's team would deviate from the date of the perihelion by 33 days, it was a vast improvement compared to the prediction of Halley, which had an error margin of 600 days.
+Ultimately, while several shortcomings have later been identified in the calculations performed by Clairaut, his largest contribution was not the prediction of Halley's comet itself.
+Clairaut's most important contribution would be the idea that laborious mathematics could be computed in parallel;
+that mathematical work could be divided into pieces, computed independently, checked for errors and combined into a final product \cite{grier1955}.
+
+\begin{figure}[h]
+    \pimage{Figures/tabulatingroom}
+    \caption[A computing room in the 1920s]
+            {A computing room in the 1920. \\ Courtesy of the Library of Congress \label{fig:tabulatingroom}}
+\end{figure}
+
+Shortly after the work by Clairaut and his companions, the French Académie des Sciences undertook to calculate logarithmic and trigonometric tables for the new metric system.
+Inspired by Adam Smith's writings on division of labor in the Wealth of Nations, Gaspard de Prony, director of the Bureau du Cadastre, organized the bureau's computing staff into three sections.
+The first group had little training in mathematics, and would be limited to performing simple arithmetics.
+The second group, made up of more experienced computers, reduced the calculations that were to be performed into fundamental arithmetical operations, and verified the results that were returned.
+These made up the section that in later computing organizations would be referred to as planners.
+The third group was made up of some of the finest mathematicians in France, who would oversee the entire operation.
+They took no part in the computational work itself, but investigated the various analytical expressions that could be used and selected the ones best suited for reduction into simple steps \cite{hyman1985}.
+
+\section{Analog computers}
+
+\begin{figure}[ht]
+    \pimage{Figures/engine}
+    \caption[Babbage's Analytical Engine]
+            {Babbage's Analytical Engine. \\ Courtesy of the Science Museum, London \label{fig:engine}}
+\end{figure}
+
+Working with a similar project in 1821, Charles Babbage, widely considered the father of the computer, was familiar with the approach used by de Prony and applied a similar methodology.
+Like de Prony, Babbage recognized that mathematical work could be reduced to what he called ``mental labor'' \cite{babbage1832}.
+He applied the same approach as de Prony in calculating a series of tables for the Astronomical Society of London.
+However, Babbage was disappointed by the number of mistakes made by his human computers.
+Babbage took de Prony's approach to its next logical step and began work on a calculating machine.
+Applying the finite difference method, Babbage designed his first difference engine; An analog computer that could calculate the values of a polynomial simply by using repeated addition.
+
+The difference engine designed by Babbage primarily holds great historical interest.
+The Astronomical Society, which supported Babbage's work, ultimately did not adopt it for practical use, as it was cumbersome in operation.
+However, Babbage later designed, though never attempted to build, a more general machine which could modify its operation based on its own results.
+Babbage called this new design the Analytical Engine (\cref{fig:engine}) and its design includes most of the major modules in a modern general purpose computer:
+
+\begin{enumerate}
+  \item \textit{Input/output} The engine would take input from, and return output to, punched cards.
+  \item \textit{Memory} The Analytical Engine could store up to 1000 numbers, each with 40 digits, in its internal data store.
+  \item \textit{Central Processing Unit} The engine included registers for storing intermediate values, an ALU which could compute basic arithmetic operations, a synchronizing clock,
+      and mechanisms for converting instructions from the programmer into detailed, internal instructions, what we today refer to as microcode.
+\end{enumerate}
+
+Unfortunately, the Difference Engine was considered unwieldy to use, and the Analytical Engine was never constructed in Babbage's lifetime \cite{babbage1832}.
+Instead, the first machine to gain widespread acceptance among astronomical computers would be the geared adding machine.
+The geared adding machine was invented in the 17th century, but was considered unreliable at the time.
+It would only be with the aid of 19th century mass production menthods, and the consequent reduction in their cost, that the machines would proliferate.
+The pressures of the Great War meant that the need for human computers was at its greatest, just as many young men would be sent to fight in the war.
+In England, France and the United States, computers were hard at work producing ballistics tables for the artillery, and calculating statistics for all areas of wartime production \cite{grier1955}.
+
+The two world wars, bringing both greater need for computation as well as scarcity of manpower, pushed the development of increasingly complex computing machines.
+While simple analog computers like the slide rule had been in use for several hundred years, the need to perform complex calculations during the war drove the development of increasingly complex
+Computers in the early 20th century relied heavily on complex mechanical calculators and punched card machines in order to keep up with the growing demand for computation.
+The punched card machine was capable of interpreting data, and could operate at full speed for days unlike a human computer who would inevitably tire \cite{carr}.
+
+\section{Digital computers}
+
+\begin{figure}[ht]
+    \pimage{Figures/eniac}
+    \caption[Technicians programming the ENIAC]
+            {Technicians programming the ENIAC. \\ Courtesy of Los Alamos National Laboratory\label{fig:eniac}}
+\end{figure}
+
+While punched card machines were much faster than human computers, as electro-mechanical machines they were slow compared to the next innovation in computing: the electronic general-purpose computer.
+In 1943, the Ordnance Corps, Research and Development Command of the United States Army commissioned engineers at the University of Pennsylvania's Moore School of Electrical Engineering
+to build the Electronic Numerical Integrator and Computer, ENIAC \cite{sep-computing-history}\cite{reed1952}.
+ENIAC, designed by John Mauchly and J. Presper Eckert, would not be the first programmable computer, as that honor belongs to the Colossus,
+built by the British codebreakers at Bletchley Park\cite{winegrad1996}, but it would be the first truly general-purpose computer.
+In fact, though originally designed to compute firing tables for the army, the the computer was general enough in its design that it could calculate a wide variety of numerical problems \cite{neyer}.
+The machine was soon put to use solving other problems, in particular by the nuclear scientists at Los Alamos National Laboratory, who had only recently developed the nuclear bombs dropped on Japan.
+The very first real-world application of the machine would not be computing artillery tables, but by Edward Teller at Los Alamos who used the machine to simulate nuclear fusion reactions \cite{AtomicHeritageFoundation}.
+
+The ideas developed by the people who had worked on the ENIAC, and its successor the EDVAC, were disseminated in 1946 at the Moore School Lectures.
+Scientists at the Moore School had already begun work on the EDVAC, which would be the first binary computer,
+and the school was central to many of the earliest developments in digital computing.
+The attendees at the lectures were all established academics, physicists and mathematicians and the lectures led to an explosion of activity in both the United States and Europe \cite{Davis2008}.
+
+The research in nuclear physics started during the war continued in peacetime and scientists at the Los Alamos National Laboratory had a large backlog of computing needs.
+There was a desire to apply statistical methods to solve some of these problems.
+Among the problems in the laboratory's backlog were a number of problems that could not feasibly be solved by the standard methods of the time, including the neutron permeability of various materials.
+Many such problems can be solved using a statistical technique called the Monte Carlo method, but the method is computationally intensive and requires a large number of human computers.
+Now that laboratory scientists had access to an electronic computer, there was a desire to use the ENIAC to do the calculations \cite{Haigh2014}.
+However, the ENIAC was designed as a large collection of functional modules, and was programmed by manually connecting these to one another with a large switchboard.
+This meant that while the computer was very fast by the standards at the time, setting the machine up to solve a new problem could take weeks \cite{Rope2007}.
+Clearly, this would not suffice if scientists were to apply the machine to a wide range of problems.
+
+In 1948, a new control system was planned and implemented for the ENIAC.
+The new system, based on the work of John von Neumann \cite{VonNeumann1993} \cite{Haigh2014a} added an instruction set to the computer.
+This greatly simplified its operation and arguably gave birth to the first stored-program computer \cite{Rope2007}.
+In this way, the need to quickly simulate a variety of mathematical problems directly led to the creation of the modern general-purpose computer.
+
+Later, the creation of one of the first widely adopted programming language, FORTRAN, was motivated by a desire to make it easier to enter equations into computers.
+Many other languages have been developed since them, some of them for the specific intent of developing simulation models.
+Three simulation frameworks, with their corresponding input languages, will be presented in this paper: Mathematica, Matlab and OpenCOR.
 
 \end{document}
