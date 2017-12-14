@@ -4,27 +4,26 @@
 \begin{document}
 \chapter{Conclusion} % Main chapter title
 
-\label{Chapter06} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
+\label{Chapter06} % Change X to a consecutive number; for referencing this chapter elsewhere, use \cref{ChapterX}
 
 This report started with the question, loosely phrased, "Is it really necessary to have as many simulation tools as there currently are in the marketplace?".
 Having reviewed three rather different simulation tools, the answer seems to be a qualified "maybe".
 
-The argument can certainly be made that the mechanism for solving these models is essentially the same, as seen in \ref{Chapter02}, \ref{Chapter03} and \ref{Chapter04}.
+The argument can certainly be made that the mechanism for solving these models is essentially the same, as seen in \cref{Chapter02,Chapter03,Chapter04}.
 Some of these software packages only allow the simulation of ordinary differential equations.
 Others allow for composite models made up of differential equations, algebraic equations and algorithms.
 Never the less, the main point where simulation tools differ seems not to be in how the models are simulated.
 In general, the systems we have reviewed all reduce the system to a similar format and solve them by numerical integration.
 However, tools oriented towards different fields of industry differ in how models are created, and how output is presented.
 
-As seen in \ref{Chapter02}, Modelica, which is targetted primarily at modelling systems in engineering, offers modelling tools which are appropriate for this purpose.
+As seen in (\cref{Chapter02}), Modelica, which is targeted primarily at modelling systems in engineering, offers modelling tools which are appropriate for this purpose.
 Models are mainly built using acausal components, which implement the behavior of real-world components.
 Furthermore, as components in engineering are frequently similar to one another, Modelica allows for inheritance and other object-oriented approaches.
 
-As we have seen, Modelica \ref{Chapter02} offers a rich interface for creating acausal models.
+As we have seen, Modelica (\cref{Chapter02}) offers a rich interface for creating acausal models.
 These models are easy to understand graphically, as they are made by connecting components which mirror their real-life counterparts.
 
-On the other hand, we have seen the causal approach in Matlab/Simulink \ref{Chapter03}, where models are built from blocks.
+On the other hand, we have seen the causal approach in Matlab/Simulink (\cref{Chapter03}), where models are built from blocks.
 While the models are not as easy to understand 
-
 
 \end{document}

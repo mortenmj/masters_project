@@ -4,7 +4,7 @@
 \begin{document}
 \chapter{Matlab/Simulink} % Main chapter title
 
-\label{Chapter03} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
+\label{Chapter03} % Change X to a consecutive number; for referencing this chapter elsewhere, use \cref{ChapterX}
 
 \section{Language features}
 
@@ -13,7 +13,7 @@ For this reason, we will first and foremost review these capabilities in the lan
 
 In addition to the Matlab programming language, Matlab also allows for modelling using graphical blocks in Simulink.
 However, it is noteworthy that these are not one and the same.
-While we saw in \ref{Chapter02} that in Modelica, graphical models were a representation of a text based specification, in Matlab these are separate things.
+While we saw in \cref{Chapter02} that in Modelica, graphical models were a representation of a text based specification, in Matlab these are separate things.
 In Matlab, these are separate.
 We may create models using state space representations, transfer functions, algorithms or a combination thereof in the Matlab language.
 We may also create models using graphical components, either causal or acausal as we shall see.
@@ -28,7 +28,7 @@ If we let $\vec{x}{t}$ be the states, $\vec{u}{t}$ be the inputs and $\vec{y}{t}
 \loadeq{\rootfolder/Equations.tex}{003} % State space representation of the system in vector/matrix form
 
 Matlab allows for systems to be modelled in several different ways.
-To illustrate this, we will return to the same drive shaft example as used in \ref{Chapter02}.
+To illustrate this, we will return to the same drive shaft example as used in \cref{Chapter02}.
 The equations shown in \cref{eq:inertial} can be transformed into state-space form.
 
 \Cref{lst:inertialmatlab} shows \cref{eq:inertial} implemented in the Matlab language, with the same example values used in \cref{fig:inertial};
@@ -80,7 +80,7 @@ As Matlab solves this numerically, adding a differentiator is troublesome and wa
     \caption{Inertial system expanded.\label{fig:inertial-simulink-expanded}}
 \end{figure}
 
-In \ref{Chapter02} we saw how partial models could be instantiated with specific components.
+In \cref{Chapter02} we saw how partial models could be instantiated with specific components.
 This is useful for example in order to compare variants of two controllers.
 In order to replace parts of models in Simulink there are a couple of approaches that can be used.
 First, for simple components, we may use the \emph{replace\_block()} function.
@@ -127,19 +127,17 @@ Therefore, it is not possible to do these changes with a simple text replacement
 \section{Simscape modelling}
 
 In addition to the causal modelling done in Simulink above, Matlab also comes with an expansion called Simscape.
-In Simscape, we can model using acausal components like those we saw in \ref{Chapter02}.
+In Simscape, we can model using acausal components like those we saw in \cref{Chapter02}.
 \Cref{fig:inertial-simscape} shows what our model looks like in Simscape.
 
 \begin{figure}[ht]
-    \centering
-        \tiny
-        \includesvg[width=0.8\columnwidth]{Figures/InertialSimscape}
+    \iimage{Figures/InertialSimscape}
     \caption{Inertial system in Simscape.\label{fig:inertial-simscape}}
 \end{figure}
 
 Simscape components are not signal-compatible with those in Simulink, but using special converter components we can interface Simscape models with Simulink models.
 This way, we might for example connect the acausal plant implementation above to a causal controller implementation.
-As acausal modelling has already been covered in \ref{Chapter02}, Simscape modelling will not be covered in further detail.
+As acausal modelling has already been covered in \cref{Chapter02}, Simscape modelling will not be covered in further detail.
 
 \section{Simulation}
 
@@ -223,6 +221,6 @@ The system creates the physical network following these two principles.
 \subsubsection{Equation construction}
 
 The system equations are then developed from this network, and the equations are simulated in a similar fashion to the procedure explained for normal Simulink models.
-Overall, the process is similar to that described in \ref{Chapter02}.
+Overall, the process is similar to that described in \cref{Chapter02}.
 
 \end{document}

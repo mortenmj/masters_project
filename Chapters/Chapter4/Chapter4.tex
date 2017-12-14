@@ -4,7 +4,7 @@
 \begin{document}
 \chapter{OpenCOR} % Main chapter title
 
-\label{Chapter04} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
+\label{Chapter04} % Change X to a consecutive number; for referencing this chapter elsewhere, use \cref{ChapterX}
 
 \section{CellML}
 
@@ -30,7 +30,7 @@ The CellML specification includes SI units, but it is useful to define complex u
 \end{listing}
 
 Then, the defined units are used to specify the model.
-The model specification is similar to the Modelica code from \ref{Chapter02}.
+The model specification is similar to the Modelica code from \cref{Chapter02}.
 
 \begin{listing}[ht]
     \inputminted[fontsize=\footnotesize, firstline=28]{matlab}{\rootfolder/Models/OpenCOR/Inertial.input}
@@ -49,7 +49,7 @@ The language is flexible enough that is is used to implement purely biological a
 CellML models are constructed as a network of interconnected components.
 The components may contain variables as well as mathematical equations specified with MathML.
 Variables belong to a single component, but may be mapped to a variable in another component by specifying a connection.
-Two components may only have one connection, and all variable mappings must therefore be declared in the same place
+Two components may only have one connection, and all variable mappings must therefore be declared in the same place.
 This is intended to enforce a level of organization to the sometimes complex mappings between components \cite{cuellar2003}.
 
 Variables in CellML are always expressed in units.
@@ -97,5 +97,9 @@ SED-ML is used to specify the exact simulation parameters needed to reproduce a 
 Indeed, models in the Physiome library are curated and evaluated by how closely they mimick the results they intend to reproduce.
 
 \section{Simulation}
+
+As OpenCOR is plugin-based, simulation is also performed by solvers implemented as plugins.
+When simulating a system, the plugin framework will instantiate an instance of the requested solver, and proceeds to run the solver iteratively until it reaches the end time.
+OpenCOR includes a number of open sourced solvers, with wrappers to make them compatible with the plugin API.
 
 \end{document}
