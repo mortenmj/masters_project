@@ -1,0 +1,3181 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="92.8687mm"
+   height="28.3104mm"
+   viewBox="0 0 351 107"
+   version="1.1"
+   id="svg6610"
+   sodipodi:docname="InertialSimulinkBlowup.svg"
+   enable-background="new"
+   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)">
+  <metadata
+     id="metadata6616">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs6614">
+    <clipPath
+       id="clip3-3">
+      <path
+         inkscape:connector-curvature="0"
+         d="M 252,80 H -32 V -89 h 284 z"
+         id="path7997" />
+    </clipPath>
+    <clipPath
+       id="clip6">
+      <path
+         inkscape:connector-curvature="0"
+         d="M -252,-73 H 32 V 96 h -284 z"
+         id="path8006" />
+    </clipPath>
+    <clipPath
+       id="clip10">
+      <path
+         inkscape:connector-curvature="0"
+         d="M -15,-7 H 15 V 7 h -30 z"
+         id="path8015" />
+    </clipPath>
+    <clipPath
+       id="clip15">
+      <path
+         inkscape:connector-curvature="0"
+         d="m -252.5,-73.5 h 284 v 169 h -284 z"
+         id="path8024" />
+    </clipPath>
+    <clipPath
+       id="clip18">
+      <path
+         inkscape:connector-curvature="0"
+         d="M -267,-89 H 17 V 80 h -284 z"
+         id="path8033" />
+    </clipPath>
+    <clipPath
+       id="clip22">
+      <path
+         inkscape:connector-curvature="0"
+         d="M 0,0 H 8 V 17 H 0 Z"
+         id="path8042" />
+    </clipPath>
+    <clipPath
+       id="clip30-6">
+      <path
+         inkscape:connector-curvature="0"
+         d="M -32,-55 H 252 V 114 H -32 Z"
+         id="path8051" />
+    </clipPath>
+    <clipPath
+       id="clip33">
+      <path
+         inkscape:connector-curvature="0"
+         d="M -2,-48 H 282 V 121 H -2 Z"
+         id="path8060" />
+    </clipPath>
+    <clipPath
+       id="clip37">
+      <path
+         inkscape:connector-curvature="0"
+         d="M -15,-7 H 15 V 7 h -30 z"
+         id="path8069" />
+    </clipPath>
+    <clipPath
+       id="clip42-7">
+      <path
+         inkscape:connector-curvature="0"
+         d="m -2.5,-48.5 h 284 v 169 h -284 z"
+         id="path8078" />
+    </clipPath>
+    <clipPath
+       id="clip45">
+      <path
+         inkscape:connector-curvature="0"
+         d="M -17,-64 H 267 V 105 H -17 Z"
+         id="path8087" />
+    </clipPath>
+    <clipPath
+       id="clip49-5">
+      <path
+         inkscape:connector-curvature="0"
+         d="M 0,0 H 6 V 17 H 0 Z"
+         id="path8096" />
+    </clipPath>
+    <clipPath
+       id="clip57">
+      <path
+         inkscape:connector-curvature="0"
+         d="M -157,-75 H 127 V 94 h -284 z"
+         id="path8105" />
+    </clipPath>
+    <clipPath
+       id="clip60">
+      <path
+         inkscape:connector-curvature="0"
+         d="M 117,85 H -167 V -84 h 284 z"
+         id="path8114" />
+    </clipPath>
+    <clipPath
+       id="clip63">
+      <path
+         inkscape:connector-curvature="0"
+         d="M 117,65 H -167 V -104 H 117 Z"
+         id="path8123" />
+    </clipPath>
+    <clipPath
+       id="clip66">
+      <path
+         inkscape:connector-curvature="0"
+         d="M -117,-57 H 167 V 112 H -117 Z"
+         id="path8132" />
+    </clipPath>
+    <clipPath
+       id="clip70">
+      <path
+         inkscape:connector-curvature="0"
+         d="M -3,-8 H 37 V 28 H -3 Z"
+         id="path8141" />
+    </clipPath>
+    <clipPath
+       id="clip71">
+      <path
+         inkscape:connector-curvature="0"
+         d="M -3,-28 H 37 V 8 H -3 Z"
+         id="path8150" />
+    </clipPath>
+    <clipPath
+       id="clip72">
+      <path
+         inkscape:connector-curvature="0"
+         d="M -37,-18 H 3 v 36 h -40 z"
+         id="path8159" />
+    </clipPath>
+    <clipPath
+       id="clip77-3">
+      <path
+         inkscape:connector-curvature="0"
+         d="m -117.5,-57.5 h 284 v 169 h -284 z"
+         id="path8168" />
+    </clipPath>
+    <clipPath
+       id="clip80-5">
+      <path
+         inkscape:connector-curvature="0"
+         d="M -137,-95 H 147 V 74 h -284 z"
+         id="path8177" />
+    </clipPath>
+    <clipPath
+       id="clip84">
+      <path
+         inkscape:connector-curvature="0"
+         d="M 0,0 H 77 V 17 H 0 Z"
+         id="path8186" />
+    </clipPath>
+    <clipPath
+       id="clip92-6">
+      <path
+         inkscape:connector-curvature="0"
+         d="M -32,-105 H 252 V 64 H -32 Z"
+         id="path8195" />
+    </clipPath>
+    <clipPath
+       id="clip95">
+      <path
+         inkscape:connector-curvature="0"
+         d="M -2,-98 H 282 V 71 H -2 Z"
+         id="path8204" />
+    </clipPath>
+    <clipPath
+       id="clip99">
+      <path
+         inkscape:connector-curvature="0"
+         d="M -15,-7 H 15 V 7 h -30 z"
+         id="path8213" />
+    </clipPath>
+    <clipPath
+       id="clip104">
+      <path
+         inkscape:connector-curvature="0"
+         d="m -2.5,-98.5 h 284 v 169 h -284 z"
+         id="path8222" />
+    </clipPath>
+    <clipPath
+       id="clip107-2">
+      <path
+         inkscape:connector-curvature="0"
+         d="M -17,-114 H 267 V 55 H -17 Z"
+         id="path8231" />
+    </clipPath>
+    <clipPath
+       id="clip111">
+      <path
+         inkscape:connector-curvature="0"
+         d="M 0,0 H 7 V 17 H 0 Z"
+         id="path8240" />
+    </clipPath>
+    <clipPath
+       id="clip119">
+      <path
+         inkscape:connector-curvature="0"
+         d="M -157,-20 H 127 V 149 H -157 Z"
+         id="path8249" />
+    </clipPath>
+    <clipPath
+       id="clip122">
+      <path
+         inkscape:connector-curvature="0"
+         d="M 117,20 H -167 V -149 H 117 Z"
+         id="path8258" />
+    </clipPath>
+    <clipPath
+       id="clip125">
+      <path
+         inkscape:connector-curvature="0"
+         d="M -117,-2 H 167 V 167 H -117 Z"
+         id="path8267" />
+    </clipPath>
+    <clipPath
+       id="clip129">
+      <path
+         inkscape:connector-curvature="0"
+         d="M -3,-18 H 37 V 18 H -3 Z"
+         id="path8276" />
+    </clipPath>
+    <clipPath
+       id="clip130">
+      <path
+         inkscape:connector-curvature="0"
+         d="M -37,-18 H 3 v 36 h -40 z"
+         id="path8285" />
+    </clipPath>
+    <clipPath
+       id="clip135">
+      <path
+         inkscape:connector-curvature="0"
+         d="m -117.5,-2.5 h 284 v 169 h -284 z"
+         id="path8294" />
+    </clipPath>
+    <clipPath
+       id="clip138">
+      <path
+         inkscape:connector-curvature="0"
+         d="M -137,-40 H 147 V 129 H -137 Z"
+         id="path8303" />
+    </clipPath>
+    <clipPath
+       id="clip142">
+      <path
+         inkscape:connector-curvature="0"
+         d="M 0,0 H 30 V 17 H 0 Z"
+         id="path8312" />
+    </clipPath>
+    <clipPath
+       id="clip150">
+      <path
+         inkscape:connector-curvature="0"
+         d="M 117,140 H -167 V -29 h 284 z"
+         id="path8321" />
+    </clipPath>
+    <clipPath
+       id="clip153-9">
+      <path
+         inkscape:connector-curvature="0"
+         d="M -157,-130 H 127 V 39 h -284 z"
+         id="path8330" />
+    </clipPath>
+    <clipPath
+       id="clip156">
+      <path
+         inkscape:connector-curvature="0"
+         d="M 117,120 H -167 V -49 h 284 z"
+         id="path8339" />
+    </clipPath>
+    <clipPath
+       id="clip159">
+      <path
+         inkscape:connector-curvature="0"
+         d="M -117,-112 H 167 V 57 h -284 z"
+         id="path8348" />
+    </clipPath>
+    <clipPath
+       id="clip163">
+      <path
+         inkscape:connector-curvature="0"
+         d="M -3,-8 H 37 V 28 H -3 Z"
+         id="path8357" />
+    </clipPath>
+    <clipPath
+       id="clip164">
+      <path
+         inkscape:connector-curvature="0"
+         d="M -3,-28 H 37 V 8 H -3 Z"
+         id="path8366" />
+    </clipPath>
+    <clipPath
+       id="clip165-1">
+      <path
+         inkscape:connector-curvature="0"
+         d="M -37,-18 H 3 v 36 h -40 z"
+         id="path8375" />
+    </clipPath>
+    <clipPath
+       id="clip170">
+      <path
+         inkscape:connector-curvature="0"
+         d="m -117.5,-112.5 h 284 v 169 h -284 z"
+         id="path8384" />
+    </clipPath>
+    <clipPath
+       id="clip173-2">
+      <path
+         inkscape:connector-curvature="0"
+         d="M -137,-150 H 147 V 19 h -284 z"
+         id="path8393" />
+    </clipPath>
+    <clipPath
+       id="clip177">
+      <path
+         inkscape:connector-curvature="0"
+         d="M 0,0 H 92 V 17 H 0 Z"
+         id="path8402" />
+    </clipPath>
+    <clipPath
+       id="clipPath12639">
+      <path
+         inkscape:connector-curvature="0"
+         d="M 252,80 H -32 V -89 h 284 z"
+         id="path12637" />
+    </clipPath>
+    <clipPath
+       id="clipPath12646">
+      <path
+         inkscape:connector-curvature="0"
+         d="M -252,-73 H 32 V 96 h -284 z"
+         id="path12644" />
+    </clipPath>
+    <clipPath
+       id="clipPath12653">
+      <path
+         inkscape:connector-curvature="0"
+         d="M -15,-7 H 15 V 7 h -30 z"
+         id="path12651" />
+    </clipPath>
+    <clipPath
+       id="clipPath12660">
+      <path
+         inkscape:connector-curvature="0"
+         d="m -252.5,-73.5 h 284 v 169 h -284 z"
+         id="path12658" />
+    </clipPath>
+    <clipPath
+       id="clipPath12667">
+      <path
+         inkscape:connector-curvature="0"
+         d="M -267,-89 H 17 V 80 h -284 z"
+         id="path12665" />
+    </clipPath>
+    <clipPath
+       id="clipPath12674">
+      <path
+         inkscape:connector-curvature="0"
+         d="M 0,0 H 8 V 17 H 0 Z"
+         id="path12672" />
+    </clipPath>
+    <clipPath
+       id="clipPath12681">
+      <path
+         inkscape:connector-curvature="0"
+         d="M -32,-55 H 252 V 114 H -32 Z"
+         id="path12679" />
+    </clipPath>
+    <clipPath
+       id="clipPath12688">
+      <path
+         inkscape:connector-curvature="0"
+         d="M -2,-48 H 282 V 121 H -2 Z"
+         id="path12686" />
+    </clipPath>
+    <clipPath
+       id="clipPath12695">
+      <path
+         inkscape:connector-curvature="0"
+         d="M -15,-7 H 15 V 7 h -30 z"
+         id="path12693" />
+    </clipPath>
+    <clipPath
+       id="clipPath12702">
+      <path
+         inkscape:connector-curvature="0"
+         d="m -2.5,-48.5 h 284 v 169 h -284 z"
+         id="path12700" />
+    </clipPath>
+    <clipPath
+       id="clipPath12709">
+      <path
+         inkscape:connector-curvature="0"
+         d="M -17,-64 H 267 V 105 H -17 Z"
+         id="path12707" />
+    </clipPath>
+    <clipPath
+       id="clipPath12716">
+      <path
+         inkscape:connector-curvature="0"
+         d="M 0,0 H 6 V 17 H 0 Z"
+         id="path12714" />
+    </clipPath>
+    <clipPath
+       id="clipPath12723">
+      <path
+         inkscape:connector-curvature="0"
+         d="M -157,-75 H 127 V 94 h -284 z"
+         id="path12721" />
+    </clipPath>
+    <clipPath
+       id="clipPath12730">
+      <path
+         inkscape:connector-curvature="0"
+         d="M 117,85 H -167 V -84 h 284 z"
+         id="path12728" />
+    </clipPath>
+    <clipPath
+       id="clipPath12737">
+      <path
+         inkscape:connector-curvature="0"
+         d="M 117,65 H -167 V -104 H 117 Z"
+         id="path12735" />
+    </clipPath>
+    <clipPath
+       id="clipPath12744">
+      <path
+         inkscape:connector-curvature="0"
+         d="M -117,-57 H 167 V 112 H -117 Z"
+         id="path12742" />
+    </clipPath>
+    <clipPath
+       id="clipPath12751">
+      <path
+         inkscape:connector-curvature="0"
+         d="M -3,-8 H 37 V 28 H -3 Z"
+         id="path12749" />
+    </clipPath>
+    <clipPath
+       id="clipPath12758">
+      <path
+         inkscape:connector-curvature="0"
+         d="M -3,-28 H 37 V 8 H -3 Z"
+         id="path12756" />
+    </clipPath>
+    <clipPath
+       id="clipPath12765">
+      <path
+         inkscape:connector-curvature="0"
+         d="M -37,-18 H 3 v 36 h -40 z"
+         id="path12763" />
+    </clipPath>
+    <clipPath
+       id="clipPath12772">
+      <path
+         inkscape:connector-curvature="0"
+         d="m -117.5,-57.5 h 284 v 169 h -284 z"
+         id="path12770" />
+    </clipPath>
+    <clipPath
+       id="clipPath12779">
+      <path
+         inkscape:connector-curvature="0"
+         d="M -137,-95 H 147 V 74 h -284 z"
+         id="path12777" />
+    </clipPath>
+    <clipPath
+       id="clipPath12786">
+      <path
+         inkscape:connector-curvature="0"
+         d="M 0,0 H 77 V 17 H 0 Z"
+         id="path12784" />
+    </clipPath>
+    <clipPath
+       id="clipPath12793">
+      <path
+         inkscape:connector-curvature="0"
+         d="M -32,-105 H 252 V 64 H -32 Z"
+         id="path12791" />
+    </clipPath>
+    <clipPath
+       id="clipPath12800">
+      <path
+         inkscape:connector-curvature="0"
+         d="M -2,-98 H 282 V 71 H -2 Z"
+         id="path12798" />
+    </clipPath>
+    <clipPath
+       id="clipPath12807">
+      <path
+         inkscape:connector-curvature="0"
+         d="M -15,-7 H 15 V 7 h -30 z"
+         id="path12805" />
+    </clipPath>
+    <clipPath
+       id="clipPath12814">
+      <path
+         inkscape:connector-curvature="0"
+         d="m -2.5,-98.5 h 284 v 169 h -284 z"
+         id="path12812" />
+    </clipPath>
+    <clipPath
+       id="clipPath12821">
+      <path
+         inkscape:connector-curvature="0"
+         d="M -17,-114 H 267 V 55 H -17 Z"
+         id="path12819" />
+    </clipPath>
+    <clipPath
+       id="clipPath12828">
+      <path
+         inkscape:connector-curvature="0"
+         d="M 0,0 H 7 V 17 H 0 Z"
+         id="path12826" />
+    </clipPath>
+    <clipPath
+       id="clipPath12835">
+      <path
+         inkscape:connector-curvature="0"
+         d="M -157,-20 H 127 V 149 H -157 Z"
+         id="path12833" />
+    </clipPath>
+    <clipPath
+       id="clipPath12842">
+      <path
+         inkscape:connector-curvature="0"
+         d="M 117,20 H -167 V -149 H 117 Z"
+         id="path12840" />
+    </clipPath>
+    <clipPath
+       id="clipPath12849">
+      <path
+         inkscape:connector-curvature="0"
+         d="M -117,-2 H 167 V 167 H -117 Z"
+         id="path12847" />
+    </clipPath>
+    <clipPath
+       id="clipPath12856">
+      <path
+         inkscape:connector-curvature="0"
+         d="M -3,-18 H 37 V 18 H -3 Z"
+         id="path12854" />
+    </clipPath>
+    <clipPath
+       id="clipPath12863">
+      <path
+         inkscape:connector-curvature="0"
+         d="M -37,-18 H 3 v 36 h -40 z"
+         id="path12861" />
+    </clipPath>
+    <clipPath
+       id="clipPath12870">
+      <path
+         inkscape:connector-curvature="0"
+         d="m -117.5,-2.5 h 284 v 169 h -284 z"
+         id="path12868" />
+    </clipPath>
+    <clipPath
+       id="clipPath12877">
+      <path
+         inkscape:connector-curvature="0"
+         d="M -137,-40 H 147 V 129 H -137 Z"
+         id="path12875" />
+    </clipPath>
+    <clipPath
+       id="clipPath12884">
+      <path
+         inkscape:connector-curvature="0"
+         d="M 0,0 H 30 V 17 H 0 Z"
+         id="path12882" />
+    </clipPath>
+    <clipPath
+       id="clipPath12891">
+      <path
+         inkscape:connector-curvature="0"
+         d="M 117,140 H -167 V -29 h 284 z"
+         id="path12889" />
+    </clipPath>
+    <clipPath
+       id="clipPath12898">
+      <path
+         inkscape:connector-curvature="0"
+         d="M -157,-130 H 127 V 39 h -284 z"
+         id="path12896" />
+    </clipPath>
+    <clipPath
+       id="clipPath12905">
+      <path
+         inkscape:connector-curvature="0"
+         d="M 117,120 H -167 V -49 h 284 z"
+         id="path12903" />
+    </clipPath>
+    <clipPath
+       id="clipPath12912">
+      <path
+         inkscape:connector-curvature="0"
+         d="M -117,-112 H 167 V 57 h -284 z"
+         id="path12910" />
+    </clipPath>
+    <clipPath
+       id="clipPath12919">
+      <path
+         inkscape:connector-curvature="0"
+         d="M -3,-8 H 37 V 28 H -3 Z"
+         id="path12917" />
+    </clipPath>
+    <clipPath
+       id="clipPath12926">
+      <path
+         inkscape:connector-curvature="0"
+         d="M -3,-28 H 37 V 8 H -3 Z"
+         id="path12924" />
+    </clipPath>
+    <clipPath
+       id="clipPath12933">
+      <path
+         inkscape:connector-curvature="0"
+         d="M -37,-18 H 3 v 36 h -40 z"
+         id="path12931" />
+    </clipPath>
+    <clipPath
+       id="clipPath12940">
+      <path
+         inkscape:connector-curvature="0"
+         d="m -117.5,-112.5 h 284 v 169 h -284 z"
+         id="path12938" />
+    </clipPath>
+    <clipPath
+       id="clipPath12947">
+      <path
+         inkscape:connector-curvature="0"
+         d="M -137,-150 H 147 V 19 h -284 z"
+         id="path12945" />
+    </clipPath>
+    <clipPath
+       id="clipPath12954">
+      <path
+         inkscape:connector-curvature="0"
+         d="M 0,0 H 92 V 17 H 0 Z"
+         id="path12952" />
+    </clipPath>
+  </defs>
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1136"
+     id="namedview6612"
+     showgrid="false"
+     inkscape:zoom="19.71511"
+     inkscape:cx="95.403915"
+     inkscape:cy="41.919593"
+     inkscape:window-x="1920"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer8" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="Main">
+    <g
+       style=""
+       fill="none"
+       stroke="black"
+       stroke-width="1"
+       fill-rule="evenodd"
+       stroke-linecap="square"
+       stroke-linejoin="bevel"
+       id="g6608">
+      <g
+         clip-path="none"
+         fill="#ffffff"
+         fill-opacity="1"
+         opacity="1"
+         stroke="none"
+         stroke-opacity="0"
+         transform="matrix(1,0,0,1,0,0)"
+         id="g6181">
+        <path
+           d="M0,0 L350.859,0 L350.859,107 L0,107 L0,0 z"
+           fill-rule="evenodd"
+           vector-effect="none"
+           id="path6179" />
+      </g>
+      <defs
+         id="defs6186">
+        <clipPath
+           id="clip3">
+          <path
+             d="M-101,-3 L249.859,-3 L249.859,104 L-101,104 L-101,-3 z"
+             id="path6183" />
+        </clipPath>
+      </defs>
+      <g
+         clip-path="url(#clip3)"
+         fill="#ffffff"
+         fill-opacity="1"
+         opacity="1"
+         stroke="none"
+         stroke-opacity="0"
+         transform="matrix(1,0,0,1,101,3)"
+         id="g6190">
+        <path
+           d="M0,0 L95,0 L95,73 L0,73 L0,0 z"
+           fill-rule="evenodd"
+           vector-effect="none"
+           id="path6188" />
+      </g>
+      <defs
+         id="defs6195">
+        <clipPath
+           id="clip7">
+          <path
+             d="M-3,-23 L92,-23 L92,50 L-3,50 L-3,-23 z"
+             id="path6192" />
+        </clipPath>
+      </defs>
+      <g
+         clip-path="url(#clip7)"
+         fill="none"
+         opacity="1"
+         stroke="#000000"
+         stroke-linecap="butt"
+         stroke-linejoin="miter"
+         stroke-miterlimit="2"
+         stroke-opacity="1"
+         stroke-width="1"
+         transform="matrix(1,0,0,1,104,26)"
+         id="g6199">
+        <text
+           fill="#000000"
+           fill-opacity="1"
+           font-family="Liberation Sans"
+           font-size="10"
+           font-style="normal"
+           font-weight="400"
+           stroke="none"
+           textLength="3.32812"
+           x="0"
+           xml:space="preserve"
+           y="1"
+           id="text6197">r</text>
+      </g>
+      <defs
+         id="defs6204">
+        <clipPath
+           id="clip8">
+          <path
+             d="M-3,-58 L92,-58 L92,15 L-3,15 L-3,-58 z"
+             id="path6201" />
+        </clipPath>
+      </defs>
+      <g
+         clip-path="url(#clip8)"
+         fill="none"
+         opacity="1"
+         stroke="#000000"
+         stroke-linecap="butt"
+         stroke-linejoin="miter"
+         stroke-miterlimit="2"
+         stroke-opacity="1"
+         stroke-width="1"
+         transform="matrix(1,0,0,1,104,61)"
+         id="g6208">
+        <text
+           fill="#000000"
+           fill-opacity="1"
+           font-family="Liberation Sans"
+           font-size="10"
+           font-style="normal"
+           font-weight="400"
+           stroke="none"
+           textLength="7.79688"
+           x="0"
+           xml:space="preserve"
+           y="1"
+           id="text6206">ω</text>
+      </g>
+      <defs
+         id="defs6213">
+        <clipPath
+           id="clip9">
+          <path
+             d="M-88,-43 L7,-43 L7,30 L-88,30 L-88,-43 z"
+             id="path6210" />
+        </clipPath>
+      </defs>
+      <g
+         clip-path="url(#clip9)"
+         fill="none"
+         opacity="1"
+         stroke="#000000"
+         stroke-linecap="butt"
+         stroke-linejoin="miter"
+         stroke-miterlimit="2"
+         stroke-opacity="1"
+         stroke-width="1"
+         transform="matrix(1,0,0,1,189,46)"
+         id="g6217">
+        <text
+           fill="#000000"
+           fill-opacity="1"
+           font-family="Liberation Sans"
+           font-size="10"
+           font-style="normal"
+           font-weight="400"
+           stroke="none"
+           textLength="3.9375"
+           x="0"
+           xml:space="preserve"
+           y="1"
+           id="text6215">τ</text>
+      </g>
+      <defs
+         id="defs6222">
+        <clipPath
+           id="clip14">
+          <path
+             d="M-100.5,-3.5 L250.359,-3.5 L250.359,103.5 L-100.5,103.5 L-100.5,-3.5 z"
+             id="path6219" />
+        </clipPath>
+      </defs>
+      <defs
+         id="defs6231">
+        <clipPath
+           id="clip17">
+          <path
+             d="M-148.359,-78 L202.5,-78 L202.5,29 L-148.359,29 L-148.359,-78 z"
+             id="path6228" />
+        </clipPath>
+      </defs>
+      <g
+         clip-path="url(#clip17)"
+         fill="none"
+         opacity="1"
+         stroke="none"
+         stroke-opacity="0"
+         transform="matrix(1,0,0,1,148.359,78)"
+         id="g6235">
+        <path
+           d="M-23.1094,0 L23.1094,0 L23.1094,17 L-23.1094,17 L-23.1094,0 z"
+           fill-rule="evenodd"
+           vector-effect="none"
+           id="path6233" />
+      </g>
+      <defs
+         id="defs6240">
+        <clipPath
+           id="clip21">
+          <path
+             d="M0,0 L46,0 L46,17 L0,17 L0,0 z"
+             id="path6237" />
+        </clipPath>
+      </defs>
+      <g
+         clip-path="url(#clip21)"
+         fill="none"
+         opacity="1"
+         stroke="#000000"
+         stroke-linecap="square"
+         stroke-linejoin="bevel"
+         stroke-opacity="1"
+         stroke-width="1"
+         transform="matrix(1,0,0,1,125.25,78)"
+         id="g6244">
+        <text
+           fill="#000000"
+           fill-opacity="1"
+           font-family="TeX Gyre Heros"
+           font-size="10"
+           font-style="normal"
+           font-weight="400"
+           stroke="none"
+           textLength="43.2188"
+           x="1.5"
+           xml:space="preserve"
+           y="13"
+           id="text6242">Controller</text>
+      </g>
+      <defs
+         id="defs6249">
+        <clipPath
+           id="clip30">
+          <path
+             d="M0,-16 L16,-16 L16,0 L0,0 L0,-16 z"
+             id="path6246" />
+        </clipPath>
+      </defs>
+      <g
+         clip-path="url(#clip30)"
+         fill="none"
+         opacity="1"
+         stroke="none"
+         stroke-opacity="0"
+         transform="matrix(1,0,0,1,101,76)"
+         id="g6253">
+        <path
+           d="M0,-15 C0,-15.5523 0.447715,-16 1,-16 L15,-16 C15.5523,-16 16,-15.5523 16,-15 L16,-1 C16,-0.447715 15.5523,0 15,0 L1,0 C0.447715,0 0,-0.447715 0,-1 L0,-15 z"
+           fill-rule="evenodd"
+           vector-effect="none"
+           id="path6251" />
+      </g>
+      <defs
+         id="defs6258">
+        <clipPath
+           id="clip36">
+          <path
+             d="M1,1 L17,1 L17,17 L1,17 L1,1 z"
+             id="path6255" />
+        </clipPath>
+      </defs>
+      <g
+         clip-path="url(#clip36)"
+         fill="none"
+         opacity="0.8"
+         stroke="#000000"
+         stroke-linecap="square"
+         stroke-linejoin="bevel"
+         stroke-opacity="1"
+         stroke-width="1"
+         transform="matrix(1,0,0,1,100.359,58.5)"
+         id="g6262">
+        <image
+           height="19"
+           preserveAspectRatio="none"
+           width="19"
+           x="0"
+           xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAYAAAByUDbMAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAkklEQVQ4jeWT0Q3DIAxE76L+NwNlsI7QgdoNGCiZ4PKBQIY2RA75Sp6EhMCcObAhHx80oCS1AioWkuNZYgCwAAhpkAx5x2nTMkt62SyD81aWJ4DJLhyxaSnesFcMJJnmPTZ/uJHYF7EQu8k/IWlGrB0PRWlYm+FP8B7FmVrMYzf1aOZRib0RW2TCtuWi0R3Jr8IKW4CVvJYZUCYAAAAASUVORK5CYII="
+           y="0"
+           id="image6260" />
+      </g>
+      <defs
+         id="defs6267">
+        <clipPath
+           id="clip42">
+          <path
+             d="M0,0 L14,0 L14,14 L0,14 L0,0 z"
+             id="path6264" />
+        </clipPath>
+      </defs>
+      <g
+         clip-path="url(#clip42)"
+         fill="#4d4d4d"
+         fill-opacity="1"
+         opacity="1"
+         stroke="none"
+         stroke-opacity="0"
+         transform="matrix(1,0,0,1,102.359,60.5)"
+         id="g6271">
+        <path
+           d="M9,0.999 L9,9 L1,9 L1,0.999 L9,0.999 M10,0 L0,0 L0,10 L10,10 L10,0"
+           fill-rule="nonzero"
+           vector-effect="none"
+           id="path6269" />
+      </g>
+      <defs
+         id="defs6281">
+        <radialGradient
+           cx="1.6665"
+           cy="1.5"
+           fx="1.6665"
+           fy="1.5"
+           gradientUnits="userSpaceOnUse"
+           id="grad1"
+           r="9.8165">
+          <stop
+             offset="0.3754"
+             stop-color="#ffffff"
+             stop-opacity="1"
+             id="stop6273" />
+          <stop
+             offset="0.7864"
+             stop-color="#cccccc"
+             stop-opacity="1"
+             id="stop6275" />
+        </radialGradient>
+        <clipPath
+           id="clip44">
+          <path
+             d="M0,0 L14,0 L14,14 L0,14 L0,0 z"
+             id="path6278" />
+        </clipPath>
+      </defs>
+      <g
+         clip-path="url(#clip44)"
+         fill="url(#grad1)"
+         opacity="1"
+         stroke="none"
+         stroke-opacity="0"
+         transform="matrix(1,0,0,1,102.359,60.5)"
+         id="g6285">
+        <path
+           d="M1,1 L9,1 L9,9 L1,9 L1,1 z"
+           fill-rule="evenodd"
+           vector-effect="none"
+           id="path6283" />
+      </g>
+      <defs
+         id="defs6290">
+        <clipPath
+           id="clip47">
+          <path
+             d="M0,0 L14,0 L14,14 L0,14 L0,0 z"
+             id="path6287" />
+        </clipPath>
+      </defs>
+      <g
+         clip-path="url(#clip47)"
+         fill="#4d4d4d"
+         fill-opacity="1"
+         opacity="1"
+         stroke="none"
+         stroke-opacity="0"
+         transform="matrix(1,0,0,1,102.359,60.5)"
+         id="g6294">
+        <path
+           d="M13,4.999 L13,13 L5,13 L5,4.999 L13,4.999 M14,4 L4,4 L4,14 L14,14 L14,4"
+           fill-rule="nonzero"
+           vector-effect="none"
+           id="path6292" />
+      </g>
+      <defs
+         id="defs6304">
+        <radialGradient
+           cx="5.6665"
+           cy="5.5"
+           fx="5.6665"
+           fy="5.5"
+           gradientUnits="userSpaceOnUse"
+           id="grad2"
+           r="9.8165">
+          <stop
+             offset="0.3754"
+             stop-color="#ffffff"
+             stop-opacity="1"
+             id="stop6296" />
+          <stop
+             offset="0.7864"
+             stop-color="#cccccc"
+             stop-opacity="1"
+             id="stop6298" />
+        </radialGradient>
+        <clipPath
+           id="clip49">
+          <path
+             d="M0,0 L14,0 L14,14 L0,14 L0,0 z"
+             id="path6301" />
+        </clipPath>
+      </defs>
+      <g
+         clip-path="url(#clip49)"
+         fill="url(#grad2)"
+         opacity="1"
+         stroke="none"
+         stroke-opacity="0"
+         transform="matrix(1,0,0,1,102.359,60.5)"
+         id="g6308">
+        <path
+           d="M5,5 L13,5 L13,13 L5,13 L5,5 z"
+           fill-rule="evenodd"
+           vector-effect="none"
+           id="path6306" />
+      </g>
+      <defs
+         id="defs6313">
+        <clipPath
+           id="clip73">
+          <path
+             d="M-6,-2 L344.859,-2 L344.859,105 L-6,105 L-6,-2 z"
+             id="path6310" />
+        </clipPath>
+      </defs>
+      <g
+         clip-path="url(#clip73)"
+         fill="#ffffff"
+         fill-opacity="1"
+         opacity="1"
+         stroke="none"
+         stroke-opacity="0"
+         transform="matrix(1,0,0,1,6,2)"
+         id="g6317">
+        <path
+           d="M0,0 L40,0 L40,40 L0,40 L0,0 z"
+           fill-rule="evenodd"
+           vector-effect="none"
+           id="path6315" />
+      </g>
+      <defs
+         id="defs6322">
+        <clipPath
+           id="clip77">
+          <path
+             d="M-34,-24 L6,-24 L6,16 L-34,16 L-34,-24 z"
+             id="path6319" />
+        </clipPath>
+      </defs>
+      <g
+         clip-path="url(#clip77)"
+         fill="none"
+         opacity="1"
+         stroke="#000000"
+         stroke-linecap="butt"
+         stroke-linejoin="miter"
+         stroke-miterlimit="2"
+         stroke-opacity="1"
+         stroke-width="1"
+         transform="matrix(1,0,0,1,40,26)"
+         id="g6326">
+        <text
+           fill="#000000"
+           fill-opacity="1"
+           font-family="Liberation Sans"
+           font-size="10"
+           font-style="normal"
+           font-weight="400"
+           stroke="none"
+           textLength="3.32812"
+           x="0"
+           xml:space="preserve"
+           y="1"
+           id="text6324">r</text>
+      </g>
+      <defs
+         id="defs6331">
+        <clipPath
+           id="clip78">
+          <path
+             d="M400,140 L440,140 L440,180 L400,180 L400,140 z"
+             id="path6328" />
+        </clipPath>
+      </defs>
+      <g
+         clip-path="url(#clip78)"
+         fill="none"
+         opacity="1"
+         stroke="#000000"
+         stroke-linecap="butt"
+         stroke-linejoin="miter"
+         stroke-miterlimit="2"
+         stroke-opacity="1"
+         stroke-width="1"
+         transform="matrix(1,0,0,1,-393.5,-137.5)"
+         id="g6335">
+        <polyline
+           fill="none"
+           points="403,177 413,177"
+           vector-effect="none"
+           id="polyline6333" />
+      </g>
+      <defs
+         id="defs6340">
+        <clipPath
+           id="clip79">
+          <path
+             d="M400,140 L440,140 L440,180 L400,180 L400,140 z"
+             id="path6337" />
+        </clipPath>
+      </defs>
+      <g
+         clip-path="url(#clip79)"
+         fill="none"
+         opacity="1"
+         stroke="#000000"
+         stroke-linecap="butt"
+         stroke-linejoin="miter"
+         stroke-miterlimit="2"
+         stroke-opacity="1"
+         stroke-width="1"
+         transform="matrix(1,0,0,1,-393.5,-137.5)"
+         id="g6344">
+        <polyline
+           fill="none"
+           points="413,177 427,143"
+           vector-effect="none"
+           id="polyline6342" />
+      </g>
+      <defs
+         id="defs6349">
+        <clipPath
+           id="clip80">
+          <path
+             d="M400,140 L440,140 L440,180 L400,180 L400,140 z"
+             id="path6346" />
+        </clipPath>
+      </defs>
+      <g
+         clip-path="url(#clip80)"
+         fill="none"
+         opacity="1"
+         stroke="#000000"
+         stroke-linecap="butt"
+         stroke-linejoin="miter"
+         stroke-miterlimit="2"
+         stroke-opacity="1"
+         stroke-width="1"
+         transform="matrix(1,0,0,1,-393.5,-137.5)"
+         id="g6353">
+        <polyline
+           fill="none"
+           points="427,143 437,143"
+           vector-effect="none"
+           id="polyline6351" />
+      </g>
+      <defs
+         id="defs6358">
+        <clipPath
+           id="clip85">
+          <path
+             d="M-5.5,-2.5 L345.359,-2.5 L345.359,104.5 L-5.5,104.5 L-5.5,-2.5 z"
+             id="path6355" />
+        </clipPath>
+      </defs>
+      <g
+         clip-path="url(#clip85)"
+         fill="none"
+         opacity="1"
+         stroke="#000000"
+         stroke-linecap="butt"
+         stroke-linejoin="miter"
+         stroke-miterlimit="2"
+         stroke-opacity="1"
+         stroke-width="1"
+         transform="matrix(1,0,0,1,5.5,2.5)"
+         id="g6362">
+        <path
+           d="M0,0 L40,0 L40,40 L0,40 L0,0 z"
+           fill-rule="evenodd"
+           vector-effect="none"
+           id="path6360" />
+      </g>
+      <defs
+         id="defs6367">
+        <clipPath
+           id="clip88">
+          <path
+             d="M-25.8594,-44 L325,-44 L325,63 L-25.8594,63 L-25.8594,-44 z"
+             id="path6364" />
+        </clipPath>
+      </defs>
+      <g
+         clip-path="url(#clip88)"
+         fill="none"
+         opacity="1"
+         stroke="none"
+         stroke-opacity="0"
+         transform="matrix(1,0,0,1,25.8594,44)"
+         id="g6371">
+        <path
+           d="M-23.8594,0 L23.8594,0 L23.8594,17 L-23.8594,17 L-23.8594,0 z"
+           fill-rule="evenodd"
+           vector-effect="none"
+           id="path6369" />
+      </g>
+      <defs
+         id="defs6376">
+        <clipPath
+           id="clip92">
+          <path
+             d="M0,0 L48,0 L48,17 L0,17 L0,0 z"
+             id="path6373" />
+        </clipPath>
+      </defs>
+      <g
+         clip-path="url(#clip92)"
+         fill="none"
+         opacity="1"
+         stroke="#000000"
+         stroke-linecap="square"
+         stroke-linejoin="bevel"
+         stroke-opacity="1"
+         stroke-width="1"
+         transform="matrix(1,0,0,1,2,44)"
+         id="g6380">
+        <text
+           fill="#000000"
+           fill-opacity="1"
+           font-family="TeX Gyre Heros"
+           font-size="10"
+           font-style="normal"
+           font-weight="400"
+           stroke="none"
+           textLength="45.7188"
+           x="1"
+           xml:space="preserve"
+           y="13"
+           id="text6378">Reference</text>
+      </g>
+      <defs
+         id="defs6385">
+        <clipPath
+           id="clip101">
+          <path
+             d="M0,-16 L16,-16 L16,0 L0,0 L0,-16 z"
+             id="path6382" />
+        </clipPath>
+      </defs>
+      <g
+         clip-path="url(#clip101)"
+         fill="none"
+         opacity="1"
+         stroke="none"
+         stroke-opacity="0"
+         transform="matrix(1,0,0,1,6,42)"
+         id="g6389">
+        <path
+           d="M0,-15 C0,-15.5523 0.447715,-16 1,-16 L15,-16 C15.5523,-16 16,-15.5523 16,-15 L16,-1 C16,-0.447715 15.5523,0 15,0 L1,0 C0.447715,0 0,-0.447715 0,-1 L0,-15 z"
+           fill-rule="evenodd"
+           vector-effect="none"
+           id="path6387" />
+      </g>
+      <defs
+         id="defs6394">
+        <clipPath
+           id="clip107">
+          <path
+             d="M1,1 L17,1 L17,17 L1,17 L1,1 z"
+             id="path6391" />
+        </clipPath>
+      </defs>
+      <g
+         clip-path="url(#clip107)"
+         fill="none"
+         opacity="0.8"
+         stroke="#000000"
+         stroke-linecap="square"
+         stroke-linejoin="bevel"
+         stroke-opacity="1"
+         stroke-width="1"
+         transform="matrix(1,0,0,1,5.35938,24.5)"
+         id="g6398">
+        <image
+           height="19"
+           preserveAspectRatio="none"
+           width="19"
+           x="0"
+           xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAATCAYAAAByUDbMAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAAkklEQVQ4jeWT0Q3DIAxE76L+NwNlsI7QgdoNGCiZ4PKBQIY2RA75Sp6EhMCcObAhHx80oCS1AioWkuNZYgCwAAhpkAx5x2nTMkt62SyD81aWJ4DJLhyxaSnesFcMJJnmPTZ/uJHYF7EQu8k/IWlGrB0PRWlYm+FP8B7FmVrMYzf1aOZRib0RW2TCtuWi0R3Jr8IKW4CVvJYZUCYAAAAASUVORK5CYII="
+           y="0"
+           id="image6396" />
+      </g>
+      <defs
+         id="defs6403">
+        <clipPath
+           id="clip113">
+          <path
+             d="M0,0 L14,0 L14,14 L0,14 L0,0 z"
+             id="path6400" />
+        </clipPath>
+      </defs>
+      <g
+         clip-path="url(#clip113)"
+         fill="#4d4d4d"
+         fill-opacity="1"
+         opacity="1"
+         stroke="none"
+         stroke-opacity="0"
+         transform="matrix(1,0,0,1,7.35938,26.5)"
+         id="g6407">
+        <path
+           d="M9,0.999 L9,9 L1,9 L1,0.999 L9,0.999 M10,0 L0,0 L0,10 L10,10 L10,0"
+           fill-rule="nonzero"
+           vector-effect="none"
+           id="path6405" />
+      </g>
+      <defs
+         id="defs6417">
+        <radialGradient
+           cx="1.6665"
+           cy="1.5"
+           fx="1.6665"
+           fy="1.5"
+           gradientUnits="userSpaceOnUse"
+           id="grad3"
+           r="9.8165">
+          <stop
+             offset="0.3754"
+             stop-color="#ffffff"
+             stop-opacity="1"
+             id="stop6409" />
+          <stop
+             offset="0.7864"
+             stop-color="#cccccc"
+             stop-opacity="1"
+             id="stop6411" />
+        </radialGradient>
+        <clipPath
+           id="clip115">
+          <path
+             d="M0,0 L14,0 L14,14 L0,14 L0,0 z"
+             id="path6414" />
+        </clipPath>
+      </defs>
+      <g
+         clip-path="url(#clip115)"
+         fill="url(#grad3)"
+         opacity="1"
+         stroke="none"
+         stroke-opacity="0"
+         transform="matrix(1,0,0,1,7.35938,26.5)"
+         id="g6421">
+        <path
+           d="M1,1 L9,1 L9,9 L1,9 L1,1 z"
+           fill-rule="evenodd"
+           vector-effect="none"
+           id="path6419" />
+      </g>
+      <defs
+         id="defs6426">
+        <clipPath
+           id="clip118">
+          <path
+             d="M0,0 L14,0 L14,14 L0,14 L0,0 z"
+             id="path6423" />
+        </clipPath>
+      </defs>
+      <g
+         clip-path="url(#clip118)"
+         fill="#4d4d4d"
+         fill-opacity="1"
+         opacity="1"
+         stroke="none"
+         stroke-opacity="0"
+         transform="matrix(1,0,0,1,7.35938,26.5)"
+         id="g6430">
+        <path
+           d="M13,4.999 L13,13 L5,13 L5,4.999 L13,4.999 M14,4 L4,4 L4,14 L14,14 L14,4"
+           fill-rule="nonzero"
+           vector-effect="none"
+           id="path6428" />
+      </g>
+      <defs
+         id="defs6440">
+        <radialGradient
+           cx="5.6665"
+           cy="5.5"
+           fx="5.6665"
+           fy="5.5"
+           gradientUnits="userSpaceOnUse"
+           id="grad4"
+           r="9.8165">
+          <stop
+             offset="0.3754"
+             stop-color="#ffffff"
+             stop-opacity="1"
+             id="stop6432" />
+          <stop
+             offset="0.7864"
+             stop-color="#cccccc"
+             stop-opacity="1"
+             id="stop6434" />
+        </radialGradient>
+        <clipPath
+           id="clip120">
+          <path
+             d="M0,0 L14,0 L14,14 L0,14 L0,0 z"
+             id="path6437" />
+        </clipPath>
+      </defs>
+      <g
+         clip-path="url(#clip120)"
+         fill="url(#grad4)"
+         opacity="1"
+         stroke="none"
+         stroke-opacity="0"
+         transform="matrix(1,0,0,1,7.35938,26.5)"
+         id="g6444">
+        <path
+           d="M5,5 L13,5 L13,13 L5,13 L5,5 z"
+           fill-rule="evenodd"
+           vector-effect="none"
+           id="path6442" />
+      </g>
+      <defs
+         id="defs6449">
+        <clipPath
+           id="clip144">
+          <path
+             d="M-330.859,-22 L20,-22 L20,85 L-330.859,85 L-330.859,-22 z"
+             id="path6446" />
+        </clipPath>
+      </defs>
+      <g
+         clip-path="url(#clip144)"
+         fill="none"
+         opacity="1"
+         stroke="#000000"
+         stroke-linecap="round"
+         stroke-linejoin="miter"
+         stroke-miterlimit="2"
+         stroke-opacity="1"
+         stroke-width="2"
+         transform="matrix(1,0,0,1,330.859,22)"
+         id="g6453">
+        <path
+           d="M0,-5 L5,0 L0,5"
+           fill-rule="evenodd"
+           vector-effect="none"
+           id="path6451" />
+      </g>
+      <defs
+         id="defs6458">
+        <clipPath
+           id="clip147">
+          <path
+             d="M-236,-3 L114.859,-3 L114.859,104 L-236,104 L-236,-3 z"
+             id="path6455" />
+        </clipPath>
+      </defs>
+      <g
+         clip-path="url(#clip147)"
+         fill="#ffffff"
+         fill-opacity="1"
+         opacity="1"
+         stroke="none"
+         stroke-opacity="0"
+         transform="matrix(1,0,0,1,236,3)"
+         id="g6462">
+        <path
+           d="M0,0 L95,0 L95,73 L0,73 L0,0 z"
+           fill-rule="evenodd"
+           vector-effect="none"
+           id="path6460" />
+      </g>
+      <defs
+         id="defs6467">
+        <clipPath
+           id="clip151">
+          <path
+             d="M-3,-43 L92,-43 L92,30 L-3,30 L-3,-43 z"
+             id="path6464" />
+        </clipPath>
+      </defs>
+      <g
+         clip-path="url(#clip151)"
+         fill="none"
+         opacity="1"
+         stroke="#000000"
+         stroke-linecap="butt"
+         stroke-linejoin="miter"
+         stroke-miterlimit="2"
+         stroke-opacity="1"
+         stroke-width="1"
+         transform="matrix(1,0,0,1,239,46)"
+         id="g6471">
+        <text
+           fill="#000000"
+           fill-opacity="1"
+           font-family="Liberation Sans"
+           font-size="10"
+           font-style="normal"
+           font-weight="400"
+           stroke="none"
+           textLength="3.9375"
+           x="0"
+           xml:space="preserve"
+           y="1"
+           id="text6469">τ</text>
+      </g>
+      <defs
+         id="defs6476">
+        <clipPath
+           id="clip152">
+          <path
+             d="M-86,-23 L9,-23 L9,50 L-86,50 L-86,-23 z"
+             id="path6473" />
+        </clipPath>
+      </defs>
+      <g
+         clip-path="url(#clip152)"
+         fill="none"
+         opacity="1"
+         stroke="#000000"
+         stroke-linecap="butt"
+         stroke-linejoin="miter"
+         stroke-miterlimit="2"
+         stroke-opacity="1"
+         stroke-width="1"
+         transform="matrix(1,0,0,1,322,26)"
+         id="g6480">
+        <text
+           fill="#000000"
+           fill-opacity="1"
+           font-family="Liberation Sans"
+           font-size="10"
+           font-style="normal"
+           font-weight="400"
+           stroke="none"
+           textLength="6.48438"
+           x="0"
+           xml:space="preserve"
+           y="1"
+           id="text6478">φ</text>
+      </g>
+      <defs
+         id="defs6485">
+        <clipPath
+           id="clip153">
+          <path
+             d="M-84,-58 L11,-58 L11,15 L-84,15 L-84,-58 z"
+             id="path6482" />
+        </clipPath>
+      </defs>
+      <g
+         clip-path="url(#clip153)"
+         fill="none"
+         opacity="1"
+         stroke="#000000"
+         stroke-linecap="butt"
+         stroke-linejoin="miter"
+         stroke-miterlimit="2"
+         stroke-opacity="1"
+         stroke-width="1"
+         transform="matrix(1,0,0,1,320,61)"
+         id="g6489">
+        <text
+           fill="#000000"
+           fill-opacity="1"
+           font-family="Liberation Sans"
+           font-size="10"
+           font-style="normal"
+           font-weight="400"
+           stroke="none"
+           textLength="7.79688"
+           x="0"
+           xml:space="preserve"
+           y="1"
+           id="text6487">ω</text>
+      </g>
+      <defs
+         id="defs6494">
+        <clipPath
+           id="clip158">
+          <path
+             d="M-235.5,-3.5 L115.359,-3.5 L115.359,103.5 L-235.5,103.5 L-235.5,-3.5 z"
+             id="path6491" />
+        </clipPath>
+      </defs>
+      <g
+         clip-path="url(#clip158)"
+         fill="none"
+         opacity="1"
+         stroke="#000000"
+         stroke-linecap="butt"
+         stroke-linejoin="miter"
+         stroke-miterlimit="2"
+         stroke-opacity="1"
+         stroke-width="1"
+         transform="matrix(1,0,0,1,235.5,3.5)"
+         id="g6498">
+        <path
+           d="M0,0 L95,0 L95,73 L0,73 L0,0 z"
+           fill-rule="evenodd"
+           vector-effect="none"
+           id="path6496" />
+      </g>
+      <defs
+         id="defs6503">
+        <clipPath
+           id="clip161">
+          <path
+             d="M-283.359,-78 L67.5,-78 L67.5,29 L-283.359,29 L-283.359,-78 z"
+             id="path6500" />
+        </clipPath>
+      </defs>
+      <g
+         clip-path="url(#clip161)"
+         fill="none"
+         opacity="1"
+         stroke="none"
+         stroke-opacity="0"
+         transform="matrix(1,0,0,1,283.359,78)"
+         id="g6507">
+        <path
+           d="M-12.3672,0 L12.3672,0 L12.3672,17 L-12.3672,17 L-12.3672,0 z"
+           fill-rule="evenodd"
+           vector-effect="none"
+           id="path6505" />
+      </g>
+      <defs
+         id="defs6512">
+        <clipPath
+           id="clip165">
+          <path
+             d="M0,0 L25,0 L25,17 L0,17 L0,0 z"
+             id="path6509" />
+        </clipPath>
+      </defs>
+      <g
+         clip-path="url(#clip165)"
+         fill="none"
+         opacity="1"
+         stroke="#000000"
+         stroke-linecap="square"
+         stroke-linejoin="bevel"
+         stroke-opacity="1"
+         stroke-width="1"
+         transform="matrix(1,0,0,1,270.992,78)"
+         id="g6516">
+        <text
+           fill="#000000"
+           fill-opacity="1"
+           font-family="TeX Gyre Heros"
+           font-size="10"
+           font-style="normal"
+           font-weight="400"
+           stroke="none"
+           textLength="22.7344"
+           x="1"
+           xml:space="preserve"
+           y="13"
+           id="text6514">Plant</text>
+      </g>
+      <defs
+         id="defs6521">
+        <clipPath
+           id="clip173">
+          <path
+             d="M-101,-22 L249.859,-22 L249.859,85 L-101,85 L-101,-22 z"
+             id="path6518" />
+        </clipPath>
+      </defs>
+      <g
+         clip-path="url(#clip173)"
+         fill="#000000"
+         fill-opacity="1"
+         opacity="1"
+         stroke="none"
+         stroke-opacity="0"
+         transform="matrix(1,0,0,1,101,22)"
+         id="g6525">
+        <path
+           d="M0,0 L-8,-4 L-8,4 L0,0 z"
+           fill-rule="nonzero"
+           vector-effect="none"
+           id="path6523" />
+      </g>
+      <defs
+         id="defs6530">
+        <clipPath
+           id="clip176">
+          <path
+             d="M394.141,138 L745,138 L745,245 L394.141,245 L394.141,138 z"
+             id="path6527" />
+        </clipPath>
+      </defs>
+      <g
+         clip-path="url(#clip176)"
+         fill="none"
+         opacity="1"
+         stroke="#000000"
+         stroke-linecap="butt"
+         stroke-linejoin="miter"
+         stroke-miterlimit="2"
+         stroke-opacity="1"
+         stroke-width="1"
+         transform="matrix(1,0,0,1,-394.141,-138)"
+         id="g6534">
+        <path
+           d="M440,160 L487,160"
+           fill-rule="evenodd"
+           vector-effect="none"
+           id="path6532" />
+      </g>
+      <defs
+         id="defs6539">
+        <clipPath
+           id="clip179">
+          <path
+             d="M-236,-42 L114.859,-42 L114.859,65 L-236,65 L-236,-42 z"
+             id="path6536" />
+        </clipPath>
+      </defs>
+      <g
+         clip-path="url(#clip179)"
+         fill="#000000"
+         fill-opacity="1"
+         opacity="1"
+         stroke="none"
+         stroke-opacity="0"
+         transform="matrix(1,0,0,1,236,42)"
+         id="g6543">
+        <path
+           d="M0,0 L-8,-4 L-8,4 L0,0 z"
+           fill-rule="nonzero"
+           vector-effect="none"
+           id="path6541" />
+      </g>
+      <defs
+         id="defs6548">
+        <clipPath
+           id="clip182">
+          <path
+             d="M394.141,138 L745,138 L745,245 L394.141,245 L394.141,138 z"
+             id="path6545" />
+        </clipPath>
+      </defs>
+      <g
+         clip-path="url(#clip182)"
+         fill="none"
+         opacity="1"
+         stroke="#000000"
+         stroke-linecap="butt"
+         stroke-linejoin="miter"
+         stroke-miterlimit="2"
+         stroke-opacity="1"
+         stroke-width="1"
+         transform="matrix(1,0,0,1,-394.141,-138)"
+         id="g6552">
+        <path
+           d="M590,180 L622,180"
+           fill-rule="evenodd"
+           vector-effect="none"
+           id="path6550" />
+      </g>
+      <defs
+         id="defs6557">
+        <clipPath
+           id="clip185">
+          <path
+             d="M-101,-57 L249.859,-57 L249.859,50 L-101,50 L-101,-57 z"
+             id="path6554" />
+        </clipPath>
+      </defs>
+      <g
+         clip-path="url(#clip185)"
+         fill="#000000"
+         fill-opacity="1"
+         opacity="1"
+         stroke="none"
+         stroke-opacity="0"
+         transform="matrix(1,0,0,1,101,57)"
+         id="g6561">
+        <path
+           d="M0,0 L-8,-4 L-8,4 L0,0 z"
+           fill-rule="nonzero"
+           vector-effect="none"
+           id="path6559" />
+      </g>
+      <defs
+         id="defs6566">
+        <clipPath
+           id="clip188">
+          <path
+             d="M394.141,138 L745,138 L745,245 L394.141,245 L394.141,138 z"
+             id="path6563" />
+        </clipPath>
+      </defs>
+      <g
+         clip-path="url(#clip188)"
+         fill="none"
+         opacity="1"
+         stroke="#000000"
+         stroke-linecap="butt"
+         stroke-linejoin="miter"
+         stroke-miterlimit="2"
+         stroke-opacity="1"
+         stroke-width="1"
+         transform="matrix(1,0,0,1,-394.141,-138)"
+         id="g6570">
+        <path
+           d="M725,195 L739,195 L739,243 L481,243 L481,195 L487,195"
+           fill-rule="evenodd"
+           vector-effect="none"
+           id="path6568" />
+      </g>
+      <defs
+         id="defs6575">
+        <clipPath
+           id="clip192">
+          <path
+             d="M0,-18 L18,-18 L18,0 L0,0 L0,-18 z"
+             id="path6572" />
+        </clipPath>
+      </defs>
+      <g
+         clip-path="url(#clip192)"
+         fill="none"
+         opacity="1"
+         stroke="none"
+         stroke-opacity="0"
+         transform="matrix(1,0,0,1,331,57)"
+         id="g6579">
+        <path
+           d="M0,-16 C0,-17.1046 0.895431,-18 2,-18 L16,-18 C17.1046,-18 18,-17.1046 18,-16 L18,-2 C18,-0.895431 17.1046,0 16,0 L2,0 C0.895431,0 0,-0.895431 0,-2 L0,-16 z"
+           fill-rule="evenodd"
+           vector-effect="none"
+           id="path6577" />
+      </g>
+      <defs
+         id="defs6584">
+        <clipPath
+           id="clip198">
+          <path
+             d="M0,-2 L14,-2 L14,-1 L15,-1 L15,0 L16,0 L16,15 L15,15 L15,16 L-1,16 L-1,15 L-2,15 L-2,0 L-1,0 L-1,-1 L0,-1"
+             id="path6581" />
+        </clipPath>
+      </defs>
+      <g
+         clip-path="url(#clip198)"
+         fill="none"
+         opacity="0.4"
+         stroke="#000000"
+         stroke-linecap="square"
+         stroke-linejoin="bevel"
+         stroke-opacity="1"
+         stroke-width="1"
+         transform="matrix(1,0,0,1,332.859,41)"
+         id="g6588">
+        <image
+           height="16"
+           preserveAspectRatio="none"
+           width="16"
+           x="-1"
+           xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABXUlEQVQ4jcWQv0sCYRzGnzsz2iIaHIyKREj6B4rmnFyiJGhwktxqkXAJHKK1oQguhLAxIoiiX7SEIA22SJtw1VBhQ3V473v33nu+b1Mi6IkU0Wf7fp+H5/sD+G+U5iKblepNX2GGcDdOmQhbzBmDZSuS2bq0bF0y63xwoOfobjfFWwIWdm4nCa/nKXNrhIk96vB7SqTuk4YQ1B2uEysMxhYFsycUx0k+XmQuGwEJrTTs1HmBcLF8sjJ93GnlkdjmFLi9D+lGn67WHhrCklbyd314/MDX9gcAENdK/e8GTX1YfN6gPCxNEzDNiiC1Q/WTaPp1xmj2q81FIl8MCs7LACJSIs0chJxeEZJAWpVKRPhRHoqtBztuN7dVHPfSRqMbntqPafnBN7PbxVilSnL09Q14eU7qZ6un7XxquyYASIEcgACAgFCQ8/J5BnSLZ4CiIgmgCqCqSiR/O+jv+ALWHqC6dVXKGAAAAABJRU5ErkJggg=="
+           y="-1"
+           id="image6586" />
+      </g>
+      <defs
+         id="defs6593">
+        <clipPath
+           id="clip205">
+          <path
+             d="M0,-18 L18,-18 L18,0 L0,0 L0,-18 z"
+             id="path6590" />
+        </clipPath>
+      </defs>
+      <g
+         clip-path="url(#clip205)"
+         fill="none"
+         opacity="1"
+         stroke="none"
+         stroke-opacity="0"
+         transform="matrix(1,0,0,1,196,42)"
+         id="g6597">
+        <path
+           d="M0,-16 C0,-17.1046 0.895431,-18 2,-18 L16,-18 C17.1046,-18 18,-17.1046 18,-16 L18,-2 C18,-0.895431 17.1046,0 16,0 L2,0 C0.895431,0 0,-0.895431 0,-2 L0,-16 z"
+           fill-rule="evenodd"
+           vector-effect="none"
+           id="path6595" />
+      </g>
+      <defs
+         id="defs6602">
+        <clipPath
+           id="clip211">
+          <path
+             d="M0,-2 L14,-2 L14,-1 L15,-1 L15,0 L16,0 L16,15 L15,15 L15,16 L-1,16 L-1,15 L-2,15 L-2,0 L-1,0 L-1,-1 L0,-1"
+             id="path6599" />
+        </clipPath>
+      </defs>
+      <g
+         clip-path="url(#clip211)"
+         fill="none"
+         opacity="0.4"
+         stroke="#000000"
+         stroke-linecap="square"
+         stroke-linejoin="bevel"
+         stroke-opacity="1"
+         stroke-width="1"
+         transform="matrix(1,0,0,1,197.859,26)"
+         id="g6606">
+        <image
+           height="16"
+           preserveAspectRatio="none"
+           width="16"
+           x="-1"
+           xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAA7EAAAOxAGVKw4bAAABXUlEQVQ4jcWQv0sCYRzGnzsz2iIaHIyKREj6B4rmnFyiJGhwktxqkXAJHKK1oQguhLAxIoiiX7SEIA22SJtw1VBhQ3V473v33nu+b1Mi6IkU0Wf7fp+H5/sD+G+U5iKblepNX2GGcDdOmQhbzBmDZSuS2bq0bF0y63xwoOfobjfFWwIWdm4nCa/nKXNrhIk96vB7SqTuk4YQ1B2uEysMxhYFsycUx0k+XmQuGwEJrTTs1HmBcLF8sjJ93GnlkdjmFLi9D+lGn67WHhrCklbyd314/MDX9gcAENdK/e8GTX1YfN6gPCxNEzDNiiC1Q/WTaPp1xmj2q81FIl8MCs7LACJSIs0chJxeEZJAWpVKRPhRHoqtBztuN7dVHPfSRqMbntqPafnBN7PbxVilSnL09Q14eU7qZ6un7XxquyYASIEcgACAgFCQ8/J5BnSLZ4CiIgmgCqCqSiR/O+jv+ALWHqC6dVXKGAAAAABJRU5ErkJggg=="
+           y="-1"
+           id="image6604" />
+      </g>
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer1"
+     inkscape:label="Subsys">
+    <g
+       inkscape:groupmode="layer"
+       id="layer8"
+       inkscape:label="Blowup"
+       style="display:inline">
+      <path
+         style="display:inline;fill:#000000;fill-opacity:0.1254902;fill-rule:evenodd;stroke:#000000;stroke-width:1.0666666px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         d="m 100.5,76.5 95,-0.39999 L 68.200969,349.22144 -218.81132,118.77466 101,3 Z"
+         id="path7704"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="cccccc" />
+    </g>
+    <g
+       inkscape:groupmode="layer"
+       id="layer9"
+       inkscape:label="Box"
+       style="display:inline">
+      <g
+         style="fill:#ffffff;fill-opacity:1"
+         id="g14531"
+         transform="translate(113.85198,28.867018)">
+        <a
+           transform="matrix(0.8759767,0,0,0.89589124,4.308024,114.69273)"
+           style="display:inline;fill:#ffffff;fill-opacity:1"
+           id="a7110">
+          <rect
+             y="-27.665291"
+             x="-384.68069"
+             height="257.22629"
+             width="327.64832"
+             id="rect7108"
+             style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.6400016;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+        </a>
+      </g>
+    </g>
+    <g
+       inkscape:groupmode="layer"
+       id="layer7"
+       inkscape:label="Sys"
+       style="display:inline">
+      <g
+         transform="translate(-217.24156,151.18886)"
+         id="g8411"
+         style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel">
+        <g
+           id="g7995"
+           clip-path="none"
+           style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-opacity:0" />
+        <defs
+           id="defs8000">
+          <clipPath
+             id="clipPath13477">
+            <path
+               id="path13475"
+               d="M 252,80 H -32 V -89 h 284 z"
+               inkscape:connector-curvature="0" />
+          </clipPath>
+        </defs>
+        <g
+           id="g8004"
+           transform="rotate(180,126,40)"
+           stroke-miterlimit="2"
+           clip-path="url(#clip3-3)"
+           style="opacity:1;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:2;stroke-opacity:1">
+          <path
+             id="path8002"
+             d="M 5,-5 0,0 5,5"
+             inkscape:connector-curvature="0"
+             style="vector-effect:none;fill-rule:evenodd" />
+        </g>
+        <defs
+           id="defs8009">
+          <clipPath
+             id="clipPath13484">
+            <path
+               id="path13482"
+               d="M -252,-73 H 32 V 96 h -284 z"
+               inkscape:connector-curvature="0" />
+          </clipPath>
+        </defs>
+        <g
+           id="g8013"
+           transform="translate(252,73)"
+           clip-path="url(#clip6)"
+           style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-opacity:0">
+          <path
+             id="path8011"
+             d="m 7,0 h 16 c 3.866,0 7,3.13401 7,7 0,3.866 -3.134,7 -7,7 H 7 C 3.13401,14 0,10.866 0,7 0,3.13401 3.13401,0 7,0 Z"
+             inkscape:connector-curvature="0"
+             style="vector-effect:none;fill-rule:nonzero" />
+        </g>
+        <defs
+           id="defs8018">
+          <clipPath
+             id="clipPath13491">
+            <path
+               id="path13489"
+               d="M -15,-7 H 15 V 7 h -30 z"
+               inkscape:connector-curvature="0" />
+          </clipPath>
+        </defs>
+        <g
+           id="g8022"
+           transform="translate(267,80)"
+           stroke-miterlimit="2"
+           clip-path="url(#clip10)"
+           style="opacity:1;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:2;stroke-opacity:1">
+          <text
+             id="text8020"
+             y="3.5"
+             xml:space="preserve"
+             x="-2.76562"
+             textLength="5.5468798"
+             font-weight="400"
+             font-style="normal"
+             font-size="10"
+             lengthAdjust="spacing"
+             style="font-style:normal;font-weight:400;font-size:10px;font-family:'Liberation Sans';fill:#000000;fill-opacity:1;stroke:none">1</text>
+        </g>
+        <defs
+           id="defs8027">
+          <clipPath
+             id="clipPath13498">
+            <path
+               id="path13496"
+               d="m -252.5,-73.5 h 284 v 169 h -284 z"
+               inkscape:connector-curvature="0" />
+          </clipPath>
+        </defs>
+        <g
+           id="g8031"
+           transform="translate(252.5,73.5)"
+           stroke-miterlimit="2"
+           clip-path="url(#clip15)"
+           style="opacity:1;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:2;stroke-opacity:1">
+          <path
+             id="path8029"
+             d="m 7,0 h 16 c 3.866,0 7,3.13401 7,7 0,3.866 -3.134,7 -7,7 H 7 C 3.13401,14 0,10.866 0,7 0,3.13401 3.13401,0 7,0 Z"
+             inkscape:connector-curvature="0"
+             style="vector-effect:none;fill-rule:nonzero" />
+        </g>
+        <defs
+           id="defs8036">
+          <clipPath
+             id="clipPath13505">
+            <path
+               id="path13503"
+               d="M -267,-89 H 17 V 80 h -284 z"
+               inkscape:connector-curvature="0" />
+          </clipPath>
+        </defs>
+        <g
+           id="g8040"
+           transform="translate(267,89)"
+           clip-path="url(#clip18)"
+           style="opacity:1;fill:none;stroke:none;stroke-opacity:0">
+          <path
+             id="path8038"
+             d="M -3.77344,0 H 3.77344 V 17 H -3.77344 Z"
+             inkscape:connector-curvature="0"
+             style="vector-effect:none;fill-rule:evenodd" />
+        </g>
+        <defs
+           id="defs8045">
+          <clipPath
+             id="clipPath13512">
+            <path
+               id="path13510"
+               d="M 0,0 H 8 V 17 H 0 Z"
+               inkscape:connector-curvature="0" />
+          </clipPath>
+        </defs>
+        <g
+           id="g8049"
+           transform="translate(263.227,89)"
+           clip-path="url(#clip22)"
+           style="opacity:1;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1">
+          <text
+             id="text8047"
+             y="13"
+             xml:space="preserve"
+             x="1"
+             textLength="5.5468798"
+             font-weight="400"
+             font-style="normal"
+             font-size="10"
+             lengthAdjust="spacing"
+             style="font-style:normal;font-weight:400;font-size:10px;font-family:'TeX Gyre Heros';fill:#000000;fill-opacity:1;stroke:none">u</text>
+        </g>
+        <defs
+           id="defs8054">
+          <clipPath
+             id="clipPath13519">
+            <path
+               id="path13517"
+               d="M -32,-55 H 252 V 114 H -32 Z"
+               inkscape:connector-curvature="0" />
+          </clipPath>
+        </defs>
+        <g
+           id="g8058"
+           transform="translate(32,55)"
+           stroke-miterlimit="2"
+           clip-path="url(#clip30-6)"
+           style="opacity:0.4;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:2;stroke-opacity:1">
+          <path
+             id="path8056"
+             d="M 0,-5 5,0 0,5"
+             inkscape:connector-curvature="0"
+             style="vector-effect:none;fill-rule:evenodd" />
+        </g>
+        <defs
+           id="defs8063">
+          <clipPath
+             id="clipPath13526">
+            <path
+               id="path13524"
+               d="M -2,-48 H 282 V 121 H -2 Z"
+               inkscape:connector-curvature="0" />
+          </clipPath>
+        </defs>
+        <g
+           id="g8067"
+           transform="translate(2,48)"
+           clip-path="url(#clip33)"
+           style="opacity:0.4;fill:#ffffff;fill-opacity:1;stroke:none;stroke-opacity:0">
+          <path
+             id="path8065"
+             d="m 7,0 h 16 c 3.866,0 7,3.13401 7,7 0,3.866 -3.134,7 -7,7 H 7 C 3.13401,14 0,10.866 0,7 0,3.13401 3.13401,0 7,0 Z"
+             inkscape:connector-curvature="0"
+             style="vector-effect:none;fill-rule:nonzero" />
+        </g>
+        <defs
+           id="defs8072">
+          <clipPath
+             id="clipPath13533">
+            <path
+               id="path13531"
+               d="M -15,-7 H 15 V 7 h -30 z"
+               inkscape:connector-curvature="0" />
+          </clipPath>
+        </defs>
+        <g
+           id="g8076"
+           transform="translate(17,55)"
+           stroke-miterlimit="2"
+           clip-path="url(#clip37)"
+           style="opacity:0.4;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:2;stroke-opacity:1">
+          <text
+             id="text8074"
+             y="3.5"
+             xml:space="preserve"
+             x="-2.76562"
+             textLength="5.5468798"
+             font-weight="400"
+             font-style="normal"
+             font-size="10"
+             lengthAdjust="spacing"
+             style="font-style:normal;font-weight:400;font-size:10px;font-family:'Liberation Sans';fill:#000000;fill-opacity:1;stroke:none">1</text>
+        </g>
+        <defs
+           id="defs8081">
+          <clipPath
+             id="clipPath13540">
+            <path
+               id="path13538"
+               d="m -2.5,-48.5 h 284 v 169 h -284 z"
+               inkscape:connector-curvature="0" />
+          </clipPath>
+        </defs>
+        <g
+           id="g8085"
+           transform="translate(2.5,48.5)"
+           stroke-miterlimit="2"
+           clip-path="url(#clip42-7)"
+           style="opacity:0.4;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:2;stroke-opacity:1">
+          <path
+             id="path8083"
+             d="m 7,0 h 16 c 3.866,0 7,3.13401 7,7 0,3.866 -3.134,7 -7,7 H 7 C 3.13401,14 0,10.866 0,7 0,3.13401 3.13401,0 7,0 Z"
+             inkscape:connector-curvature="0"
+             style="vector-effect:none;fill-rule:nonzero" />
+        </g>
+        <defs
+           id="defs8090">
+          <clipPath
+             id="clipPath13547">
+            <path
+               id="path13545"
+               d="M -17,-64 H 267 V 105 H -17 Z"
+               inkscape:connector-curvature="0" />
+          </clipPath>
+        </defs>
+        <g
+           id="g8094"
+           transform="translate(17,64)"
+           clip-path="url(#clip45)"
+           style="opacity:0.4;fill:none;stroke:none;stroke-opacity:0">
+          <path
+             id="path8092"
+             d="M -3.16406,0 H 3.16406 V 17 H -3.16406 Z"
+             inkscape:connector-curvature="0"
+             style="vector-effect:none;fill-rule:evenodd" />
+        </g>
+        <defs
+           id="defs8099">
+          <clipPath
+             id="clipPath13554">
+            <path
+               id="path13552"
+               d="M 0,0 H 6 V 17 H 0 Z"
+               inkscape:connector-curvature="0" />
+          </clipPath>
+        </defs>
+        <g
+           id="g8103"
+           transform="translate(13.8359,64)"
+           clip-path="url(#clip49-5)"
+           style="opacity:0.4;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1">
+          <text
+             id="text8101"
+             y="13"
+             xml:space="preserve"
+             x="1.5"
+             textLength="3.32812"
+             font-weight="400"
+             font-style="normal"
+             font-size="10"
+             lengthAdjust="spacing"
+             style="font-style:normal;font-weight:400;font-size:10px;font-family:'TeX Gyre Heros';fill:#000000;fill-opacity:1;stroke:none">r</text>
+        </g>
+        <defs
+           id="defs8108">
+          <clipPath
+             id="clipPath13561">
+            <path
+               id="path13559"
+               d="M -157,-75 H 127 V 94 h -284 z"
+               inkscape:connector-curvature="0" />
+          </clipPath>
+        </defs>
+        <g
+           id="g8112"
+           transform="translate(157,75)"
+           stroke-miterlimit="2"
+           clip-path="url(#clip57)"
+           style="opacity:0.4;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:2;stroke-opacity:1">
+          <path
+             id="path8110"
+             d="M 0,-5 5,0 0,5"
+             inkscape:connector-curvature="0"
+             style="vector-effect:none;fill-rule:evenodd" />
+        </g>
+        <defs
+           id="defs8117">
+          <clipPath
+             id="clipPath13568">
+            <path
+               id="path13566"
+               d="M 117,85 H -167 V -84 h 284 z"
+               inkscape:connector-curvature="0" />
+          </clipPath>
+        </defs>
+        <g
+           id="g8121"
+           transform="rotate(180,58.5,42.5)"
+           stroke-miterlimit="2"
+           clip-path="url(#clip60)"
+           style="opacity:0.4;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:2;stroke-opacity:1">
+          <path
+             id="path8119"
+             d="M 5,-5 0,0 5,5"
+             inkscape:connector-curvature="0"
+             style="vector-effect:none;fill-rule:evenodd" />
+        </g>
+        <defs
+           id="defs8126">
+          <clipPath
+             id="clipPath13575">
+            <path
+               id="path13573"
+               d="M 117,65 H -167 V -104 H 117 Z"
+               inkscape:connector-curvature="0" />
+          </clipPath>
+        </defs>
+        <g
+           id="g8130"
+           transform="rotate(180,58.5,32.5)"
+           stroke-miterlimit="2"
+           clip-path="url(#clip63)"
+           style="opacity:0.4;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:2;stroke-opacity:1">
+          <path
+             id="path8128"
+             d="M 5,-5 0,0 5,5"
+             inkscape:connector-curvature="0"
+             style="vector-effect:none;fill-rule:evenodd" />
+        </g>
+        <defs
+           id="defs8135">
+          <clipPath
+             id="clipPath13582">
+            <path
+               id="path13580"
+               d="M -117,-57 H 167 V 112 H -117 Z"
+               inkscape:connector-curvature="0" />
+          </clipPath>
+        </defs>
+        <g
+           id="g8139"
+           transform="translate(117,57)"
+           clip-path="url(#clip66)"
+           style="opacity:0.4;fill:#ffffff;fill-opacity:1;stroke:none;stroke-opacity:0">
+          <path
+             id="path8137"
+             d="M 0,0 H 40 V 36 H 0 Z"
+             inkscape:connector-curvature="0"
+             style="vector-effect:none;fill-rule:evenodd" />
+        </g>
+        <defs
+           id="defs8144">
+          <clipPath
+             id="clipPath13589">
+            <path
+               id="path13587"
+               d="M -3,-8 H 37 V 28 H -3 Z"
+               inkscape:connector-curvature="0" />
+          </clipPath>
+        </defs>
+        <g
+           id="g8148"
+           transform="translate(120,65)"
+           stroke-miterlimit="2"
+           clip-path="url(#clip70)"
+           style="opacity:0.4;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:2;stroke-opacity:1">
+          <text
+             id="text8146"
+             y="3"
+             xml:space="preserve"
+             x="0"
+             textLength="2.98438"
+             font-weight="400"
+             font-style="normal"
+             font-size="9"
+             lengthAdjust="spacing"
+             style="font-style:normal;font-weight:400;font-size:9px;font-family:'Liberation Sans';fill:#000000;fill-opacity:1;stroke:none">r</text>
+        </g>
+        <defs
+           id="defs8153">
+          <clipPath
+             id="clipPath13596">
+            <path
+               id="path13594"
+               d="M -3,-28 H 37 V 8 H -3 Z"
+               inkscape:connector-curvature="0" />
+          </clipPath>
+        </defs>
+        <g
+           id="g8157"
+           transform="translate(120,85)"
+           stroke-miterlimit="2"
+           clip-path="url(#clip71)"
+           style="opacity:0.4;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:2;stroke-opacity:1">
+          <text
+             id="text8155"
+             y="3"
+             xml:space="preserve"
+             x="0"
+             textLength="4.5"
+             font-weight="400"
+             font-style="normal"
+             font-size="9"
+             lengthAdjust="spacing"
+             style="font-style:normal;font-weight:400;font-size:9px;font-family:'Liberation Sans';fill:#000000;fill-opacity:1;stroke:none">y</text>
+        </g>
+        <defs
+           id="defs8162">
+          <clipPath
+             id="clipPath13603">
+            <path
+               id="path13601"
+               d="M -37,-18 H 3 v 36 h -40 z"
+               inkscape:connector-curvature="0" />
+          </clipPath>
+        </defs>
+        <g
+           id="g8166"
+           transform="translate(154,75)"
+           stroke-miterlimit="2"
+           clip-path="url(#clip72)"
+           style="opacity:0.4;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:2;stroke-opacity:1">
+          <text
+             id="text8164"
+             y="3"
+             xml:space="preserve"
+             x="-5"
+             textLength="5"
+             font-weight="400"
+             font-style="normal"
+             font-size="9"
+             lengthAdjust="spacing"
+             style="font-style:normal;font-weight:400;font-size:9px;font-family:'Liberation Sans';fill:#000000;fill-opacity:1;stroke:none">u</text>
+        </g>
+        <defs
+           id="defs8171">
+          <clipPath
+             id="clipPath13610">
+            <path
+               id="path13608"
+               d="m -117.5,-57.5 h 284 v 169 h -284 z"
+               inkscape:connector-curvature="0" />
+          </clipPath>
+        </defs>
+        <g
+           id="g8175"
+           transform="translate(117.5,57.5)"
+           stroke-miterlimit="2"
+           clip-path="url(#clip77-3)"
+           style="opacity:0.4;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:2;stroke-opacity:1">
+          <path
+             id="path8173"
+             d="M 0,0 H 40 V 36 H 0 Z"
+             inkscape:connector-curvature="0"
+             style="vector-effect:none;fill-rule:evenodd" />
+        </g>
+        <defs
+           id="defs8180">
+          <clipPath
+             id="clipPath13617">
+            <path
+               id="path13615"
+               d="M -137,-95 H 147 V 74 h -284 z"
+               inkscape:connector-curvature="0" />
+          </clipPath>
+        </defs>
+        <g
+           id="g8184"
+           transform="translate(137,95)"
+           clip-path="url(#clip80-5)"
+           style="opacity:0.4;fill:none;stroke:none;stroke-opacity:0">
+          <path
+             id="path8182"
+             d="M -38.3594,0 H 38.3594 V 17 H -38.3594 Z"
+             inkscape:connector-curvature="0"
+             style="vector-effect:none;fill-rule:evenodd" />
+        </g>
+        <defs
+           id="defs8189">
+          <clipPath
+             id="clipPath13624">
+            <path
+               id="path13622"
+               d="M 0,0 H 77 V 17 H 0 Z"
+               inkscape:connector-curvature="0" />
+          </clipPath>
+        </defs>
+        <g
+           id="g8193"
+           transform="translate(98.6406,95)"
+           clip-path="url(#clip84)"
+           style="opacity:0.4;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1">
+          <text
+             id="text8191"
+             y="13"
+             xml:space="preserve"
+             x="1.5"
+             textLength="73.718803"
+             font-weight="400"
+             font-style="normal"
+             font-size="10"
+             lengthAdjust="spacing"
+             style="font-style:normal;font-weight:400;font-size:10px;font-family:'TeX Gyre Heros';fill:#000000;fill-opacity:1;stroke:none">Linear Controller</text>
+        </g>
+        <defs
+           id="defs8198">
+          <clipPath
+             id="clipPath13631">
+            <path
+               id="path13629"
+               d="M -32,-105 H 252 V 64 H -32 Z"
+               inkscape:connector-curvature="0" />
+          </clipPath>
+        </defs>
+        <g
+           id="g8202"
+           transform="translate(32,105)"
+           stroke-miterlimit="2"
+           clip-path="url(#clip92-6)"
+           style="opacity:1;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:2;stroke-opacity:1">
+          <path
+             id="path8200"
+             d="M 0,-5 5,0 0,5"
+             inkscape:connector-curvature="0"
+             style="vector-effect:none;fill-rule:evenodd" />
+        </g>
+        <defs
+           id="defs8207">
+          <clipPath
+             id="clipPath13638">
+            <path
+               id="path13636"
+               d="M -2,-98 H 282 V 71 H -2 Z"
+               inkscape:connector-curvature="0" />
+          </clipPath>
+        </defs>
+        <g
+           id="g8211"
+           transform="translate(2,98)"
+           clip-path="url(#clip95)"
+           style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-opacity:0">
+          <path
+             id="path8209"
+             d="m 7,0 h 16 c 3.866,0 7,3.13401 7,7 0,3.866 -3.134,7 -7,7 H 7 C 3.13401,14 0,10.866 0,7 0,3.13401 3.13401,0 7,0 Z"
+             inkscape:connector-curvature="0"
+             style="vector-effect:none;fill-rule:nonzero" />
+        </g>
+        <defs
+           id="defs8216">
+          <clipPath
+             id="clipPath13645">
+            <path
+               id="path13643"
+               d="M -15,-7 H 15 V 7 h -30 z"
+               inkscape:connector-curvature="0" />
+          </clipPath>
+        </defs>
+        <g
+           id="g8220"
+           transform="translate(17,105)"
+           stroke-miterlimit="2"
+           clip-path="url(#clip99)"
+           style="opacity:1;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:2;stroke-opacity:1">
+          <text
+             id="text8218"
+             y="3.5"
+             xml:space="preserve"
+             x="-2.76562"
+             textLength="5.5468798"
+             font-weight="400"
+             font-style="normal"
+             font-size="10"
+             lengthAdjust="spacing"
+             style="font-style:normal;font-weight:400;font-size:10px;font-family:'Liberation Sans';fill:#000000;fill-opacity:1;stroke:none">2</text>
+        </g>
+        <defs
+           id="defs8225">
+          <clipPath
+             id="clipPath13652">
+            <path
+               id="path13650"
+               d="m -2.5,-98.5 h 284 v 169 h -284 z"
+               inkscape:connector-curvature="0" />
+          </clipPath>
+        </defs>
+        <g
+           id="g8229"
+           transform="translate(2.5,98.5)"
+           stroke-miterlimit="2"
+           clip-path="url(#clip104)"
+           style="opacity:1;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:2;stroke-opacity:1">
+          <path
+             id="path8227"
+             d="m 7,0 h 16 c 3.866,0 7,3.13401 7,7 0,3.866 -3.134,7 -7,7 H 7 C 3.13401,14 0,10.866 0,7 0,3.13401 3.13401,0 7,0 Z"
+             inkscape:connector-curvature="0"
+             style="vector-effect:none;fill-rule:nonzero" />
+        </g>
+        <defs
+           id="defs8234">
+          <clipPath
+             id="clipPath13659">
+            <path
+               id="path13657"
+               d="M -17,-114 H 267 V 55 H -17 Z"
+               inkscape:connector-curvature="0" />
+          </clipPath>
+        </defs>
+        <g
+           id="g8238"
+           transform="translate(17,114)"
+           clip-path="url(#clip107-2)"
+           style="opacity:1;fill:none;stroke:none;stroke-opacity:0">
+          <path
+             id="path8236"
+             d="m -3.5,0 h 7 v 17 h -7 z"
+             inkscape:connector-curvature="0"
+             style="vector-effect:none;fill-rule:evenodd" />
+        </g>
+        <defs
+           id="defs8243">
+          <clipPath
+             id="clipPath13666">
+            <path
+               id="path13664"
+               d="M 0,0 H 7 V 17 H 0 Z"
+               inkscape:connector-curvature="0" />
+          </clipPath>
+        </defs>
+        <g
+           id="g8247"
+           transform="translate(13.5,114)"
+           clip-path="url(#clip111)"
+           style="opacity:1;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1">
+          <text
+             id="text8245"
+             y="13"
+             xml:space="preserve"
+             x="1"
+             textLength="5"
+             font-weight="400"
+             font-style="normal"
+             font-size="10"
+             lengthAdjust="spacing"
+             style="font-style:normal;font-weight:400;font-size:10px;font-family:'TeX Gyre Heros';fill:#000000;fill-opacity:1;stroke:none">y</text>
+        </g>
+        <defs
+           id="defs8252">
+          <clipPath
+             id="clipPath13673">
+            <path
+               id="path13671"
+               d="M -157,-20 H 127 V 149 H -157 Z"
+               inkscape:connector-curvature="0" />
+          </clipPath>
+        </defs>
+        <g
+           id="g8256"
+           transform="translate(157,20)"
+           stroke-miterlimit="2"
+           clip-path="url(#clip119)"
+           style="opacity:1;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:2;stroke-opacity:1">
+          <path
+             id="path8254"
+             d="M 0,-5 5,0 0,5"
+             inkscape:connector-curvature="0"
+             style="vector-effect:none;fill-rule:evenodd" />
+        </g>
+        <defs
+           id="defs8261">
+          <clipPath
+             id="clipPath13680">
+            <path
+               id="path13678"
+               d="M 117,20 H -167 V -149 H 117 Z"
+               inkscape:connector-curvature="0" />
+          </clipPath>
+        </defs>
+        <g
+           id="g8265"
+           transform="rotate(180,58.5,10)"
+           stroke-miterlimit="2"
+           clip-path="url(#clip122)"
+           style="opacity:1;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:2;stroke-opacity:1">
+          <path
+             id="path8263"
+             d="M 5,-5 0,0 5,5"
+             inkscape:connector-curvature="0"
+             style="vector-effect:none;fill-rule:evenodd" />
+        </g>
+        <defs
+           id="defs8270">
+          <clipPath
+             id="clipPath13687">
+            <path
+               id="path13685"
+               d="M -117,-2 H 167 V 167 H -117 Z"
+               inkscape:connector-curvature="0" />
+          </clipPath>
+        </defs>
+        <g
+           id="g8274"
+           transform="translate(117,2)"
+           clip-path="url(#clip125)"
+           style="opacity:1;fill:#ffffff;fill-opacity:1;stroke:none;stroke-opacity:0">
+          <path
+             id="path8272"
+             d="M 0,0 H 40 V 36 H 0 Z"
+             inkscape:connector-curvature="0"
+             style="vector-effect:none;fill-rule:evenodd" />
+        </g>
+        <defs
+           id="defs8279">
+          <clipPath
+             id="clipPath13694">
+            <path
+               id="path13692"
+               d="M -3,-18 H 37 V 18 H -3 Z"
+               inkscape:connector-curvature="0" />
+          </clipPath>
+        </defs>
+        <g
+           id="g8283"
+           transform="translate(120,20)"
+           stroke-miterlimit="2"
+           clip-path="url(#clip129)"
+           style="opacity:1;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:2;stroke-opacity:1">
+          <text
+             id="text8281"
+             y="3"
+             xml:space="preserve"
+             x="0"
+             textLength="4.5"
+             font-weight="400"
+             font-style="normal"
+             font-size="9"
+             lengthAdjust="spacing"
+             style="font-style:normal;font-weight:400;font-size:9px;font-family:'Liberation Sans';fill:#000000;fill-opacity:1;stroke:none">y</text>
+        </g>
+        <defs
+           id="defs8288">
+          <clipPath
+             id="clipPath13701">
+            <path
+               id="path13699"
+               d="M -37,-18 H 3 v 36 h -40 z"
+               inkscape:connector-curvature="0" />
+          </clipPath>
+        </defs>
+        <g
+           id="g8292"
+           transform="translate(154,20)"
+           stroke-miterlimit="2"
+           clip-path="url(#clip130)"
+           style="opacity:1;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:2;stroke-opacity:1">
+          <text
+             id="text8290"
+             y="3"
+             xml:space="preserve"
+             x="-5"
+             textLength="5"
+             font-weight="400"
+             font-style="normal"
+             font-size="9"
+             lengthAdjust="spacing"
+             style="font-style:normal;font-weight:400;font-size:9px;font-family:'Liberation Sans';fill:#000000;fill-opacity:1;stroke:none">u</text>
+        </g>
+        <defs
+           id="defs8297">
+          <clipPath
+             id="clipPath13708">
+            <path
+               id="path13706"
+               d="m -117.5,-2.5 h 284 v 169 h -284 z"
+               inkscape:connector-curvature="0" />
+          </clipPath>
+        </defs>
+        <g
+           id="g8301"
+           transform="translate(117.5,2.5)"
+           stroke-miterlimit="2"
+           clip-path="url(#clip135)"
+           style="opacity:1;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:2;stroke-opacity:1">
+          <path
+             id="path8299"
+             d="M 0,0 H 40 V 36 H 0 Z"
+             inkscape:connector-curvature="0"
+             style="vector-effect:none;fill-rule:evenodd" />
+        </g>
+        <defs
+           id="defs8306">
+          <clipPath
+             id="clipPath13715">
+            <path
+               id="path13713"
+               d="M -137,-40 H 147 V 129 H -137 Z"
+               inkscape:connector-curvature="0" />
+          </clipPath>
+        </defs>
+        <g
+           id="g8310"
+           transform="translate(137,40)"
+           clip-path="url(#clip138)"
+           style="opacity:1;fill:none;stroke:none;stroke-opacity:0">
+          <path
+             id="path8308"
+             d="M -15.1484,0 H 15.1484 V 17 H -15.1484 Z"
+             inkscape:connector-curvature="0"
+             style="vector-effect:none;fill-rule:evenodd" />
+        </g>
+        <defs
+           id="defs8315">
+          <clipPath
+             id="clipPath13722">
+            <path
+               id="path13720"
+               d="M 0,0 H 30 V 17 H 0 Z"
+               inkscape:connector-curvature="0" />
+          </clipPath>
+        </defs>
+        <g
+           id="g8319"
+           transform="translate(121.852,40)"
+           clip-path="url(#clip142)"
+           style="opacity:1;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1">
+          <text
+             id="text8317"
+             y="13"
+             xml:space="preserve"
+             x="1"
+             textLength="28.2969"
+             font-weight="400"
+             font-style="normal"
+             font-size="10"
+             lengthAdjust="spacing"
+             style="font-style:normal;font-weight:400;font-size:10px;font-family:'TeX Gyre Heros';fill:#000000;fill-opacity:1;stroke:none">Empty</text>
+        </g>
+        <defs
+           id="defs8324">
+          <clipPath
+             id="clipPath13729">
+            <path
+               id="path13727"
+               d="M 117,140 H -167 V -29 h 284 z"
+               inkscape:connector-curvature="0" />
+          </clipPath>
+        </defs>
+        <g
+           id="g8328"
+           transform="rotate(180,58.5,70)"
+           stroke-miterlimit="2"
+           clip-path="url(#clip150)"
+           style="opacity:0.4;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:2;stroke-opacity:1">
+          <path
+             id="path8326"
+             d="M 5,-5 0,0 5,5"
+             inkscape:connector-curvature="0"
+             style="vector-effect:none;fill-rule:evenodd" />
+        </g>
+        <defs
+           id="defs8333">
+          <clipPath
+             id="clipPath13736">
+            <path
+               id="path13734"
+               d="M -157,-130 H 127 V 39 h -284 z"
+               inkscape:connector-curvature="0" />
+          </clipPath>
+        </defs>
+        <g
+           id="g8337"
+           transform="translate(157,130)"
+           stroke-miterlimit="2"
+           clip-path="url(#clip153-9)"
+           style="opacity:0.4;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:2;stroke-opacity:1">
+          <path
+             id="path8335"
+             d="M 0,-5 5,0 0,5"
+             inkscape:connector-curvature="0"
+             style="vector-effect:none;fill-rule:evenodd" />
+        </g>
+        <defs
+           id="defs8342">
+          <clipPath
+             id="clipPath13743">
+            <path
+               id="path13741"
+               d="M 117,120 H -167 V -49 h 284 z"
+               inkscape:connector-curvature="0" />
+          </clipPath>
+        </defs>
+        <g
+           id="g8346"
+           transform="rotate(180,58.5,60)"
+           stroke-miterlimit="2"
+           clip-path="url(#clip156)"
+           style="opacity:0.4;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:2;stroke-opacity:1">
+          <path
+             id="path8344"
+             d="M 5,-5 0,0 5,5"
+             inkscape:connector-curvature="0"
+             style="vector-effect:none;fill-rule:evenodd" />
+        </g>
+        <defs
+           id="defs8351">
+          <clipPath
+             id="clipPath13750">
+            <path
+               id="path13748"
+               d="M -117,-112 H 167 V 57 h -284 z"
+               inkscape:connector-curvature="0" />
+          </clipPath>
+        </defs>
+        <g
+           id="g8355"
+           transform="translate(117,112)"
+           clip-path="url(#clip159)"
+           style="opacity:0.4;fill:#ffffff;fill-opacity:1;stroke:none;stroke-opacity:0">
+          <path
+             id="path8353"
+             d="M 0,0 H 40 V 36 H 0 Z"
+             inkscape:connector-curvature="0"
+             style="vector-effect:none;fill-rule:evenodd" />
+        </g>
+        <defs
+           id="defs8360">
+          <clipPath
+             id="clipPath13757">
+            <path
+               id="path13755"
+               d="M -3,-8 H 37 V 28 H -3 Z"
+               inkscape:connector-curvature="0" />
+          </clipPath>
+        </defs>
+        <g
+           id="g8364"
+           transform="translate(120,120)"
+           stroke-miterlimit="2"
+           clip-path="url(#clip163)"
+           style="opacity:0.4;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:2;stroke-opacity:1">
+          <text
+             id="text8362"
+             y="3"
+             xml:space="preserve"
+             x="0"
+             textLength="2.98438"
+             font-weight="400"
+             font-style="normal"
+             font-size="9"
+             lengthAdjust="spacing"
+             style="font-style:normal;font-weight:400;font-size:9px;font-family:'Liberation Sans';fill:#000000;fill-opacity:1;stroke:none">r</text>
+        </g>
+        <defs
+           id="defs8369">
+          <clipPath
+             id="clipPath13764">
+            <path
+               id="path13762"
+               d="M -3,-28 H 37 V 8 H -3 Z"
+               inkscape:connector-curvature="0" />
+          </clipPath>
+        </defs>
+        <g
+           id="g8373"
+           transform="translate(120,140)"
+           stroke-miterlimit="2"
+           clip-path="url(#clip164)"
+           style="opacity:0.4;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:2;stroke-opacity:1">
+          <text
+             id="text8371"
+             y="3"
+             xml:space="preserve"
+             x="0"
+             textLength="4.5"
+             font-weight="400"
+             font-style="normal"
+             font-size="9"
+             lengthAdjust="spacing"
+             style="font-style:normal;font-weight:400;font-size:9px;font-family:'Liberation Sans';fill:#000000;fill-opacity:1;stroke:none">y</text>
+        </g>
+        <defs
+           id="defs8378">
+          <clipPath
+             id="clipPath13771">
+            <path
+               id="path13769"
+               d="M -37,-18 H 3 v 36 h -40 z"
+               inkscape:connector-curvature="0" />
+          </clipPath>
+        </defs>
+        <g
+           id="g8382"
+           transform="translate(154,130)"
+           stroke-miterlimit="2"
+           clip-path="url(#clip165-1)"
+           style="opacity:0.4;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:2;stroke-opacity:1">
+          <text
+             id="text8380"
+             y="3"
+             xml:space="preserve"
+             x="-5"
+             textLength="5"
+             font-weight="400"
+             font-style="normal"
+             font-size="9"
+             lengthAdjust="spacing"
+             style="font-style:normal;font-weight:400;font-size:9px;font-family:'Liberation Sans';fill:#000000;fill-opacity:1;stroke:none">u</text>
+        </g>
+        <defs
+           id="defs8387">
+          <clipPath
+             id="clipPath13778">
+            <path
+               id="path13776"
+               d="m -117.5,-112.5 h 284 v 169 h -284 z"
+               inkscape:connector-curvature="0" />
+          </clipPath>
+        </defs>
+        <g
+           id="g8391"
+           transform="translate(117.5,112.5)"
+           stroke-miterlimit="2"
+           clip-path="url(#clip170)"
+           style="opacity:0.4;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:2;stroke-opacity:1">
+          <path
+             id="path8389"
+             d="M 0,0 H 40 V 36 H 0 Z"
+             inkscape:connector-curvature="0"
+             style="vector-effect:none;fill-rule:evenodd" />
+        </g>
+        <defs
+           id="defs8396">
+          <clipPath
+             id="clipPath13785">
+            <path
+               id="path13783"
+               d="M -137,-150 H 147 V 19 h -284 z"
+               inkscape:connector-curvature="0" />
+          </clipPath>
+        </defs>
+        <g
+           id="g8400"
+           transform="translate(137,150)"
+           clip-path="url(#clip173-2)"
+           style="opacity:0.4;fill:none;stroke:none;stroke-opacity:0">
+          <path
+             id="path8398"
+             d="M -45.8516,0 H 45.8516 V 17 H -45.8516 Z"
+             inkscape:connector-curvature="0"
+             style="vector-effect:none;fill-rule:evenodd" />
+        </g>
+        <defs
+           id="defs8405">
+          <clipPath
+             id="clipPath13792">
+            <path
+               id="path13790"
+               d="M 0,0 H 92 V 17 H 0 Z"
+               inkscape:connector-curvature="0" />
+          </clipPath>
+        </defs>
+        <g
+           id="g8409"
+           transform="translate(91.1484,150)"
+           clip-path="url(#clip177)"
+           style="opacity:0.4;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1">
+          <text
+             id="text8407"
+             y="13"
+             xml:space="preserve"
+             x="1.5"
+             textLength="88.703102"
+             font-weight="400"
+             font-style="normal"
+             font-size="10"
+             lengthAdjust="spacing"
+             style="font-style:normal;font-weight:400;font-size:10px;font-family:'TeX Gyre Heros';fill:#000000;fill-opacity:1;stroke:none">Nonlinear Controller</text>
+        </g>
+      </g>
+    </g>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer6"
+     inkscape:label="Controller"
+     style="display:inline">
+    <g
+       style="opacity:1;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:2;stroke-opacity:1"
+       clip-path="url(#clip14)"
+       stroke-miterlimit="2"
+       transform="translate(100.5,3.5)"
+       id="g6226">
+      <path
+         d="M 0,0 H 95 V 73 H 0 Z"
+         id="path6224"
+         inkscape:connector-curvature="0"
+         style="vector-effect:none;fill-rule:evenodd" />
+    </g>
+  </g>
+</svg>

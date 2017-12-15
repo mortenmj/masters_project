@@ -54,12 +54,10 @@ To compare this with the acausal modelling paradigm shown earlier, the same syst
 
 Generally, the simplest approach when implementing a system of differential equations in Simulink is to start with the integration blocks, and work backwards.
 Unfortunately, as the model must be made from low-level components the possibility of making a mistake if that much greater.
-The author needed significantly more time to create this model compared to the implementation in \ref{Chapter02}.
+The author needed significantly more time to create this model compared to the implementation in \cref{Chapter02}.
 
 \begin{figure}[ht]
-    \centering
-    \tiny
-    \includesvg[width=0.8\columnwidth]{Figures/InertialSimulink}
+    \iimage{Figures/InertialSimulink}
     \caption{Inertial system implemented in Simulink.\label{fig:inertial-simulink}}
 \end{figure}
 
@@ -74,9 +72,7 @@ Note that the plant outputs $\omega$ directly, while previously we added a senso
 As Matlab solves this numerically, adding a differentiator is troublesome and was skipped in the example.
 
 \begin{figure}[ht]
-    \centering
-    \footnotesize
-    \includesvg[width=0.8\columnwidth]{Figures/InertialSimulinkExpanded}
+    \iimage{Figures/InertialSimulinkExpanded}
     \caption{Inertial system expanded.\label{fig:inertial-simulink-expanded}}
 \end{figure}
 
@@ -101,18 +97,8 @@ For example, we may configure the system to use a Kalman filter only when a cert
 Note that the example also shows an empty controller variant, which allows us to run the system with no controller active by choosing this variant.
 
 \begin{figure}[ht]
-    \centering
-    \subcaptionbox{Model overview.\label{fig:inertial-simulink-variant-top}}
-    {
-        \footnotesize
-        \includesvg[width=0.8\columnwidth]{Figures/InertialSimulinkVariant1}
-    }
-    \subcaptionbox{View of the controller subsystem.\label{fig:inertial-simulink-variant-bottom}}
-    {
-        \footnotesize
-        \includesvg[width=0.8\columnwidth]{Figures/InertialSimulinkVariant2}
-    }
-    \caption{Inertial model with variant controller subsystem.\label{fig:inertial-simulink-variant}}
+    \iimage{Figures/InertialSimulinkBlowup}
+    \caption{Inertial system with variant controller subsystem.\label{fig:inertial-simscape-blowup}}
 \end{figure}
 
 This can be combined with running simulations of Simulink models from Matlab scripts in order to compare the effect of various signal sources on the behavior of the model.
@@ -153,9 +139,7 @@ In the case of symbolic expressions, these must be resolved to determine the res
 The data type, numeric type and dimensions of signals are also checked, to ensure that every block in the model is compatible with the signals that are applied to it.
 
 \begin{figure}[ht]
-    \centering
-    \tiny
-    \includesvg[width=0.8\columnwidth]{Figures/InertialSimulinkOrder}
+    \iimage{Figures/InertialSimulinkOrder}
     \caption{Execution order for the plant subsystem.\label{fig:inertial-simulink-order}}
 \end{figure}
 
@@ -187,6 +171,7 @@ Then, during the loop iteration phase, the following takes place:
         This step is performed by invoking a solver.
         Which solver depends on whether the model has no states, only continuous states, only discrete states or both types of states.
         The user can specify which continuous and discrete solver to use, or the system can be asked to determine the optimal solver automatically.
+        The solvers used by Simulink are the same as those used when implementing an ODE in Matlab code.
     \item Discontinuity checks
     \item Computation of the time until the next time step
 \end{enumerate}
