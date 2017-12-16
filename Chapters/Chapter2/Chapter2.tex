@@ -378,4 +378,20 @@ Abaqus then solves for the resulting dynamics in the brake caliper and tyre.
 The paper compares this implementation to one created entirely with Modelica.
 While the paper shows that it is possible to implement a simple model of the tyres and brakes in Modelica, it obtains more realistic results by using a high-fidelity finite element model.
 
+\section{Scripting interface}
+
+Models created with Modelica can be compiled to an FMU using PyModelica, and simulated using PyFMI, both part of the JModelica project.
+While the complexity in setting up this toolchain is significant, the available interface once initial setup is done is attractive.
+
+\begin{figure}[ht]
+	\begin{minipage}[c]{.5\columnwidth}
+	    \iimage{Figures/InertialSimulation}
+	\end{minipage}%
+	\begin{minipage}[c]{.5\columnwidth}
+        \inputminted[fontsize=\footnotesize]{Python}{\rootfolder/Chapters/Chapter2/Listings/simulate.py}
+	\end{minipage}
+    \caption{Python script showing how to run Modelica simulation, with output}
+\end{figure}
+
+
 \end{document}

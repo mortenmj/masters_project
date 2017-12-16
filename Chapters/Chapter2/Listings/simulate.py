@@ -5,8 +5,8 @@ import pymodelica
 import pyfmi
 
 fmu = pymodelica.compile_fmu(
-        'MasterProject.Models.InertialImplementation',
-        'InertialImplementation.mo')
+    'MasterProject.Models.InertialImplementation',
+    'InertialImplementation.mo')
 model = pyfmi.load_fmu(fmu)
 
 # Simulate
@@ -20,7 +20,10 @@ output = res['sensor.w']
 
 # Plot results
 fig, ax = plt.subplots()
-ax.plot(time, ref, 'b')
-ax.plot(time, output, 'r')
+
+for key in ['reference.y', 'sensor.w']:
+    var = res[key]
+    ax.plot(time, var, 'b')
+
 plt.xlim(0, end_time)
 plt.savefig('test.svg')
