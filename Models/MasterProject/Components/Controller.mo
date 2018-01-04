@@ -80,7 +80,7 @@ part of this controller, the following features are present:
 
 <p>
 The parameters of the controller can be manually adjusted by performing
-simulations of the closed loop system (= controller + plant connected
+simulations of the closed loop system (= controller + process connected
 together) and using the following strategy:
 </p>
 
