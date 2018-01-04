@@ -1,29 +1,35 @@
 #!/usr/bin/env python
-
 import matplotlib.pyplot as plt
-import pymodelica
-import pyfmi
+from scipy import signal
+from pyfmi import load_fmu, Master
 
-fmu = pymodelica.compile_fmu(
-    'MasterProject.Models.InertialImplementation',
-    'InertialImplementation.mo')
-model = pyfmi.load_fmu(fmu)
+# Load the FMUs that make up the model
+controller = load_fmu('FMU/Controller.fmu')
+plant = load_fmu('FMU/Plant.fmu')
 
-# Simulate
-end_time = 5
-res = model.simulate(final_time=end_time)
+# Connect the two FMUs
+components = [controller, plant]
+connections = [
+        (controller, 'y', plant, 'u'),
+        (plant, 'y', controller, 'u_m')]
+
+# Create the FMU Master
+model = Master(components, connections)
+
+# Connect a function to the controller reference
+input_object = ((controller, 'u_s'), signal.square)
+
+# Run the simulation
+res = model.simulate(input=input_object)
 
 # Get simulation results
-time = res['time']
-ref = res['reference.y']
-output = res['sensor.w']
+output = res[plant]['y']
+reference = res[controller]['u_s']
+t = res[plant]['time']
 
 # Plot results
 fig, ax = plt.subplots()
-
-for key in ['reference.y', 'sensor.w']:
-    var = res[key]
-    ax.plot(time, var, 'b')
-
-plt.xlim(0, end_time)
-plt.savefig('test.svg')
+ax.plot(t, reference, 'b')
+ax.plot(t, output, 'r')
+plt.xlim(0, 5)
+plt.show()
