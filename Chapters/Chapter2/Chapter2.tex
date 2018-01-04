@@ -121,7 +121,7 @@ We may choose to either use a partial model, which is the Modelica term for an i
 Then, when we instantiate a model, we supply a component for each subsystem that is to be replaced.
 
 \begin{listing}[ht]
-    \inputminted[fontsize=\footnotesize]{Modelica}{\rootfolder/Models/MasterProject/Models/InertialImplementation.mo}
+    \inputminted[fontsize=\footnotesize]{Modelica}{\rootfolder/Models/MasterProject/Models/Inertial.mo}
     \caption{Instantiation of the inertial system.\label{lst:inertial-instantiation}}
 \end{listing}
 
@@ -164,7 +164,7 @@ As an example, the PhysioLibrary project publishes a Modelica library for modell
         {
             \iimage{Figures/RLCcomponents}
         }\par\bigskip
-        \subcaptionbox{Block implementation.\label{fig:rlc-block}}
+    \subcaptionbox{Block implementation.\label{fig:rlc-block}}
         {
             \iimage{Figures/RLCblocks}
         }
@@ -191,6 +191,20 @@ To illustrate this, we implement a simple parallel RLC circuit.
 In \cref{fig:rlc-comp} we create an acausal model, by dragging and dropping components that implement the behavior of the circuit elements.
 Compare to \cref{fig:rlc-block} which implements the same circuit using block components.
 As before, these circuit components can easily be replaced by plug-compatible versions, making it trivial to e.g. replace the resistors with components that also model heat buildup.
+
+\subsection{Discontinuities}
+
+The Modelica language has intuitive support for discontinuities in models.
+To illustrate, we will look at the model of a bouncing ball\footnotemark.
+The ball falls towards the ground, under the force of gravity, and then bounces when it hits the ground.
+At the moment of impact, the model is reinitialized with the velocity reversed, minus a loss of energy from the impact.
+
+\footnotetext{The example is inspired by \emph{Modelica By Example}, by Michael M. Tiller \cite{openmodelica.org:tiller:2014}.}
+
+\begin{listing}[ht]
+    \inputminted[fontsize=\footnotesize]{Modelica}{\rootfolder/Models/MasterProject/Models/BouncingBall.mo}
+    \caption{Bouncing ball model showing discontinuous equation}
+\end{listing}
 
 \section{Simulation}
 
@@ -380,18 +394,40 @@ While the paper shows that it is possible to implement a simple model of the tyr
 
 \section{Scripting interface}
 
-Models created with Modelica can be compiled to an FMU using PyModelica, and simulated using PyFMI, both part of the JModelica project.
-While the complexity in setting up this toolchain is significant, the available interface once initial setup is done is attractive.
+Models created with Modelica can be compiled to an FMU using a Modelica client such as OpenModelica, Dymola or JModelica.
+Additionally, these three all come with Python APIs that can be used to run simulations or compile models to FMI.
+These interfaces are unfortunately not very user friendly, either in setup or in use.
+For these reasons, it is frequently easier to compile the model to an FMU, either in the program or using the Python bindings, and then doing further work with PyFMI.
+
+PyFMI is available with Anaconda, a Python distribution targetting scientific computing, and as such is simple to acquire.
+Once compiled as an FMU, the simuation can be configured and run using PyFMI, either step by step or from beginning to end without interruption.
+Multiple FMIs can be simulated in lock-step, with the input and output signals of the FMIs connected to one another as required.
+
+Using the classical co-simulation algorithm, this can be numerically unstable.
+The classical approach is to simulate each model for a short time-step, exchange information between the models, and then proceed to the next step.
+PyFMI includes several techniques for improving stability during co-simulation \cite{Andersson2016}.
+
+
+To illustrate the flexibility of this approach, we split the model from \cref{fig:inertial-architecture} into three parts, and run the simulation from Python.
+The plant and controller are compiled as separate FMUs, and connected to one another, and the reference signal is replaced by a Python function.
+The logical parts of this new model are shown in \cref{fig:connected_fmus}.
 
 \begin{figure}[ht]
-	\begin{minipage}[c]{.5\columnwidth}
-	    \iimage{Figures/InertialSimulation}
-	\end{minipage}%
-	\begin{minipage}[c]{.5\columnwidth}
-        \inputminted[fontsize=\footnotesize]{Python}{\rootfolder/Chapters/Chapter2/Listings/simulate.py}
-	\end{minipage}
-    \caption{Python script showing how to run Modelica simulation, with output}
+    \iimage{Figures/InertialArchitecturePlant}
+    \caption{Logical overview of the model simulated in \cref{lst:connected_fmus}.\label{fig:connected_fmus}}
 \end{figure}
 
+The reference signal function takes a single parameter, the current time.
+In the example, the scipy.signals.square function, which generates a square waveform, is attached to the input of the system from \cref{fig:inertial-architecture}.
+The simulation is the run using the interface, and the output is collected and processed as needed.
+
+It is possible to connect an input function to any input signal.
+The function must take a single input variable, the current simulation time.
+This approach provides a convenient way to drive a model using signal functions or stored data.
+
+\begin{listing}[ht]
+    \inputminted[fontsize=\footnotesize, firstline=3, lastline=28]{Python}{\rootfolder/Chapters/Chapter2/Listings/simulate.py}
+    \caption{Co-simulation of two connected FMUs with input function.\label{lst:connected_fmus}}
+\end{listing}
 
 \end{document}
