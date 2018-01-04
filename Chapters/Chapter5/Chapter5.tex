@@ -32,23 +32,23 @@ In order to better understand how these requirements might be met by a single pi
 
 There are several areas of a simulation package where access to implementing plugins would be benefitial.
 In the case of both OpenModelica and Matlab, it was the experience of the author that creating publication quality figures required export and external post-processing of outputted data.
-External plotting libraries, such as Matplotlib or Seaborn for Python, offer powerful means of creating 
-
+External plotting libraries, such as Matplotlib or Bokeh for Python, offer powerful means of creating data visualizations, in the latter case including interactive visualizations.
+Basing data visualization on one of these packages could avoid significant duplication of effort.
 
 \section{Data Access}
 
 \section{GUI}
 
-\section{Input formats}
+\section{Model specification}
 
-The two most powerful methods for describing systems, and also the most common, are the state space representation and the transfer function representation.
+As seen in previous chapters, there are several ways to represent models.
+Some software solutions put the onus on the user, and require a state space or transfer function representation, while others separate the input representation from the internal representation, and translate the model before simulation.
+We will briefly consider these approaches in turn.
+
+State space representation and the transfer function representation are well known from control theory literature.
 While classical control theory is based on transfer function analysis, it has several drawbacks.
 Modern control theory largely relies on state space representation, which benefits from several powerful techniques in linear algebra.
 While both methods can be used to represent linear time-invariant systems, the state space representation offers several attractive advantages:
-
-While it is possible to extend the notion of transfer functions to time-variant and non-linear systems, it is rarely done.
-Representing a nonlinear system requires a sequence of transfer functions \cite{Zhang1993}, and the stronger the nonlinearities are the more functions are required.
-For this reason, the use of transfer functions is largely restricted to linear, time-invariant systems.
 
 \begin{itemize}
 	\item To treat multivariate systems in transfer function form requires a transfer function matrix. This can become unwieldy.
@@ -61,21 +61,32 @@ For this reason, the use of transfer functions is largely restricted to linear, 
 	\item Given the state space representation, it is simple to determine if the system is observable and controllable.
 \end{itemize}
 
-To see how a state space representation may be represented in software, it is useful to review how it is defined.
-A system with states $x_{1}$ to $x_{p}$ and outputs $y_{1}$ to $y_{r}$ are related by the following equations:
+While it is possible to extend the notion of transfer functions to time-variant and non-linear systems, it is rarely done.
+Representing a nonlinear system requires a sequence of transfer functions \cite{Zhang1993}, and the stronger the nonlinearities are the more functions are required.
+For this reason, the use of transfer functions is largely restricted to linear, time-invariant systems.
 
-\loadeq{\rootfolder/Equations.tex}{001}
-
-We can rearrange this to represent the variables as vectors, and the coefficient as matrices:
-\loadeq{\rootfolder/Equations.tex}{002}
-
-Finally, in compact form, this may be written as:
+A system with states $x_{1}$ to $x_{p}$ and outputs $y_{1}$ to $y_{r}$ is expressed in compact state-space form by the following equations:
 \loadeq{\rootfolder/Equations.tex}{003}
 
-As we can see, this system can be uniquely identified in the software by the matrices $(A, B, C, D)$, and it follows that this would be all we need to pass to a solver in order to simulate the system.
+As we can see, this system can be uniquely identified in the software by the matrices $(A, B, C, D)$. 
+It follows that this would be all we need to pass to a solver in order to simulate the system.
+
+If we also wish to support model with discontinuities, a more complicated representation is required.
+As seen previously, such a system is represented by a system of differential-algebraic equations, as shown in \cref{eq:dae-system}.
+Reducing a complex system of this sort to a system of ordinary differential equations is not for the faint of heart, and better left to computers.
+The complexity of directly specifying a system with discontinuities is high, and can be significantly simplified by using a higher level description language.
+
+For these reasons, it would be desirable to allow the user to express models in a language that allows for both a natural expression of differential equations, and imperative algorithms.
+As seen previously, Modelica is an established language with these features.
+The Modelica language also allows simple expression of discontinuities within equation definitions.
+Additionally, Modelica already has significant market penetration, with multiple clients already in existence.
+
 However, in order to separate the model from the simulation setup, and to promote sharing of models, a richer input format would be desirable.
-In order to promote sharing of models, it is useful to attach metadata to the model, such as units.
-It would also be desirable to store the model in a format where variables and coefficients can have descriptive names.
+In order to promote sharing of models, it is useful to specify the model with units, and a include a graphical representation.
+Modelica allows for a graphical representation both of the internal connections in the model, and an icon view of the model when it is used as a component in a larger model.
+It also allows for units, arbitrarily named variables and descriptions following each variable.
+CellML also allows for most of these requirements, but it is not as richly featured.
+
 While the format described above, where the model is defined by its coefficient matrices, is sufficient to define the model mathematically, it is insufficient in these regards.
 In order to fulfill all of these requirements, storing the model as MathML would be more feasible.
 An input method like the one employed by OpenCOR, which we reviewed earlier, would be one possible solution, as shown in %\cref{fig:opencor-input}.
@@ -85,12 +96,6 @@ An input method like the one employed by OpenCOR, which we reviewed earlier, wou
 \subsection{Plotting Engine}
 
 \section{Solvers}
-
-\begin{figure}[h]
-  \centering
-%  \includegraphics{solverinterface-uml}
-  \caption{Solver interface.\label{fig:solver-interface}}
-\end{figure}
 
 As it is desirable that solvers also be implemented in plugins, it is necessary to specify an API.
 
