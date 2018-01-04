@@ -1,6 +1,6 @@
 within MasterProject.Components;
 
-model Plant
+model Process
   extends Modelica.Blocks.Icons.Block;
   extends Modelica.Mechanics.Rotational.Interfaces.PartialTwoFlangesAndSupport;
   import SI = Modelica.SIunits;
@@ -34,4 +34,4 @@ equation
     Diagram(coordinateSystem(initialScale = 0.75)),
     Icon(coordinateSystem(initialScale = 0.75)),
     __OpenModelica_commandLineOptions = "");
-end Plant;
+end Process;
