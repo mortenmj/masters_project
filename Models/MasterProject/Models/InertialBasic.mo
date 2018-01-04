@@ -1,6 +1,5 @@
 within MasterProject.Models;
-
-model InertialBasic
+model InertialBasic2
   Modelica.Mechanics.Rotational.Components.SpringDamper springDamper1(c = 11.0, d = 0.2, phi_rel(displayUnit = "rad"), phi_rel0(displayUnit = "rad")) annotation(
     Placement(visible = true, transformation(origin = {14, 0}, extent = {{-10, -10}, {10, 10}}, rotation = 0)));
   Modelica.Mechanics.Rotational.Components.Inertia inertia1(J = 0.4, phi(displayUnit = "rad", fixed = true, start = 0), w(start = 0)) annotation(
@@ -27,4 +26,4 @@ equation
   annotation(
     uses(Modelica(version = "3.2.2")),
     Diagram);
-end InertialBasic;
+end InertialBasic2;
