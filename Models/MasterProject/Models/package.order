@@ -1,9 +1,11 @@
 SecondOrder
 RLCcomponents
-InertialImplementation
+Inertial
+InertialReduced
 InertialExpanded
 InertialCode
 InertialBasic2
 InertialBasic
 RLCblocks
 InertialRigid
+BouncingBall
