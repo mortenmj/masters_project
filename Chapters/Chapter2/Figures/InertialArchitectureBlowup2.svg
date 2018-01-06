@@ -14,7 +14,7 @@
    viewBox="0 0 986.21026 497.12776"
    version="1.2"
    id="svg2"
-   inkscape:version="0.92.1 r15371"
+   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"
    sodipodi:docname="InertialArchitectureBlowup2.svg">
   <metadata
      id="metadata906">
@@ -37,14 +37,14 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1600"
-     inkscape:window-height="849"
+     inkscape:window-width="1920"
+     inkscape:window-height="1136"
      id="namedview904"
      showgrid="false"
-     inkscape:zoom="2.1542647"
-     inkscape:cx="406.57009"
-     inkscape:cy="321.09248"
-     inkscape:window-x="0"
+     inkscape:zoom="0.76164759"
+     inkscape:cx="568.87902"
+     inkscape:cy="211.46946"
+     inkscape:window-x="1920"
      inkscape:window-y="27"
      inkscape:window-maximized="1"
      inkscape:current-layer="g5828"
@@ -569,12 +569,12 @@
          font-weight="400"
          font-size="11"
          transform="matrix(2.14286,0,0,-2.14286,182,96)"
-         style="font-style:normal;font-weight:400;font-size:11px;font-family:Ubuntu;fill:none;stroke:#00007f;stroke-width:0.94488198;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1">
+         style="font-style:normal;font-weight:400;font-size:11px;font-family:Ubuntu;fill:none;stroke:#00007f;stroke-width:0.15259981;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none">
         <path
            id="path23461"
            d="m 38,0 h 8 v 18"
            inkscape:connector-curvature="0"
-           style="vector-effect:non-scaling-stroke;fill-rule:evenodd" />
+           style="vector-effect:non-scaling-stroke;fill-rule:evenodd;stroke-width:0.15259981;stroke-miterlimit:4;stroke-dasharray:none" />
       </g>
       <g
          id="g23465"
@@ -596,12 +596,12 @@
          font-weight="400"
          font-size="11"
          transform="matrix(2.14286,0,0,-2.14286,182,96)"
-         style="font-style:normal;font-weight:400;font-size:11px;font-family:Ubuntu;fill:none;stroke:#00007f;stroke-width:0.94488198;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1">
+         style="font-style:normal;font-weight:400;font-size:11px;font-family:Ubuntu;fill:none;stroke:#00007f;stroke-width:0.15259981;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none">
         <path
            id="path23469"
            d="M 70,30 H 60 58"
            inkscape:connector-curvature="0"
-           style="vector-effect:non-scaling-stroke;fill-rule:evenodd" />
+           style="vector-effect:non-scaling-stroke;fill-rule:evenodd;stroke-width:0.15259981;stroke-miterlimit:4;stroke-dasharray:none" />
       </g>
       <g
          id="g23473"
@@ -623,12 +623,12 @@
          font-weight="400"
          font-size="11"
          transform="matrix(2.14286,0,0,-2.14286,182,96)"
-         style="font-style:normal;font-weight:400;font-size:11px;font-family:Ubuntu;fill:none;stroke:#00007f;stroke-width:0.94488198;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1">
+         style="font-style:normal;font-weight:400;font-size:11px;font-family:Ubuntu;fill:none;stroke:#00007f;stroke-width:0.15259981;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none">
         <path
            id="path23477"
            d="M 35,30 H -79 V 0 h 18"
            inkscape:connector-curvature="0"
-           style="vector-effect:non-scaling-stroke;fill-rule:evenodd" />
+           style="vector-effect:non-scaling-stroke;fill-rule:evenodd;stroke-width:0.15259981;stroke-miterlimit:4;stroke-dasharray:none" />
       </g>
       <g
          id="g23481"
@@ -650,12 +650,12 @@
          font-weight="400"
          font-size="11"
          transform="matrix(2.14286,0,0,-2.14286,182,96)"
-         style="font-style:normal;font-weight:400;font-size:11px;font-family:Ubuntu;fill:none;stroke:#000000;stroke-width:0.94488198;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1">
+         style="font-style:normal;font-weight:400;font-size:11px;font-family:Ubuntu;fill:none;stroke:#000000;stroke-width:0.15259981;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none">
         <path
            id="path23485"
            d="m -38,0 h 20"
            inkscape:connector-curvature="0"
-           style="vector-effect:non-scaling-stroke;fill-rule:evenodd" />
+           style="vector-effect:non-scaling-stroke;fill-rule:evenodd;stroke-width:0.15259981;stroke-miterlimit:4;stroke-dasharray:none" />
       </g>
       <g
          id="g23489"
@@ -677,12 +677,12 @@
          font-weight="400"
          font-size="11"
          transform="matrix(2.14286,0,0,-2.14286,182,96)"
-         style="font-style:normal;font-weight:400;font-size:11px;font-family:Ubuntu;fill:none;stroke:#000000;stroke-width:0.94488198;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1">
+         style="font-style:normal;font-weight:400;font-size:11px;font-family:Ubuntu;fill:none;stroke:#000000;stroke-width:0.15259981;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none">
         <path
            id="path23493"
            d="M 2,0 H 16"
            inkscape:connector-curvature="0"
-           style="vector-effect:non-scaling-stroke;fill-rule:evenodd" />
+           style="vector-effect:non-scaling-stroke;fill-rule:evenodd;stroke-width:0.15259981;stroke-miterlimit:4;stroke-dasharray:none" />
       </g>
       <g
          id="g23497"
@@ -4366,12 +4366,12 @@
          font-weight="400"
          font-size="11"
          transform="matrix(2.14286,0,0,-2.14286,255,34)"
-         style="font-style:normal;font-weight:400;font-size:11px;font-family:Ubuntu;fill:none;stroke:#000000;stroke-width:0.94488198;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1">
+         style="font-style:normal;font-weight:400;font-size:11px;font-family:Ubuntu;fill:none;stroke:#000000;stroke-width:0.13666797;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none">
         <path
            id="path12160"
            d="m 0,-100 v 20"
            inkscape:connector-curvature="0"
-           style="vector-effect:non-scaling-stroke;fill-rule:evenodd" />
+           style="vector-effect:non-scaling-stroke;fill-rule:evenodd;stroke-width:0.13666797;stroke-miterlimit:4;stroke-dasharray:none" />
       </g>
       <g
          id="g12164"
@@ -4393,12 +4393,12 @@
          font-weight="400"
          font-size="11"
          transform="matrix(2.14286,0,0,-2.14286,255,34)"
-         style="font-style:normal;font-weight:400;font-size:11px;font-family:Ubuntu;fill:none;stroke:#000000;stroke-width:0.94488198;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1">
+         style="font-style:normal;font-weight:400;font-size:11px;font-family:Ubuntu;fill:none;stroke:#000000;stroke-width:0.13666797;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none">
         <path
            id="path12168"
            d="m 0,-80 h 20 v -7"
            inkscape:connector-curvature="0"
-           style="vector-effect:non-scaling-stroke;fill-rule:evenodd" />
+           style="vector-effect:non-scaling-stroke;fill-rule:evenodd;stroke-width:0.13666797;stroke-miterlimit:4;stroke-dasharray:none" />
       </g>
       <g
          id="g12172"
@@ -4420,12 +4420,12 @@
          font-weight="400"
          font-size="11"
          transform="matrix(2.14286,0,0,-2.14286,255,34)"
-         style="font-style:normal;font-weight:400;font-size:11px;font-family:Ubuntu;fill:none;stroke:#000000;stroke-width:0.94488198;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1">
+         style="font-style:normal;font-weight:400;font-size:11px;font-family:Ubuntu;fill:none;stroke:#000000;stroke-width:0.13666797;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none">
         <path
            id="path12176"
            d="M 40,0 H 60 V -34 H 44"
            inkscape:connector-curvature="0"
-           style="vector-effect:non-scaling-stroke;fill-rule:evenodd" />
+           style="vector-effect:non-scaling-stroke;fill-rule:evenodd;stroke-width:0.13666797;stroke-miterlimit:4;stroke-dasharray:none" />
       </g>
       <g
          id="g12180"
@@ -4447,12 +4447,12 @@
          font-weight="400"
          font-size="11"
          transform="matrix(2.14286,0,0,-2.14286,255,34)"
-         style="font-style:normal;font-weight:400;font-size:11px;font-family:Ubuntu;fill:none;stroke:#000000;stroke-width:0.94488198;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1">
+         style="font-style:normal;font-weight:400;font-size:11px;font-family:Ubuntu;fill:none;stroke:#000000;stroke-width:0.13666797;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none">
         <path
            id="path12184"
            d="M 2,0 H 20"
            inkscape:connector-curvature="0"
-           style="vector-effect:non-scaling-stroke;fill-rule:evenodd" />
+           style="vector-effect:non-scaling-stroke;fill-rule:evenodd;stroke-width:0.13666797;stroke-miterlimit:4;stroke-dasharray:none" />
       </g>
       <g
          id="g12188"
@@ -4474,12 +4474,12 @@
          font-weight="400"
          font-size="11"
          transform="matrix(2.14286,0,0,-2.14286,255,34)"
-         style="font-style:normal;font-weight:400;font-size:11px;font-family:Ubuntu;fill:none;stroke:#000000;stroke-width:0.94488198;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1">
+         style="font-style:normal;font-weight:400;font-size:11px;font-family:Ubuntu;fill:none;stroke:#000000;stroke-width:0.13666797;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none">
         <path
            id="path12192"
            d="M 100,0 H 40"
            inkscape:connector-curvature="0"
-           style="vector-effect:non-scaling-stroke;fill-rule:evenodd" />
+           style="vector-effect:non-scaling-stroke;fill-rule:evenodd;stroke-width:0.13666797;stroke-miterlimit:4;stroke-dasharray:none" />
       </g>
       <g
          id="g12196"
@@ -4501,12 +4501,12 @@
          font-weight="400"
          font-size="11"
          transform="matrix(2.14286,0,0,-2.14286,255,34)"
-         style="font-style:normal;font-weight:400;font-size:11px;font-family:Ubuntu;fill:none;stroke:#000000;stroke-width:0.94488198;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1">
+         style="font-style:normal;font-weight:400;font-size:11px;font-family:Ubuntu;fill:none;stroke:#000000;stroke-width:0.13666797;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none">
         <path
            id="path12200"
            d="m -42,0 h 24"
            inkscape:connector-curvature="0"
-           style="vector-effect:non-scaling-stroke;fill-rule:evenodd" />
+           style="vector-effect:non-scaling-stroke;fill-rule:evenodd;stroke-width:0.13666797;stroke-miterlimit:4;stroke-dasharray:none" />
       </g>
       <g
          id="g12204"
@@ -4528,12 +4528,12 @@
          font-weight="400"
          font-size="11"
          transform="matrix(2.14286,0,0,-2.14286,255,34)"
-         style="font-style:normal;font-weight:400;font-size:11px;font-family:Ubuntu;fill:none;stroke:#000000;stroke-width:0.94488198;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1">
+         style="font-style:normal;font-weight:400;font-size:11px;font-family:Ubuntu;fill:none;stroke:#000000;stroke-width:0.13666797;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none">
         <path
            id="path12208"
            d="m -100,0 h 38"
            inkscape:connector-curvature="0"
-           style="vector-effect:non-scaling-stroke;fill-rule:evenodd" />
+           style="vector-effect:non-scaling-stroke;fill-rule:evenodd;stroke-width:0.13666797;stroke-miterlimit:4;stroke-dasharray:none" />
       </g>
       <g
          id="g12212"
@@ -4555,12 +4555,12 @@
          font-weight="400"
          font-size="11"
          transform="matrix(2.14286,0,0,-2.14286,255,34)"
-         style="font-style:normal;font-weight:400;font-size:11px;font-family:Ubuntu;fill:none;stroke:#000000;stroke-width:0.94488198;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1">
+         style="font-style:normal;font-weight:400;font-size:11px;font-family:Ubuntu;fill:none;stroke:#000000;stroke-width:0.94476437;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none">
         <path
            id="path12216"
            d="M 24,-34 H 0 v -46"
            inkscape:connector-curvature="0"
-           style="vector-effect:non-scaling-stroke;fill-rule:evenodd" />
+           style="vector-effect:non-scaling-stroke;fill-rule:evenodd;stroke-width:0.13666797;stroke-miterlimit:4;stroke-dasharray:none" />
       </g>
       <g
          id="g12220"
@@ -8743,12 +8743,12 @@
            font-weight="400"
            font-size="11"
            transform="matrix(2.14286,0,0,-2.14286,280,131)"
-           style="font-style:normal;font-weight:400;font-size:11px;font-family:Ubuntu;fill:none;stroke:#000000;stroke-width:0.94488198;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1">
+           style="font-style:normal;font-weight:400;font-size:11px;font-family:Ubuntu;fill:none;stroke:#000000;stroke-width:0.20581661;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none">
           <path
              id="path4328"
              d="m 0,-100 v 20"
              inkscape:connector-curvature="0"
-             style="vector-effect:non-scaling-stroke;fill-rule:evenodd" />
+             style="vector-effect:non-scaling-stroke;fill-rule:evenodd;stroke-width:0.20581661;stroke-miterlimit:4;stroke-dasharray:none" />
         </g>
         <g
            id="g4332"
@@ -8770,12 +8770,12 @@
            font-weight="400"
            font-size="11"
            transform="matrix(2.14286,0,0,-2.14286,280,131)"
-           style="font-style:normal;font-weight:400;font-size:11px;font-family:Ubuntu;fill:none;stroke:#000000;stroke-width:0.94488198;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1">
+           style="font-style:normal;font-weight:400;font-size:11px;font-family:Ubuntu;fill:none;stroke:#000000;stroke-width:0.20581661;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none">
           <path
              id="path4336"
              d="m 0,-80 h 20 v -4"
              inkscape:connector-curvature="0"
-             style="vector-effect:non-scaling-stroke;fill-rule:evenodd" />
+             style="vector-effect:non-scaling-stroke;fill-rule:evenodd;stroke-width:0.20581661;stroke-miterlimit:4;stroke-dasharray:none" />
         </g>
         <g
            id="g4340"
@@ -8797,12 +8797,12 @@
            font-weight="400"
            font-size="11"
            transform="matrix(2.14286,0,0,-2.14286,280,131)"
-           style="font-style:normal;font-weight:400;font-size:11px;font-family:Ubuntu;fill:none;stroke:#000000;stroke-width:0.94488198;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1">
+           style="font-style:normal;font-weight:400;font-size:11px;font-family:Ubuntu;fill:none;stroke:#000000;stroke-width:0.20581661;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none">
           <path
              id="path4344"
              d="m 90,0 h 10"
              inkscape:connector-curvature="0"
-             style="vector-effect:non-scaling-stroke;fill-rule:evenodd" />
+             style="vector-effect:non-scaling-stroke;fill-rule:evenodd;stroke-width:0.20581661;stroke-miterlimit:4;stroke-dasharray:none" />
         </g>
         <g
            id="g4348"
@@ -8824,12 +8824,12 @@
            font-weight="400"
            font-size="11"
            transform="matrix(2.14286,0,0,-2.14286,280,131)"
-           style="font-style:normal;font-weight:400;font-size:11px;font-family:Ubuntu;fill:none;stroke:#000000;stroke-width:0.94488198;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1">
+           style="font-style:normal;font-weight:400;font-size:11px;font-family:Ubuntu;fill:none;stroke:#000000;stroke-width:0.20581661;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none">
           <path
              id="path4352"
              d="M 50,0 H 60 58"
              inkscape:connector-curvature="0"
-             style="vector-effect:non-scaling-stroke;fill-rule:evenodd" />
+             style="vector-effect:non-scaling-stroke;fill-rule:evenodd;stroke-width:0.20581661;stroke-miterlimit:4;stroke-dasharray:none" />
         </g>
         <g
            id="g4356"
@@ -8851,12 +8851,12 @@
            font-weight="400"
            font-size="11"
            transform="matrix(2.14286,0,0,-2.14286,280,131)"
-           style="font-style:normal;font-weight:400;font-size:11px;font-family:Ubuntu;fill:none;stroke:#0000ff;stroke-width:0.94488198;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1">
+           style="font-style:normal;font-weight:400;font-size:11px;font-family:Ubuntu;fill:none;stroke:#0000ff;stroke-width:0.20581661;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none">
           <path
              id="path4360"
              d="M 32,-18 V -36"
              inkscape:connector-curvature="0"
-             style="vector-effect:non-scaling-stroke;fill-rule:evenodd" />
+             style="vector-effect:non-scaling-stroke;fill-rule:evenodd;stroke-width:0.20581661;stroke-miterlimit:4;stroke-dasharray:none" />
         </g>
         <g
            id="g4364"
@@ -8878,12 +8878,12 @@
            font-weight="400"
            font-size="11"
            transform="matrix(2.14286,0,0,-2.14286,280,131)"
-           style="font-style:normal;font-weight:400;font-size:11px;font-family:Ubuntu;fill:none;stroke:#0000ff;stroke-width:0.94488198;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1">
+           style="font-style:normal;font-weight:400;font-size:11px;font-family:Ubuntu;fill:none;stroke:#0000ff;stroke-width:0.20581661;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none">
           <path
              id="path4368"
              d="M 32,-18 V -28 H -80 v 12"
              inkscape:connector-curvature="0"
-             style="vector-effect:non-scaling-stroke;fill-rule:evenodd" />
+             style="vector-effect:non-scaling-stroke;fill-rule:evenodd;stroke-width:0.20581661;stroke-miterlimit:4;stroke-dasharray:none" />
         </g>
         <g
            id="g4372"
@@ -8905,12 +8905,12 @@
            font-weight="400"
            font-size="11"
            transform="matrix(2.14286,0,0,-2.14286,280,131)"
-           style="font-style:normal;font-weight:400;font-size:11px;font-family:Ubuntu;fill:none;stroke:#00007f;stroke-width:0.94488198;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1">
+           style="font-style:normal;font-weight:400;font-size:11px;font-family:Ubuntu;fill:none;stroke:#00007f;stroke-width:0.20581661;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none">
           <path
              id="path4376"
              d="m -120,0 h 29"
              inkscape:connector-curvature="0"
-             style="vector-effect:non-scaling-stroke;fill-rule:evenodd" />
+             style="vector-effect:non-scaling-stroke;fill-rule:evenodd;stroke-width:0.20581661;stroke-miterlimit:4;stroke-dasharray:none" />
         </g>
         <g
            id="g4380"
@@ -8932,12 +8932,12 @@
            font-weight="400"
            font-size="11"
            transform="matrix(2.14286,0,0,-2.14286,280,131)"
-           style="font-style:normal;font-weight:400;font-size:11px;font-family:Ubuntu;fill:none;stroke:#0000ff;stroke-width:0.94488198;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1">
+           style="font-style:normal;font-weight:400;font-size:11px;font-family:Ubuntu;fill:none;stroke:#0000ff;stroke-width:0.20581661;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none">
           <path
              id="path4384"
              d="m -80,16 v 25 h 12"
              inkscape:connector-curvature="0"
-             style="vector-effect:non-scaling-stroke;fill-rule:evenodd" />
+             style="vector-effect:non-scaling-stroke;fill-rule:evenodd;stroke-width:0.20581661;stroke-miterlimit:4;stroke-dasharray:none" />
         </g>
         <g
            id="g4388"
@@ -8959,12 +8959,12 @@
            font-weight="400"
            font-size="11"
            transform="matrix(2.14286,0,0,-2.14286,280,131)"
-           style="font-style:normal;font-weight:400;font-size:11px;font-family:Ubuntu;fill:none;stroke:#0000ff;stroke-width:0.94488198;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1">
+           style="font-style:normal;font-weight:400;font-size:11px;font-family:Ubuntu;fill:none;stroke:#0000ff;stroke-width:0.20581661;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none">
           <path
              id="path4392"
              d="m -38,41 h 24"
              inkscape:connector-curvature="0"
-             style="vector-effect:non-scaling-stroke;fill-rule:evenodd" />
+             style="vector-effect:non-scaling-stroke;fill-rule:evenodd;stroke-width:0.20581661;stroke-miterlimit:4;stroke-dasharray:none" />
         </g>
         <g
            id="g4396"
@@ -8991,7 +8991,7 @@
              id="path4400"
              d="M 16,41 H 32 V 18"
              inkscape:connector-curvature="0"
-             style="vector-effect:non-scaling-stroke;fill-rule:evenodd" />
+             style="vector-effect:non-scaling-stroke;fill-rule:evenodd;stroke-width:0.20581661;stroke-miterlimit:4;stroke-dasharray:none" />
         </g>
         <g
            id="g4404"
@@ -9013,12 +9013,12 @@
            font-weight="400"
            font-size="11"
            transform="matrix(2.14286,0,0,-2.14286,280,131)"
-           style="font-style:normal;font-weight:400;font-size:11px;font-family:Ubuntu;fill:none;stroke:#000000;stroke-width:0.94488198;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1">
+           style="font-style:normal;font-weight:400;font-size:11px;font-family:Ubuntu;fill:none;stroke:#000000;stroke-width:0.20581661;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none">
           <path
              id="path4408"
              d="M 14,0 H 0 v -80"
              inkscape:connector-curvature="0"
-             style="vector-effect:non-scaling-stroke;fill-rule:evenodd" />
+             style="vector-effect:non-scaling-stroke;fill-rule:evenodd;stroke-width:0.20581661;stroke-miterlimit:4;stroke-dasharray:none" />
         </g>
         <g
            id="g4412"
@@ -10211,12 +10211,12 @@
            font-size="11"
            transform="matrix(0,-0.342857,0.342857,0,108.571,131)"
            stroke-miterlimit="2"
-           style="font-style:normal;font-weight:400;font-size:11px;font-family:Ubuntu;fill:#ffffff;fill-opacity:1;stroke:#0000ff;stroke-width:0.94488198;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:2;stroke-opacity:1">
+           style="font-style:normal;font-weight:400;font-size:11px;font-family:Ubuntu;fill:#ffffff;fill-opacity:1;stroke:#0000ff;stroke-width:1.28635608;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:2;stroke-opacity:1;stroke-dasharray:none">
           <path
              id="path4768"
              d="M 50,0 C 50,27.6142 27.6142,50 0,50 -27.6142,50 -50,27.6142 -50,0 c 0,-27.6142 22.3858,-50 50,-50 27.6142,0 50,22.3858 50,50"
              inkscape:connector-curvature="0"
-             style="vector-effect:non-scaling-stroke;fill-rule:evenodd" />
+             style="vector-effect:non-scaling-stroke;fill-rule:evenodd;stroke-width:1.28635608;stroke-miterlimit:2;stroke-dasharray:none" />
         </g>
         <g
            id="g4772"
@@ -10238,12 +10238,12 @@
            font-weight="400"
            font-size="11"
            transform="matrix(0,-0.342857,-0.342857,0,108.571,131)"
-           style="font-style:normal;font-weight:400;font-size:11px;font-family:Ubuntu;fill:none;stroke:#0000ff;stroke-width:0.94488198;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1">
+           style="font-style:normal;font-weight:400;font-size:11px;font-family:Ubuntu;fill:none;stroke:#0000ff;stroke-width:1.28635608;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none">
           <path
              id="path4776"
              d="m -90,0 h 40"
              inkscape:connector-curvature="0"
-             style="vector-effect:non-scaling-stroke;fill-rule:evenodd" />
+             style="vector-effect:non-scaling-stroke;fill-rule:evenodd;stroke-width:1.28635608;stroke-miterlimit:4;stroke-dasharray:none" />
         </g>
         <g
            id="g4780"
@@ -10265,12 +10265,12 @@
            font-weight="400"
            font-size="11"
            transform="matrix(0,-0.342857,-0.342857,0,108.571,131)"
-           style="font-style:normal;font-weight:400;font-size:11px;font-family:Ubuntu;fill:none;stroke:#0000ff;stroke-width:0.94488198;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1">
+           style="font-style:normal;font-weight:400;font-size:11px;font-family:Ubuntu;fill:none;stroke:#0000ff;stroke-width:1.28635608;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none">
           <path
              id="path4784"
              d="M 50,0 H 90"
              inkscape:connector-curvature="0"
-             style="vector-effect:non-scaling-stroke;fill-rule:evenodd" />
+             style="vector-effect:non-scaling-stroke;fill-rule:evenodd;stroke-width:1.28635608;stroke-miterlimit:4;stroke-dasharray:none" />
         </g>
         <g
            id="g4788"
@@ -11729,12 +11729,12 @@
            font-weight="400"
            font-size="11"
            transform="matrix(0.385714,0,0,-0.385714,348.571,131)"
-           style="font-style:normal;font-weight:400;font-size:11px;font-family:Ubuntu;fill:none;stroke:#0000ff;stroke-width:0.94488198;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1">
+           style="font-style:normal;font-weight:400;font-size:11px;font-family:Ubuntu;fill:none;stroke:#0000ff;stroke-width:1.143428;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none">
           <path
              id="path5188"
              d="M 0,90 V 40"
              inkscape:connector-curvature="0"
-             style="vector-effect:non-scaling-stroke;fill-rule:evenodd" />
+             style="vector-effect:non-scaling-stroke;fill-rule:evenodd;stroke-width:1.143428;stroke-miterlimit:4;stroke-dasharray:none" />
         </g>
         <g
            id="g5192"
@@ -11814,12 +11814,12 @@
            font-weight="400"
            font-size="11"
            transform="matrix(0.385714,0,0,-0.385714,348.571,131)"
-           style="font-style:normal;font-weight:400;font-size:11px;font-family:Ubuntu;fill:none;stroke:#0000ff;stroke-width:0.94488198;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1">
+           style="font-style:normal;font-weight:400;font-size:11px;font-family:Ubuntu;fill:none;stroke:#0000ff;stroke-width:1.143428;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none">
           <path
              id="path5212"
              d="m 0,-90 v 50"
              inkscape:connector-curvature="0"
-             style="vector-effect:non-scaling-stroke;fill-rule:evenodd" />
+             style="vector-effect:non-scaling-stroke;fill-rule:evenodd;stroke-width:1.143428;stroke-miterlimit:4;stroke-dasharray:none" />
         </g>
         <g
            id="g5216"
@@ -12509,12 +12509,12 @@
            font-weight="400"
            font-size="11"
            transform="matrix(0.428571,0,0,-0.428571,348.571,251)"
-           style="font-style:normal;font-weight:400;font-size:11px;font-family:Ubuntu;fill:none;stroke:#0000ff;stroke-width:0.94488198;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1">
+           style="font-style:normal;font-weight:400;font-size:11px;font-family:Ubuntu;fill:none;stroke:#0000ff;stroke-width:1.02908546;stroke-linecap:square;stroke-linejoin:bevel;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none">
           <path
              id="path5408"
              d="M 0,90 V 50"
              inkscape:connector-curvature="0"
-             style="vector-effect:non-scaling-stroke;fill-rule:evenodd" />
+             style="vector-effect:non-scaling-stroke;fill-rule:evenodd;stroke-width:1.02908546;stroke-miterlimit:4;stroke-dasharray:none" />
         </g>
         <g
            id="g5412"
