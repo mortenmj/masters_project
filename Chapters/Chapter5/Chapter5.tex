@@ -153,7 +153,7 @@ Other information the solver needs, such as time step for fixed-step solvers, to
 
 \subsection{Proposal}
 
-%\begin{figure}[h]
+%\begin{figure}[ht]
 %  \centering
 %  \includegraphics{basesolver-uml}
 %  \caption{Solver base class.\label{fig:solver-baseclass}}
@@ -161,14 +161,14 @@ Other information the solver needs, such as time step for fixed-step solvers, to
 
 \subsubsection{General}
 
-The interface, shown in \cref{fig:solver-interface}, allows the solver implementation to provide the framework with a unique ID, a human-readable name, a
+%The interface, shown in \cref{fig:solver-interface}, allows the solver implementation to provide the framework with a unique ID, a human-readable name, a
 type (ODE, PDE, etc.\@), and any relevant properties that must be configured by the user.
 One such property might for example be the desired number of steps, in the case of e.g. Euler's method.
 The Solver class needs to be sufficiently flexible that it can be inherited by classes for implementing all the solver types mentioned above.
 
 \subsubsection{Linear solvers}
 
-%\begin{figure}[h]
+%\begin{figure}[ht]
 %  \centering
 %  \includegraphics{solverinheritance-uml}
 %  \caption{Linear differential equation solver class.\label{fig:solver-linear}}

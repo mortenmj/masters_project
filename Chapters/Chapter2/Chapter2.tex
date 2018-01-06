@@ -77,7 +77,7 @@ The code in \cref{lst:inertial-basic} is the code generated when the model in \c
 \footnotetext{Annotations which describe the placement of components has been removed}
 
 \begin{listing}[ht]
-    \inputminted[fontsize=\footnotesize]{Modelica}{\rootfolder/Models/MasterProject/Models/InertialBasic2.mo}
+    \inputminted[fontsize=\footnotesize]{Modelica}{\rootfolder/Models/MasterProject/Models/InertialBasic.mo}
     \caption{Text view of the model in \cref{fig:inertial}.\label{lst:inertial-basic}}
 \end{listing}
 
@@ -158,23 +158,11 @@ As an example, the PhysioLibrary project publishes a Modelica library for modell
 
 \subsection{Causal and acausal}
 
-\begin{figure}[ht]
-    \centering
-    \subcaptionbox{Component implementation.\label{fig:rlc-comp}}
-        {
-            \iimage{Figures/RLCcomponents}
-        }\par\bigskip
-    \subcaptionbox{Block implementation.\label{fig:rlc-block}}
-        {
-            \iimage{Figures/RLCblocks}
-        }
-    \caption{RLC circuit comparing component and block implementations.\label{fig:rlc}}
-\end{figure}
-
-In the model in \cref{fig:inertial-architecture}, most subsystems are components while the reference sinusous is a block.
+In the model in \cref{fig:inertial-architecture}, most subsystems are components while the reference signal is a block.
 We will quickly review the differences between the two, and provide an example of their relative strengths.
 A block in Modelica is a causal model.
-In short, a causal model relates inputs to outputs. In Modelica, there are many such blocks, which implement operations such as integration, gain, sinusoids etc.
+In short, a causal model relates inputs to outputs.
+In Modelica, there are many such blocks, which implement operations such as integration, gain, sinusoids etc.
 Conversely, acausal modelling creates the model from components that implement the behaviors of their real-world counterparts, such as the spring-damper we used previously.
 While it is more difficult to implement acausal simulation software \cite{tiller2001}, there are many benefits to the user.
 An example is provided in \cite{harman2006}.
@@ -188,27 +176,51 @@ Here, the modelling of hydraulic components for automotive systems is discussed.
 
 Creating the model from acausal components is also often quicker and easier for the user.
 To illustrate this, we implement a simple parallel RLC circuit.
+
+\begin{wrapfigure}{R}{0.6\columnwidth}
+    \iimage[0.58]{Figures/RLCcomponents}
+    \caption{Component implementation.\label{fig:rlc-comp}}
+\end{wrapfigure}
+
 In \cref{fig:rlc-comp} we create an acausal model, by dragging and dropping components that implement the behavior of the circuit elements.
+As shown, the model closely resembles how we would draw this circuit with pen and paper.
 Compare to \cref{fig:rlc-block} which implements the same circuit using block components.
-As before, these circuit components can easily be replaced by plug-compatible versions, making it trivial to e.g. replace the resistors with components that also model heat buildup.
+Here, it is necessary to derive the equations for the circuit and then implement it using blocks that implement basic mathematical operations.
+Even after establishing the required equations, creating the model requires some experience.
+
+\begin{figure}[ht]
+    \iimage{Figures/RLCblocks}
+    \caption{Block implementation.\label{fig:rlc-block}}
+\end{figure}
+
+A further advantage to the acausal approach is that a component can be replaced by any other component that implements the same interface.
+We could easily modify the above model by replacing a component with any other two-port component.
 
 \subsection{Discontinuities}
 
-The Modelica language has intuitive support for discontinuities in models.
-To illustrate, we will look at the model of a bouncing ball\footnotemark.
-The ball falls towards the ground, under the force of gravity, and then bounces when it hits the ground.
-At the moment of impact, the model is reinitialized with the velocity reversed, minus a loss of energy from the impact.
+\begin{wrapfigure}{R}{0.6\columnwidth}
+    \iimage[0.58]{Figures/BouncingBall}
+    \caption{Ball bouncing down stairs.\label{fig:modelica-bouncingball}}
+\end{wrapfigure}
 
-\footnotetext{The example is inspired by \emph{Modelica By Example}, by Michael M. Tiller \cite{openmodelica.org:tiller:2014}.}
+The Modelica language has intuitive support for discontinuities in models.
+To illustrate, we will look at the model of a ball bouncing down a set of stairs.
+The ball falls towards the ground, under the force of gravity, and then bounces when it hits the staircase, as shown in \cref{fig:modelica-bouncingball}.
+This simple example is interesting, as it shows the simple syntax available in Modelica for specifying discrete events.
+In order to correctly model the behavior of the bouncing ball, it is necessary to trigger an event whenever the ball hits the ground.
+There are many ways to specify discrete behavior in Modelica, and it is outside the scope of this report to give a complete accounting of all of these.
+For the purposes of this example, a when-block will be used, as shown in \cref{lst:modelica-discontinuous}.
+In this case, the "ground" is represented by a stepping line, which starts 1 meter below the initial height for the ball, but any conditional statement can be used in a when-condition.
+The simulation engine issues an event when the condition in our when-block evaluates as true, and the code inside is executed, which reverses the ball's trajectory.
 
 \begin{listing}[ht]
     \inputminted[fontsize=\footnotesize]{Modelica}{\rootfolder/Models/MasterProject/Models/BouncingBall.mo}
-    \caption{Bouncing ball model showing discontinuous equation}
+    \caption{Bouncing ball model showing discontinuous equation\label{lst:modelica-discontinuous}}
 \end{listing}
 
 \section{Simulation}
 
-Here we will look at how software implementation of Modelica typically handle model simulation.
+Here we will look at how software implementations of Modelica typically handle model simulation.
 Because Modelica supports acausal modelling, the process of running the simulation is significantly more involved than otherwise.
 
 \subsection{System transformation}
@@ -346,18 +358,12 @@ Roughly, there are two ways FMI may be employed, as shown in \cref{fig:fmi}.
 Using \emph{model exchange}, the model is simply imported into a modelling tool which supports FMI and simulation is handled by the tool.
 Using \emph{co-simulation}, each FMU handles its own simulation.
 
-\begin{figure}[ht]
+\begin{wrapfigure}{R}{0.5\columnwidth}
     \centering
-    \subcaptionbox{Model exchange.\label{fig:fmi-exchange}}[0.4\columnwidth][l]
-        {
-            \includegraphics[width=0.37\columnwidth]{Figures/fmi-exchange}
-        }
-        \subcaptionbox{Co-simulation.\label{fig:fmi-cosim}}[0.4\columnwidth][r]
-        {
-            \includegraphics[width=0.37\columnwidth]{Figures/fmi-cosim}
-        }
+    \subcaptionbox{Model exchange.\label{fig:fmi-exchange}}[0.48\columnwidth][l]{\pimage[0.48]{Figures/fmi-exchange}}\par\bigskip
+    \subcaptionbox{Co-simulation.\label{fig:fmi-cosim}}[0.48\columnwidth][r]{\pimage[0.48]{Figures/fmi-cosim}}
     \caption{The two interface standards for FMI.\label{fig:fmi}}
-\end{figure}
+\end{wrapfigure}
 
 \subsection{Model exchange}
 

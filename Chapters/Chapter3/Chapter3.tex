@@ -45,6 +45,24 @@ It is also possible to transform this into a transfer function object, and use a
 The system can be analyzed to find initial response, step response and so forth.
 Additionally, Matlab optionally includes toolboxes with a rich set of tools for control system creation, which can analyze the system and help the system designer do controller tuning.
 
+\subsection{Discontinuities}
+
+\begin{listing}[ht]
+    \inputminted[fontsize=\footnotesize]{matlab}{\rootfolder/Models/Matlab/BouncingBall.m}
+    \caption{Bouncing ball showing discontinuous equation\label{lst:matlab-discontinuous}}
+\end{listing}
+
+We will revisit the example shown in \cref{lst:modelica-discontinuous}, and attempt to implement the same example in Matlab code.
+Matlab allows for simulation of discontinuous ODEs by allowing the user to specify points at which the simulation should stop and reinitialize.
+In concept, this is the same as we did previously, but Matlab requires that the user supply an event function.
+The simulation is interrupted when the height above ground decreases to zero.
+This interrupts the ode45() function call, and allows us to set new initial values.
+As we can see, Matlab requires that we handle this discontinuous behavior in the simulation of our model, as opposed to allowing it to be specified as part of the model itself.
+We need to interrupt the solver, set new initial values, and then call the solver to calculate the next bounce of the ball.
+This is somewhat more involved than the approach we saw in \cref{Chapter02}.
+Note that it is only possible to supply a single event function to the solver.
+While this is fine for a simple example such as this, it could be limiting in a more complicated scenario.
+
 \section{Simulink modelling}
 
 In addition to specifying the state space or transfer function representations of the system in the Matlab language, it is possible to specify
