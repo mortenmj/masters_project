@@ -4,19 +4,18 @@ model BouncingBall
     import Modelica.SIunits.Velocity;
     import g = Modelica.Constants.g_n;
 
-    Height h "Height";
-    Velocity v(start=0.0, fixed=true) "Velocity";
-
     parameter Real e = 0.8 "Coefficient of restitution";
-    parameter Height h0 = 1 "Initial height";
+    parameter Height h0 = 5 "Initial height";
 
-initial equation
-    h = h0;
-
+    Height h(start=h0, fixed=true) "Height";
+    Velocity v(start=0.0, fixed=true) "Velocity";
+    Height ground "Surface height";
 equation
-    v = der(h);
+    der(h) = v;
     der(v) = -g;
-    when h <= 0.1 then
+    ground = max(0, h0 - 1 - floor(time));
+
+    when h < ground then
         reinit(v, -e*pre(v));
     end when;
 end BouncingBall;
