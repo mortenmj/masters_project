@@ -400,6 +400,16 @@ While the paper shows that it is possible to implement a simple model of the tyr
 
 \section{Scripting interface}
 
+\begin{figure}[H]
+    \iimage{Figures/InertialArchitecturePlant}
+    \caption{Logical overview of the model simulated in \cref{lst:connected_fmus}.\label{fig:fmi-connected}}
+\end{figure}
+
+\begin{wraptable}{R}{0.5\columnwidth}
+    \inputminted[fontsize=\footnotesize, firstline=3, lastline=30]{Python}{\rootfolder/Chapters/Chapter2/Listings/simulate.py}
+    \captionof{listing}{Simulating connected FMUs.\label{lst:connected_fmus}}
+\end{wraptable}
+
 Models created with Modelica can be compiled to an FMU using a Modelica client such as OpenModelica, Dymola or JModelica.
 Additionally, these three all come with Python APIs that can be used to run simulations or compile models to FMI.
 These interfaces are unfortunately not very user friendly, either in setup or in use.
@@ -413,15 +423,9 @@ Using the classical co-simulation algorithm, this can be numerically unstable.
 The classical approach is to simulate each model for a short time-step, exchange information between the models, and then proceed to the next step.
 PyFMI includes several techniques for improving stability during co-simulation \cite{Andersson2016}.
 
-
 To illustrate the flexibility of this approach, we split the model from \cref{fig:modelica-inertial-architecture} into three parts, and run the simulation from Python.
 The plant and controller are compiled as separate FMUs, and connected to one another, and the reference signal is replaced by a Python function.
 The logical parts of this new model are shown in \cref{fig:fmi-connected}.
-
-\begin{figure}[ht]
-    \iimage{Figures/InertialArchitecturePlant}
-    \caption{Logical overview of the model simulated in \cref{lst:connected_fmus}.\label{fig:fmi-connected}}
-\end{figure}
 
 The reference signal function takes a single parameter, the current time.
 In the example, the scipy.signals.square function, which generates a square waveform, is attached to the input of the system from \cref{fig:modelica-inertial-architecture}.
@@ -430,10 +434,5 @@ The simulation is the run using the interface, and the output is collected and p
 It is possible to connect an input function to any input signal.
 The function must take a single input variable, the current simulation time.
 This approach provides a convenient way to drive a model using signal functions or stored data.
-
-\begin{listing}[ht]
-    \inputminted[fontsize=\footnotesize, firstline=3, lastline=28]{Python}{\rootfolder/Chapters/Chapter2/Listings/simulate.py}
-    \caption{Co-simulation of two connected FMUs with input function.\label{lst:connected_fmus}}
-\end{listing}
 
 \end{document}
