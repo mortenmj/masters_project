@@ -31,13 +31,13 @@ Matlab allows for systems to be modelled in several different ways.
 To illustrate this, we will return to the same drive shaft example as used in \cref{Chapter02}.
 The equations shown in \cref{eq:inertial} can be transformed into state-space form.
 
-\Cref{lst:inertialmatlab} shows \cref{eq:inertial} implemented in the Matlab language, with the same example values used in \cref{fig:inertial};
+\Cref{lst:matlab-inertial} shows \cref{eq:inertial} implemented in the Matlab language, with the same example values used in \cref{fig:modelica-inertial};
 
 While perhaps most known as a scripting language, Matlab offers many features from object-oriented languages.
 
 \begin{listing}[ht]
     \inputminted[fontsize=\footnotesize, firstline=1, lastline=9]{matlab}{\rootfolder/Models/Matlab/InertialMatlab.m}
-    \caption{Inertial system implemented numerically in Matlab\label{lst:inertialmatlab}}
+    \caption{Inertial system implemented numerically in Matlab\label{lst:matlab-inertial}}
 \end{listing}
 
 This creates a state space object which can be used with a number of other methods available in Matlab.
@@ -76,10 +76,10 @@ The author needed significantly more time to create this model compared to the i
 
 \begin{figure}[ht]
     \iimage{Figures/InertialSimulink}
-    \caption{Inertial system implemented in Simulink.\label{fig:inertial-simulink}}
+    \caption{Inertial system implemented in Simulink.\label{fig:simulink-inertial}}
 \end{figure}
 
-The block diagram equivalent of \cref{eq:inertial} is shown in \cref{fig:inertial-simulink}.
+The block diagram equivalent of \cref{eq:inertial} is shown in \cref{fig:simulink-inertial}.
 Note that the input torque is added to the term for $J_{1} \der{\omega_{1}}$.
 Whereas adding an input term in Modelica required nothing more than to connect the input source to the left-hand side of the first inertia component,
 adding an input term in this model requires understanding the underlying equations and correctly identifying the proper way to change the model.
@@ -91,14 +91,14 @@ As Matlab solves this numerically, adding a differentiator is troublesome and wa
 
 \begin{figure}[ht]
     \iimage{Figures/InertialSimulinkExpanded}
-    \caption{Inertial system expanded.\label{fig:inertial-simulink-expanded}}
+    \caption{Inertial system expanded.\label{fig:simulink-inertial-expanded}}
 \end{figure}
 
 In \cref{Chapter02} we saw how partial models could be instantiated with specific components.
 This is useful for example in order to compare variants of two controllers.
 In order to replace parts of models in Simulink there are a couple of approaches that can be used.
 First, for simple components, we may use the \emph{replace\_block()} function.
-\Cref{lst:matlab-replace} shows how to use this to replace the step function in \cref{fig:inertial-simulink-expanded}, to swap in a different source.
+\Cref{lst:matlab-replace} shows how to use this to replace the step function in \cref{fig:simulink-inertial-expanded}, to swap in a different source.
 
 \begin{listing}[ht]
     \inputminted[fontsize=\footnotesize, firstline=1, lastline=4]{matlab}{\rootfolder/Models/Matlab/ReplaceSource.m}
@@ -116,27 +116,27 @@ Note that the example also shows an empty controller variant, which allows us to
 
 \begin{figure}[ht]
     \iimage{Figures/InertialSimulinkBlowup}
-    \caption{Inertial system with variant controller subsystem.\label{fig:inertial-simscape-blowup}}
+    \caption{Inertial system with variant controller subsystem.\label{fig:simscape-inertial-blowup}}
 \end{figure}
 
 This can be combined with running simulations of Simulink models from Matlab scripts in order to compare the effect of various signal sources on the behavior of the model.
 
 While, as we have seen, the model can be made modular and components can have multiple implementations, but there is no mechanism in Matlab/Simulink for
-the types of partial model implementation shown in \cref{fig:inertial-architecture}.
+the types of partial model implementation shown in \cref{fig:modelica-inertial-architecture}.
 In effect, this means that while we can create highly configurable models, any such changes requires that the original model is edited.
 
 Furthermore, the Simulink file format is a binary, as opposed to a text, format.
-Therefore, it is not possible to do these changes with a simple text replacement, like we could have done with the model from \cref{lst:inertial-instantiation}.
+Therefore, it is not possible to do these changes with a simple text replacement, like we could have done with the model from \cref{lst:modelica-inertial-instantiation}.
 
 \section{Simscape modelling}
 
 In addition to the causal modelling done in Simulink above, Matlab also comes with an expansion called Simscape.
 In Simscape, we can model using acausal components like those we saw in \cref{Chapter02}.
-\Cref{fig:inertial-simscape} shows what our model looks like in Simscape.
+\Cref{fig:simscape-inertial} shows what our model looks like in Simscape.
 
 \begin{figure}[ht]
     \iimage{Figures/InertialSimscape}
-    \caption{Inertial system in Simscape.\label{fig:inertial-simscape}}
+    \caption{Inertial system in Simscape.\label{fig:simscape-inertial}}
 \end{figure}
 
 Simscape components are not signal-compatible with those in Simulink, but using special converter components we can interface Simscape models with Simulink models.
@@ -158,12 +158,12 @@ The data type, numeric type and dimensions of signals are also checked, to ensur
 
 \begin{figure}[ht]
     \iimage{Figures/InertialSimulinkOrder}
-    \caption{Execution order for the plant subsystem.\label{fig:inertial-simulink-order}}
+    \caption{Execution order for the plant subsystem.\label{fig:simulink-inertial-order}}
 \end{figure}
 
 After this, the algorithm determines the sorted execution order for the model, so that blocks are executed in an order which reflects their data dependencies.
 This turns the graphical model into a sequentially executed program that can be simulated by a computer.
-\Cref{fig:inertial-simulink-order} shows the execution order for the model we have been working with.
+\Cref{fig:simulink-inertial-order} shows the execution order for the model we have been working with.
 The execution order is determined by the algorithm, but the designer can exert some influence on it by assigning higher priority a block.
 It is also possible to designate a subsystem as atomic, so that the whole subsystem is executed as a single unit.
 Beyond this virtual blocks, such as subsystems, are flattened and do not influence the execution order.
