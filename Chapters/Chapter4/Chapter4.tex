@@ -15,6 +15,11 @@ The software includes an editor for each language so that the user can create mo
 
 \subsection{Language features}
 
+\begin{wraptable}{R}{0.5\columnwidth}
+    \inputminted[fontsize=\footnotesize, lastline=27]{matlab}{\rootfolder/Models/OpenCOR/Inertial.input}
+    \captionof{listing}{Unit definitions for the inertial system\label{lst:cellml-inertial-units}}
+\end{wraptable}
+
 CellML \cite{cuellar2003} is an XML-based format that is used to describe the structure of models.
 The information included in the model can broadly be described as twofold.
 First, it includes the various parts of the model, and how these are combined into the complete model.
@@ -24,20 +29,14 @@ Second, the language allows for metadata to be added to the model, in order to c
 To specify the model we have used previously, in CellML, we first define the units that are used in the model.
 The CellML specification includes SI units, but it is useful to define complex units and give them a descriptive name.
 
-\begin{listing}[ht]
-    \inputminted[fontsize=\footnotesize, lastline=27]{matlab}{\rootfolder/Models/OpenCOR/Inertial.input}
-    \caption{Unit definitions for the inertial system\label{lst:cellml-inertial-units}}
-\end{listing}
-
 Then, the defined units are used to specify the model.
-The model specification is similar to the Modelica code from \cref{Chapter02}.
+The model specification is similar to the Modelica code from \cref{Chapter02}, and is shown in \cref{lst:cellml-inertial-model}.
+This is turned into MathML, which would be tedious to write manually, behind the scenes.
 
 \begin{listing}[ht]
     \inputminted[fontsize=\footnotesize, firstline=28]{matlab}{\rootfolder/Models/OpenCOR/Inertial.input}
     \caption{Model definition for the inertial system\label{lst:cellml-inertial-model}}
 \end{listing}
-
-This is turned into MathML, which would be tedious to write manually, behind the scenes.
 
 Being an XML-based standard, CellML is extensible.
 In addition to the above, CellML allows for model designers to add information written in other XML-based languages to the model.
@@ -85,9 +84,10 @@ An experiment described with SED-ML consists of several components.
 The simulation process broadly consists of three steps:
 
 \begin{enumerate}
-    \item Select the model to use. Any required fine-tuning, such as changing the models initial values, can be applied without requiring a change to the model specification itself.
+    \item Select the model to use.\\
+        Any required fine-tuning, such as changing the models initial values, can be applied without requiring a change to the model specification itself.
     \item Specify the simulation algorithm that should be used for the experiment.
-    \item Apply post-processing
+    \item Apply post-processing.\\
         Here, the raw output from the simulation steps can be processed. For example, the data can be normalised,
         correlations can be calculated and so on, before the final plots or reports are generated.
 \end{enumerate}

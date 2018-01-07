@@ -10,22 +10,28 @@ This report started with the question, loosely phrased, "Is it really necessary 
 Having reviewed three rather different simulation tools, the answer seems to be a qualified "maybe".
 
 The argument can certainly be made that the mechanism for solving these models is essentially the same, as seen in \cref{Chapter02,Chapter03,Chapter04}.
-Some of these software packages only allow the simulation of ordinary differential equations, while others allow for composite models made up of differential equations, algebraic equations and algorithms.
+Some of these software packages only allow the simulation of ordinary differential equations.
+While others allow for composite models made up of differential equations, algebraic equations and algorithms.
 
 Based on what we have seen, the chief differences between these tools, or certainly the differences that matter most, are in how the models themselves are specified, and how the simulation is specified.
 Other, secondary, considerations include the ability to extend the software using plugins, the ability to produce publication-quality figures.
 
-\subsection{Model specification}
+\section{Model specification}
 
-
-
-Never the less, the main point where simulation tools differ seems not to be in how the models are simulated.
 In general, the systems we have reviewed all reduce the system to a similar format and solve them by numerical integration.
-However, tools oriented towards different fields of industry differ in how models are created, and how output is presented.
+However, as we have seen, different tools differ in how models are specified.
 
 As seen in (\cref{Chapter02}), Modelica, which is targeted primarily at modelling systems in engineering, offers modelling tools which are appropriate for this purpose.
 Models are mainly built using acausal components, which implement the behavior of real-world components.
 Furthermore, as components in engineering are frequently similar to one another, Modelica allows for inheritance and other object-oriented approaches.
+
+Matlab offers a many of the same advantages, but as it is not a pure-bred simulation tool it falls short in some aspects.
+As Matlab is a much more general computing environment than Modelica-based tools, this is to be expected.
+
+As we have seen, the ease of understanding a model can vary greatly depending on the language in which it is specified.
+We would argue that the model implemented in Modelica, shown in \cref{lst:modelica-inertial-code} is significantly easier to grasp than that same model in Matlab, shown in \cref{lst:matlab-inertial}, or CellML, shown in \cref{lst:cellml-inertial-units,lst:cellml-inertial-model}. 
+It is a common mantra in software development that source code is written once, but read many times, and that as a consequence readability should be highly valued.
+
 
 As we have seen, Modelica (\cref{Chapter02}) offers a rich interface for creating acausal models.
 These models are easy to understand graphically, as they are made by connecting components which mirror their real-life counterparts.
