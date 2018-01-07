@@ -11,10 +11,12 @@ model BouncingBall
     Velocity v(start=0.0, fixed=true) "Velocity";
     Height ground "Surface height";
 equation
+    // Ball is accelerated downwards by gravity
     der(h) = v;
     der(v) = -g;
-    ground = max(0, h0 - 1 - floor(time));
 
+    // Reinitialize model when it hits the ground
+    ground = max(0, h0 - 1 - floor(time));
     when h < ground then
         reinit(v, -e*pre(v));
     end when;
