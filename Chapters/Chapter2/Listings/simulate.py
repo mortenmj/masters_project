@@ -3,28 +3,30 @@ import matplotlib.pyplot as plt
 from scipy import signal
 from pyfmi import load_fmu, Master
 
-# Load the FMUs that make up the model
-controller = load_fmu('FMU/Controller.fmu')
+# Load the model FMUs
+ctrl = load_fmu('FMU/Ctrl.fmu')
 plant = load_fmu('FMU/Plant.fmu')
 
-# Connect the two FMUs
-components = [controller, plant]
-connections = [
-        (controller, 'y', plant, 'u'),
-        (plant, 'y', controller, 'u_m')]
+# Connect the controller and plant
+components = [ctrl, plant]
+conns = [
+        (ctrl, 'y', plant, 'u'),
+        (plant, 'y', ctrl, 'u_m')]
 
 # Create the FMU Master
-model = Master(components, connections)
+model = Master(components, conns)
 
-# Connect a function to the controller reference
-input_object = ((controller, 'u_s'), signal.square)
+# Connect a reference signal
+ref = signal.square
+input_obj = ((ctrl, 'u_s'), ref)
 
 # Run the simulation
-res = model.simulate(input=input_object)
+res = model.simulate(
+        input=input_obj)
 
 # Get simulation results
 output = res[plant]['y']
-reference = res[controller]['u_s']
+reference = res[ctrl]['u_s']
 t = res[plant]['time']
 
 # Plot results
