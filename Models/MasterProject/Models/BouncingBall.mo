@@ -1,6 +1,6 @@
 within MasterProject.Models;
 model BouncingBall
-    import Modelica.SIunits.Height;
+    type Height=Real(unit="m");
     import Modelica.SIunits.Velocity;
     import g = Modelica.Constants.g_n;
 
