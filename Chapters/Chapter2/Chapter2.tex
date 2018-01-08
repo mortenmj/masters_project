@@ -38,7 +38,7 @@ In an imperative language, statements are evaluated sequentially and assigning a
 This is not the case in Modelica, and it is possible to express statements which are simultaneously valid.
 In a strictly imperative programming language, the second statement would override the first in the following example:
 
-\inputminted[fontsize=\footnotesize]{Modelica}{\rootfolder/Chapters/Chapter2/Listings/simultaneous.txt}
+\inputminted{Modelica}{\rootfolder/Chapters/Chapter2/Listings/simultaneous.txt}
 
 To look at how this is used to define a physical system, we will implement the equations for the model from \cref{fig:modelica-inertial} in text form.
 The equations for the system are derived by Newton's second law for rotation.
@@ -55,7 +55,7 @@ We will use this in order to implement the system shown above.
 \Cref{lst:modelica-inertial-code} shows a direct implementation of \cref{eq:inertial}.
 
 \begin{listing}[ht]
-    \inputminted[fontsize=\footnotesize]{Modelica}{\rootfolder/Models/MasterProject/Models/InertialCode.mo}
+    \inputminted{Modelica}{\rootfolder/Models/MasterProject/Models/InertialCode.mo}
     \caption{Code implementation of the inertial system in \cref{eq:inertial}.\label{lst:modelica-inertial-code}}
 \end{listing}
 
@@ -77,7 +77,7 @@ The code in \cref{lst:modelica-inertial-basic} is the code generated when the mo
 \footnotetext{Annotations which describe the placement of components has been removed}
 
 \begin{listing}[ht]
-    \inputminted[fontsize=\footnotesize]{Modelica}{\rootfolder/Models/MasterProject/Models/InertialBasic.mo}
+    \inputminted{Modelica}{\rootfolder/Models/MasterProject/Models/InertialBasic.mo}
     \caption{Text view of the model in \cref{fig:modelica-inertial}.\label{lst:modelica-inertial-basic}}
 \end{listing}
 
@@ -121,7 +121,7 @@ We may choose to either use a partial model, which is the Modelica term for an i
 Then, when we instantiate a model, we supply a component for each subsystem that is to be replaced.
 
 \begin{listing}[ht]
-    \inputminted[fontsize=\footnotesize]{Modelica}{\rootfolder/Models/MasterProject/Models/Inertial.mo}
+    \inputminted{Modelica}{\rootfolder/Models/MasterProject/Models/Inertial.mo}
     \caption{Instantiation of the inertial system.\label{lst:modelica-inertial-instantiation}}
 \end{listing}
 
@@ -214,7 +214,7 @@ In this case, the "ground" is represented by a stepping line, which starts 1 met
 The simulation engine issues an event when the condition in our when-block evaluates as true, and the code inside is executed, which reverses the ball's trajectory.
 
 \begin{listing}[ht]
-    \inputminted[fontsize=\footnotesize]{Modelica}{\rootfolder/Models/MasterProject/Models/BouncingBall.mo}
+    \inputminted{Modelica}{\rootfolder/Models/MasterProject/Models/BouncingBall.mo}
     \caption{Bouncing ball model showing discontinuous equation\label{lst:modelica-discontinuous}}
 \end{listing}
 
@@ -406,7 +406,7 @@ While the paper shows that it is possible to implement a simple model of the tyr
 \end{figure}
 
 \begin{wraptable}{R}{0.5\columnwidth}
-    \inputminted[fontsize=\footnotesize, firstline=3, lastline=30]{Python}{\rootfolder/Chapters/Chapter2/Listings/simulate.py}
+    \inputminted[firstline=3, lastline=30]{Python}{\rootfolder/Chapters/Chapter2/Listings/simulate.py}
     \captionof{listing}{Simulating connected FMUs.\label{lst:connected_fmus}}
 \end{wraptable}
 
