@@ -89,10 +89,10 @@ The plant has been turned into a subsystem, to reduce clutter in the model.
 Note that the plant outputs $\omega$ directly, while previously we added a sensor which differentiated $\varphi$ to solve for $\omega$.
 As Matlab solves this numerically, adding a differentiator is troublesome and was skipped in the example.
 
-\begin{figure}[ht]
-    \iimage{Figures/InertialSimulinkExpanded}
+\begin{wrapfigure}{R}{0.5\columnwidth}
+    \iimage[0.48]{Figures/InertialSimulinkExpanded}
     \caption{Inertial system expanded.\label{fig:simulink-inertial-expanded}}
-\end{figure}
+\end{wrapfigure}
 
 In \cref{Chapter02} we saw how partial models could be instantiated with specific components.
 This is useful for example in order to compare variants of two controllers.

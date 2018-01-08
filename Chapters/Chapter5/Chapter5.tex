@@ -2,183 +2,70 @@
 \providecommand{\rootfolder}{../..} % Relative path to main.tex
 \documentclass[\rootfolder/main.tex]{subfiles}
 \begin{document}
-\chapter{A domain-independent solution} % Main chapter title
+\chapter{Discussion} % Main chapter title
 
-\label{Chapter05} % Change X to a consecutive number; for referencing this chapter elsewhere, use \cref{ChapterX}
+\label{Chapter06} % Change X to a consecutive number; for referencing this chapter elsewhere, use \cref{ChapterX}
 
-\section{General Requirements}
+This report started with the question, loosely phrased, "Is it really necessary to have as many simulation tools as there currently are in the marketplace?".
+To investigate the question, we have reviewed three different software tools, and how they differ.
 
-For any general purpose simulation suite to establish itself in the already crowded marketplace, it will need to be highly customisable.
-In order to provide all the benefits of existing simulation suites, without simply offering a toolbox, the simulation suite needs a plugin-based architecture.
-Features such as input- and output formats, the graphical interface, available solvers, language packs and model components should all be customisable by the user,
-so that the software can be tailored to different needs.
+The argument can certainly be made that the mechanism for solving models in all three tools is essentially the same, as seen in \cref{Chapter02,Chapter03,Chapter04}.
+Some of these software packages only allow the simulation of ordinary differential equations, while others allow for composite models made up of differential equations, algebraic equations and algorithms.
 
-A weakness in current solutions is that they are either too generic or too specific.
-Matlab is an example of the former, where users need a lot of technical know-how in order to write simulations from scratch.
-The Matlab language allows for any conceivable simulation problem to be run, but requires that the user knows the language,
-and that the problem is described at a low abstraction level.
-Other solutions are highly tailored to a particular field, or even sub-field, and only allow the user to simulation a constrained set of problems.
-These software suites typically allow the user to quickly simulate a problem, as long as it is within the realm of problems supported by the software,
-often with a graphical interface so that no programming experience is required of the user.
-
-The benefit of the former is, of course, that any problem can be simulated given that the user has the required skill set.
-In practice however, the result is frequently that a software solution is cobbled together by end users with little experience in the best practises of software architecture.
-This leads to what software architects affectionately refer to as a big ball of mud.
-Conversely, the latter approach allows users to quickly simulate problems, without much knowledge of the software, but leaves the user with little opportunity to customise the application if needed.
-
-In order to better understand how these requirements might be met by a single piece of software, we will look at each of them in turn.
-
-\section{Plugin API}
-
-There are several areas of a simulation package where access to implementing plugins would be benefitial.
-In the case of both OpenModelica and Matlab, it was the experience of the author that creating publication quality figures required export and external post-processing of outputted data.
-External plotting libraries, such as Matplotlib or Bokeh for Python, offer powerful means of creating data visualizations, in the latter case including interactive visualizations.
-Basing data visualization on one of these packages could avoid significant duplication of effort.
-
-\section{Data Access}
-
-\section{GUI}
+Based on what we have seen, the chief differences between these tools, or certainly the differences that matter most, are in how the models themselves are specified, and how the simulation is specified.
+Other, secondary, considerations include the ability to extend the software using plugins, the ability to produce publication-quality figures, solve optimization problems for the model and so forth.
+These are viewed as secondary because most of these problems can be solved by exporting the model to a standard format, and simulating it from a scripting interface.
 
 \section{Model specification}
 
-As seen in previous chapters, there are several ways to represent models.
-Some software solutions put the onus on the user, and require a state space or transfer function representation, while others separate the input representation from the internal representation, and translate the model before simulation.
-We will briefly consider these approaches in turn.
+In general, the systems we have reviewed all reduce the model to a standard format and solves it by numerical integration.
+However, as we have seen, different tools differ in how models are specified.
 
-State space representation and the transfer function representation are well known from control theory literature.
-While classical control theory is based on transfer function analysis, it has several drawbacks.
-Modern control theory largely relies on state space representation, which benefits from several powerful techniques in linear algebra.
-While both methods can be used to represent linear time-invariant systems, the state space representation offers several attractive advantages:
+As seen in \cref{Chapter02}, Modelica, which is targeted primarily at modelling systems in engineering, offers modelling tools which are appropriate for this purpose.
+Models are mainly built using acausal components, which implement the behavior of real-world components.
+This allows for models that are easily understood in terms of their real-world counterparts.
+Compare this to the causal approach, shown in \cref{Chapter03}.
+Furthermore, as components in engineering are frequently similar to one another, Modelica allows for inheritance and other object-oriented approaches.
+As shown, we can for example implement a basic representation of an actuator, and later replace it with a more realistic component without any changes to the rest of the model.
 
-\begin{itemize}
-	\item To treat multivariate systems in transfer function form requires a transfer function matrix. This can become unwieldy.
-		Using the state space representation allows us to treat univariate and multivariate systems the same way.
-	\item For any transfer function, there are many possible state space representations. Therefore, converting to the transfer function form involves a loss of information.
-		The state space representation maintains this information, allowing greater insight into the inner workings of the system.
-	\item The state space representation allows for non-zero initial conditions, unlike a transfer function representation.
-	\item The state space representation is defined for linear and non-linear systems, unlike a transfer function representation which is only defined for linear systems.
-	\item The state space representation is defined for time-variant and time-invariant systems, unlike a transfer function representation which is only defined for time invariant systems.
-	\item Given the state space representation, it is simple to determine if the system is observable and controllable.
-\end{itemize}
+Matlab offers a many of the same advantages, but as it is not a pure-bred simulation tool it falls short in some aspects.
+As Matlab is a much more general computing environment than Modelica-based tools, this is to be expected.
 
-While it is possible to extend the notion of transfer functions to time-variant and non-linear systems, it is rarely done.
-Representing a nonlinear system requires a sequence of transfer functions \cite{Zhang1993}, and the stronger the nonlinearities are the more functions are required.
-For this reason, the use of transfer functions is largely restricted to linear, time-invariant systems.
+As we have seen, the ease of understanding a model can vary greatly depending on the language in which it is specified.
+We would argue that the model implemented in Modelica, shown in \cref{lst:modelica-inertial-code} is significantly easier to grasp than that same model in Matlab, shown in \cref{lst:matlab-inertial}, or CellML, shown in \cref{lst:cellml-inertial-units,lst:cellml-inertial-model}. 
+It is a common mantra in software development that source code is written once, but read many times, and that as a consequence readability should be highly valued.
 
-A system with states $x_{1}$ to $x_{p}$ and outputs $y_{1}$ to $y_{r}$ is expressed in compact state-space form by the following equations:
-\loadeq{\rootfolder/Equations.tex}{003}
+As we have seen, Modelica (\cref{Chapter02}) offers a rich interface for creating acausal models.
+These models are easy to understand graphically, as they are made by connecting components which mirror their real-life counterparts.
+On the other hand, we have seen the causal approach in Matlab/Simulink (\cref{Chapter03}), where models are built from blocks.
+While the models are not as easy to understand, the software required to simulate them can be made simpler.
 
-As we can see, this system can be uniquely identified in the software by the matrices $(A, B, C, D)$. 
-It follows that this would be all we need to pass to a solver in order to simulate the system.
+There is generally a trend in software development for higher-level languages, at the expense of less efficient software.
+As computers become faster, the tradeoff between efficient software and the amount of developer hours it takes to create, increasingly favors efficient development.
+As shown in \cref{Chapter02}, an acausal model can be significantly simpler to grasp than an equivalent causal model.
+Further, as we have seen, building a causal model requires that we make a priori assumptions about what will be known and what will be unknown in the model.
+For example, in the circuit model in \cref{Chapter02}, we may have later wished to solve for some other quantity.
+If we build a causal model, this requires that the model is reworked.
 
-If we also wish to support model with discontinuities, a more complicated representation is required.
-As seen previously, such a system is represented by a system of differential-algebraic equations, as shown in \cref{eq:dae-system}.
-Reducing a complex system of this sort to a system of ordinary differential equations is not for the faint of heart, and better left to computers.
-The complexity of directly specifying a system with discontinuities is high, and can be significantly simplified by using a higher level description language.
+We have further seen that features from object-oriented languages, such as composition and inheritance (in particular interface inheritance) allow for highly flexible development, as well as model and component reuse.
 
-For these reasons, it would be desirable to allow the user to express models in a language that allows for both a natural expression of differential equations, and imperative algorithms.
-As seen previously, Modelica is an established language with these features.
-The Modelica language also allows simple expression of discontinuities within equation definitions.
-Additionally, Modelica already has significant market penetration, with multiple clients already in existence.
+\section{Simulation}
 
-However, in order to separate the model from the simulation setup, and to promote sharing of models, a richer input format would be desirable.
-In order to promote sharing of models, it is useful to specify the model with units, and a include a graphical representation.
-Modelica allows for a graphical representation both of the internal connections in the model, and an icon view of the model when it is used as a component in a larger model.
-It also allows for units, arbitrarily named variables and descriptions following each variable.
-CellML also allows for most of these requirements, but it is not as richly featured.
+From what we have seen in previous chapters, there appear to be two important considerations when designing simulation software concerning the simulation phase itself.
+First, it should be simple to play around with simulation parameters in a graphical interface within the software tool.
+This is necessary to quickly get a feel for the behavior of the model, and to be able to iterate efficiently when developing the model.
+As in all software development, the ability to quickly compile and run the software is of great advantage, and there seems to be no good replacement for a built-in graphical interface for this.
+Of the three tools we have reviewed, two have powerful, graphical interfaces for configuring the simulation and graphing the results.
 
-While the format described above, where the model is defined by its coefficient matrices, is sufficient to define the model mathematically, it is insufficient in these regards.
-In order to fulfill all of these requirements, storing the model as MathML would be more feasible.
-An input method like the one employed by OpenCOR, which we reviewed earlier, would be one possible solution, as shown in %\cref{fig:opencor-input}.
+Secondly, the ability to run simulations headless, meaning without a graphical interface.
+This is frequently a requirement for running simulations on remote machines, such as computation clusters.
+Unfortunately, none of the reviewed tools have particularily attractive scripting interfaces in and of themselves.
+One alternative, which we have reviewed, is compiling the model in a standard format, such as FMI.
+This allows for the model to be run e.g. from Python, as shown in \cref{Chapter02}.
+Model components can be compiled as FMUs, connected with Python, and run on any computer or computer cluster using the widely available Anaconda Python distribution.
 
-\section{Output formats}
-
-\subsection{Plotting Engine}
-
-\section{Solvers}
-
-As it is desirable that solvers also be implemented in plugins, it is necessary to specify an API.
-
-\subsection{Criteria}
-
-The API should allow for as wide a range of implementations as possible, and roughly in any conceivable language.
-The reasons for this need for flexibility are several.
-
-While implementing solvers in a procedural or functional language might yield impressive performance, the result is often code that is difficult to understand.
-Implementing in an object oriented language allows for abstraction of the numerical algorithm, and permits code that is divided into well-defined, self-contained modules \cite{kees1999}.
-However, programmers may also deem that the computational overhead of an object oriented solution outweighs the benefits, and would therefore prefer to implement the solver in some other paradigm.
-Our interface must be sufficiently flexible to allow for both approaches, so that implementers can make this choice themselves.
-Furthermore, much research has gone into the development of efficient solvers in the past century, and it would be very useful to simply integrate these as plugins in our software.
-
-The API should allow for solvers of ordinary differential equations, partial differential equations and non-linear differential equations.
-This will not be an API for implementing solvers, but rather an API for how such a solver should interface with the rest of our simulation framework.
-
-In order to create a pleasant user experience, it would be beneficial if the solver could report data to the application as the simulation progresses.
-This way, the user can see the graph being drawn in real time, and can stop and reconfigure the simulation if that is desired.
-This is also in line with the requirements of responsive design; The user sees that the application is working, and therefore has a better user experience.
-It is important that this continous feedback is an option, and not a hard requirement, so that the coupling between the solver and the application doesn't impose limitations on solver implementers.
-
-In some cases it may be desirable to run the solver on some other machine, or indeed even a cluster of machines, and our API should be flexible enough to allow for this.
-Therefore, we need an API where the solver can report data to the application, even when running remotely.
-However, it would not be desirable to impose this as a requirement, as that may limit certain implementations.
-Whether or not the solver can provide data to the GUI in real time should be reported to the application, so that the lack of information isn't interpreted as an error by the user.
-
-\subsection{Considerations}
-
-To determine the required parameters for our solver API, we will have to look more closely at the types of differential equations we intend to support.
-There are two ways we can represent systems of differential equations in our application.
-We can require the user to supply the system in a matrix representation, or we can require a function $f(x)$, that returns $dx/dt$.
-In the case where $x$ is multivariate, $f(x)$ should return an array of results.
-Systems of linear differential equations can be specified in matrix form in the following manner \cite{kreyzig}:
-
-\loadeq{\rootfolder/Equations.tex}{001}
-
-As we can see, it would suffice to have an array of size $n$ for the state variables,
-a two-dimensional array of size $n \times n$ for the constants and another array of size $n$ for the constant terms.
-Linear partial differential equations can be reduced to this form and this should be done before passing the equations to the solver.
-
-Support for differential algebraic equations complicate the matter somewhat, but not much.
-In addition to the specification outlined above, we would need to specify the algebraic constraints in a similar fashion.
-However, nonlinear systems obviously can not be written in such a form \cite{khalil}.
-Generally, solvers of nonlinear algebraic equations take as input a problem-defining function.
-
-In order to provide the same API for both classes of problems, it might be more useful to require that the user supplies such a function.
-In addition, specialized solvers may require that other functions are supplied \cite{kinsol}\cite{cvode}\cite{ida}.
-Where solver implementations require that the user supplies functions such as these, they should either be implemented in our wrapper,
-or we should provide an interface for the user to supply their own implementation.
-In the latter case, it would be useful to supply a default implementation, so that the solver can be used out of the box.
-
-For linear solvers, whether they be for ordinary or partial differential equations, we need an initial time value, as well as an end value.
-Other information the solver needs, such as time step for fixed-step solvers, tolerance and so on, can be set in a key-value manner in Properties.
-
-\subsection{Proposal}
-
-%\begin{figure}[ht]
-%  \centering
-%  \includegraphics{basesolver-uml}
-%  \caption{Solver base class.\label{fig:solver-baseclass}}
-%\end{figure}
-
-\subsubsection{General}
-
-%The interface, shown in \cref{fig:solver-interface}, allows the solver implementation to provide the framework with a unique ID, a human-readable name, a
-type (ODE, PDE, etc.\@), and any relevant properties that must be configured by the user.
-One such property might for example be the desired number of steps, in the case of e.g. Euler's method.
-The Solver class needs to be sufficiently flexible that it can be inherited by classes for implementing all the solver types mentioned above.
-
-\subsubsection{Linear solvers}
-
-%\begin{figure}[ht]
-%  \centering
-%  \includegraphics{solverinheritance-uml}
-%  \caption{Linear differential equation solver class.\label{fig:solver-linear}}
-%\end{figure}
-
-
-\subsubsection{Non-linear solvers}
-
-\section{Internationalization}
-
-\section{Model sharing}
+Once a model can be run from a general purpose programming language, it opens up a wide range of possibilities, such as data fitting or parameter sweeps.
+Many such languages include libraries for numerical optimization, which would allow us to fit our model to experimental data.
+Being able to create write scripts that automate the production of publication-quality figures also simplifies the writing of reports, such as this one.
 
 \end{document}

@@ -31,7 +31,7 @@ english, % ngerman for German
 onehalfspacing, % Single line spacing, alternatives: onehalfspacing or doublespacing
 %draft, % Uncomment to enable draft mode (no pictures, no links, overfull hboxes indicated)
 rnolistspacing, % If the document is onehalfspacing or doublespacing, uncomment this to set spacing in lists to single
-%liststotoc, % Uncomment to add the list of figures/tables/etc to the table of contents
+liststotoc, % Uncomment to add the list of figures/tables/etc to the table of contents
 %toctotoc, % Uncomment to add the main table of contents to the table of contents
 parskip, % Uncomment to add space between paragraphs
 %nohyperref, % Uncomment to not load the hyperref package
@@ -120,7 +120,7 @@ headsepline, % Uncomment to get a line under the header
 \usepackage{enumitem}
 
 \usepackage[chapter]{minted}
-\setminted{fontsize=\footnotesize}
+\setminted{fontsize=\footnotesize, baselinestretch=1}
 
 \usepackage[inkscape=newer,inkscapelatex=false]{svg}
 
@@ -328,20 +328,19 @@ The acknowledgments and the people to thank go here, don't forget to include you
 \subfile{Chapters/Chapter2/Chapter2}
 \subfile{Chapters/Chapter3/Chapter3}
 \subfile{Chapters/Chapter4/Chapter4}
+\subfile{Chapters/Chapter5/Chapter5}
 \subfile{Chapters/Chapter6/Chapter6}
 
 %----------------------------------------------------------------------------------------
 %    THESIS CONTENT - APPENDICES
 %----------------------------------------------------------------------------------------
 
-%\appendix % Cue to tell LaTeX that the following "chapters" are Appendices
+\appendix % Cue to tell LaTeX that the following "chapters" are Appendices
 
 % Include the appendices of the thesis as separate files from the Appendices folder
 % Uncomment the lines as you write the Appendices
 
-%\subfile{Appendices/AppendixA}
-%\include{Appendices/AppendixB}
-%\include{Appendices/AppendixC}
+\subfile{Appendices/AppendixA}
 
 %----------------------------------------------------------------------------------------
 %    BIBLIOGRAPHY

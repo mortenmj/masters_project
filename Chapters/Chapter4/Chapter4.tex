@@ -20,6 +20,11 @@ The software includes an editor for each language so that the user can create mo
     \captionof{listing}{Unit definitions for the inertial system\label{lst:cellml-inertial-units}}
 \end{wraptable}
 
+\begin{listing}[ht]
+    \inputminted[firstline=28]{cellml}{\rootfolder/Models/OpenCOR/Inertial.input}
+    \caption{Model definition for the inertial system\label{lst:cellml-inertial-model}}
+\end{listing}
+
 CellML \cite{cuellar2003} is an XML-based format that is used to describe the structure of models.
 The information included in the model can broadly be described as twofold.
 First, it includes the various parts of the model, and how these are combined into the complete model.
@@ -32,11 +37,6 @@ The CellML specification includes SI units, but it is useful to define complex u
 Then, the defined units are used to specify the model.
 The model specification is similar to the Modelica code from \cref{Chapter02}, and is shown in \cref{lst:cellml-inertial-model}.
 This is turned into MathML, which would be tedious to write manually, behind the scenes.
-
-\begin{listing}[ht]
-    \inputminted[firstline=28]{cellml}{\rootfolder/Models/OpenCOR/Inertial.input}
-    \caption{Model definition for the inertial system\label{lst:cellml-inertial-model}}
-\end{listing}
 
 Being an XML-based standard, CellML is extensible.
 In addition to the above, CellML allows for model designers to add information written in other XML-based languages to the model.

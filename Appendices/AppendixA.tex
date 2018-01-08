@@ -2,29 +2,13 @@
 \providecommand{\rootfolder}{..} % Relative path to main.tex
 \documentclass[\rootfolder/main.tex]{subfiles}
 \begin{document}
-
-\chapter{Frequently Asked Questions} % Main appendix title
-
 \label{AppendixA} % For referencing this appendix elsewhere, use \ref{AppendixA}
 
-\section{How do I change the colors of links?}
+\chapter{Listings}
 
-The color of links can be changed to your liking using:
-
-{\small\verb!\hypersetup{urlcolor=red}!}, or
-
-{\small\verb!\hypersetup{citecolor=green}!}, or
-
-{\small\verb!\hypersetup{allcolor=blue}!}.
-
-\noindent If you want to completely hide the links, you can use:
-
-{\small\verb!\hypersetup{allcolors=.}!}, or even better:
-
-{\small\verb!\hypersetup{hidelinks}!}.
-
-\noindent If you want to have obvious links in the PDF but not the printed text, use:
-
-{\small\verb!\hypersetup{colorlinks=false}!}.
+\begin{listing}[ht]
+    \inputminted{python}{\rootfolder/Chapters/Chapter2/Listings/ball.py}
+    \caption{Python program to plot the trajectory of a bouncing ball\label{lst:python-bouncingball}}
+\end{listing}
 
 \end{document}

@@ -206,6 +206,7 @@ We could easily modify the above model by replacing a component with any other t
 The Modelica language has intuitive support for discontinuities in models.
 To illustrate, we will look at the model of a ball bouncing down a set of stairs.
 The ball falls towards the ground, under the force of gravity, and then bounces when it hits the staircase, as shown in \cref{fig:modelica-bouncingball}.
+The program written to create this figure is shown in \cref{lst:python-bouncingball}.
 This simple example is interesting, as it shows the simple syntax available in Modelica for specifying discrete events.
 In order to correctly model the behavior of the bouncing ball, it is necessary to trigger an event whenever the ball hits the ground.
 There are many ways to specify discrete behavior in Modelica, and it is outside the scope of this report to give a complete accounting of all of these.
@@ -239,7 +240,8 @@ Before simulation the systems are processed to reduce the number of unknowns, us
 
 As the systems created by Modelica are composed from acausal components, the complete system will generally have fewer states than the total sum of the states of the components.
 This is referred to as the DAE system having a high index.
-Solving such a systems requires that equations are differentiated as we will see in the following example, which is adapted from \cite{clauss2002}.
+Solving such a systems requires that equations are differentiated as we will see in the following example, shown in \cref{fig:modelica-inertial-equations}.
+This example is adapted from \cite{clauss2002}.
 
 \begin{figure}[ht]
 	\begin{minipage}[c]{.75\columnwidth}
@@ -248,7 +250,7 @@ Solving such a systems requires that equations are differentiated as we will see
 	\begin{minipage}[c]{.25\columnwidth}
 	    \loadeq{\rootfolder/Equations.tex}{007}
 	\end{minipage}
-    \caption{Rigid driveshaft model with corresponding equations.}
+    \caption{Rigid driveshaft model with corresponding equations.\label{fig:modelica-inertial-equations}}
 \end{figure}
 
 Here, the system has more equations than strictly needed;
@@ -322,8 +324,6 @@ The DAE solution algorithm can efficiently monitor the function to detect when t
 
 \section{Functional Mock-up Interface}
 
-\subsection{Overview}
-
 \begin{displayquote}[\cite{harman2006}][\dots]
     [The] \emph{Functional Mock-up Interface} (FMI) is a tool independent standard to support both model exchange and co-simulation of dynamic models using a combination of xml-files and compiled C-code
 \end{displayquote}
@@ -364,10 +364,6 @@ Using \emph{co-simulation}, each FMU handles its own simulation.
     \subcaptionbox{Co-simulation.\label{fig:fmi-cosim}}[0.48\columnwidth][r]{\pimage[0.48]{Figures/fmi-cosim}}
     \caption{The two interface standards for FMI.\label{fig:fmi}}
 \end{wrapfigure}
-
-\subsection{Model exchange}
-
-\subsection{Co-simulation}
 
 Often, complex models that combine multiple physical domains are difficult, or even impossible, to create with one software tool.
 Using the FMI standard, this can be solved by modelling separate parts of the model in specialized software, and including the numerical solver with the model.
