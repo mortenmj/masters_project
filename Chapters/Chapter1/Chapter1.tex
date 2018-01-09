@@ -6,74 +6,58 @@
 
 \label{Chapter01} % Change X to a consecutive number; for referencing this chapter elsewhere, use \cref{ChapterX}
 
-\section{Human computers}
-
-%\begin{wrapfigure}{R}{0.6\columnwidth}
-%    \pimage[0.58]{Figures/comet}
-%    \caption[Halley's comet over Cambridge, 1682]
-%        {Halley's comet over Cambridge, 1682. \\ Courtesy of the Library of Congress\label{fig:comet}}
-%\end{wrapfigure}
+\section{Human Computers}
 
 In order to better understand the history of simulation, it is useful to take a look at the history of computation in general.
-Here, we will see how the need to simulate physical systems has been a driving force in the development of the computer.
+Here, it will be shown how the need to simulate physical systems has been a driving force in the development of the computer.
 Analog counting devices, such as the Chinese abacus, have been used for thousands of years to aid in computation.
 Originally, however, the term computer referred to people who were employed to perform calculations.
 One of the earliest examples of this was the work done to predict the return of Halley's comet, by Alexis-Claude Clairaut.
-Halley and Newton had correctly deduced that other celestial bodies influenced the comet's orbit, but undertaking to solve a three-body problem in order to predict the date the comet would return was considered to be an insurmountable amount of work at the time.
+Halley and Newton had correctly deduced that other celestial bodies influenced the comet's orbit.
+However, solving a three-body problem, necessary in order to predict the date the comet would return, was considered insurmountable at the time.
 Clairaut, along with two friends, used successive approximation to solve the problem \cite{wilson1993}.
-This method they used is strikingly similar to the numerical methods employed by modern simulation software.
-
-%\begin{align*} \label{eqn:clairaut}
-%  z &= \int r \times dx + \int (2 \xi - \rho)r \times dx && \text{Clairaut's equation \cite{wilson1993}}
-%\end{align*}
+The method they used is strikingly similar to the numerical methods employed by modern simulation software.
 
 \begin{wrapfigure}{R}{0.6\columnwidth}
     \pimage[0.58]{Figures/tabulatingroom}
-    \caption[A computing room in the 1920s]
-            {A computing room in the 1920. \\ Courtesy of the Library of Congress \label{fig:tabulatingroom}}
+    \caption[A computing room in the 1920s.]
+            {A computing room in the 1920s. \\ Courtesy of the Library of Congress \label{fig:tabulatingroom}.}
 \end{wrapfigure}
 
-Shortly after the work by Clairaut and his companions, the French Académie des Sciences undertook to calculate logarithmic and trigonometric tables for the new metric system.
-Inspired by Adam Smith's writings on division of labor in the Wealth of Nations, Gaspard de Prony, director of the Bureau du Cadastre, organized the bureau's computing staff into three sections.
-The first group had little training in mathematics, and would be limited to performing simple arithmetics.
-The second group, made up of more experienced computers, reduced the calculations that were to be performed into fundamental arithmetical operations, and verified the results that were returned.
-These made up the section that in later computing organizations would be referred to as planners.
-The third group was made up of some of the finest mathematicians in France, who would oversee the entire operation.
-They took no part in the computational work itself, but investigated the various analytical expressions that could be used and selected the ones best suited for reduction into simple steps \cite{hyman1985}.
-
-\section{Analog computers}
+\section{Analog Computers}
 
 Later, in 1821, Charles Babbage was employed by the Astronomical Society of London to calculate logarithmic tables.
 This had been done before, in particular by the French, who had perfected the process of breaking down problems into their simplest parts, and set large groups of computers to work on them.
 However, Babbage was disappointed by the number of mistakes made by his human computers.
 Babbage took the approach to its next logical step and began work on a calculating machine; An analog computer that could calculate the values of a polynomial simply by using repeated addition.
-While not particularily successful, Babbage's second machine, the Analytical Engine, included most of the major components in a modern computer, such as IO, memory and a central processing unit.
+While not particularily successful, Babbage's second machine, the Analytical Engine, included most of the major components of a modern computer, such as input/output, memory and a central processing unit.
 
-Later the two world wars would bring both a greater need for computation, as well as a scarcity of manpower.
+Later, the two world wars would bring both a greater need for computation, as well as a scarcity of manpower.
 This pushed the development of increasingly complex computing machines.
 Computers in the early 20th century relied heavily on complex mechanical calculators and punched card machines in order to keep up with the growing demand for computation.
 The punched card machine was capable of interpreting data, and could operate at full speed for days unlike a human computer who would inevitably tire \cite{carr}.
 
-\section{Digital computers}
+\section{Digital Computers}
 
 \begin{wrapfigure}{R}{0.6\columnwidth}
     \pimage[0.58]{Figures/eniac}
-    \caption[Technicians programming the ENIAC]
-            {Technicians programming the ENIAC. \\ Courtesy of Los Alamos National Laboratory\label{fig:eniac}}
+    \caption[Technicians programming the ENIAC.]
+            {Technicians programming the ENIAC. \\ Courtesy of Los Alamos National Laboratory\label{fig:eniac}.}
 \end{wrapfigure}
 
-While punched card machines were much faster than human computers, as electro-mechanical machines they were slow compared to the next innovation in computing: the electronic general-purpose computer.
+Although punched card machines were much faster than human computers, as electro-mechanical machines they were slow compared to the next innovation in computing: the electronic general-purpose computer.
 In 1943, the United States Army commissioned engineers at the University of Pennsylvania to build the Electronic Numerical Integrator and Computer, ENIAC \cite{sep-computing-history}\cite{reed1952}.
-While strictly speaking no the first programmable computer (that honor belongs to the Colossus, built by the British codebreakers at Bletchley Park\cite{winegrad1996}), the ENIAC would be the first truly general-purpose computer.
-Originally built the compute firing tables for artillery, the machine was soon after the war put to use solving other problems, in particular by the nuclear scientists at Los Alamos National Laboratory, who had only recently developed the nuclear bombs dropped on Japan.
-The very first real-world application of the machine would not be computing artillery tables, but by Edward Teller at Los Alamos who used the machine to simulate nuclear fusion reactions \cite{AtomicHeritageFoundation}.
+While it was not the first programmable computer (that honor belongs to the Colossus, built by the British code breakers at Bletchley Park\cite{winegrad1996}), the ENIAC was the first truly general-purpose computer.
+Originally built to compute firing tables for artillery, the machine was soon used to solve other problems. 
+In particular, by the nuclear scientists at Los Alamos National Laboratory, who had only recently developed the nuclear bombs dropped on Japan.
+The very first real-world application of the machine would not be artillery tables, but simulations of nuclear fusion reactions \cite{AtomicHeritageFoundation}.
 
 In 1948, a new control system was planned and implemented for the ENIAC.
-The new system, based on the work of John von Neumann \cite{VonNeumann1993} \cite{Haigh2014a} added an instruction set to the computer.
+The new system, based on the work of John von Neumann \cite{VonNeumann1993} \cite{Haigh2014a}, added an instruction set to the computer.
 This greatly simplified its operation and gave birth to the first stored-program computer \cite{Rope2007}.
 
 Later, the creation of one of the first widely adopted programming language, FORTRAN, was motivated by a desire to make it easier, and less error-prone, to program computers to do calculations.
-Many other languages have been developed since them, some of them for the specific intent of developing simulation models.
+Many other languages have been developed since then, some for the specific intent of developing simulation models.
 Three simulation frameworks, with their corresponding input languages, will be presented in this paper: Modelica, Matlab and OpenCOR.
 
 \end{document}

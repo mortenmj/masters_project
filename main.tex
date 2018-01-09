@@ -111,6 +111,7 @@ headsepline, % Uncomment to get a line under the header
 
 \numberwithin{figure}{chapter}
 \numberwithin{table}{chapter}
+\usepackage[acronym]{glossaries}
 \usepackage[section]{placeins}
 \usepackage{booktabs}
 \usepackage[l2tabu]{nag}
@@ -141,7 +142,7 @@ headsepline, % Uncomment to get a line under the header
 %\subject{Engineering Cybernetics} % Your subject area, this is not currently used anywhere in the template, print it elsewhere with \subjectname
 \keywords{} % Keywords for your thesis, this is not currently used anywhere in the template, print it elsewhere with \keywordnames
 \university{\href{http://www.ntnu.edu}{Norwegian University of Science and Technology}} % Your university's name and URL, this is used in the title page and abstract, print it elsewhere with \univname
-\department{\href{http://www.ntnu.edu/itk}{Department or Engineering Cybernetics}} % Your department's name and URL, this is used in the title page and abstract, print it elsewhere with \deptname
+\department{\href{http://www.ntnu.edu/itk}{Department of Engineering Cybernetics}} % Your department's name and URL, this is used in the title page and abstract, print it elsewhere with \deptname
 \group{\href{http://researchgroup.university.com}{Research Group Name}} % Your research group's name and URL, this is used in the title page, print it elsewhere with \groupname
 \faculty{\href{http://ntnu.edu/ie}{Faculty of Information Technology and Electrical Engineering}} % Your faculty's name and URL, this is used in the title page and abstract, print it elsewhere with \facname
 
@@ -215,7 +216,7 @@ headsepline, % Uncomment to get a line under the header
 \item Where I have consulted the published work of others, this is always clearly attributed.
 \item Where I have quoted from the work of others, the source is always given. With the exception of such quotations, this thesis is entirely my own work.
 \item I have acknowledged all main sources of help.
-\item Where the thesis is based on work done by myself jointly with others, I have made clear exactly what was done by others and what I have contributed myself.\\
+\item Where the thesis is based on work done by myself jointly with others, I have made clear exactly what was done by others, and what I have contributed myself.\\
 \end{itemize}
 
 \noindent Signed:\\
@@ -271,12 +272,13 @@ The acknowledgments and the people to thank go here, don't forget to include you
 %    ABBREVIATIONS
 %----------------------------------------------------------------------------------------
 
-%\begin{abbreviations}{ll} % Include a list of abbreviations (a table of two columns)
+\begin{abbreviations}{ll} % Include a list of abbreviations (a table of two columns)
 
-%\textbf{LAH} & \textbf{L}ist \textbf{A}bbreviations \textbf{H}ere\\
-%\textbf{WSF} & \textbf{W}hat (it) \textbf{S}tands \textbf{F}or\\
+\textbf{FMI} & \textbf{F}unctional \textbf{M}ock-up \textbf{I}nterface\\
+\textbf{FMU} & \textbf{F}unctional \textbf{M}odellin \textbf{U}nit\\
+\textbf{ODE} & \textbf{O}rdinary \textbf{D}ifferential \textbf{E}quation\\
 
-%\end{abbreviations}
+\end{abbreviations}
 
 %----------------------------------------------------------------------------------------
 %    PHYSICAL CONSTANTS/OTHER DEFINITIONS

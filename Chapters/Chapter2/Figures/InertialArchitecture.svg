@@ -34,17 +34,17 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1920"
-     inkscape:window-height="1136"
+     inkscape:window-width="1600"
+     inkscape:window-height="836"
      id="namedview962"
      showgrid="false"
      inkscape:zoom="2.4186048"
      inkscape:cx="195.14304"
      inkscape:cy="106.96653"
-     inkscape:window-x="1920"
+     inkscape:window-x="0"
      inkscape:window-y="27"
      inkscape:window-maximized="1"
-     inkscape:current-layer="g958" />
+     inkscape:current-layer="g76" />
   <title
      id="title2">OMEdit - OpenModelica Connection Editor</title>
   <desc
@@ -476,17 +476,14 @@
        font-style="normal"
        id="g76">
       <text
-         fill="#0000ff"
-         fill-opacity="1"
-         stroke="none"
          xml:space="preserve"
-         x="-51.1719"
+         x="-72.171875"
          y="142"
-         font-family="DejaVu Sans Mono"
          font-size="33.8462"
          font-weight="400"
          font-style="normal"
-         id="text74">plant</text>
+         id="text74"
+         style="font-style:normal;font-weight:400;font-size:33.84619904px;font-family:'DejaVu Sans Mono';fill:#0000ff;fill-opacity:1;stroke:none">process</text>
     </g>
     <g
        fill="none"
