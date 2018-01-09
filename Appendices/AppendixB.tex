@@ -1,0 +1,15 @@
+% Appendix A
+\providecommand{\rootfolder}{..} % Relative path to main.tex
+\documentclass[\rootfolder/main.tex]{subfiles}
+\begin{document}
+\label{AppendixB} % For referencing this appendix elsewhere, use \ref{AppendixA}
+
+\chapter{Figures}
+
+\begin{sidewaysfigure}
+    \centering
+    \includesvg[width=\textheight]{Figures/InertialArchitectureBlowup2}
+    \caption{Expanded view of the actuator and process subsystems, shown in full size}
+\end{sidewaysfigure}
+
+\end{document}

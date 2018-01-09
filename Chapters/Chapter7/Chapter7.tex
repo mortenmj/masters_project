@@ -1,0 +1,27 @@
+% Chapter Template
+\providecommand{\rootfolder}{../..} % Relative path to main.tex
+\documentclass[\rootfolder/main.tex]{subfiles}
+\begin{document}
+\chapter{Conclusion} % Main chapter title
+
+\label{ch:conclusion} % Change X to a consecutive number; for referencing this chapter elsewhere, use \cref{ChapterX}
+
+Having reviewed three rather different simulation tools, the answer to the original question seems to be a qualified "maybe".
+
+As discussed, the primary difference between software tools for simulation lies in how the model is specified, and the ease of configuring and visualizing the simulation.
+Certainly, the argument can be made that this process is different for different fields of science and engineering, and that this justifies having highly specialized tools.
+Even so, the author would argue that a general modeling language, such as Modelica, could readily be used in specialized software.
+This approach would permit efficient model development in specialized applications.
+It would also reap the benefits of using a modeling language that is in widespread use, such as the ability to view and simulate the model in any software tool that uses Modelica, 
+We reviewed one such specialized tool, OpenCOR, which is intended for biological sciences.
+In the opinion of the author, this project might well have been better served by using an existing modeling language, freeing up development time to be used for other parts of the project.
+
+The paper has also shown that the use of object-oriented features in a modelling language simplifies model development, in the same way that object-orientation simplifies other software development.
+Shown in \cref{ch:modelica}, the ability to inherit interfaces allows for model subsystems to be replaced.
+In both \cref{ch:modelica,ch:matlab} it was shown that the ability to reuse models as subsystems in larger models also has great utility.
+
+We have also seen a standard interface for model sharing, which has gained a lot of traction in the industry, namely FMI, and how we can simulate FMUs from an external program.
+This approach, originally developed in the automotive industry, is popular as it allows for model sharing without revealing intellectual property.
+As the model is compiled to a binary program, it can also be simulated on machines without needing to install the software used to make the model.
+
+\end{document}

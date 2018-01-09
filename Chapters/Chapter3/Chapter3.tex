@@ -2,210 +2,435 @@
 \providecommand{\rootfolder}{../..} % Relative path to main.tex
 \documentclass[\rootfolder/main.tex]{subfiles}
 \begin{document}
-\chapter{Matlab/Simulink} % Main chapter title
+\chapter{Modelica} % Main chapter title
 
-\label{Chapter03} % Change X to a consecutive number; for referencing this chapter elsewhere, use \cref{ChapterX}
+\label{ch:modelica} % Change X to a consecutive number; for referencing this chapter elsewhere, use \cref{ChapterX}
 
 \section{Language features}
 
-While Matlab offers many different programming paradigms, and both numerical and symbolic mathematics, it is most known as a numerical scripting language.
-For this reason, these features are the ones that will be reviewed, first and foremost.
+Modelica is an object-oriented programming language for specifying models of large, complex, and heterogeneous physical systems \cite{clauss2002}.
+The language can be used to model systems in fields like mechanical engineering, biology, robotics, and more.
+It supports the creation of mixed-domain models, for example combining electric power, hydraulic systems, and thermal systems.
+Many types of preserved quantities are already implemented in Modelica, such as torque, voltage or heat.
+It is also possible for model developers to create their own flow variables.
+This could, for example, be chemicals necessary for modeling a specific chemical processes.
 
-In addition to the Matlab programming language, Matlab also allows for modelling using graphical blocks in Simulink.
-However, it is noteworthy that these are not one and the same.
-While \cref{Chapter02} showed that in Modelica, graphical models are a representation of a text based specification.
-In Matlab, these are separate.
-It is possible to create models using state-space representations, transfer functions, algorithms or a combination thereof in the Matlab language.
-It is also possible to create models using graphical components, either causal or acausal as will be shown.
-Furthermore, models created in the Matlab language can be included as components in a graphical model, using what is called an s-function.
-However, a Simulink model is in a binary format, and there is no underlying Matlab code that may be edited.
+In Modelica, models are mathematically described by differential or algebraic equations, that can be discrete or continuous, in a declarative fashion.
+It is also possible to define algorithms like those in imperative languages.
+Models are made by composition of components, which in turn are implemented by equations or by programming them imperatively.
+This means they are created by connecting graphical representations of the components in a composition diagram.
+Modelica is object-oriented, and each component in a composition is implemented as a class.
 
-To illustrate some features of the language, the example with the coupled driveshaft will be revisited.
-The equations for this system were shown in \cref{eq:inertial}.
-To implement this system in Matlab, the system is first changed into matrix form.
-Let $\vec{x}{t}$ be the states, $\vec{u}{t}$ be the inputs and $\vec{y}{t}$ be the outputs of the system, any such system can be represented in the following form:
+In order to illustrate the advantages and disadvantages between Modelica and the other simulation packages that will be reviewed later, the following example will be used repeatedly\footnotemark{}.
+Consider a simple drive-shaft system, consisting of two rotational inertial loads, with a spring-damper between the two, and between the second load and a rigid frame as shown in \cref{fig:modelica-inertial}.
 
-\loadeq{\rootfolder/Equations.tex}{003} % State-space representation of the system in vector/matrix form
+\footnotetext{The example is inspired by \emph{Modelica By Example}, by Michael M. Tiller \cite{openmodelica.org:tiller:2014}.}
 
-Matlab allows for systems to be modelled in several different ways.
-The equations shown in \cref{eq:inertial} can be transformed into state-space form.
+\begin{figure}[ht]
+    \iimage{Figures/InertialBasic}
+    \caption{Graphical Modelica implementation Modelica of a simple drive-shaft system.\label{fig:modelica-inertial}}
+\end{figure}
 
-\Cref{lst:matlab-inertial} shows \cref{eq:inertial} implemented in the Matlab language, with the same example values used in \cref{fig:modelica-inertial}.
+\subsection{Equations and algorithms}
+
+First, consider what it means to say that Modelica is equation-based.
+In an imperative language, statements are evaluated sequentially and assigning a value to a variable would overwrite whatever value it may have held previously.
+This is not the case in Modelica, hence it is possible to express statements that are simultaneously valid.
+In a strictly imperative programming language, the second statement would overwrite the first one in the following example:
+
+\inputminted{Modelica}{\rootfolder/Chapters/Chapter3/Listings/simultaneous.txt}
+
+To look at how this is used to define a physical system, the equations for the model from \cref{fig:modelica-inertial} are implemented in text form.
+The equations for the system are derived by Newton's second law for rotation.
+Let $J$ be the moment of inertia, $\varphi$ be the angular displacement, $\omega$ be the angular velocity and, $\tau$ be the torque.
+Then, the law states that
+
+\loadeq{\rootfolder/Equations.tex}{005} % Newton's second in a rotating system
+
+Combining these equations gives the following system of differential equations:
+
+\loadeq{\rootfolder/Equations.tex}{006} % Differential equations for the inertial system
+
+In Modelica, complex equations are defined simply by stating the necessary expressions.
+This will be used in order to implement the system shown above.
+\Cref{lst:modelica-inertial-code} shows a direct implementation of \cref{eq:inertial}.
 
 \begin{listing}[ht]
-    \inputminted{matlab}{\rootfolder/Models/Matlab/InertialMatlab.m}
-    \caption{Inertial system implemented numerically in Matlab.\label{lst:matlab-inertial}}
+    \inputminted{Modelica}{\rootfolder/Models/MasterProject/Models/InertialCode.mo}
+    \caption{Textual Modelica implementation of the drive-shaft system in \cref{eq:inertial}.\label{lst:modelica-inertial-code}}
 \end{listing}
 
-This creates a state-space object which can be used with a number of other methods available in Matlab.
-It is also possible to transform this into a transfer function object, and use any number of Matlab methods made for analyzing these.
-The system can be analyzed to find initial response, step response and so forth.
-Additionally, Matlab includes toolboxes with a rich set of tools for control system creation, which can analyze the system and help the system designer do controller tuning.
+As stated, it is also possible to implement programs like this in imperative languages.
+This may be done in algorithm blocks within models, which may coexist with the equation blocks seen above, or they may be implemented as separate functions and then called from a model.
+It is also possible to call an external function in this way, written in e.g. the C language.
+This allows for complex model behavior.
+One example, which is typical in the field of control engineering, would be to model the behavior of a system of elevators in Modelica, and implement a control system in a different language.
+As a consequence, automated testing of the control system by replacing the physical elevator system with a computer model can be carried out.
+
+\subsection{Object-oriented features}
+
+As Modelica is object-oriented it is possible, if desired, to separate a model into smaller components, and connect these components to one another to form a more complex model.
+In the previous example, it would make sense to implement the inertial load and the spring-damper as separate classes, and connect instances of them to form the model.
+When creating a model by connecting graphical components in Modelica, this instantiation and connecting of objects is done behind the scenes.
+Looking at the code of the first model, shown in \cref{fig:modelica-inertial}, it can be seen that this is exactly what the program does.
+\Cref{lst:modelica-inertial-basic} shows the code generated when the model in \cref{fig:modelica-inertial} was created, although somewhat cleaned up to emphasize the relevant sections.
+
+\begin{listing}[ht]
+    \inputminted{Modelica}{\rootfolder/Models/MasterProject/Models/InertialBasic.mo}
+    \caption{Text view of the model in \cref{fig:modelica-inertial}.\label{lst:modelica-inertial-basic}}
+\end{listing}
+
+Most of the key features in object-oriented languages are implemented in Modelica.
+Among these are encapsulation, inheritance, information hiding and polymorphisms.
+The model will be extended in order to have a look at some of these features.
+In \cref{fig:modelica-inertial-expanded} an actuator has been added, as well as a sensor for measuring the rotation speed of the second shaft.
+Also, a PID controller was included, which drives the shaft speed to follow a reference signal.
+
+\begin{figure}[ht]
+    \iimage{Figures/InertialExpanded}
+    \caption{Expanded drive-shaft system in Modelica, with actuator, rotation speed sensor and PID controller.\label{fig:modelica-inertial-expanded}}
+\end{figure}
+
+As can be seen, the model roughly consists of five subsystems: a reference signal, an actuator, the inertial system itself, a speed sensor, and a controller.
+Just like these subsystems are made up of smaller components, it is possible to create a component representing each subsystem.
+This makes it possible to hide implementation details, and gives a clearer view of how the system is structured.
+This generalized model is shown in \cref{fig:modelica-inertial-architecture}.
+
+\begin{figure}[ht]
+    \iimage{Figures/InertialArchitecture}
+    \caption{Drive-shaft system in Modelica, with replaceable subsystems.\label{fig:modelica-inertial-architecture}}
+\end{figure}
+
+Here, each block is a separate model, which can be developed independently of the main model.
+\Cref{fig:modelica-inertial-architecture-blowup} shows how the new component, named \emph{Process}, now contains the same shaft and spring-damper assembly as in the previous models.
+Furthermore, the component now inherits from a library interface named \emph{PartialTwoFlangesAndSupport}.
+This interface provides input and output flanges, as well as the option between using a support flange or allowing the component to be implicitly supported.
+This process can be repeated indefinitely, and the model shown in the figure might easily be a component in another, larger model.
+Structuring models in this way makes them easier to understand, and allows for model reuse.
+
+\begin{figure}[ht]
+    \iimage{Figures/InertialArchitectureBlowup2}
+    \caption[Expanded view of the actuator and process subsystems of the drive-shaft system in \cref{fig:modelica-inertial-architecture}.]%
+    {Expanded view of the actuator and process subsystems of the drive-shaft system in \cref{fig:modelica-inertial-architecture}. A larger version is included in \cref{ch:appendixB}.\label{fig:modelica-inertial-architecture-blowup}}
+\end{figure}
+
+This process can be taken one step further, by replacing all subsystems with virtual subsystems, or interfaces, to get even greater reusability from model.
+A component in a model declared as \emph{replaceable} can be replaced with any plug-compatible component, i.e. any component with the same inputs and outputs.
+It is possible to use a partial model, which is the Modelica term for an interface, or some default model that can be replaced when desired.
+Then, when the model is instantiated, a specific component is supplied for each subsystem that is to be replaced.
+
+\begin{listing}[ht]
+    \inputminted{Modelica}{\rootfolder/Models/MasterProject/Models/Inertial.mo}
+    \caption{Modelica example showing the instantiation of the drive-shaft system in \cref{fig:modelica-inertial-architecture}.\label{lst:modelica-inertial-instantiation}}
+\end{listing}
+
+In this case, the model has an ideal speed sensor. 
+However, when modeling a real system, it would be more useful to replace this with a model that mimics the operation of a real sensor.
+There are many possible sensors for measuring the rotational speed of a shaft, and it would be useful if these could be implemented as components and quickly swapped into the model.
+In this case, the process will be the only constant part of the model, while the controller, the actuator, the sensor and the signal source will be made replaceable.
+What used to be a model is now a model architecture, and needs to be instantiated with components.
+The code in \cref{lst:modelica-inertial-instantiation} shows how this is done.
+Scalar inputs and outputs are used in this example.
+However, the interfaces may trivially be changed to accept multiple inputs and outputs, which would make the architecture even more general.
+
+Where necessary, it is also possible to create adapter models that wrap a subsystem and convert the output to whatever format the rest of the model requires.
+For example, while this sensor measures the rotational speed of the drive-shaft, in some other application it might be preferable to know the drive-shaft position.
+This is very useful when different parts of models are created independently.
+
+Since the model instantiation in \cref{lst:modelica-inertial-instantiation} is in a pure text format, any number of programming languages could be used to change the definition of the model.
+Using e.g. the Python bindings for OpenModelica or Dymola, model variations can be generated and simulated without resorting to manually using a graphical interface.
+
+\subsection{Mixed-domain models}
+
+Modelica allows for easy creation of mixed-domain models \cite{clauss2002}.
+\Cref{fig:modelica-inertial-architecture-blowup} shows one such example, where the actuator from \cref{fig:modelica-inertial-architecture} is implemented as a simple model of an induction motor.
+Additionally, the resistor in the model has a heat port that allows the motor to be thermally connected to the rest of the system.
+While this simple example is limited to electric flow, torque and, optionally heat flow, it is possible to model any number of physical quantities in Modelica.
+A similar component to that shown in \cref{fig:modelica-inertial-architecture-blowup} could easily be connected to a valve that controls liquid flow, all in one model.
+The Modelica library contains more detailed examples showing how to model heat flow\footnotemark{}
+\footnotetext{\url{http://doc.modelica.org/om/Modelica.Thermal.HeatTransfer.Examples.html}}
+and liquid flow\footnotemark{}.
+\footnotetext{\url{http://doc.modelica.org/om/Modelica.Fluid.Examples.html}}
+
+This can also be extended to model phenomena outside of the engineering disciplines.
+As an example, the PhysioLibrary project publishes a Modelica library for modeling all aspects of human physiology.
+
+\subsection{Causal and acausal}
+
+In the model in \cref{fig:modelica-inertial-architecture}, most subsystems are components while the reference signal is a block.
+The differences between the two will be quickly reviewed, and an example of their relative strengths will be provided.
+A block in Modelica is a causal model.
+In short, a causal model relates inputs to outputs.
+In Modelica, there are many such blocks, that implement operations such as integration, gain, sinusoids etc.
+Conversely, acausal modeling creates the model from components that implement the behaviors of their real-world counterparts, such as the spring-damper we used previously.
+While it is more difficult to implement acausal simulation software \cite{tiller2001}, there are many benefits to the user.
+An example is provided in \cite{harman2006}.
+Here, the modeling of hydraulic components for automotive systems is discussed.
+
+\begin{displayquote}[\cite{harman2006}][\dots]
+    For some components a pressure drop across the component is the only data available.
+    With some modeling tools it would be necessary to reverse-engineer an orifice size and flow coefficient to achieve this pressure drop.
+    However the \emph{ActuationHydraulics} library exploits the acausal capabilities of Modelica and allows the choice of a flow-model where pressure drop is specified as a function of flow.
+\end{displayquote}
+
+Creating the model from acausal components is also often quicker and easier for the user.
+To illustrate this, a simple parallel RLC circuit is implemented.
+
+\begin{wrapfigure}{R}{0.6\columnwidth}
+    \iimage[0.58]{Figures/RLCcomponents}
+    \caption{Modelica implementation of a simple RLC circuit, using acausal components.\label{fig:modelica-rlc-comp}}
+\end{wrapfigure}
+
+\Cref{fig:modelica-rlc-comp} shows an acausal model, created by dragging and dropping components that implement the behavior of the circuit elements.
+As shown, the model closely resembles how an engineer would draw this circuit with pen and paper.
+
+This can be compared to \cref{fig:modelica-rlc-block} which implements the same circuit using block components.
+Contrary to the example above, in \cref{fig:modelica-rlc-comp}, it is necessary to derive the equations for the circuit and then create the model using blocks that implement basic mathematical operations.
+Even after establishing the necessary equations, creating the model requires some experience.
+
+\begin{figure}[ht]
+    \iimage{Figures/RLCblocks}
+    \caption{Modelica implementation of a simple RLC circuit, using causal blocks.\label{fig:modelica-rlc-block}}
+\end{figure}
+
+A further advantage to the acausal approach is that a component can be replaced by any other component that implements the same interface.
+The model in \cref{fig:modelica-rlc-comp} could easily be modified by replacing a component with any other two-port component.
 
 \subsection{Discontinuities}
 
-\begin{listing}[ht]
-    \inputminted{matlab}{\rootfolder/Models/Matlab/BouncingBall.m}
-    \caption{Matlab implementation of the bouncing ball model, showing discontinuous behavior.\label{lst:matlab-discontinuous}}
-\end{listing}
-
-To illustrate handling of discontinuous systems in Matlab, the example with the bouncing ball, shown in \cref{lst:modelica-discontinuous}, will be revisited and implemented in Matlab code.
-Matlab allows for simulation of discontinuous ODEs by allowing the user to specify points at which the simulation should stop and reinitialize.
-In concept, this is the same as shown previously, but Matlab requires that the user supplies an event function.
-The simulation is interrupted when the height above ground decreases to zero.
-This interrupts the \emph{ode45()} function call, and makes it possible to set new initial values.
-As can be seen, Matlab couples the discontinuous behavior to the simulation of the model, as opposed to allowing it to be specified as part of the model itself.
-It is necessary to interrupt the solver, set new initial values, and then call the solver to calculate the next bounce of the ball, in effect requiring the user to micromanage the simulation.
-This is somewhat more involved than the approach seen in \cref{Chapter02}.
-Note that it is only possible to supply a single event function to the solver.
-While this is fine for a simple example such as this, it could be limiting in a more complicated scenario.
-
-\section{Simulink modelling}
-
-In addition to specifying the state-space or transfer function representations of the system in the Matlab language, it is possible to specify
-the system equations using block components in the graphical interface Simulink.
-The components used in Simulink are purely causal, and as such the system must be built from components such as adders, multipliers and integrators.
-To compare this with the acausal modelling paradigm shown earlier, the same system is also implemented in Simulink.
-
-Generally, the simplest approach when implementing a system of differential equations in Simulink is to start with the integration blocks, and work backwards.
-Unfortunately, as the model must be made from low-level components the possibility of making a mistake if that much greater.
-In the scope of this project significantly more time was required to create this model compared to the implementation in \cref{Chapter02}.
-
-\begin{figure}[ht]
-    \iimage{Figures/InertialSimulink}
-    \caption{Simulink implementation of the inertial system.\label{fig:simulink-inertial}}
-\end{figure}
-
-The block diagram equivalent of \cref{eq:inertial} is shown in \cref{fig:simulink-inertial}.
-Note that the input torque is added to the term for $J_{1} \der{\omega_{1}}$.
-While adding an input term in Modelica was as simple as connecting the input source to the left-hand side of the first inertia component,
-adding an input term in this model requires understanding the underlying equations and correctly identifying the proper way to change the model.
-
-The model is expanded in the same was as was done previously, in \cref{Chapter02}, by adding a reference source and a controller to drive the output state of the system to the desired value.
-The plant has been turned into a subsystem to reduce clutter in the model.
-Note that the plant outputs $\omega$ directly, while previously a sensor was added which differentiated $\varphi$ to solve for $\omega$.
-As Matlab solves this numerically, adding a differentiator is troublesome and was skipped in the example.
-
-\begin{wrapfigure}{R}{0.5\columnwidth}
-    \iimage[0.48]{Figures/InertialSimulinkExpanded}
-    \caption{Simulink implementation of the inertial system, expanded with a reference signal and controller.\label{fig:simulink-inertial-expanded}}
+\begin{wrapfigure}{R}{0.6\columnwidth}
+    \iimage[0.58]{Figures/BouncingBall}
+    \caption{Simulation output of the bouncing ball model shown in \cref{lst:modelica-discontinuous}.\label{fig:modelica-bouncingball}}
 \end{wrapfigure}
 
-\Cref{Chapter02} showed how partial models could be instantiated with specific components.
-This is useful for example in order to compare variants of two controllers.
-In order to replace parts of models in Simulink there are a couple of approaches that can be used.
-First, for simple components, it is possible to use the \emph{replace\_block()} function.
-\Cref{lst:matlab-replace} shows how to use this to replace the step function in \cref{fig:simulink-inertial-expanded} with a different reference signal.
+The Modelica language has intuitive support for discontinuities in models.
+A model of a ball bouncing down a set of stairs is used to illustrate this.
+The ball falls towards the ground, under the force of gravity, and then bounces when it hits the staircase, as shown in \cref{fig:modelica-bouncingball}.
+The program written to create this figure is shown in \cref{lst:python-bouncingball}.
+This simple example is interesting, as it shows the simple syntax available in Modelica for specifying discrete events.
+In order to correctly model the behavior of the bouncing ball, it is necessary to trigger an event whenever the ball hits the ground.
+There are many ways to specify discrete behavior in Modelica, but it is outside the scope of this report to give a complete accounting of all of these.
+For the purposes of this example, a when-block will be used, as shown in \cref{lst:modelica-discontinuous}.
+In this case, the "ground" is represented by a stepping line, that starts one meter below the initial height for the ball.
+It should be noted, however, that any conditional statement can be used in a when-condition, including function calls.
+The simulation engine issues an event when the condition in the when-block evaluates as true, and the code inside is executed, which reverses the ball's trajectory.
 
 \begin{listing}[ht]
-    \inputminted{matlab}{\rootfolder/Models/Matlab/ReplaceSource.m}
-    \caption{Matlab code showing how to replace a module programmatically.\label{lst:matlab-replace}}
+    \inputminted{Modelica}{\rootfolder/Models/MasterProject/Models/BouncingBall.mo}
+    \caption{Modelica implementation of a bouncing ball model, illustrating discontinuous behavior.\label{lst:modelica-discontinuous}}
 \end{listing}
-
-This works for simple changes, but is limited to single blocks.
-To replace subcomponents, it is necessary to introduce a variant subsystem.
-This is a special type of subsystem that contains one or more plug-compatible variants.
-Simulink connects one of the variants the inputs and outputs of the subsystem based on the value of a variable.
-This allows for programmatic switching between the variants.
-The selection of a variant can also be made conditional on the choice of another component variant, or any other logical expression for that matter.
-For example, it is possible to configure the system to use a Kalman filter only when a certain controller variant is active.
-Note that the example also shows an empty controller variant, which makes it possible to run the system with no controller active.
-
-\begin{figure}[ht]
-    \iimage{Figures/InertialSimulinkBlowup}
-    \caption{Simulink implementation of the inertial system with variant controller subsystem.\label{fig:simscape-inertial-blowup}}
-\end{figure}
-
-This can be combined with running simulations of Simulink models from Matlab scripts in order to compare the effect of various signal sources on the behavior of the model.
-
-While the model can be made modular and components can have multiple implementations, but there is no mechanism in Matlab/Simulink for
-the types of partial model implementation shown in \cref{fig:modelica-inertial-architecture}.
-In effect, this means that while it is possible to create highly configurable models, any such changes requires that the original model is edited.
-
-Furthermore, the Simulink file is in a binary format.
-Therefore, it is not possible to do these changes with a simple text replacement, as could have done with the model from \cref{lst:modelica-inertial-instantiation} in \cref{Chapter02}.
-
-\section{Simscape modelling}
-
-In addition to the causal modelling done in Simulink above, Matlab also comes with an expansion called Simscape.
-In Simscape, it is possible to model using acausal components like those shown in \cref{Chapter02}.
-\Cref{fig:simscape-inertial} shows what the inertial model looks like in Simscape.
-
-\begin{figure}[ht]
-    \iimage{Figures/InertialSimscape}
-    \caption{Simscape implementation of the inertial system.\label{fig:simscape-inertial}}
-\end{figure}
-
-Simscape components are not signal-compatible with those in Simulink, but using special converter components it is possible to interface Simscape models with Simulink models.
-This way, it would for example be possible to connect the acausal plant implementation above to a causal controller implementation.
-As acausal modelling has already been covered in \cref{Chapter02}, Simscape modelling will not be covered in further detail.
 
 \section{Simulation}
 
-When simulating a model in Matlab the procedure is somewhat different depending on whether the model is defined in Matlab code, or in Simulink or Simscape.
+Here we will look at how software implementations of Modelica typically handle model simulation.
+Because Modelica supports acausal modeling, the process of running the simulation is significantly more involved than otherwise.
 
-\subsection{Simulink}
+\subsection{System transformation}
 
-When simulating a simulink model, the compiler first determines the values of any variables used in the model.
-In the example, several values are set in a Matlab script and the compiler must populate the model with the numerical values before proceeding.
-In the case of symbolic expressions, these must be resolved to determine the resulting numerical value that is used in the simulation.
-The data type, numeric type and dimensions of signals are also checked, to ensure that every block in the model is compatible with the signals that are applied to it.
+Before a model can be used, it must first be translated into a form that can be simulated in an efficient manner.
+Typically, Modelica models are translated into a flat system of differential and algebraic equations (DAEs) \cite{openmodelica.org:lundvall:sims:2005}.
+The translation process expands base classes, performs redeclaration and so on, to form the flat set of equations.
+This is done to create a system of equations that is free of the original object hierarchy of the model.
+Modelica allows for the creation of very large models, where real-life use cases can scale to a size of more than a hundred thousand variables.
+For this reason, systems must be optimized before simulation takes place.
+
+Modelica models are generally hybrid systems, consisting of both differential-algebraic and discrete equations.
+While there are DAE solvers capable of handling the continuous parts of hybrid systems, there are no general purpose solvers capable of handling these systems.
+In order to overcome this problem, Modelica translators first translate the systems using symbolic transformation algorithms, into a form that can be integrated.
+Before simulation, the systems are processed to reduce the number of unknowns using techniques such as BLT-partitioning and tearing \cite{clauss2002} to translate the system.
+
+As the systems created by Modelica are composed from acausal components, the complete system will generally have fewer states than the total sum of the states of the components.
+This is referred to as the DAE system having a high index.
+Solving such a systems requires that equations are differentiated as shown in the following example, in \cref{fig:modelica-inertial-equations}.
+This example is adapted from \cite{clauss2002}.
 
 \begin{figure}[ht]
-    \iimage{Figures/InertialSimulinkOrder}
-    \caption{Simulink execution order for the plant subsystem from the inertial system.\label{fig:simulink-inertial-order}}
+	\begin{minipage}[c]{.75\columnwidth}
+	    \iimage{Figures/InertialRigid}
+	\end{minipage}%
+	\begin{minipage}[c]{.25\columnwidth}
+	    \loadeq{\rootfolder/Equations.tex}{007}
+	\end{minipage}
+    \caption{Modelica model of a rigid drive-shaft with the corresponding equations.\label{fig:modelica-inertial-equations}}
 \end{figure}
 
-After this, the algorithm determines the sorted execution order for the model, so that blocks are executed in an order which reflects their data dependencies.
-This turns the graphical model into a sequentially executed program that can be simulated by a computer.
-\Cref{fig:simulink-inertial-order} shows the execution order for the model.
-The execution order is determined by the algorithm, but the designer can exert some influence on it by assigning higher priority to a block.
-It is also possible to designate a subsystem as atomic, so that the whole subsystem is executed as a single unit.
-Beyond this, virtual blocks, such as subsystems, are flattened and do not influence the execution order.
-Finally, the sample times are determined for blocks that have inherited sample times.
+Here, the system has more equations than strictly needed;
+J1 and J2 are rigidly connected and as such they must have the same angles and velocities.
+The system must be transformed to the form $\frac{d\vec{x}}{dt} = f\left(\vec{x}, t\right)$.
+However, the relation $\varphi_{1} = \varphi_{2}$ must be differentiated twice to solve for $\tau_{2}$.
+This is a problem, as numerical integration algorithms can only handle systems that require differentiation no more than once.
 
-After the model is compiled, the Simulink engine allocates working memory for the model execution, as well as memory for run-time data that is to be stored.
-The method execution list, which lists the most efficient execution order of the model blocks, is generated from the sorted order lists found previously.
-
-After model linking, the algorithm proceeds to the simulation loop phase.
-The loop phase is separated into two subphases: the initialization phase and the iteration phase.
-First, during initialization, the system determines the initial states for the system and the output values that need to be computed.
-Then, during the loop iteration phase, the following takes place:
-
-\begin{enumerate}
-    \item Computation of outputs
-    \item Computation of the model states
-        This step is performed by invoking a solver.
-        Which solver is chosen depends on whether the model has no states, only continuous states, only discrete states or both types of states.
-        The user can specify which continuous and discrete solver to use, or the system can be asked to determine the optimal solver automatically.
-        The solvers used by Simulink are the same as those used when implementing an ODE in Matlab code.
-    \item Discontinuity checks
-    \item Computation of the time until the next time step
-\end{enumerate}
-
-These steps are repeated until the simulation end-time is reached.
-
-\subsection{Simscape}
-
-Simulation of Simscape models is somewhat more involved, as the model is acausal.
-Some model validation is performed for causal models, as shown above, but for acausal models the procedure is more involved.
-When simulating a Simscape model, the system ensures that all blocks are connected.
-It is not allowed to leave conserving ports, such as those representing hydraulic flow or energy flow, unconnected.
-Models containing fluid or gas flow networks require that no more than one block which specifies the properties of the fluid or gas is connected to each network.
-
-After this, the system creates the physical network.
-This is based on two types of properties.
-
+To solve this problem, the standard technique is as follows \cite{clauss2002}:
 \begin{itemize}
-    \item Through-properties (e.g. current) are those which are measured in series with an element
-    \item Across-properties (e.g. voltage) are those which are measured in parallel with an element
+    \item Determine how many times each equation must be differentiated, using the Pantelides algorithm
+    \item Differentiate analytically
+    \item Select state variables (at compile-time if possible, or at runtime)
 \end{itemize}
 
-The system follows the rules that for every through-variable, the sum of the values going into a node equal those going out.
-Conversely, for every across-variable, two directly connected elements have the same value.
-The system creates the physical network following these two principles.
+The final representation of the system consists of both the continuous-time and discrete-time behavior of the system \cite{openmodelica.org:lundvall:sims:2005}:
 
-The system equations are then developed from this network, and the equations are simulated in a similar fashion to the procedure explained for normal Simulink models.
-Overall, the process is similar to that described in \cref{Chapter02}.
+\loadeq{\rootfolder/Equations.tex}{008} % Equation system generated by Modelica
+
+The continuous-time behavior between events is given by \cref{eq:dae-system}.
+The equations warrant some explanation.
+
+\begin{itemize}[noitemsep]
+    \item $\vec{x}(t)$ are the dynamic variables of the system.
+    \item $\vec{u}(t)$ are the system inputs.
+    \item $\vec{y}(t)$ are other system variables, including outputs.
+    \item $\vec{q}(t_{e})$ are discrete-time variables, at event instants $t_{e}$.
+    \item $\vec{q_{pre}}(t_{e})$ are the discrete-time variables from the previous event instant.
+    \item $\vec{c}(t_{e})$ are boolean conditional expressions, given by when- and if-conditions.
+    \item $\vec{p}$ is a vector of system parameters and constants.
+    \item $\vec{rel}(\vec{v}(t_{e}))$ is a boolean vector of relevant relation expressions in the model; $\vec{v}(t_{e}$ is a vector of all variables in the vectors above.
+\end{itemize}
+
+The equations are more thoroughly explained in \cite{openmodelica.org:lundvall:sims:2005}.
+
+\subsection{DAE solution algorithm}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics{Figures/flowchart}
+    \caption{Flowchart showing the solution algorithm Modelica uses to simulate Differential Algebraic Equations.\label{fig:modelica-dae-flowchart}}
+\end{figure}
+
+As stated, the system description in \cref{eq:dae-system} is only valid between events, and the simulation is therefore performed piecewise.
+At event instants, points in time where the model is non-continuous, the hybrid DAE system must be reinitialized before simulation continues.
+A flowchart describing the procedure is shown in \cite{openmodelica.org:lundvall:sims:2005}, and reproduced in \cref{fig:modelica-dae-flowchart}.
+The following steps are performed when simulating the system:
+
+\begin{enumerate}
+    \item Before the continuous part of the DAE, shown in \cref{eq:dae-continuous}, can be simulated, the system must determine the set of initial conditions for the problem.
+	This generally requires the solution of a system of equations that determine the system constraints.
+
+    \item After determining initial conditions, the system checks all event conditions, such as when- and if-statements, to see if any events need to be fired.
+
+    \item After the event conditions are processed, events are fired if necessary.
+	If any events were fired, the initial conditions must be recalculated and the simulation restarted with new initial conditions.
+	Following this, event conditions are reevaluated as new conditions may have changed as a result of changes caused by the event.
+
+    \item Once the system is stable, that is when no more events need to fire, the simulation proceeds.
+	In this step, the vectors $\vec{q}$, $\vec{q_{pre}}$, and $\vec{c}$ are kept constant, so that \cref{eq:dae-continuous} is a set of continuous functions of continuous variables.
+
+	Once any of the conditions in $\vec{c}$ that are relevant, as determined by $\vec{rel}(\vec{v}(t_{e}))$, the continuous simulation is halted and event conditions are evaluated.
+	The system repeats the process of firing events, and reevaluating conditions, until the new set of continuous equations can be simulated.
+\end{enumerate}
+
+The boolean conditions are divided into two groups, continuous or discrete.
+Discrete conditions can only change value at discrete time instances $t_{e}$, and cause no problems.
+These are simply evaluated at every discrete time step.
+Continuous conditions are converted into a continuous function that crosses zero at the time the condition changes from true to false.
+The DAE solution algorithm can efficiently monitor the function to detect when this happens \cite{openmodelica.org:lundvall:sims:2005}.
+
+\section{Functional Mock-up Interface}
+
+\begin{displayquote}[\cite{harman2006}][\dots]
+    [The] \emph{Functional Mock-up Interface} (FMI) is a tool independent standard to support both model exchange and co-simulation of dynamic models using a combination of XML-files and compiled C-code
+\end{displayquote}
+
+Currently, there are a variety of simulation tools available, that support a large variety of modeling languages.
+Some tools are general purpose, such as Modelica, while others can be quite specialized.
+In general, these tools do not inter-operate.
+In today's industry highly complex, interdisciplinary models are frequently required, which often necessitates the use of specialized modeling tools or languages.
+Manufacturers have a need to connect models developed by their suppliers, but models have typically been locked into the software they are made in.  This has prompted the development of an open standard for model exchange.
+FMI was developed for the exchange of models in the automotive industry, and aims to improve this issue.
+Currently, FMI is used by many companies both inside and outside the automotive industry \cite{fmispecification}.
+The standard is currently developed by the Modelica Association.
+
+Using FMI, models can be developed and shared between simulation tools, allowing for greater reuse and early validation of designs \cite{Blochwitz2011}.
+Additionally, simplified model exchange makes possible early validation of designs, as the designs from several suppliers can be tested together.
+
+Modelica is one of the simulation packages that can export models to the FMI format, and all Modelica variable attributes can be exchanged.
+The FMI models can be connected hierarchically, just like Modelica models, and they can optionally include their own solver, when using the FMI co-simulation standard.
+
+The FMI standard defines an XML schema that is used to describe the model components, a C API for implementing the model.
+This is used to define \emph{Functional Mock-up Unit}, or FMUs, that are typically exported from modeling tools which support the FMI standard.
+An FMU consists of the following elements:
+
+\begin{itemize}
+    \item The model description file, an XML-file with all exposed variables in the model.
+    \item The model implementation, a collection of C source files or the compiled binaries.
+        This may be an implementation of the model equations, or an interface that communicates with an external tool.
+    \item Additional data such as an icon bitmap, parameter tables, object libraries and so on.
+\end{itemize}
+
+Roughly, there are two ways FMI may be employed, as shown in \cref{fig:fmi}.
+Using \emph{model exchange}, the model is simply imported into a modeling tool that supports FMI and simulation is handled by the tool.
+Using \emph{co-simulation}, each FMU handles its own simulation.
+
+\begin{wrapfigure}{R}{0.5\columnwidth}
+    \centering
+    \subcaptionbox{Model exchange.\label{fig:fmi-exchange}}[0.48\columnwidth][l]{\pimage[0.48]{Figures/fmi-exchange}}\par\bigskip
+    \subcaptionbox{Co-simulation.\label{fig:fmi-cosim}}[0.48\columnwidth][r]{\pimage[0.48]{Figures/fmi-cosim}}
+    \caption{Illustration of the two interface types specified in the FMI standard.\label{fig:fmi}}
+\end{wrapfigure}
+
+Often, complex models that combine multiple physical domains are difficult, or even impossible, to create with one software tool.
+Using the FMI standard, this can be solved by modeling separate parts of the model in specialized software, and including the numerical solver with the model.
+In the FMI standard, this is called co-simulation.
+
+An illustrative example of the power of co-simulation is given in \cite{Schofield}. 
+The paper implements an anti-lock braking system; this is an example of a system that spans multiple physical domains.
+As stated by \cite{Schofield}, Modelica is appropriate for models involving multiple physical domains.
+However, while it is far more computationally intensive, in some cases the higher quality results that can be obtained by using finite element models justify the effort.
+This is relevant in cases where physically-derived models are unavailable, or where high resolution is required.
+There are models that approximate tire dynamics, such as the magic formula tire model \cite{Pacejka2012}.
+However, these models do not capture as much detail as a finite element model.
+Using co-simulation, it is possible to implement these parts as a finite element model, and other parts in e.g. Modelica, as shown by \cite{Schofield}.
+
+Broadly speaking, the main components of an ABS system model are the tire, the brake system, the road surface and the ABS controller.
+Here, Abaqus, a Finite Element Analysis software tool, is used to implement high-fidelity models of the tire, road and brake caliper/disc assembly.
+These components exhibit behaviors that cannot easily be captured in a model based tool such as those based on Modelica.
+
+Many manufacturers use detailed finite element models of their tires to study the response of the tire to different loading conditions.
+As a result, tire models and road surface models are available.
+In \cite{Schofield}, a finite element model of the tire, including the thread, plies and wire support structure is used in order to accurately predict the stresses and deformations of the tire at different speeds.
+
+The ABS controller, as well as the hydraulics of the braking system, are well suited for modeling in Modelica and are using the \emph{HyLib} hydraulics library.
+The ABS controller receives sensor data from the tire, such as forward velocity of the vehicle, the angular velocity of the tire and the effective rolling radius of the tire as it deforms.
+This information is transmitted from the finite element model in Abaqus to the control algorithm in Dymola.
+The ABS controller regulates an hydraulic solenoid and computes the brake caliper clamp force, which is transmitted back to Abaqus.
+Abaqus then solves for the resulting dynamics in the brake caliper and tire.
+
+\cite{Schofield} compares this implementation to one created entirely with Modelica.
+While the paper shows that it is possible to implement a simple model of the tires and brakes in Modelica, it obtains more realistic results by using a high-fidelity finite element model.
+
+\section{Scripting interface}
+
+\begin{figure}[H]
+    \iimage{Figures/InertialArchitecturePlant}
+    \caption{Logical overview of the model simulated in \cref{lst:connected_fmus}.\label{fig:fmi-connected}}
+\end{figure}
+
+\begin{wraptable}{R}{0.5\columnwidth}
+    \inputminted[firstline=3, lastline=30]{Python}{\rootfolder/Chapters/Chapter3/Listings/simulate.py}
+    \captionof{listing}{Python program illustrating how to simulate two connected FMUs, with a Python input function as reference signal.\label{lst:connected_fmus}}
+\end{wraptable}
+
+Models created with Modelica can be compiled to an FMU using a Modelica client such as OpenModelica, Dymola or JModelica.
+Additionally, these three all come with Python APIs that can be used to run simulations or compile models to FMI.
+These interfaces are unfortunately not very user friendly, neither in setup nor in use.
+Therefore, it is frequently easier to compile the model to an FMU, either in the program or using the Python bindings, and then doing further work with PyFMI.
+
+PyFMI is available with Anaconda, a Python distribution targeting scientific computing, and is as such simple to acquire.
+Once compiled as an FMU, the simulation can be configured and run using PyFMI, either step by step or from beginning to end without interruption.
+Multiple FMIs can be simulated in lock-step, with the input and output signals of the FMIs connected to one another as required.
+
+Using the classical co-simulation algorithm, this can be numerically unstable.
+The classical approach is to simulate each model for a short time-step, exchange information between the models, and then proceed to the next step.
+PyFMI includes several techniques for improving stability during co-simulation \cite{Andersson2016}.
+
+To illustrate the flexibility of this approach, the model from \cref{fig:modelica-inertial-architecture} is split into three parts, and the simulation is run from Python.
+The plant, meaning the actuator and process, and the controller are compiled as separate FMUs, and connected to one another, and the reference signal is replaced by a Python function.
+The logical parts of this new model are shown in \cref{fig:fmi-connected}.
+
+The reference signal function takes a single parameter, the current time.
+In the example, the \emph{scipy.signal.square()} function, which generates a square wave-form, is attached to the input of the system from \cref{fig:modelica-inertial-architecture}.
+The simulation is the run using the interface, and the output is collected and processed as needed.
+
+It is possible to connect a function to any input signal.
+The function must take a single input variable, the current simulation time.
+This approach provides a convenient way to drive a model using signal functions or stored data.
 
 \end{document}

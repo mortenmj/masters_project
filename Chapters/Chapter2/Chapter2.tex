@@ -2,434 +2,67 @@
 \providecommand{\rootfolder}{../..} % Relative path to main.tex
 \documentclass[\rootfolder/main.tex]{subfiles}
 \begin{document}
-\chapter{Modelica} % Main chapter title
+\chapter{Historical background} % Main chapter title
 
-\label{Chapter02} % Change X to a consecutive number; for referencing this chapter elsewhere, use \cref{ChapterX}
+\label{ch:background} % Change X to a consecutive number; for referencing this chapter elsewhere, use \cref{ChapterX}
 
-\section{Language features}
-
-Modelica is an object-oriented programming language for specifying models of large, complex, and heterogenous physical systems \cite{clauss2002}.
-The language can be used to model systems in fields like mechanical engineering, biology, robotics, and more.
-It supports the creation of mixed-domain models, for example combining electric power, hydraulic systems, and thermal systems.
-Many types of preserved quantities are already implemented in Modelica, such as torque, voltage or heat.
-It is also possible for model developers to create their own flow variables.
-This could, for example, be chemicals necessary for modelling a specific chemical processes.
-
-In Modelica, models are mathematically described by differential or algebraic equations, and they can be discrete or continuous.
-It is also possible to define algorithms like those in imperative languages.
-Models are made by composition of components, which in turn are implemented by equations or by programming them imperatively.
-The models are created by connecting graphical representations of the components in a composition diagram.
-Modelica is object-oriented, and each component in a composition is implemented as a class.
-
-In order to illustrate the advantages and disadvantages between Modelica and the other simulation packages that will be reviewed later, the following example will be used repeatedly \footnotemark{}.
-Consider a simple drive train, consisting of two rotational inertial loads, with a spring-damper between the two, and between the second load and a rigid frame as shown in \cref{fig:modelica-inertial}.
-
-\footnotetext{The example is inspired by \emph{Modelica By Example}, by Michael M. Tiller \cite{openmodelica.org:tiller:2014}.}
-
-\begin{figure}[ht]
-    \iimage{Figures/InertialBasic}
-    \caption{Graphical implementation of inertial system.\label{fig:modelica-inertial}}
-\end{figure}
-
-\subsection{Equations and algorithms}
-
-First, consider what it means to say that Modelica is equation-based.
-In an imperative language, statements are evaluated sequentially and assigning a value to a variable would overwrite whatever value it may have held previously.
-This is not the case in Modelica, and it is possible to express statements which are simultaneously valid.
-In a strictly imperative programming language, the second statement would override the first in the following example:
-
-\inputminted{Modelica}{\rootfolder/Chapters/Chapter2/Listings/simultaneous.txt}
-
-To look at how this is used to define a physical system, the equations for the model from \cref{fig:modelica-inertial} are implemented in text form.
-The equations for the system are derived by Newton's second law for rotation.
-Let $J$ be the moment of inertia, $\varphi$ be the angular displacement, $\omega$ be the angular velocity and, $\tau$ be the torque.
-Then, the law states that
-
-\loadeq{\rootfolder/Equations.tex}{005} % Newton's second in a rotating system
-
-Combining these equations gives the following system of differential equations:
-
-\loadeq{\rootfolder/Equations.tex}{006} % Differential equations for the inertial system
-
-In Modelica, complex equations are defined simply by stating the necessary expressions.
-This will be used in order to implement the system shown above.
-\Cref{lst:modelica-inertial-code} shows a direct implementation of \cref{eq:inertial}.
-
-\begin{listing}[ht]
-    \inputminted{Modelica}{\rootfolder/Models/MasterProject/Models/InertialCode.mo}
-    \caption{Code implementation of the inertial system in \cref{eq:inertial}.\label{lst:modelica-inertial-code}}
-\end{listing}
-
-As stated, it is also possible to implement programs like this in imperative languages.
-This may be done in algorithm blocks within models, which may coexist with the equation blocks seen above, or they may be implemented as separate functions and then called from a model.
-It is also possible to call an external function in this way, written in e.g. the C language.
-This allows for complex model behavior.
-One example, which is typical in the field of control engineering, would be to model the behavior of a system of elevators in Modelica, and implement a control system in a different language.
-This would allow efficient, automated testing of the control system by replacing the physical elevator system with a computer model.
-
-\subsection{Object-oriented features}
-
-As Modelica is object-oriented it is possible, if desired, to separate a model into smaller component parts, and connect these components to one another to form a more complex model.
-In the previous example, it would make sense to implement the inertial load and the spring-damper as separate classes, and connect instances of them to form the model.
-When creating a model by connecting graphical components in Modelica, this instantiation and connecting of objects is done behind the scenes.
-Looking at the code of the first model, shown in \cref{fig:modelica-inertial}, it can be seen that it does exactly what is proposed above.
-\Cref{lst:modelica-inertial-basic} shows the the code generated when the model in \cref{fig:modelica-inertial} was created, although somewhat cleaned up to make the example clearer.
-
-\begin{listing}[ht]
-    \inputminted{Modelica}{\rootfolder/Models/MasterProject/Models/InertialBasic.mo}
-    \caption{Text view of the model in \cref{fig:modelica-inertial}.\label{lst:modelica-inertial-basic}}
-\end{listing}
-
-Most of the key features in object-oriented languages are implemented in Modelica.
-Among these are encapsulation, inheritance, information hiding and polymorphism.
-The model will be extended in order to have a look at some of these features.
-In \cref{fig:modelica-inertial-expanded} actuator has been added, as well as a sensor for measuring the rotation speed of the second shaft.
-Also, a PID controller has been added, which drives the shaft speed to follow a reference signal.
-
-\begin{figure}[ht]
-    \iimage{Figures/InertialExpanded}
-    \caption{Expanded inertial system.\label{fig:modelica-inertial-expanded}}
-\end{figure}
-
-As can be seen, the model roughly consists of five subsystems: a reference signal, an actuator, the inertial system itself, a speed sensor, and a controller.
-Just like these subsystems are made up of smaller components, it is possible to create a component representing each subsystem.
-This makes it possible to hide implementation details, and gives a clearer view of how the system is structured.
-This generalised model is shown in \cref{fig:modelica-inertial-architecture}.
-
-\begin{figure}[ht]
-    \iimage{Figures/InertialArchitecture}
-    \caption{System with replaceable subsystems.\label{fig:modelica-inertial-architecture}}
-\end{figure}
-
-Here, each block is a separate model, which can be developed independently of the main model.
-\Cref{fig:modelica-inertial-architecture-blowup} shows how the new component, named \emph{Process}, now contains the same shaft and spring-damper assembly as in the previous models.
-Furthermore, the component now inherits from a library interface named \emph{PartialTwoFlangesAndSupport}.
-This interface provides input and output flanges, as well as the option between using a support flange or allowing the component to be implicitly supported.
-This process can be repeated indefinitely, and the model shown in the figure might easily be a component in another, larger model.
-Structuring models in this way makes them easier to understand, and allows for model reuse.
-
-\begin{figure}[ht]
-    \scriptsize
-    \iimage{Figures/InertialArchitectureBlowup2}
-    \caption{Expanded view of the actuator left and process subsystems.\label{fig:modelica-inertial-architecture-blowup}}
-\end{figure}
-
-This process can be taken one step further, by replacing all subsystems with virtual subsystems, or interfaces, to get even greater reusability from model.
-A component in a model declared as \emph{replaceable} can be replaced with any plug-compatible component, i.e. any component with the same inputs and outputs.
-It is possible to use a partial model, which is the Modelica term for an interface, or some default model that can be replaced when desired.
-Then, when the model is instantiated, a specific component is supplied for each subsystem that is to be replaced.
-
-\begin{listing}[ht]
-    \inputminted{Modelica}{\rootfolder/Models/MasterProject/Models/Inertial.mo}
-    \caption{Instantiation of the inertial system.\label{lst:modelica-inertial-instantiation}}
-\end{listing}
-
-In this case, the model has an ideal speed sensor. 
-However, when modelling a real system, it would be more useful to replace this with a model that mimics the operation of a real sensor.
-There are many possible sensors for measuring the rotational speed of a shaft, and it would be useful if these could be implemented as components and quickly swapped into the model.
-In this case, the process will be the only constant part of the model, while the controller, the actuator, the sensor and the signal source will be made replaceable.
-What used to be a model is now a model architecture, and needs to be instantiated with components.
-The code in \cref{lst:modelica-inertial-instantiation} shows how this is done.
-Scalar inputs and outputs are used in this example.
-However, the interfaces may trivially be changed to accept multiple inputs and outputs, which would make the architecture even more general.
-
-Where necessary, it is also possible to create adapter models which wrap a subsystem and convert the output to whatever format the rest of the model requires.
-For example, while this sensor measures the rotational speed of the drive shaft, in some other application it might be preferable to know the drive shaft position.
-This is very useful when different parts of models are created independently.
-
-Since the model instantiation in \cref{lst:modelica-inertial-instantiation} is in a pure text format, any number of programming languages could be used to change the definition of the model.
-Using e.g. the Python bindings for OpenModelica or Dymola, model variations can be generated and simulated without resorting to manually using a graphical interface.
-
-\subsection{Mixed-domain models}
-
-Modelica allows for easy creation of mixed-domain models \cite{clauss2002}.
-\Cref{fig:modelica-inertial-architecture-blowup} shows one such example, where the actuator from \cref{fig:modelica-inertial-architecture} is implemented as a simple model of an induction motor.
-Additionally, the resistor in the model has a heat port which allows the motor to be thermally connected to the rest of the system.
-While this simple example is limited to electric flow, torque and, optionally heat flow, it is possible to model any number of physical quantities in Modelica.
-A similar component to that shown in \cref{fig:modelica-inertial-architecture-blowup} could easily be connected to a valve that controls liquid flow, all in one model.
-The Modelica library contains more detailed examples showing how to model heat flow\footnotemark{}
-\footnotetext{\url{http://doc.modelica.org/om/Modelica.Thermal.HeatTransfer.Examples.html}}
-and liquid flow\footnotemark{}.
-\footnotetext{\url{http://doc.modelica.org/om/Modelica.Fluid.Examples.html}}
-
-This can also be extended to model phenomena outside of the engineering disciplines.
-As an example, the PhysioLibrary project publishes a Modelica library for modelling all aspects of human physiology.
-
-\subsection{Causal and acausal}
-
-In the model in \cref{fig:modelica-inertial-architecture}, most subsystems are components while the reference signal is a block.
-The differences between the two will be quickly reviewed, and an example of their relative strengths will be provided.
-A block in Modelica is a causal model.
-In short, a causal model relates inputs to outputs.
-In Modelica, there are many such blocks, which implement operations such as integration, gain, sinusoids etc.
-Conversely, acausal modelling creates the model from components that implement the behaviors of their real-world counterparts, such as the spring-damper we used previously.
-While it is more difficult to implement acausal simulation software \cite{tiller2001}, there are many benefits to the user.
-An example is provided in \cite{harman2006}.
-Here, the modelling of hydraulic components for automotive systems is discussed.
-
-\begin{displayquote}[\cite{harman2006}][\dots]
-    For some components a pressure drop across the component is the only data available.
-    With some modelling tools it would be necessary to reverse-engineer an orifice size and flow coefficient to achieve this pressure drop.
-    However the ActuationHydraulics library exploits the acausal capabilities of Modelica and allows the choice of a flow-model where pressure drop is specified as a function of flow.
-\end{displayquote}
-
-Creating the model from acausal components is also often quicker and easier for the user.
-To illustrate this, a simple parallel RLC circuit is implemented.
-
-\begin{wrapfigure}{R}{0.6\columnwidth}
-    \iimage[0.58]{Figures/RLCcomponents}
-    \caption{Component implementation.\label{fig:modelica-rlc-comp}}
-\end{wrapfigure}
-
-\Cref{fig:modelica-rlc-comp} shows an acausal model, created by dragging and dropping components that implement the behavior of the circuit elements.
-As shown, the model closely resembles how an engineer would draw this circuit with pen and paper.
-This can be compared to \cref{fig:modelica-rlc-block} which implements the same circuit using block components.
-
-Contrary to the example above, it is necessary to derive the equations for the circuit and then implement it using blocks that implement basic mathematical operations.
-Even after establishing the necessary equations, creating the model requires some experience.
-
-\begin{figure}[ht]
-    \iimage{Figures/RLCblocks}
-    \caption{Block implementation.\label{fig:modelica-rlc-block}}
-\end{figure}
-
-A further advantage to the acausal approach is that a component can be replaced by any other component that implements the same interface.
-above model could easily be modified by replacing a component with any other two-port component.
-
-\subsection{Discontinuities}
-
-\begin{wrapfigure}{R}{0.6\columnwidth}
-    \iimage[0.58]{Figures/BouncingBall}
-    \caption{Ball bouncing down stairs.\label{fig:modelica-bouncingball}}
-\end{wrapfigure}
-
-The Modelica language has intuitive support for discontinuities in models.
-A model of a ball bouncing down a set of stairs is used to illustrate this.
-The ball falls towards the ground, under the force of gravity, and then bounces when it hits the staircase, as shown in \cref{fig:modelica-bouncingball}.
-The program written to create this figure is shown in \cref{lst:python-bouncingball}.
-This simple example is interesting, as it shows the simple syntax available in Modelica for specifying discrete events.
-In order to correctly model the behavior of the bouncing ball, it is necessary to trigger an event whenever the ball hits the ground.
-There are many ways to specify discrete behavior in Modelica, but it is outside the scope of this report to give a complete accounting of all of these.
-For the purposes of this example, a when-block will be used, as shown in \cref{lst:modelica-discontinuous}.
-In this case, the "ground" is represented by a stepping line, which starts one meter below the initial height for the ball.
-It should be noted however, that any conditional statement can be used in a when-condition, including function calls.
-The simulation engine issues an event when the condition in the when-block evaluates as true, and the code inside is executed, which reverses the ball's trajectory.
-
-\begin{listing}[ht]
-    \inputminted{Modelica}{\rootfolder/Models/MasterProject/Models/BouncingBall.mo}
-    \caption{Bouncing ball model showing discontinuous equation.\label{lst:modelica-discontinuous}}
-\end{listing}
-
-\section{Simulation}
-
-Here we will look at how software implementations of Modelica typically handle model simulation.
-Because Modelica supports acausal modelling, the process of running the simulation is significantly more involved than otherwise.
-
-\subsection{System transformation}
-
-Before a model can be used, it must first be translated into a form which can be simulated in an efficient manner.
-Typically, Modelica models are translated into a flat system of differential and algebraic equations (DAEs) \cite{openmodelica.org:lundvall:sims:2005}.
-The translation process expands base classes, redeclarations and so on, to form the flat set of equations.
-This is done to create a system of equations that is free of the original object hierarchy of the model.
-Modelica allows for the creation of very large models, where real-life use cases can scale to a size of more than a hundred thousand variables
-For this reason, systems must be optimized before simulation takes place.
-
-Modelica models are generally hybrid systems, consisting of both differential-algebraic and discrete equations.
-While there are DAE solvers capable of handling the continuous parts of hybrid systems, there are no general purpose solvers capable of handling these systems.
-In order to overcome this problem, Modelica translators first translate the systems using symbolic transformation algorithms, into a form that can be integrated.
-Before simulation the systems are processed to reduce the number of unknowns, using techniques such as BLT-partitioning and tearing \cite{clauss2002} to translate the system.
-
-As the systems created by Modelica are composed from acausal components, the complete system will generally have fewer states than the total sum of the states of the components.
-This is referred to as the DAE system having a high index.
-Solving such a systems requires that equations are differentiated as shown in following example, in \cref{fig:modelica-inertial-equations}.
-This example is adapted from \cite{clauss2002}.
-
-\begin{figure}[ht]
-	\begin{minipage}[c]{.75\columnwidth}
-	    \iimage{Figures/InertialRigid}
-	\end{minipage}%
-	\begin{minipage}[c]{.25\columnwidth}
-	    \loadeq{\rootfolder/Equations.tex}{007}
-	\end{minipage}
-    \caption{Rigid driveshaft model with corresponding equations.\label{fig:modelica-inertial-equations}}
-\end{figure}
-
-Here, the system has more equations than strictly needed;
-J1 and J2 are rigidly connected and as such they must have the same angles and velocities.
-The system must be transformed to the form $\frac{d\vec{x}}{dt} = f\left(\vec{x}, t\right)$.
-However, the relation $\varphi_{1} = \varphi_{2}$ must be differentiated twice to solve for $\tau_{2}$.
-This is a problem, as numerical integration algorithms can only handle systems that require differentiation no more than once.
-
-To solve this problem, the standard technique is as follows \cite{clauss2002}:
-\begin{itemize}
-    \item Determine how many times each equation must be differentiated, using the Pantelides algorithm
-    \item Differentiate analytically
-    \item Select state variables (at compiletime if possible, or at runtime)
-\end{itemize}
-
-The final representation of the system consists of both the continuous-time and discrete-time behavior of the system \cite{openmodelica.org:lundvall:sims:2005}:
-
-\loadeq{\rootfolder/Equations.tex}{008} % Equation system generated by Modelica
-
-The continuous-time behavior, between events, is given by \cref{eq:dae-system}.
-The equations warrant some explanation.
-
-\begin{itemize}[noitemsep]
-    \item $\vec{x}(t)$ are the dynamic variables of the system
-    \item $\vec{u}(t)$ are the system inputs
-    \item $\vec{y}(t)$ are other system variables, including outputs
-    \item $\vec{q}(t_{e})$ are discrete-time variables, at event instants $t_{e}$
-    \item $\vec{q_{pre}}(t_{e})$ are the discrete-time variables from the previous event instant
-    \item $\vec{c}(t_{e})$ are boolean conditional expressions, given by when- and if-conditions
-    \item $\vec{p}$ is a vector of system parameters and constants.
-    \item $\vec{rel}(\vec{v}(t_{e}))$ is a boolean vector of relevant relation expressions in the model; $\vec{v}(t_{e}$ is a vector of all variables in the vectors above.
-\end{itemize}
-
-The equations are more thoroughly explained in \cite{openmodelica.org:lundvall:sims:2005}.
-
-\subsection{DAE solution algorithm}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics{Figures/flowchart}
-    \caption{Solution algorithm flowchart.\label{fig:modelica-dae-flowchart}}
-\end{figure}
-
-As stated, the system description in \cref{eq:dae-system} is only valid between events, and the simulation is therefore performed piecewise.
-At event instants, points in time where the model is non-continuous, the hybrid DAE system must be reinitialized before simulation continues.
-A flowchart describing the procedure is shown in \cite{openmodelica.org:lundvall:sims:2005}, and reproduced in \cref{fig:modelica-dae-flowchart}.
-The following steps are performed when simulating the system:
-
-\begin{enumerate}
-    \item Before the continous part of the DAE, shown in \cref{eq:dae-continuous}, can be simulated, the system must determine the set of initial conditions for the problem.
-	This generally requires the solution of a system of equations which determine the system constraints.
-
-    \item After determining initial conditions, the system checks all event conditions, such as when- and if-statements, to see if any events need to be fired.
-
-    \item After the event conditions are processed, events are fired if necessary.
-	If any events were fired, the initial conditions must be recalculated and the simulation restarted with new initial conditions.
-	Following this, event conditions are reevaluated as new conditions may have changed as a result of changes caused by the event.
-
-    \item Once the system is stable, that is when no more events need to fire, the simulation proceeds.
-	In this step, the vectors $\vec{q}$, $\vec{q_{pre}}$, and $\vec{c}$ are kept constant, so that \cref{eq:dae-continuous} is a set of continuous functions of continuous variables.
-
-	Once any of the conditions in $\vec{c}$ that are relevant, determined by $\vec{rel}(\vec{v}(t_{e}))$, the continuous simulation is halted and event conditions are evaluated.
-	The system repeats the process of firing events, and reevaluating conditions, until the new set of continuous equations can be simulated.
-\end{enumerate}
-
-The boolean conditions are divided into two groups, continuous or discrete.
-Discrete conditions can only change value at discrete time instances $t_{e}$, and offer no problems.
-These are simply evaluated at every discrete time step.
-Continuous conditions are converted into a continuous function which crosses zero at the time the condition changes from true to false.
-The DAE solution algorithm can efficiently monitor the function to detect when this happens \cite{openmodelica.org:lundvall:sims:2005}.
-
-\section{Functional Mock-up Interface}
-
-\begin{displayquote}[\cite{harman2006}][\dots]
-    [The] \emph{Functional Mock-up Interface} (FMI) is a tool independent standard to support both model exchange and co-simulation of dynamic models using a combination of xml-files and compiled C-code
-\end{displayquote}
-
-Today, there are a variety of simulation tools available, which support a large variety of modelling languages.
-Some tools are general purpose, such as Modelica, while others can be quite specialized.
-In general, these tools do not interoperate.
-In today's industry highly complex, interdisciplinary models are frequently required, which often requires the use of specialized modelling tools or languages.
-Manufacturers have a need to connect models developed by their suppliers, but models have typically been locked into the software they are made in.  This has prompted the development of an open standard for model exchange.
-FMI was developed for the exchange of models in the automotive industry, and aims to improve this issue.
-Today, FMI is used by many companies both within and without the industry \cite{fmispecification}.
-The standard is currently developed by the Modelica Association.
-
-Using FMI, models can be developed and shared between simulation tools, allowing for greater reuse and early validation of designs \cite{Blochwitz2011}.
-Additionally, simplified model exchange makes possible early validation of designs, as the designs from several suppliers can be tested together.
-
-Modelica is one of the simulation packages that can export models to the FMI format, and all Modelica variable attributes can be exchanged.
-The FMI models can be connected hierarchically, just like Modelica models, and they can optionally include their own solver, when using the FMI co-simulation standard.
-
-The FMI standard defines an XML schema which is used to describe the model components, a C API for implementing the model.
-This is used to define \emph{Functional Mock-up Unit}, or FMUs, which are typically exported from modelling tools which support the FMI standard.
-An FMU consists of the following elements:
-
-\begin{itemize}
-    \item The model description file, an XML-file with all exposed variables in the model.
-    \item The model implementation, A collection of C source files or the compiled binaries.
-        This may be an implementation of the model equations, or an interface which communicates with an external tool.
-    \item Additional data such as an icon bitmap, parameter tables, object libraries and so on.
-\end{itemize}
-
-Roughly, there are two ways FMI may be employed, as shown in \cref{fig:fmi}.
-Using \emph{model exchange}, the model is simply imported into a modelling tool which supports FMI and simulation is handled by the tool.
-Using \emph{co-simulation}, each FMU handles its own simulation.
+\section{Human Computers}
 
 \begin{wrapfigure}{R}{0.5\columnwidth}
-    \centering
-    \subcaptionbox{Model exchange.\label{fig:fmi-exchange}}[0.48\columnwidth][l]{\pimage[0.48]{Figures/fmi-exchange}}\par\bigskip
-    \subcaptionbox{Co-simulation.\label{fig:fmi-cosim}}[0.48\columnwidth][r]{\pimage[0.48]{Figures/fmi-cosim}}
-    \caption{The two interface standards for FMI.\label{fig:fmi}}
+    \pimage[0.48]{Figures/tabulatingroom}
+    \caption[A computing room in the 1920s.]
+            {A computing room in the 1920s. \\ Courtesy of the Library of Congress\label{fig:tabulatingroom}.}
 \end{wrapfigure}
 
-Often, complex models that combine multiple physical domains are difficult, or even impossible, to create with one software tool.
-Using the FMI standard, this can be solved by modelling separate parts of the model in specialized software, and including the numerical solver with the model.
-In the FMI standard, this is called co-simulation.
+In order to better understand the history of simulation, it is useful to take a look at the history of computation in general.
+Analog counting devices, such as the abacus, have been used for thousands of years to speed up computations.
+Originally, however, the term computer referred to people who were employed to perform calculations.
+One of the earliest examples of this was the work done to predict the return of Halley's comet, by Alexis-Claude Clairaut.
+Halley and Newton had correctly deduced that other celestial bodies influenced the comet's orbit.
+However, solving a three-body problem, which was necessary in order to predict the date the comet would return, was considered insurmountable at the time.
+Clairaut, along with two friends, used successive approximation to solve the problem \cite{wilson1993}.
+The method they used is strikingly similar to the numerical methods employed by modern simulation software.
 
-An illustrative example of the power of co-simulation is given in \cite{Schofield}, which implements an anti-lock braking system.
-This is an example of a system that spans multiple physical domains.
-As stated by \cite{Schofield}, Modelica is appropriate for models involving multiple physical domains.
-However, while it is far more computationally intensive, in some cases the higher quality results that can be obtained by using finite element models justify the effort.
-This is relevant in cases where physically-derived models are unavailable, or where high resolution is required.
-In this case, while there are models which approximate tyre dynamics, such as the magic formula tyre model \cite{Pacejka2012}, these models do not capture as much detail as a finite element model.
-Using co-simulation, it is possible to implement these parts as a finite element model, and other parts in e.g. Modelica, as shown by \cite{Schofield}.
+\section{Analog Computers}
 
-Broadly speaking, the main components of an ABS system model is the tyre, the brake system, the road surface and the ABS controller.
-Here, Abaqus is used to implement high-fidelity models of the tyre, road and brake caliper/disc assembly.
-These components exhibit behaviors which cannot easily be captured in a model based tool such as those based on Modelica.
+Later, in 1821, Charles Babbage was employed by the Astronomical Society of London to calculate logarithmic tables.
+This had been done before, in particular by the French, who had perfected the process of breaking down problems into their simplest parts, and set large groups of computers to work on them.
+However, Babbage was disappointed by the number of mistakes made by his human computers.
+He took the approach to its next logical step and began to work on a calculating machine; An analog computer that could calculate the values of a polynomial simply by using repeated addition.
+While not particularly successful, Babbage's second machine, the Analytical Engine, included most of the major components of a modern computer, such as input/output, memory and a central processing unit.
 
-Many tyre manufacturers use detailed finite element models of their tyres to study the tyres response to different loading conditions.
-As a result, tyre models and road surface models are available.
-In \cite{Schofield}, a finite element model of the tyre, including the thread, plies and wire support structure is used in order to accurately predict the stresses and deformations of the tyre at different speeds.
+Later, the two world wars would bring both a greater need for computation, as well as a scarcity of manpower.
+This pushed the development of increasingly complex computing machines.
+Computers in the early 20th century heavily relied on complex mechanical calculators and punched card machines in order to keep up with the growing demand for computation.
+The punched card machine was capable of interpreting data, and could operate at full speed for days unlike a human computer that would inevitably tire \cite{carr}.
 
-The ABS controller, as well as the hydraulics of the braking system, are well suited for modelling in Modelica and are using the HyLib hydraulics library.
-The ABS controller receives sensor data from the tyre, such as forward velocity of the vehicle, the angular velocity of the tyre and the effective rolling radius of the tyre as it deforms.
-This information is transmitted from the finite element model in Abaqus to the control algorithm in Dymola.
-The ABS controller regulates an hydraulic solenoid and computes the brake caliper clamp force, which is transmitted back to Abaqus.
-Abaqus then solves for the resulting dynamics in the brake caliper and tyre.
+\section{Digital Computers}
 
-\cite{Schofield} compares this implementation to one created entirely with Modelica.
-While the paper shows that it is possible to implement a simple model of the tyres and brakes in Modelica, it obtains more realistic results by using a high-fidelity finite element model.
+\begin{wrapfigure}{L}{0.6\columnwidth}
+    \pimage[0.58]{Figures/eniac}
+    \caption[Technicians programming the ENIAC.]
+            {Technicians programming the ENIAC. \\ Courtesy of Los Alamos National Laboratory\label{fig:eniac}.}
+\end{wrapfigure}
 
-\section{Scripting interface}
+Although punched card machines were much faster than human computers, as electro-mechanical machines they were slow compared to the next innovation in computing: the electronic general-purpose computer.
+In 1943, the United States Army commissioned engineers at the University of Pennsylvania to build the Electronic Numerical Integrator and Computer, ENIAC \cite{sep-computing-history}\cite{reed1952}.
+While it was not the first programmable computer (that honor belongs to the Colossus, built by the British code breakers at Bletchley Park\cite{winegrad1996}), the ENIAC was the first truly general-purpose computer.
+Originally built to compute firing tables for artillery, the machine was soon used to solve other problems. 
+In particular, by the nuclear scientists at Los Alamos National Laboratory, who had only recently developed the nuclear bombs dropped on Japan.
+The very first real-world application of the machine would not be artillery tables, but simulations of nuclear fusion reactions \cite{AtomicHeritageFoundation}.
 
-\begin{figure}[H]
-    \iimage{Figures/InertialArchitecturePlant}
-    \caption{Logical overview of the model simulated in \cref{lst:connected_fmus}.\label{fig:fmi-connected}}
-\end{figure}
+In 1948, a new control system was planned and implemented for the ENIAC.
+The new system, based on the work of John von Neumann \cite{VonNeumann1993} \cite{Haigh2014a}, added an instruction set to the computer.
+This greatly simplified its operation and gave birth to the first stored-program computer \cite{Rope2007}.
 
-\begin{wraptable}{R}{0.5\columnwidth}
-    \inputminted[firstline=3, lastline=30]{Python}{\rootfolder/Chapters/Chapter2/Listings/simulate.py}
-    \captionof{listing}{Simulating connected FMUs.\label{lst:connected_fmus}}
-\end{wraptable}
+Computers at the time were programmed in assembly language, which is a slow and error-prone process.
+Later, the creation of one of the first widely adopted programming languages, FORTRAN, short for Formula Translation, was motivated by a desire to make it easier to program computers to do calculations.
+FORTRAN is considered the first high-level language to be developed, and was the first language to use a compiler.
+In the late 70s, Matlab was developed to allow students to use linear algebra libraries, written in FORTRAN, without having to learn FORTRAN itself \cite{Moler}.
+Matlab is one of the tools that will be reviewed in this report.
 
-Models created with Modelica can be compiled to an FMU using a Modelica client such as OpenModelica, Dymola or JModelica.
-Additionally, these three all come with Python APIs that can be used to run simulations or compile models to FMI.
-These interfaces are unfortunately not very user friendly, neither in setup nor in use.
-Therefore, it is frequently easier to compile the model to an FMU, either in the program or using the Python bindings, and then doing further work with PyFMI.
-
-PyFMI is available with Anaconda, a Python distribution targetting scientific computing, and as such is simple to acquire.
-Once compiled as an FMU, the simuation can be configured and run using PyFMI, either step by step or from beginning to end without interruption.
-Multiple FMIs can be simulated in lock-step, with the input and output signals of the FMIs connected to one another as required.
-
-Using the classical co-simulation algorithm, this can be numerically unstable.
-The classical approach is to simulate each model for a short time-step, exchange information between the models, and then proceed to the next step.
-PyFMI includes several techniques for improving stability during co-simulation \cite{Andersson2016}.
-
-To illustrate the flexibility of this approach, the model from \cref{fig:modelica-inertial-architecture} is split into three parts, and the simulation is run from Python.
-The plant, meaning the actuator and process, and the controller are compiled as separate FMUs, and connected to one another, and the reference signal is replaced by a Python function.
-The logical parts of this new model are shown in \cref{fig:fmi-connected}.
-
-The reference signal function takes a single parameter, the current time.
-In the example, the \emph{scipy.signal.square()} function, which generates a square waveform, is attached to the input of the system from \cref{fig:modelica-inertial-architecture}.
-The simulation is the run using the interface, and the output is collected and processed as needed.
-
-It is possible to connect a function to any input signal.
-The function must take a single input variable, the current simulation time.
-This approach provides a convenient way to drive a model using signal functions or stored data.
+Many other languages have been developed since then, some for the specific intent of developing simulation models.
+Three simulation frameworks with their corresponding input languages will be presented in this paper: Modelica, Matlab and OpenCOR.
+A fundamental understanding of computers and programming languages is assumed in the following report.
 
 \end{document}

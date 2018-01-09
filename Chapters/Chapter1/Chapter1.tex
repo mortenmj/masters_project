@@ -2,62 +2,20 @@
 \providecommand{\rootfolder}{../..} % Relative path to main.tex
 \documentclass[\rootfolder/main.tex]{subfiles}
 \begin{document}
-\chapter{Historical background} % Main chapter title
 
-\label{Chapter01} % Change X to a consecutive number; for referencing this chapter elsewhere, use \cref{ChapterX}
+\chapter{Introduction} % Main chapter title
 
-\section{Human Computers}
+\label{ch:introduction} % Change X to a consecutive number; for referencing this chapter elsewhere, use \ref{ChapterX}
 
-In order to better understand the history of simulation, it is useful to take a look at the history of computation in general.
-Here, it will be shown how the need to simulate physical systems has been a driving force in the development of the computer.
-Analog counting devices, such as the Chinese abacus, have been used for thousands of years to aid in computation.
-Originally, however, the term computer referred to people who were employed to perform calculations.
-One of the earliest examples of this was the work done to predict the return of Halley's comet, by Alexis-Claude Clairaut.
-Halley and Newton had correctly deduced that other celestial bodies influenced the comet's orbit.
-However, solving a three-body problem, necessary in order to predict the date the comet would return, was considered insurmountable at the time.
-Clairaut, along with two friends, used successive approximation to solve the problem \cite{wilson1993}.
-The method they used is strikingly similar to the numerical methods employed by modern simulation software.
+The are many simulation languages, and software tools for constructing and simulating models in these languages, available to engineers and scientists.
+In this report, this situation is investigated by comparison of three selected software tools, with the aim of answering if this is necessary.
 
-\begin{wrapfigure}{R}{0.6\columnwidth}
-    \pimage[0.58]{Figures/tabulatingroom}
-    \caption[A computing room in the 1920s.]
-            {A computing room in the 1920s. \\ Courtesy of the Library of Congress \label{fig:tabulatingroom}.}
-\end{wrapfigure}
-
-\section{Analog Computers}
-
-Later, in 1821, Charles Babbage was employed by the Astronomical Society of London to calculate logarithmic tables.
-This had been done before, in particular by the French, who had perfected the process of breaking down problems into their simplest parts, and set large groups of computers to work on them.
-However, Babbage was disappointed by the number of mistakes made by his human computers.
-Babbage took the approach to its next logical step and began work on a calculating machine; An analog computer that could calculate the values of a polynomial simply by using repeated addition.
-While not particularily successful, Babbage's second machine, the Analytical Engine, included most of the major components of a modern computer, such as input/output, memory and a central processing unit.
-
-Later, the two world wars would bring both a greater need for computation, as well as a scarcity of manpower.
-This pushed the development of increasingly complex computing machines.
-Computers in the early 20th century relied heavily on complex mechanical calculators and punched card machines in order to keep up with the growing demand for computation.
-The punched card machine was capable of interpreting data, and could operate at full speed for days unlike a human computer who would inevitably tire \cite{carr}.
-
-\section{Digital Computers}
-
-\begin{wrapfigure}{R}{0.6\columnwidth}
-    \pimage[0.58]{Figures/eniac}
-    \caption[Technicians programming the ENIAC.]
-            {Technicians programming the ENIAC. \\ Courtesy of Los Alamos National Laboratory\label{fig:eniac}.}
-\end{wrapfigure}
-
-Although punched card machines were much faster than human computers, as electro-mechanical machines they were slow compared to the next innovation in computing: the electronic general-purpose computer.
-In 1943, the United States Army commissioned engineers at the University of Pennsylvania to build the Electronic Numerical Integrator and Computer, ENIAC \cite{sep-computing-history}\cite{reed1952}.
-While it was not the first programmable computer (that honor belongs to the Colossus, built by the British code breakers at Bletchley Park\cite{winegrad1996}), the ENIAC was the first truly general-purpose computer.
-Originally built to compute firing tables for artillery, the machine was soon used to solve other problems. 
-In particular, by the nuclear scientists at Los Alamos National Laboratory, who had only recently developed the nuclear bombs dropped on Japan.
-The very first real-world application of the machine would not be artillery tables, but simulations of nuclear fusion reactions \cite{AtomicHeritageFoundation}.
-
-In 1948, a new control system was planned and implemented for the ENIAC.
-The new system, based on the work of John von Neumann \cite{VonNeumann1993} \cite{Haigh2014a}, added an instruction set to the computer.
-This greatly simplified its operation and gave birth to the first stored-program computer \cite{Rope2007}.
-
-Later, the creation of one of the first widely adopted programming language, FORTRAN, was motivated by a desire to make it easier, and less error-prone, to program computers to do calculations.
-Many other languages have been developed since then, some for the specific intent of developing simulation models.
-Three simulation frameworks, with their corresponding input languages, will be presented in this paper: Modelica, Matlab and OpenCOR.
+The report will first take a brief look at the history of the computer and of programming languages, as it relates to simulation.
+Here, it will be shown how the need to simulate physical systems has been a driving force in the development of the computer, and an attempt will be made to cast some light on why there are so many software solutions in the field.
+Then, three software solutions will be compared, in terms of their similarities and differences as well as their strengths and weaknesses.
+\Cref{ch:modelica} will review the Modelica language.
+In \cref{ch:matlab} the Matlab computing environment and the included Simulink environment is reviewed.
+Finally, \cref{ch:opencor} will review OpenCOR, including the CellML and SED-ML languages.
+An attempt will be made to craft some suggestions as to what features from these should be found in a software tool that aims to support the widest possible range of engineering disciplines.
 
 \end{document}

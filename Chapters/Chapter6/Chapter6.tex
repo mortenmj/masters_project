@@ -2,18 +2,71 @@
 \providecommand{\rootfolder}{../..} % Relative path to main.tex
 \documentclass[\rootfolder/main.tex]{subfiles}
 \begin{document}
-\chapter{Conclusion} % Main chapter title
+\chapter{Discussion} % Main chapter title
 
-\label{Chapter06} % Change X to a consecutive number; for referencing this chapter elsewhere, use \cref{ChapterX}
+\label{ch:discussion} % Change X to a consecutive number; for referencing this chapter elsewhere, use \cref{ChapterX}
 
 This report started with the question, loosely phrased, "Is it really necessary to have as many simulation tools as there currently are in the marketplace?".
-Having reviewed three rather different simulation tools, the answer seems to be a qualified "maybe".
+To investigate the question, three different software tools have been reviewed (Modelica, Matlab and OpenCOR), and how they differ.
+The main criteria for comparison were their model input languages, and the ease of simulating the model.
 
-As we have discussed, the primary difference between software tools for simulation lies in how the model is specified, and the ease of configuring and visualizing the simulation.
-Certainly, the argument can be made that this process is different for different fields of science and engineering, and that this justifies having highly specialized tools.
-Even so, the author would argue that a general modelling language, such as Modelica, could readily be used in specialized software.
-We reviewed one such specialized tool, OpenCOR, which is intended for biological sciences.
-In the opinion of the author, this project might well have been better served by using an existing modelling language, freeing up development time to be used for other parts of the project.
-We have also seen a standard interface for model sharing, which has gained a lot of traction in the industry, namely FMI, and how we can simulate FMUs from an external program.
+The argument can certainly be made that the mechanism for solving models in all three tools is essentially the same, as seen in \cref{ch:modelica,ch:matlab,ch:opencor}.
+Some of these software packages only allow the simulation of ordinary differential equations, while others allow for composite models made up of differential equations, algebraic equations and algorithms.
+
+Although it would be difficult to make a general statement that applies to all fields of engineering, based on what has been shown the chief differences between these tools, or perhaps the differences that matter most in systems engineering, are in how the models themselves are specified, and how the simulation is specified.
+Other considerations include the ability to extend the software using plugins, the ability to produce publication-quality figures, solve optimization problems for the model and so forth.
+We view these as secondary because most of these problems can be solved by exporting the model to a standard format, after which it can be simulated from a scripting interface.
+
+\section{Model specification}
+
+In general, the reviewed systems all reduce the model to a standard format and solve it by numerical integration.
+However, as seen, different tools differ in how models are specified.
+
+Modelica and Matlab, reviewed in \cref{ch:modelica} and \cref{ch:matlab}, are targeted primarily at modeling for systems engineering and offer tools which are appropriate for this purpose.
+Models can be built using acausal components, which implement the behavior of real-world components.
+This allows for models that are easily understood in terms of their real-world counterparts.
+Furthermore, as components in engineering are frequently similar to one another, Modelica allows for inheritance and other object-oriented approaches.
+As shown, it is possible to implement a basic representation of an actuator, and later replace it with a more realistic component without any changes to the rest of the model.
+
+Matlab offers many of the same advantages, but as it is not a pure-bred simulation tool it falls short in some aspects.
+Since Matlab is a much more general computing environment than Modelica-based tools, this is to be expected.
+
+As seen, the ease of understanding a model can vary greatly depending on the language in which it is specified.
+It might be arguable that the model implemented in Modelica, shown in \cref{lst:modelica-inertial-code} is significantly easier to grasp than that same model in Matlab, shown in \cref{lst:matlab-inertial}, or CellML, shown in \cref{lst:cellml-inertial-units,lst:cellml-inertial-model}. 
+It is a common mantra in software development that source code is written once, but read many times, and that as a consequence readability should be highly valued.
+
+As shown, Modelica offers a rich interface for creating acausal models\cref{ch:modelica}.
+These models are easy to understand graphically, as they are made by connecting components which mirror their real-life counterparts.
+The causal approach, taken by Matlab/Simulink as shown in \cref{ch:matlab}, means that models are built from simpler blocks.
+While the models are not as easy to understand, the software required to simulate them can be made less complex.
+
+There is generally a trend in software development for higher-level languages, at the expense of less efficient software.
+As computers become faster, the trade-off between efficient software and the amount of developer hours it takes to create, increasingly favors efficient development.
+As shown in \cref{ch:modelica}, an acausal model can be significantly simpler to grasp than an equivalent causal model.
+Furthermore, building a causal model requires that a~priori assumptions are made about what will be known and what will be unknown in the model.
+For example, in the circuit model in \cref{ch:modelica}, it may later have been desirable to solve for some other quantity.
+If the model was made up of causal components, this would require that the model is reworked.
+
+It has been seen that features from object-oriented languages, such as composition and inheritance (in particular interface inheritance) allow for highly flexible development, as well as model and component reuse.
+
+\section{Simulation}
+
+As shown, there appear to be two important considerations when designing simulation software concerning the simulation phase itself.
+
+Firstly, it should be simple to play around with simulation parameters in a graphical interface within the software tool.
+This is necessary to quickly get a feel for the behavior of the model, and to be able to iterate efficiently when developing the model.
+As in all software development, the ability to quickly compile and run the software is of great advantage, and there seems to be no good replacement for a built-in graphical interface for this.
+Of the three tools that have been reviewed, two have powerful, graphical interfaces for configuring the simulation and graphing the results.
+
+Secondly, it is important to be able to run simulations headless, meaning without a graphical interface, was found to be important.
+This is frequently a requirement for running simulations on remote machines, such as computation clusters.
+Unfortunately, none of the reviewed tools have particularly attractive scripting interfaces in and of themselves.
+One alternative, which has been reviewed, is compiling the model in a standard format, such as FMI.
+This allows for the model to be run e.g. from Python, as shown in \cref{ch:modelica}.
+Model components can be compiled as FMUs, connected with Python, and run on any computer or computer cluster using the widely available Anaconda Python distribution.
+
+Once a model can be run from a general purpose programming language, it opens up a wide range of possibilities, such as data fitting or parameter sweeps.
+Many such languages include libraries for numerical optimization, which would allow us to fit the model to experimental data.
+Being able to create scripts that automate the production of publication-quality figures also simplifies the writing of reports, such as this one.
 
 \end{document}

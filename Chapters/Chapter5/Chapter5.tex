@@ -2,71 +2,104 @@
 \providecommand{\rootfolder}{../..} % Relative path to main.tex
 \documentclass[\rootfolder/main.tex]{subfiles}
 \begin{document}
-\chapter{Discussion} % Main chapter title
+\chapter{OpenCOR} % Main chapter title
 
-\label{Chapter05} % Change X to a consecutive number; for referencing this chapter elsewhere, use \cref{ChapterX}
+\label{ch:opencor} % Change X to a consecutive number; for referencing this chapter elsewhere, use \cref{ChapterX}
 
-This report started with the question, loosely phrased, "Is it really necessary to have as many simulation tools as there currently are in the marketplace?".
-To investigate the question, three different software tools have been reviewed (Modelica, Matlab and OpenCOR), and how they differ.
-The main criteria for comparison were their model input languages, and the ease of simulating the model.
+\section{CellML}
 
-The argument can certainly be made that the mechanism for solving models in all three tools is essentially the same, as seen in \cref{Chapter02,Chapter03,Chapter04}.
-Some of these software packages only allow the simulation of ordinary differential equations, while others allow for composite models made up of differential equations, algebraic equations and algorithms.
+OpenCOR is an open source simulation package made for the biology field.
+It is modular to the point where all features are in the form of plugins \cite{10.3389/fphys.2015.00026}.
+OpenCOR uses two input languages, CellML and SED-ML, both XML-based markup languages, to describe the model and the simulation setup, respectively.
+The software includes an editor for each language so that the user can create models without writing XML directly.
+This section is largely based on information from \cite{cuellar2003}.
 
-Although it would be difficult to make a general statement that applies to all fields of engineering, based on what has been shown the chief differences between these tools, or perhaps the differences that matter most, are in how the models themselves are specified, and how the simulation is specified.
-Other, secondary, considerations include the ability to extend the software using plugins, the ability to produce publication-quality figures, solve optimization problems for the model and so forth.
-We view these as secondary because most of these problems can be solved by exporting the model to a standard format, after which it can be simulated from a scripting interface.
+\subsection{Language features}
 
-\section{Model specification}
+\begin{wraptable}{R}{0.5\columnwidth}
+    \inputminted[lastline=27]{cellml}{\rootfolder/Models/OpenCOR/Inertial.input}
+    \captionof{listing}{CellML code showing unit definitions for the drive-shaft system.\label{lst:cellml-inertial-units}}
+\end{wraptable}
 
-In general, the reviewed systems all reduce the model to a standard format and solve it by numerical integration.
-However, as seen, different tools differ in how models are specified.
+\begin{listing}[ht]
+    \inputminted[firstline=28]{cellml}{\rootfolder/Models/OpenCOR/Inertial.input}
+    \caption{CellML code showing model definition for the drive-shaft system.\label{lst:cellml-inertial-model}}
+\end{listing}
 
-As seen in \cref{Chapter02}, Modelica, which is targeted primarily at modelling for systems engineering, offers tools which are appropriate for this purpose.
-Models are mainly built using acausal components, which implement the behavior of real-world components.
-This allows for models that are easily understood in terms of their real-world counterparts.
-This can be compared to the causal approach, shown in \cref{Chapter03}.
-Furthermore, as components in engineering are frequently similar to one another, Modelica allows for inheritance and other object-oriented approaches.
-As shown, it is possible to implement a basic representation of an actuator, and later replace it with a more realistic component without any changes to the rest of the model.
+CellML is an XML-based format that is used to describe the structure of models.
+The information included in the model can broadly be described as twofold.
+Firstly, it includes the various parts of the model, and how these parts are combined to form a complete model.
+This information is specified separately from the simulation configuration, as will be shown later.
+Secondly, the language allows for meta-data to be added to the model, in order to categorize and organize models and model parts.
 
-Matlab offers many of the same advantages, but as it is not a pure-bred simulation tool it falls short in some aspects.
-As Matlab is a much more general computing environment than Modelica-based tools, this is to be expected.
+To specify the model used previously, in CellML, it is first necessary to define the units that are used in the model.
+The CellML specification includes SI units, but it is useful to define complex units and give them a descriptive name.
+Once the necessary units are defined, they are used in the specification of the model components.
+The model specification is similar to the Modelica code from \cref{ch:modelica}, and is shown in \cref{lst:cellml-inertial-model}.
+This is automatically translated into MathML behind the scenes.
 
-As seen, the ease of understanding a model can vary greatly depending on the language in which it is specified.
-It is arguable that the model implemented in Modelica, shown in \cref{lst:modelica-inertial-code} is significantly easier to grasp than that same model in Matlab, shown in \cref{lst:matlab-inertial}, or CellML, shown in \cref{lst:cellml-inertial-units,lst:cellml-inertial-model}. 
-It is a common mantra in software development that source code is written once, but read many times, and that as a consequence readability should be highly valued.
+Being an XML-based standard, CellML is extensible, and allows for model designers to add information written in other XML-based languages to the model.
+This can be equations written in MathML, textual and graphical documentation in HTML (currently planned), data sets and so on.
 
-As shown, Modelica (\cref{Chapter02}) offers a rich interface for creating acausal models.
-These models are easy to understand graphically, as they are made by connecting components which mirror their real-life counterparts.
-On the other hand, as shown in \cref{Chapter03}, the causal approach is taken by Matlab/Simulink where models are built from blocks.
-While the models are not as easy to understand, the software required to simulate them is simpler.
+While CellML is mainly used in biology, it is designed to be domain-independent.
+The language is flexible enough to be used to implement purely biological as well as electrochemical and mechanical models.
 
-There is generally a trend in software development for higher-level languages, at the expense of less efficient software.
-As computers become faster, the tradeoff between efficient software and the amount of developer hours it takes to create, increasingly favors efficient development.
-As shown in \cref{Chapter02}, an acausal model can be significantly simpler to grasp than an equivalent causal model.
-Further, as seen, building a causal model requires that a priori assumptions are made about what will be known and what will be unknown in the model.
-For example, in the circuit model in \cref{Chapter02}, it may later have been desirable to solve for some other quantity.
-If the model was made with causal components, this would require that the model is reworked.
+CellML models are constructed as a network of interconnected components.
+The components may contain variables as well as mathematical equations specified with MathML.
+Variables belong to a single component, but may be mapped to a variable in another component by specifying a connection.
+Two components may only have one connection, and all variable mappings must therefore be declared in the same place.
+This is intended to enforce a level of organization to the sometimes complex mappings between components.
 
-It has been seen that features from object-oriented languages, such as composition and inheritance (in particular interface inheritance) allow for highly flexible development, as well as model and component reuse.
+Variables in CellML are always expressed in units.
+This ensures rigor when shared models are connected, since incompatible variables cannot be mapped to one another.
+A variable declared in units of length, for example, cannot be mapped to another variable with units of mass.
+However, it is perfectly possible to connect a variable using kilograms to one using pounds, and have the units automatically converted.
+This is possible by defining new units in terms of the dictionary of standard units included with CellML, which include the base and derived SI units.
+This allows researchers to work in their preferred units, and still share their work with the rest of the scientific community.
+
+Models can be structured using grouping.
+CellML provides two types of groups, encapsulation and containment.
+In an encapsulating group, only one component in the group is accessible to components outside the group, in effect acting as an interface.
+By using a containment group the modeler can specify that one component contains another, which allows a physical organization of the model.
+
+Meta-data in CellML models can include information about the author, references to literature and various information that puts the model into the proper biological context.
+Model sharing is integral to the Physiome Project, the group behind OpenCOR and CellML, and the project includes an extensive database of models.
+The meta-data information allows for other researchers to search the repository for existing models.
+Models are shared as source code, and as such it is not possible to share models without revealing intellectual property.
+
+There is no support for discontinuous events in CellML, and the bouncing ball model has therefore not been implemented here.
+
+\section{SED-ML}
+
+The SED-ML language allows the researcher to specify all stages of the simulation itself, independent of the model that is simulated.
+An experiment described with SED-ML consists of several components.
+This section is largely based on information from \cite{sedml-specification}.
+
+\begin{enumerate}
+    \item The Model class defines which models should be used in the simulation.
+    \item The Change class allows models to be tweaked for a particular simulation, including changes to attributes or additions to the model specification itself.
+    \item The Simulation class specifies which of a number of predefined simulation algorithms to use for the experiment.
+\end{enumerate}
+
+The simulation process broadly consists of three steps:
+
+\begin{enumerate}
+    \item Select the model to use.\\
+        Any required fine-tuning, such as changing the model's initial values, can be applied without requiring a change to the model specification itself.
+    \item Specify the simulation algorithm that should be used for the experiment.
+    \item Apply post-processing.\\
+        Here, the raw output from the simulation steps can be processed. For example, the data can be normalized,
+        correlations can be calculated and so on, before the final plots or reports are generated.
+\end{enumerate}
+
+The project behind OpenCOR, called the Physiome Project, expends significant effort to reproduce the models used in scientific publications.
+SED-ML is used to specify the exact simulation parameters needed to reproduce a result the way it appears in literature.
+Indeed, models in the Physiome library are curated and evaluated by how closely they mimic the results they intend to reproduce.
 
 \section{Simulation}
 
-From what has been seen in previous chapters, there appear to be two important considerations when designing simulation software concerning the simulation phase itself.
-First, it should be simple to play around with simulation parameters in a graphical interface within the software tool.
-This is necessary to quickly get a feel for the behavior of the model, and to be able to iterate efficiently when developing the model.
-As in all software development, the ability to quickly compile and run the software is of great advantage, and there seems to be no good replacement for a built-in graphical interface for this.
-Of the three tools that have been reviewed, two have powerful, graphical interfaces for configuring the simulation and graphing the results.
-
-Secondly, the ability to run simulations headless, meaning without a graphical interface.
-This is frequently a requirement for running simulations on remote machines, such as computation clusters.
-Unfortunately, none of the reviewed tools have particularily attractive scripting interfaces in and of themselves.
-One alternative, which has been reviewed, is compiling the model in a standard format, such as FMI.
-This allows for the model to be run e.g. from Python, as shown in \cref{Chapter02}.
-Model components can be compiled as FMUs, connected with Python, and run on any computer or computer cluster using the widely available Anaconda Python distribution.
-
-Once a model can be run from a general purpose programming language, it opens up a wide range of possibilities, such as data fitting or parameter sweeps.
-Many such languages include libraries for numerical optimization, which would allow us to fit the model to experimental data.
-Being able to create write scripts that automate the production of publication-quality figures also simplifies the writing of reports, such as this one.
+As OpenCOR is plugin-based, simulation is also performed by solvers implemented as plugins.
+When simulating a system, the plugin framework will instantiate an instance of the requested solver, and proceeds to run the solver iteratively until it reaches the end time.
+OpenCOR includes a number of open sourced solvers with wrappers to make them compatible with the plugin API.
 
 \end{document}
